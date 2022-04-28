@@ -8,9 +8,6 @@
   },
   "type": "module",
   "scripts": {
-    "build": "env-cmd --silent cross-env CONTENT_ROOT=files BUILD_OUT_ROOT=build yari-build",
-    "content": "env-cmd --silent cross-env CONTENT_ROOT=files yari-tool",
-    "filecheck": "env-cmd --silent cross-env CONTENT_ROOT=files yari-filecheck --cwd=.",
     "fix:js": "prettier -w \"**/*.(m)?js\"",
     "fix:json": "prettier -w \"**/*.json(c)?\"",
     "fix:md": "markdownlint-cli2-fix \"**/*.md\"",
@@ -21,7 +18,12 @@
     "lint:yml": "prettier -c \"**/*.yml\"",
     "prepare": "husky install",
     "start": "yarn up-to-date-check && env-cmd --silent cross-env CONTENT_ROOT=files REACT_APP_DISABLE_AUTH=true BUILD_OUT_ROOT=build yari-server",
-    "up-to-date-check": "node scripts/up-to-date-check.js"
+    "up-to-date-check": "node scripts/up-to-date-check.js",
+    "start": "yarn up-to-date-check && env-cmd --silent cross-env CONTENT_ROOT=files REACT_APP_DISABLE_AUTH=true BUILD_OUT_ROOT=build node node_modules/@mdn/yari/server",
+    "filecheck": "env-cmd --silent cross-env CONTENT_ROOT=files node node_modules/@mdn/yari/filecheck/cli.js --cwd=.",
+    "content": "env-cmd --silent cross-env CONTENT_ROOT=files node node_modules/@mdn/yari/tool/cli.js",
+    "build": "env-cmd --silent cross-env CONTENT_ROOT=files BUILD_OUT_ROOT=build node node_modules/@mdn/yari/build/cli.js",
+    "diff": "node ./scripts/diff.mjs"
   },
   "dependencies": {
     "@mdn/yari": "2.15.5",
@@ -31,6 +33,8 @@
     "lint-staged": "13.2.1",
     "markdownlint-cli2": "0.6.0",
     "markdownlint-rule-search-replace": "1.0.9",
-    "prettier": "2.8.7"
+    "prettier": "2.8.7",
+    "glob": "^8.0.1",
+    "lodash-es": "^4.17.21"
   }
 }
