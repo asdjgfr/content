@@ -9,6 +9,9 @@ tags:
   - listbox role
   - composite widget role
   - NeedsContent
+spec-urls:
+  - https://w3c.github.io/aria/#listbox
+  - https://w3c.github.io/aria-practices/#Listbox
 ---
 The `listbox` role is used for lists from which a user may select one or more items which are static and, unlike HTML {{HTMLElement('select')}} elements, may contain images.
 
@@ -103,7 +106,7 @@ For further details and a full list of ARIA states and properties see the [`list
 
   , while navigating the list or an alternative model that does require modifier keys to be held while navigating in order to avoid losing selection states.
 
-  - Recommended selection model -- holding modifier keys is not necessary:
+  - Recommended selection model — holding modifier keys is not necessary:
 
     - <kbd>Space</kbd>
 
@@ -152,7 +155,7 @@ When the user clicks on an option, hits <kbd>Space</kbd> when focused on an opti
 1. Change the appearance of the option to reflect its selected state
 1. Update the [`aria-activedescendant`](/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-activedescendant) value on the listbox to the ID of the option the user just interacted with, even if they toggled the option to be unselected.
 
-> **Note: ** The first rule of ARIA use is you can use a native feature with the semantics and behavior you require already built in, instead of re-purposing an element and **adding** an ARIA role, state or property to make it accessible, then do so. The {{HTMLElement('select')}} element with descendant {{HTMLElement('option')}} elements handles all the needed interactions natively.
+> **Note:** The first rule of ARIA use is you can use a native feature with the semantics and behavior you require already built in, instead of re-purposing an element and **adding** an ARIA role, state or property to make it accessible, then do so. The {{HTMLElement('select')}} element with descendant {{HTMLElement('option')}} elements handles all the needed interactions natively.
 
 ## Examples
 
@@ -206,10 +209,7 @@ This could have more easily been handled with the native HTML {{HTMLElement('sel
 
 ## Specifications
 
-| Specification                                                                            | Status                                           |
-| ---------------------------------------------------------------------------------------- | ------------------------------------------------ |
-| {{SpecName("ARIA","#listbox","ARIA listbox role")}}                     | {{Spec2('ARIA')}}                         |
-| {{SpecName("ARIA Authoring Practices 1.2","#Listbox","Listbox Role")}} | {{Spec2('ARIA Authoring Practices 1.2')}} |
+{{Specifications}}
 
 ## See also
 

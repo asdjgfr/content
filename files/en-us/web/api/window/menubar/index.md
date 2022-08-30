@@ -1,6 +1,7 @@
 ---
 title: Window.menubar
 slug: Web/API/Window/menubar
+page-type: web-api-instance-property
 tags:
   - API
   - HTML DOM
@@ -24,16 +25,16 @@ The following complete HTML example demonstrates how the `visible` property
 of the `menubar` object is used.
 
 ```html
-<html>
-<head>
-  <title>Various DOM Tests</title>
-  <script>
-    var visible = window.menubar.visible;
-  </script>
-</head>
-<body>
-  <p>Various DOM Tests</p>
-</body>
+<html lang="en">
+  <head>
+    <title>Various DOM Tests</title>
+    <script>
+      const visible = window.menubar.visible;
+    </script>
+  </head>
+  <body>
+    <p>Various DOM Tests</p>
+  </body>
 </html>
 ```
 

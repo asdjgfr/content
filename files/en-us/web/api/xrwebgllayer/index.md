@@ -1,6 +1,7 @@
 ---
 title: XRWebGLLayer
 slug: Web/API/XRWebGLLayer
+page-type: web-api-interface
 tags:
   - API
   - AR
@@ -16,7 +17,7 @@ tags:
   - XRWebGLLayer
 browser-compat: api.XRWebGLLayer
 ---
-{{securecontext_header}}{{APIRef("WebXR Device API")}}
+{{SecureContext_Header}}{{APIRef("WebXR Device API")}}{{SeeCompatTable}}
 
 The **`XRWebGLLayer`** interface of the WebXR Device API provides a linkage between the WebXR device (or simulated XR device, in the case of an inline session) and a WebGL context used to render the scene for display on the device. In particular, it provides access to the WebGL framebuffer and viewport to ease access to the context.
 
@@ -42,7 +43,7 @@ Although `XRWebGLLayer` is currently the only type of framebuffer layer supporte
 - {{domxref('XRWebGLLayer.framebufferHeight', "framebufferHeight")}} {{ReadOnlyInline}}
   - : Returns the height of the layer's framebuffer.
 - {{domxref('XRWebGLLayer.ignoreDepthValues', "ignoreDepthValues")}} {{ReadOnlyInline}}
-  - : A Boolean which Indicates whether or not the [WebXR compositor](en-US/docs/Web/API/WebXR_Device_API/Fundamentals#The_WebXR_compositor) should make use of the contents of the layer's depth buffer while compositing the scene.
+  - : A Boolean which Indicates whether or not the [WebXR compositor](/en-US/docs/Web/API/WebXR_Device_API/Fundamentals#the_webxr_compositor) should make use of the contents of the layer's depth buffer while compositing the scene.
 
 ## Methods
 
@@ -75,11 +76,11 @@ That function receives as input an {{domxref("XRFrame")}} which encapsulates the
 let pose = xrFrame.getViewerPose(xrReferenceSpace);
 
 if (pose) {
-  let glLayer = xrSession.renderState.baseLayer;
+  const glLayer = xrSession.renderState.baseLayer;
   gl.bindFrameBuffer(gl.FRAMEBUFFER, glLayer.Framebffer);
 
-  for (let view of pose.views) {
-    let viewport = glLayer.getViewport(view);
+  for (const view of pose.views) {
+    const viewport = glLayer.getViewport(view);
     gl.viewport(viewport.x, viewport.y, viewport.width, viewport.height);
 
     /* Render the view */

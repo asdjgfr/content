@@ -1,6 +1,7 @@
 ---
 title: CSSRule.parentStyleSheet
 slug: Web/API/CSSRule/parentStyleSheet
+page-type: web-api-instance-property
 tags:
   - API
   - CSSOM
@@ -22,8 +23,8 @@ A {{domxref("StyleSheet")}} object.
 ## Examples
 
 ```js
-let myRules = document.styleSheets[0].cssRules;
-console.log(myRules.parentStyleSheet);
+const docRules = document.styleSheets[0].cssRules;
+console.log(docRules[0].parentStyleSheet == document.styleSheets[0]); // returns true 
 ```
 
 ## Specifications

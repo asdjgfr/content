@@ -1,6 +1,7 @@
 ---
 title: WEBGL_compressed_texture_astc.getSupportedProfiles()
 slug: Web/API/WEBGL_compressed_texture_astc/getSupportedProfiles
+page-type: webgl-extension-method
 tags:
   - API
   - Method
@@ -22,6 +23,10 @@ by the implementation.
 getSupportedProfiles()
 ```
 
+### Parameters
+
+None.
+
 ### Return value
 
 An {{jsxref("Array")}} of string elements indicating which ASTC
@@ -38,7 +43,7 @@ tonal range of real-world scenes (100,000:1).
 ## Examples
 
 ```js
-var ext = gl.getExtension('WEBGL_compressed_texture_astc');
+const ext = gl.getExtension('WEBGL_compressed_texture_astc');
 ext.getSupportedProfiles(); // ["ldr"]
 ```
 

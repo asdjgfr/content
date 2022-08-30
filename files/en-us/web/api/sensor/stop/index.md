@@ -1,6 +1,7 @@
 ---
 title: Sensor.stop()
 slug: Web/API/Sensor/stop
+page-type: web-api-instance-method
 tags:
   - API
   - Generic Sensor API
@@ -29,7 +30,7 @@ None.
 
 ### Return value
 
-{{jsxref('undefined')}}
+None ({{jsxref("undefined")}}).
 
 ## Examples
 

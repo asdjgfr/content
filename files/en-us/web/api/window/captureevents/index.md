@@ -1,6 +1,7 @@
 ---
 title: Window.captureEvents()
 slug: Web/API/Window/captureEvents
+page-type: web-api-instance-method
 tags:
   - API
   - Gecko
@@ -32,6 +33,10 @@ captureEvents(eventType)
 `Event.MOUSEOVER`, `Event.MOUSEUP`, `Event.MOVE`,
 `Event.RESET`, `Event.RESIZE`, `Event.SELECT`,
 `Event.SUBMIT`, `Event.UNLOAD`.
+
+### Return value
+
+None ({{jsxref("undefined")}}).
 
 ## Examples
 

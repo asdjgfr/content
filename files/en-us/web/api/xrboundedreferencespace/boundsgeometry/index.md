@@ -1,6 +1,7 @@
 ---
 title: XRBoundedReferenceSpace.boundsGeometry
 slug: Web/API/XRBoundedReferenceSpace/boundsGeometry
+page-type: web-api-instance-property
 tags:
   - API
   - AR
@@ -21,9 +22,10 @@ tags:
   - augmented
   - boundsGeometry
   - space
+  - Experimental
 browser-compat: api.XRBoundedReferenceSpace.boundsGeometry
 ---
-{{APIRef("WebXR Device API")}}
+{{APIRef("WebXR Device API")}}{{SeeCompatTable}}
 
 The read-only {{domxref("XRBoundedReferenceSpace")}}
 property **`boundsGeometry`** is an array of

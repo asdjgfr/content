@@ -1,6 +1,7 @@
 ---
 title: StylePropertyMap.clear()
 slug: Web/API/StylePropertyMap/clear
+page-type: web-api-instance-method
 tags:
   - API
   - CSS Typed Object Model API
@@ -9,6 +10,7 @@ tags:
   - Reference
   - StylePropertyMap
   - clear()
+  - Experimental
 browser-compat: api.StylePropertyMap.clear
 ---
 {{APIRef("CSS Typed Object Model API")}}{{SeeCompatTable}}
@@ -28,7 +30,7 @@ None.
 
 ### Return value
 
-{{jsxref('undefined')}}
+None ({{jsxref("undefined")}}).
 
 ## Examples
 

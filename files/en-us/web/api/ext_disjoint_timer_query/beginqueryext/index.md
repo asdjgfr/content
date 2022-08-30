@@ -1,6 +1,7 @@
 ---
 title: EXT_disjoint_timer_query.beginQueryEXT()
 slug: Web/API/EXT_disjoint_timer_query/beginQueryEXT
+page-type: webgl-extension-method
 tags:
   - API
   - Method
@@ -22,7 +23,7 @@ beginQueryEXT(target, query)
 
 ### Parameters
 
-- target
+- `target`
   - : A {{domxref("WebGL_API/Types", "GLenum")}} specifying the target of the time query. Must be
     `ext.TIME_ELAPSED_EXT`.
 - `query`
@@ -30,16 +31,16 @@ beginQueryEXT(target, query)
 
 ### Return value
 
-None.
+None ({{jsxref("undefined")}}).
 
 ## Examples
 
 ```js
-var ext = gl.getExtension('EXT_disjoint_timer_query');
-var query = ext.createQueryEXT();
+const ext = gl.getExtension('EXT_disjoint_timer_query');
+const query = ext.createQueryEXT();
 ext.beginQueryEXT(ext.TIME_ELAPSED_EXT, query);
 
-// ...
+// …
 ```
 
 ## Specifications

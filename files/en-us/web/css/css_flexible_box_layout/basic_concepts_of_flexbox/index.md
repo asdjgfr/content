@@ -198,7 +198,7 @@ You could instead set `align-items` to `flex-start` in order to make the items l
 
 ### justify-content
 
-The {{cssxref("justify-content")}} property is used to align the items on the main axis, the direction in which `flex-direction` has set the flow. The initial value is `flex-start` which will line the items up at the start edge of the container, but you could also set the value to `flex-end` to line them up at the end, or `center` to line them up in the centre.
+The {{cssxref("justify-content")}} property is used to align the items on the main axis, the direction in which `flex-direction` has set the flow. The initial value is `flex-start` which will line the items up at the start edge of the container, but you could also set the value to `flex-end` to line them up at the end, or `center` to line them up in the center.
 
 You can also use the value `space-between` to take all the spare space after the items have been laid out, and share it out evenly between the items so there will be an equal amount of space between each item. To cause an equal amount of space on the right and left of each item use the value `space-around`. With `space-around`, items have a half-size space on either end. Or, to cause items to have equal space around them use the value `space-evenly`. With `space-evenly`, items have a full-size space on either end.
 
@@ -214,6 +214,10 @@ Try the following values of `justify-content` in the live example:
 {{EmbedGHLiveSample("css-examples/flexbox/basics/justify-content.html", '100%', 380)}}
 
 In the article [Aligning Items in a Flex Container](/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container) we will explore these properties in more depth, in order to have a better understanding of how they work. These simple examples however will be useful in the majority of use cases.
+
+### justify-items
+
+The [`justify-items`](/en-US/docs/Web/CSS/justify-items) property is ignored in flexbox layouts.
 
 ## Next steps
 

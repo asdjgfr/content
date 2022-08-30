@@ -1,6 +1,7 @@
 ---
 title: XRView.eye
 slug: Web/API/XRView/eye
+page-type: web-api-instance-property
 tags:
   - API
   - AR
@@ -17,9 +18,10 @@ tags:
   - XR
   - XRView
   - augmented
+  - Experimental
 browser-compat: api.XRView.eye
 ---
-{{APIRef("WebXR Device API")}}
+{{APIRef("WebXR Device API")}}{{SeeCompatTable}}
 
 The {{domxref("XRView")}} interface's read-only **`eye`**
 property is a string indicating which eye's viewpoint the `XRView` represents: `left` or
@@ -57,12 +59,12 @@ gl.clearColor(0,0, 0, 1.0);
 gl.clearDepth(1.0);
 gl.clear(gl.COLOR_BUFFER_BIT, gl.DEPTH_BUFFER_BIT);
 
-for (let view of xrPose.views) {
+for (const view of xrPose.views) {
   let skipView = false;
 
-  if (view.eye == "left" && body.leftEye.injured) ||
+  if (view.eye === "left" && body.leftEye.injured) {
     skipView = updateInjury(body.leftEye);
-  } else if (view.eye == "right" && body.rightEye.injured) {
+  } else if (view.eye === "right" && body.rightEye.injured) {
     skipView = updateInjury(body.rightEye);
   }
 
@@ -74,7 +76,7 @@ for (let view of xrPose.views) {
 }
 ```
 
-For each of the views, the value of `eye` is checked and  if it's either
+For each of the views, the value of `eye` is checked and if it's either
 `left` or `right`, we check to see if the
 `body.leftEye.injured` or `body.rightEye.injured` property is
 `true`; if so, we call a function `updateInjury()` on that eye to

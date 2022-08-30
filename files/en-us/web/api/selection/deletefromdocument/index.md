@@ -1,6 +1,7 @@
 ---
 title: Selection.deleteFromDocument()
 slug: Web/API/Selection/deleteFromDocument
+page-type: web-api-instance-method
 tags:
   - API
   - HTML Editing
@@ -23,7 +24,11 @@ deleteFromDocument()
 
 ### Parameters
 
-_None._
+None.
+
+### Return value
+
+None ({{jsxref("undefined")}}).
 
 ## Examples
 
@@ -53,7 +58,7 @@ function deleteSelection() {
 
 ### Result
 
-{{EmbedLiveSample("Example")}}
+{{EmbedLiveSample("Examples")}}
 
 ## Specifications
 

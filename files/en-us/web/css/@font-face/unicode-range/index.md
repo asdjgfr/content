@@ -6,7 +6,6 @@ tags:
   - CSS
   - CSS Fonts
   - CSS Property
-  - Experimental
   - Layout
   - Reference
   - Web
@@ -46,7 +45,9 @@ The purpose of this descriptor is to allow the font resources to be segmented so
 
 ## Formal syntax
 
-{{csssyntax}}
+```
+<unicode-range>#
+```
 
 ## Examples
 

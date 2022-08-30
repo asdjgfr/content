@@ -1,15 +1,17 @@
 ---
 title: VideoDecoder.close()
 slug: Web/API/VideoDecoder/close
+page-type: web-api-instance-method
 tags:
   - API
   - Method
   - Reference
   - close
   - VideoDecoder
+  - Experimental
 browser-compat: api.VideoDecoder.close
 ---
-{{securecontext_header}}{{DefaultAPISidebar("WebCodecs API")}}
+{{APIRef("WebCodecs API")}}{{SecureContext_Header}}{{SeeCompatTable}}
 
 The **`close()`** method of the {{domxref("VideoDecoder")}} interface ends all pending work and releases system resources.
 
@@ -25,7 +27,7 @@ None.
 
 ### Return value
 
-{{jsxref('undefined')}}.
+None ({{jsxref("undefined")}}).
 
 ## Examples
 

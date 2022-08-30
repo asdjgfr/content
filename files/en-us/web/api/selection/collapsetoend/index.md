@@ -1,6 +1,7 @@
 ---
 title: Selection.collapseToEnd()
 slug: Web/API/Selection/collapseToEnd
+page-type: web-api-instance-method
 tags:
   - API
   - HTML Editing
@@ -23,7 +24,11 @@ collapseToEnd()
 
 ### Parameters
 
-_None._
+None.
+
+### Return value
+
+None ({{jsxref("undefined")}}).
 
 ## Specifications
 

@@ -1,6 +1,7 @@
 ---
 title: HTMLImageElement.srcset
 slug: Web/API/HTMLImageElement/srcset
+page-type: web-api-instance-property
 tags:
   - API
   - HTML
@@ -35,7 +36,7 @@ situation.
 
 ## Value
 
-A {{domxref("USVString")}} containing a comma-separated list of one or more image
+A string containing a comma-separated list of one or more image
 candidate strings to be used when determining which image resource to present inside the
 {{HTMLElement("img")}} element represented by the
 `HTMLImageElement`.
@@ -62,7 +63,7 @@ candidates match. Otherwise, the condition descriptor may take one of two forms:
   specifies the condition in which the corresponding image resource should be used as
   the display's pixel density. This is written by stating the pixel density as a
   positive, non-zero floating-point value followed by the lower-case letter "x". As an
-  example, to state that the corresponding  image should be used when the pixel density
+  example, to state that the corresponding image should be used when the pixel density
   is double the standard density, you can give the pixel density descriptor
   `2x` or `2.0x`.
 
@@ -70,15 +71,15 @@ You may mix and match the two types of descriptor. You must not, however, provid
 multiple image candidate strings that specify the same descriptor. All of the following
 are valid image candidate strings:
 
-```html
-"images/team-photo.jpg 1x, images/team-photo-retina.jpg 2x, images/team-photo-full 2048w"
+```plain
+"images/team-photo.jpg 1x, images/team-photo-retina.jpg 2x, images/team-photo-full.jpg 2048w"
 ```
 
 This string provides versions of an image to be used at the standard pixel density
 (`1x`) as well as double that pixel density (`2x`). Also available
 is a version of the image for use at a width of 2048 pixels (`2048w`).
 
-```html
+```plain
 "header640.png 640w, header960.png 960w, header1024.png 1024w, header.png"
 ```
 
@@ -87,7 +88,7 @@ This string provides versions of a header image to use when the {{Glossary("user
 additional, fallback image candidate is provided without any condition at all, to be
 used for any other width.
 
-```html
+```plain
 "icon32px.png 32w, icon64px.png 64w, icon-retina.png 2x, icon-ultra.png 3x, icon.svg"
 ```
 
@@ -126,7 +127,7 @@ the wrap must occur.
 ```css
 .box {
   width: 200px;
-  border: 2px solid rgba(150, 150, 150, 255);
+  border: 2px solid rgb(150, 150, 150);
   padding: 0.5em;
   word-break: break-all;
 }
@@ -161,10 +162,9 @@ display results in selecting the 1x or the 2x version of the image. If you happe
 have both standard and high density displays, try moving this window between them and
 reloading the page to see the results change.
 
-{{EmbedLiveSample("Example", 640, 320)}}
+{{EmbedLiveSample("Examples", 640, 320)}}
 
-For additional examples, see our guide to [responsive
-images](/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images).
+For additional examples, see our guide to [responsive images](/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images).
 
 ## Specifications
 
@@ -176,9 +176,6 @@ images](/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images).
 
 ## See also
 
-- [Images in
-  HTML](/en-US/docs/Learn/HTML/Multimedia_and_embedding/Images_in_HTML)
-- [Responsive
-  images](/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)
-- [Image file type and format
-  guide](/en-US/docs/Web/Media/Formats/Image_types)
+- [Images in HTML](/en-US/docs/Learn/HTML/Multimedia_and_embedding/Images_in_HTML)
+- [Responsive images](/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)
+- [Image file type and format guide](/en-US/docs/Web/Media/Formats/Image_types)

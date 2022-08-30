@@ -1,6 +1,7 @@
 ---
 title: Window.stop()
 slug: Web/API/Window/stop
+page-type: web-api-instance-method
 tags:
   - API
   - DOM
@@ -25,6 +26,14 @@ objects.
 ```js
 stop()
 ```
+
+### Parameters
+
+None.
+
+### Return value
+
+None ({{jsxref("undefined")}}).
 
 ## Examples
 

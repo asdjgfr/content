@@ -1,6 +1,7 @@
 ---
 title: SubtleCrypto.generateKey()
 slug: Web/API/SubtleCrypto/generateKey
+page-type: web-api-instance-method
 tags:
   - API
   - Method
@@ -35,7 +36,7 @@ generateKey(algorithm, extractable, keyUsages)
     - For [HMAC](/en-US/docs/Web/API/SubtleCrypto/sign#hmac):
       pass an [`HmacKeyGenParams`](/en-US/docs/Web/API/HmacKeyGenParams) object.
     - For [AES-CTR](/en-US/docs/Web/API/SubtleCrypto/encrypt#aes-ctr), [AES-CBC](/en-US/docs/Web/API/SubtleCrypto/encrypt#aes-cbc),
-      [AES-GCM](/en-US/docs/Web/API/SubtleCrypto/encrypt#aes-gcm), or [AES-KW](/en-US/docs/Web/API/SubtleCrypto/encrypt#aes-kw):
+      [AES-GCM](/en-US/docs/Web/API/SubtleCrypto/encrypt#aes-gcm), or [AES-KW](/en-US/docs/Web/API/SubtleCrypto/wrapKey#aes-kw):
       pass an [`AesKeyGenParams`](/en-US/docs/Web/API/AesKeyGenParams) object.
 - `extractable`
   - : A boolean value indicating whether it
@@ -65,7 +66,7 @@ The promise is rejected when the following exception is encountered:
 
 - `SyntaxError` {{domxref("DOMException")}}
   - : Raised when the result is a {{domxref("CryptoKey")}} of type `secret` or
-    `private` but _`keyUsages`_ is empty.
+    `private` but `keyUsages` is empty.
 - `SyntaxError` {{domxref("DOMException")}}
   - : Raised when the result is a {{domxref("CryptoKeyPair")}} and its
     `privateKey.usages` attribute is empty.
@@ -77,7 +78,7 @@ The promise is rejected when the following exception is encountered:
 ### RSA key pair generation
 
 This code generates an RSA-OAEP encryption key pair.
-[See the complete code on GitHub.](https://github.com/mdn/dom-examples/blob/master/web-crypto/encrypt-decrypt/rsa-oaep.js)
+[See the complete code on GitHub.](https://github.com/mdn/dom-examples/blob/main/web-crypto/encrypt-decrypt/rsa-oaep.js)
 
 ```js
 let keyPair = await window.crypto.subtle.generateKey(
@@ -95,7 +96,7 @@ let keyPair = await window.crypto.subtle.generateKey(
 ### Elliptic curve key pair generation
 
 This code generates an ECDSA signing key pair.
-[See the complete code on GitHub.](https://github.com/mdn/dom-examples/blob/master/web-crypto/sign-verify/ecdsa.js)
+[See the complete code on GitHub.](https://github.com/mdn/dom-examples/blob/main/web-crypto/sign-verify/ecdsa.js)
 
 ```js
 let keyPair = await window.crypto.subtle.generateKey(
@@ -111,7 +112,7 @@ let keyPair = await window.crypto.subtle.generateKey(
 ### HMAC key generation
 
 This code generates an HMAC signing key.
-[See the complete code on GitHub.](https://github.com/mdn/dom-examples/blob/master/web-crypto/sign-verify/hmac.js)
+[See the complete code on GitHub.](https://github.com/mdn/dom-examples/blob/main/web-crypto/sign-verify/hmac.js)
 
 ```js
 let key = await window.crypto.subtle.generateKey(
@@ -127,7 +128,7 @@ let key = await window.crypto.subtle.generateKey(
 ### AES key generation
 
 This code generates an AES-GCM encryption key.
-[See the complete code on GitHub.](https://github.com/mdn/dom-examples/blob/master/web-crypto/encrypt-decrypt/aes-gcm.js)
+[See the complete code on GitHub.](https://github.com/mdn/dom-examples/blob/main/web-crypto/encrypt-decrypt/aes-gcm.js)
 
 ```js
 let key = await window.crypto.subtle.generateKey(
@@ -151,4 +152,4 @@ let key = await window.crypto.subtle.generateKey(
 ## See also
 
 - [Cryptographic key length recommendations](https://www.keylength.com/).
-- [NIST cryptographic algorithm and key length recommendations](https://csrc.nist.gov/publications/detail/sp/800-131a/rev-1/final).
+- [NIST Transitioning the Use of Cryptographic Algorithms and Key Lengths](https://csrc.nist.gov/publications/detail/sp/800-131a/rev-1/archive/2015-11-06).

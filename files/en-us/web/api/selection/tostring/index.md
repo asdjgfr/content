@@ -1,6 +1,7 @@
 ---
 title: Selection.toString()
 slug: Web/API/Selection/toString
+page-type: web-api-instance-method
 tags:
   - API
   - HTML Editing
@@ -19,6 +20,10 @@ currently being represented by the selection object, i.e. the currently selected
 ```js
 toString()
 ```
+
+### Parameters
+
+None.
 
 ### Return value
 

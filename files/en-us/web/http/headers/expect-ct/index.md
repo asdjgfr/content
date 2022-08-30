@@ -38,7 +38,7 @@ CT requirements can be satisfied via any one of the following mechanisms:
 
 ## Syntax
 
-```
+```http
 Expect-CT: report-uri="<uri>",
            enforce,
            max-age=<age>
@@ -66,10 +66,10 @@ Expect-CT: report-uri="<uri>",
 
 ## Example
 
-The following example specifies enforcement of Certificate Transparency for 24 hours and reports violations to `foo.example`.
+The following example specifies enforcement of Certificate Transparency for 24 hours and reports violations to `foo.example.com`.
 
-```
-Expect-CT: max-age=86400, enforce, report-uri="https://foo.example/report"
+```http
+Expect-CT: max-age=86400, enforce, report-uri="https://foo.example.com/report"
 ```
 
 ## Notes
@@ -82,9 +82,7 @@ Builds of Chrome are designed to stop enforcing the `Expect-CT` policy 10 weeks 
 
 ## Specifications
 
-| Specification                                                                           | Title                        |
-| --------------------------------------------------------------------------------------- | ---------------------------- |
-| [Internet Draft](https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-expect-ct-08) | Expect-CT Extension for HTTP |
+{{Specifications}}
 
 ## Browser compatibility
 

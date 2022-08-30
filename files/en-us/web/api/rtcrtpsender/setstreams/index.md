@@ -1,6 +1,7 @@
 ---
 title: RTCRtpSender.setStreams()
 slug: Web/API/RTCRtpSender/setStreams
+page-type: web-api-instance-method
 tags:
   - API
   - Audio
@@ -42,7 +43,7 @@ setStreams(mediaStreams)
 
 ### Return value
 
-None.
+None ({{jsxref("undefined")}}).
 
 ### Exceptions
 

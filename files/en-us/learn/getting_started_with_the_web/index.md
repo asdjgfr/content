@@ -1,5 +1,5 @@
 ---
-title: Getting started with the Web
+title: Getting started with the web
 slug: Learn/Getting_started_with_the_web
 tags:
   - Beginner
@@ -14,7 +14,7 @@ tags:
 ---
 {{LearnSidebar}}
 
-_Getting started with the Web_ is a concise series introducing you to the practicalities of web development. You'll set up the tools you need to construct a simple webpage and publish your own simple code.
+_Getting started with the web_ is a concise series introducing you to the practicalities of web development. You'll set up the tools you need to construct a simple webpage and publish your own simple code.
 
 ## The story of your first website
 
@@ -22,7 +22,7 @@ It's a lot of work to create a professional website, so if you're new to web dev
 
 ## Guides
 
-By working through the articles listed below,  you will go from nothing to getting your first webpage online. Let's begin our journey!
+By working through the articles listed below, you will go from nothing to getting your first webpage online. Let's begin our journey!
 
 - [Installing basic software](/en-US/docs/Learn/Getting_started_with_the_web/Installing_basic_software)
   - : When it comes to tools for building a website, there's a lot to pick from. If you're just starting, you might be confused by the array of code editors, frameworks, and testing tools out there. In this article, we will show you step-by-step how to install the software you need to begin some basic web development.

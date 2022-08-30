@@ -4,6 +4,7 @@ slug: Web/HTTP/Headers/Accept-Patch
 tags:
   - HTTP
   - Reference
+spec-urls: https://www.rfc-editor.org/rfc/rfc5789#section-3.1
 ---
 {{HTTPSidebar}}
 
@@ -33,7 +34,7 @@ A server receiving a PATCH request with an unsupported media type could reply wi
 
 ## Syntax
 
-```
+```http
 Accept-Patch: application/example, text/example
 Accept-Patch: text/example;charset=utf-8
 Accept-Patch: application/merge-patch+json
@@ -45,7 +46,7 @@ None
 
 ## Examples
 
-```
+```http
 Accept-Patch: application/example, text/example
 
 Accept-Patch: text/example;charset=utf-8
@@ -55,9 +56,7 @@ Accept-Patch: application/merge-patch+json
 
 ## Specifications
 
-| Specification                                        | Title      |
-| ---------------------------------------------------- | ---------- |
-| {{RFC("5789", "Accept-Patch", "3.1")}} | HTTP PATCH |
+{{Specifications}}
 
 ## Browser compatibility
 

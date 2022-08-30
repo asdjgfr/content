@@ -7,9 +7,10 @@
   "MD007": {
     "indent": 2
   },
+  "MD010": {
+    "spaces_per_tab": 2
+  },
   "MD013": false,
-  "MD014": false,
-  "MD023": false,
   "MD024": false,
   "MD025": {
     "front_matter_title": "^\\s*title\\s*[:=]"
@@ -24,7 +25,6 @@
       "base",
       "br",
       "caption",
-      "cite",
       "code",
       "col",
       "colgroup",
@@ -72,7 +72,6 @@
       "ol",
       "p",
       "pre",
-      "q",
       "section",
       "semantics",
       "strong",
@@ -90,7 +89,6 @@
       "var"
     ]
   },
-  "MD034": false,
   "MD036": false,
   "MD037": false,
   "MD040": false,
@@ -100,5 +98,9 @@
     "style": "fenced"
   },
   "MD049": false,
-  "MD050": false
+  "MD050": {
+    "style": "asterisk"
+  },
+  "MD051": false,
+  "MD052": false
 }

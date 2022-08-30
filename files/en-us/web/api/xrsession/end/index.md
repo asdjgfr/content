@@ -1,6 +1,7 @@
 ---
 title: XRSession.end()
 slug: Web/API/XRSession/end
+page-type: web-api-instance-method
 tags:
   - API
   - AR
@@ -16,7 +17,7 @@ tags:
   - end()
 browser-compat: api.XRSession.end
 ---
-{{APIRef("WebXR Device API")}}
+{{APIRef("WebXR Device API")}}{{SeeCompatTable}}
 
 The **`end()`** method shuts down the
 {{domxref("XRSession")}} on which it's called, returning a promise which resolves once

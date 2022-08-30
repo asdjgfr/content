@@ -1,12 +1,14 @@
 ---
 title: WindowControlsOverlay.getTitlebarAreaRect()
 slug: Web/API/WindowControlsOverlay/getTitlebarAreaRect
+page-type: web-api-instance-method
 tags:
   - API
   - Method
   - Reference
   - WindowControlsOverlay
   - Progressive Web Apps
+  - Experimental
 browser-compat: api.WindowControlsOverlay.getTitlebarAreaRect
 ---
 {{APIRef("Window Controls Overlay API")}}{{SeeCompatTable}}
@@ -20,6 +22,10 @@ This only applies to Progressive Web Apps installed on desktop operating systems
 ```js
 getTitlebarAreaRect()
 ```
+
+### Parameters
+
+None.
 
 ### Return value
 

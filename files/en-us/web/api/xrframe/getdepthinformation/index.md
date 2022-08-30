@@ -1,6 +1,7 @@
 ---
 title: XRFrame.getDepthInformation()
 slug: Web/API/XRFrame/getDepthInformation
+page-type: web-api-instance-method
 tags:
   - API
   - Method
@@ -8,9 +9,10 @@ tags:
   - AR
   - XR
   - WebXR
+  - Experimental
 browser-compat: api.XRFrame.getDepthInformation
 ---
-{{APIRef("WebXR Device API")}}
+{{APIRef("WebXR Device API")}}{{SeeCompatTable}}
 
 The **`getDepthInformation()`** method of the {{domxref("XRFrame")}} interface returns an {{domxref("XRCPUDepthInformation")}} object containing CPU depth information for the active and animated frame.
 
@@ -53,7 +55,7 @@ const session = navigator.xr.requestSession("immersive-ar", {
   }
 });
 
-// ...
+// …
 
 // Obtain depth information in an active and animated frame
 function rafCallback(time, frame) {

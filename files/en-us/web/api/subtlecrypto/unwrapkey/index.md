@@ -1,6 +1,7 @@
 ---
 title: SubtleCrypto.unwrapKey()
 slug: Web/API/SubtleCrypto/unwrapKey
+page-type: web-api-instance-method
 tags:
   - API
   - Method
@@ -71,7 +72,7 @@ unwrapKey(format, wrappedKey, unwrappingKey, unwrapAlgo, unwrappedKeyAlgo, extra
     - For [HMAC](/en-US/docs/Web/API/SubtleCrypto/sign#hmac): Pass an
       [`HmacImportParams`](/en-US/docs/Web/API/HmacImportParams) object.
     - For [AES-CTR](/en-US/docs/Web/API/SubtleCrypto/encrypt#aes-ctr), [AES-CBC](/en-US/docs/Web/API/SubtleCrypto/encrypt#aes-cbc),
-      [AES-GCM](/en-US/docs/Web/API/SubtleCrypto/encrypt#aes-gcm), or [AES-KW](/en-US/docs/Web/API/SubtleCrypto/encrypt#aes-kw):
+      [AES-GCM](/en-US/docs/Web/API/SubtleCrypto/encrypt#aes-gcm), or [AES-KW](/en-US/docs/Web/API/SubtleCrypto/wrapKey#aes-kw):
       Pass the string identifying the algorithm or an object of the form `{ "name": ALGORITHM }`, where `ALGORITHM` is the name of
       the algorithm.
 - `extractable`
@@ -129,7 +130,7 @@ AES-KW unwrapping key. The salt needs to be the same as the salt that was used t
 the original AES-KW key wrapping key.
 
 Once we have the unwrapping key we pass it into `unwrapKey()` with the
-wrapped key and other parameters. [See the complete code on GitHub.](https://github.com/mdn/dom-examples/blob/master/web-crypto/unwrap-key/raw.js)
+wrapped key and other parameters. [See the complete code on GitHub.](https://github.com/mdn/dom-examples/blob/main/web-crypto/unwrap-key/raw.js)
 
 ```js
 /*
@@ -234,7 +235,7 @@ derive the original AES-GCM key wrapping key.
 Once we have the unwrapping key we pass it into `unwrapKey()` with the
 wrapped key and other parameters. Note that when using AES-GCM we have to pass the iv
 value into `unwrapKey()`, and this must be the same as the iv that was used
-in the corresponding `wrapKey()` operation. [See the complete code on GitHub.](https://github.com/mdn/dom-examples/blob/master/web-crypto/unwrap-key/pkcs8.js)
+in the corresponding `wrapKey()` operation. [See the complete code on GitHub.](https://github.com/mdn/dom-examples/blob/main/web-crypto/unwrap-key/pkcs8.js)
 
 ```js
 /*

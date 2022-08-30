@@ -1,6 +1,7 @@
 ---
 title: XRSession.preferredReflectionFormat
 slug: Web/API/XRSession/preferredReflectionFormat
+page-type: web-api-instance-property
 tags:
   - API
   - AR
@@ -13,7 +14,7 @@ tags:
   - WebXR Device API
 browser-compat: api.XRSession.preferredReflectionFormat
 ---
-{{APIRef("WebXR Device API")}}
+{{APIRef("WebXR Device API")}}{{SeeCompatTable}}
 
 The _read-only_ **`preferredReflectionFormat`** property of the {{DOMxRef("XRSession")}} interface returns this session's preferred reflection format used for lighting estimation texture data.
 

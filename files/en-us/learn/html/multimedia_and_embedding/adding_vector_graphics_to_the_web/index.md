@@ -1,5 +1,5 @@
 ---
-title: Adding vector graphics to the Web
+title: Adding vector graphics to the web
 slug: Learn/HTML/Multimedia_and_embedding/Adding_vector_graphics_to_the_Web
 tags:
   - Beginner
@@ -79,7 +79,7 @@ This creates the following output:
 
 {{ EmbedLiveSample('What_is_SVG', 300, 240, "", "") }}
 
-From the example above, you may get the impression that SVG is easy to handcode. Yes, you can handcode simple SVG in a text editor, but for a complex image this quickly starts to get very difficult. For creating SVG images, most people use a vector graphics editor like [Inkscape](https://inkscape.org/en/) or [Illustrator](https://en.wikipedia.org/wiki/Adobe_Illustrator). These packages allow you to create a variety of illustrations using various graphics tools, and create approximations of photos (for example Inkscape's Trace Bitmap feature.)
+From the example above, you may get the impression that SVG is easy to handcode. Yes, you can handcode simple SVG in a text editor, but for a complex image this quickly starts to get very difficult. For creating SVG images, most people use a vector graphics editor like [Inkscape](https://inkscape.org/) or [Illustrator](https://en.wikipedia.org/wiki/Adobe_Illustrator). These packages allow you to create a variety of illustrations using various graphics tools, and create approximations of photos (for example Inkscape's Trace Bitmap feature.)
 
 SVG has some additional advantages besides those described so far:
 
@@ -263,7 +263,7 @@ reset.addEventListener('click', function() {
 });
 
 solution.addEventListener('click', function() {
-  if(solution.value === 'Show solution') {
+  if (solution.value === 'Show solution') {
     textarea.value = solutionEntry;
     solution.value = 'Hide solution';
   } else {
@@ -296,11 +296,11 @@ textarea.onkeydown = function(e){
 function insertAtCaret(text) {
   const scrollPos = textarea.scrollTop;
   let caretPos = textarea.selectionStart;
-  const front = (textarea.value).substring(0, caretPos);
-  const back = (textarea.value).substring(textarea.selectionEnd, textarea.value.length);
+  const front = textarea.value.substring(0, caretPos);
+  const back = textarea.value.substring(textarea.selectionEnd, textarea.value.length);
 
   textarea.value = front + text + back;
-  caretPos = caretPos + text.length;
+  caretPos += text.length;
   textarea.selectionStart = caretPos;
   textarea.selectionEnd = caretPos;
   textarea.focus();
@@ -312,7 +312,7 @@ function insertAtCaret(text) {
 textarea.onkeyup = function(){
   // We only want to save the state when the user code is being shown,
   // not the solution, so that solution is not saved over the user code
-  if(solution.value === 'Show solution') {
+  if (solution.value === 'Show solution') {
     userEntry = textarea.value;
   } else {
     solutionEntry = textarea.value;

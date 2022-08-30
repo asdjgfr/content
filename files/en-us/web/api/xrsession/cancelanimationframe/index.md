@@ -1,6 +1,7 @@
 ---
 title: XRSession.cancelAnimationFrame()
 slug: Web/API/XRSession/cancelAnimationFrame
+page-type: web-api-instance-method
 tags:
   - API
   - AR
@@ -16,7 +17,7 @@ tags:
   - cancelAnimationFrame()
 browser-compat: api.XRSession.cancelAnimationFrame
 ---
-{{APIRef("WebXR Device API")}}
+{{APIRef("WebXR Device API")}}{{SeeCompatTable}}
 
 The **`cancelAnimationFrame()`** method of
 the {{domxref("XRSession")}} interface cancels an animation frame which was previously
@@ -38,7 +39,7 @@ cancelAnimationFrame(handle)
 
 ### Return value
 
-None.
+None ({{jsxref("undefined")}}).
 
 ## Usage notes
 

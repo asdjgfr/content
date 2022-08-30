@@ -1,6 +1,7 @@
 ---
 title: ANGLE_instanced_arrays.vertexAttribDivisorANGLE()
 slug: Web/API/ANGLE_instanced_arrays/vertexAttribDivisorANGLE
+page-type: web-api-instance-method
 tags:
   - ANGLE_instanced_arrays
   - API
@@ -31,12 +32,12 @@ vertexAttribDivisorANGLE(index, divisor)
 
 ### Return value
 
-None.
+None ({{jsxref("undefined")}}).
 
 ## Examples
 
 ```js
-var ext = gl.getExtension('ANGLE_instanced_arrays');
+const ext = gl.getExtension('ANGLE_instanced_arrays');
 ext.vertexAttribDivisorANGLE(0, 2);
 ```
 

@@ -1,6 +1,7 @@
 ---
 title: Window.scrollByPages()
 slug: Web/API/Window/scrollByPages
+page-type: web-api-instance-method
 tags:
   - API
   - HTML DOM
@@ -27,6 +28,10 @@ scrollByPages(pages)
 
 - `pages` is the number of pages to scroll. It may be a positive or
   negative integer.
+
+### Return value
+
+None ({{jsxref("undefined")}}).
 
 ## Examples
 

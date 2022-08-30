@@ -98,18 +98,12 @@ dd {
   border: 1px solid black;
  }
 dd.none {
-  -webkit-hyphens: none;
-  -ms-hyphens: none;
   hyphens: none;
 }
 dd.manual {
-  -webkit-hyphens: manual;
-  -ms-hyphens: manual;
   hyphens: manual;
 }
 dd.auto {
-  -webkit-hyphens: auto;
-  -ms-hyphens: auto;
   hyphens: auto;
 }
 ```
@@ -131,4 +125,4 @@ dd.auto {
 - {{cssxref("content")}}
 - {{cssxref("overflow-wrap")}} (formerly `word-wrap`)
 - {{cssxref("word-break")}}
-- [Guide to wrapping and breaking text](/en-US/docs/Web/CSS/CSS_Text/Wrapping_text)
+- [Guide to wrapping and breaking text](/en-US/docs/Web/CSS/CSS_Text/Wrapping_Text)

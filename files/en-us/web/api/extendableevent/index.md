@@ -1,9 +1,9 @@
 ---
 title: ExtendableEvent
 slug: Web/API/ExtendableEvent
+page-type: web-api-interface
 tags:
   - API
-  - Experimental
   - ExtendableEvent
   - Interface
   - Offline
@@ -52,13 +52,13 @@ The code snippet also shows a best practice for versioning caches used by the se
 > **Note:** In Chrome, logging statements are visible via the "Inspect" interface for the relevant service worker accessed via chrome://serviceworker-internals.
 
 ```js
-var CACHE_VERSION = 1;
-var CURRENT_CACHES = {
-  prefetch: 'prefetch-cache-v' + CACHE_VERSION
+const CACHE_VERSION = 1;
+const CURRENT_CACHES = {
+  prefetch: `prefetch-cache-v${CACHE_VERSION}`
 };
 
-self.addEventListener('install', function(event) {
-  var urlsToPrefetch = [
+self.addEventListener('install', (event) => {
+  const urlsToPrefetch = [
     './static/pre_fetched.txt',
     './static/pre_fetched.html',
     'https://www.chromium.org/_/rsrc/1302286216006/config/customLogo.gif'
@@ -67,13 +67,13 @@ self.addEventListener('install', function(event) {
   console.log('Handling install event. Resources to pre-fetch:', urlsToPrefetch);
 
   event.waitUntil(
-    caches.open(CURRENT_CACHES['prefetch']).then(function(cache) {
-      return cache.addAll(urlsToPrefetch.map(function(urlToPrefetch) {
+    caches.open(CURRENT_CACHES['prefetch']).then((cache) => {
+      return cache.addAll(urlsToPrefetch.map((urlToPrefetch) => {
         return new Request(urlToPrefetch, {mode: 'no-cors'});
-      })).then(function() {
+      })).then(() => {
         console.log('All resources have been fetched and cached.');
       });
-    }).catch(function(error) {
+    }).catch((error) => {
       console.error('Pre-fetching failed:', error);
     })
   );
@@ -93,7 +93,7 @@ self.addEventListener('install', function(event) {
 ## See also
 
 - [Using Service Workers](/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers)
-- [Service workers basic code example](https://github.com/mdn/sw-test)
+- [Service workers basic code example](https://github.com/mdn/dom-examples/tree/main/service-worker/simple-service-worker)
 - [Is ServiceWorker ready?](https://jakearchibald.github.io/isserviceworkerready/)
 - {{jsxref("Promise")}}
 - [Using web workers](/en-US/docs/Web/API/Web_Workers_API/Using_web_workers)

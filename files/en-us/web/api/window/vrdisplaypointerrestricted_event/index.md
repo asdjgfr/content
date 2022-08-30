@@ -1,6 +1,7 @@
 ---
 title: 'Window: vrdisplaypointerrestricted event'
 slug: Web/API/Window/vrdisplaypointerrestricted_event
+page-type: web-api-event
 tags:
   - Reference
   - Web VR
@@ -8,9 +9,10 @@ tags:
   - Event
   - Deprecated
   - vrdisplaypointerrestricted
+  - Non-standard
 browser-compat: api.Window.vrdisplaypointerrestricted_event
 ---
-{{APIRef("Window")}}{{Deprecated_Header}}
+{{APIRef("Window")}}{{Deprecated_Header}}{{Non-standard_Header}}
 
 The **`vrdisplaypointerrestricted`** event of the [WebVR API](/en-US/docs/Web/API/WebVR_API) is fired when the VR display's pointer input is restricted to consumption via a [pointerlocked element](/en-US/docs/Web/API/Pointer_Lock_API).
 
@@ -23,14 +25,14 @@ This event is not cancelable and does not bubble.
 Use the event name in methods like {{domxref("EventTarget.addEventListener", "addEventListener()")}}, or set an event handler property.
 
 ```js
-addEventListener('vrdisplaypointerrestricted', event => { });
+addEventListener('vrdisplaypointerrestricted', (event) => { });
 
-onvrdisplaypointerrestricted = event => { };
+onvrdisplaypointerrestricted = (event) => { };
 ```
 
 ## Event type
 
-An {{domxref("VRDisplayEvent")}}. Inherits from {{domxref("Event")}}.
+A {{domxref("VRDisplayEvent")}}. Inherits from {{domxref("Event")}}.
 
 {{InheritanceDiagram("VRDisplayEvent")}}
 
@@ -38,9 +40,9 @@ An {{domxref("VRDisplayEvent")}}. Inherits from {{domxref("Event")}}.
 
 _`VRDisplayEvent` also inherits properties from its parent object, {{domxref("Event")}}._
 
-- {{domxref("VRDisplayEvent.display")}} {{deprecated_inline}}{{readonlyInline}}
+- {{domxref("VRDisplayEvent.display")}} {{Deprecated_Inline}} {{ReadOnlyInline}}
   - : The {{domxref("VRDisplay")}} associated with this event.
-- {{domxref("VRDisplayEvent.reason")}} {{deprecated_inline}}{{readonlyInline}}
+- {{domxref("VRDisplayEvent.reason")}} {{Deprecated_Inline}} {{ReadOnlyInline}}
   - : A human-readable reason why the event was fired.
 
 ## Examples
@@ -48,15 +50,15 @@ _`VRDisplayEvent` also inherits properties from its parent object, {{domxref("Ev
 You can use the `vrdisplaypointerrestricted` event in an [`addEventListener`](/en-US/docs/Web/API/EventTarget/addEventListener) method:
 
 ```js
-window.addEventListener('vrdisplaypointerrestricted', function() {
+window.addEventListener('vrdisplaypointerrestricted', () => {
   // Run code to handle pointer lock
 });
 ```
 
-Or use the [`onvrdisplaypointerrestricted`](/en-US/docs/Web/API/Window/onvrdisplaypointerrestricted) event handler property:
+Or use the `onvrdisplaypointerrestricted` event handler property:
 
 ```js
-window.onvrdisplaypointerrestricted = function() {
+window.onvrdisplaypointerrestricted = () => {
   // Run code to handle pointer lock
 };
 ```

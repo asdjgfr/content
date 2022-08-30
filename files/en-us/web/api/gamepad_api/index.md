@@ -1,12 +1,13 @@
 ---
 title: Gamepad API
 slug: Web/API/Gamepad_API
+page-type: web-api-overview
 tags:
   - API
-  - Experimental
   - Gamepad API
   - Games
   - Overview
+browser-compat: api.Gamepad
 ---
 {{securecontext_header}}{{DefaultAPISidebar("Gamepad API")}}
 
@@ -26,7 +27,7 @@ The **Gamepad API** is a way for developers to access and respond to signals fro
 - [`GamepadHapticActuator`](/en-US/docs/Web/API/GamepadHapticActuator)
   - : Represents hardware in the controller designed to provide haptic feedback to the user (if available), most commonly vibration hardware.
 - [`GamepadPose`](/en-US/docs/Web/API/GamepadPose)
-  - : Represents the pose of a controller (e.g. position and orientation in 3D space) in the case of a [WebVR](/en-US/docs/Web/API/WebVR_API) controller. This is *not* used by the newer [WebXR](/en-US/docs/Web/API/WebXR_Device_API) standard.
+  - : Represents the pose of a controller (e.g. position and orientation in 3D space) in the case of a [WebVR](/en-US/docs/Web/API/WebVR_API) controller. This is _not_ used by the newer [WebXR](/en-US/docs/Web/API/WebXR_Device_API) standard.
 
 See also the [extensions to the Gamepad interface](/en-US/docs/Web/API/Gamepad#experimental_extensions_to_gamepad), for features that allow you to access the above information.
 
@@ -51,33 +52,11 @@ See also the [extensions to the Gamepad interface](/en-US/docs/Web/API/Gamepad#e
 
 ## Specifications
 
-<table class="no-markdown">
-  <tbody>
-    <tr>
-      <th scope="col">Specification</th>
-      <th scope="col">Status</th>
-      <th scope="col">Comment</th>
-    </tr>
-    <tr>
-      <td>{{SpecName("GamepadExtensions")}}</td>
-      <td>{{Spec2("GamepadExtensions")}}</td>
-      <td>
-        Defines the <a href="#experimental_gamepad_extensions">Experimental Gamepad extensions</a>.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        {{SpecName("Gamepad", "", "The Gamepad API specification")}}
-      </td>
-      <td>{{Spec2("Gamepad")}}</td>
-      <td>Initial definition</td>
-    </tr>
-  </tbody>
-</table>
+{{Specifications}}
 
 ## Browser compatibility
 
-{{Compat("api.Gamepad")}}
+{{Compat}}
 
 ## See also
 

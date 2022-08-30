@@ -6,6 +6,7 @@ tags:
   - HTTP
   - Network Error Logging
   - Reference
+browser-compat: http.headers.NEL
 ---
 {{HTTPSidebar}}{{SeeCompatTable}}
 
@@ -17,7 +18,7 @@ Reports are sent to a reporting group defined within a {{HTTPHeader("Report-To")
 
 Web applications opt in to this behavior with the NEL header, which is a _[JSON-encoded](/en-US/docs/Glossary/Response_header)_ object:
 
-```
+```http
 NEL: { "report_to": "nel",
        "max_age": 31556952 }
 ```
@@ -39,7 +40,7 @@ The following object keys can be specified in the NEL header:
 
 The reporting group referenced above is defined in the usual manner within the {{HTTPHeader("Report-To")}} header, for example:
 
-```
+```http
 Report-To: { "group": "nel",
              "max_age": 31556952,
              "endpoints": [
@@ -54,7 +55,7 @@ In these examples, the entire reporting API payload is shown. The top-level **`"
 
 ### HTTP 400 (Bad Request) response
 
-```js
+```json
 {
   "age": 20,
   "type": "network-error",
@@ -78,7 +79,7 @@ In these examples, the entire reporting API payload is shown. The top-level **`"
 
 Note that the phase is set to `dns` in this report and no `server_ip` is available to include.
 
-```js
+```json
 {
   "age": 20,
   "type": "network-error",
@@ -137,10 +138,8 @@ The type of the network error may be one of the following pre-defined values fro
 
 ## Specifications
 
-| Specification                                                                      |
-| ---------------------------------------------------------------------------------- |
-| [Network Error Logging](https://w3c.github.io/network-error-logging/#introduction) |
+{{Specifications}}
 
 ## Browser compatibility
 
-{{Compat("http.headers.NEL")}}
+{{Compat}}

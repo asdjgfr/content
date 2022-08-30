@@ -1,6 +1,7 @@
 ---
 title: IDBObjectStore.openKeyCursor()
 slug: Web/API/IDBObjectStore/openKeyCursor
+page-type: web-api-instance-method
 tags:
   - API
   - Database
@@ -32,11 +33,11 @@ openKeyCursor(query, direction)
 
 ### Parameters
 
-- *query* {{optional_inline}}
+- `query` {{optional_inline}}
   - : The key range to be queried. If a single valid key is passed, this will default to a
     range containing only that key. If nothing is passed, this will default to a key range
     that selects all the records in this object store.
-- *direction* {{optional_inline}}
+- `direction` {{optional_inline}}
   - : An [`IDBCursorDirection`](https://w3c.github.io/IndexedDB/#enumdef-idbcursordirection) telling the cursor what direction to travel.
     Valid values are `"next"`, `"nextunique"`, `"prev"`,
     and `"prevunique"`. The default is `"next"`.
@@ -63,12 +64,12 @@ In this simple fragment we create a transaction, retrieve an object store, then 
 cursor to iterate through all the records in the object store:
 
 ```js
-var transaction = db.transaction("name", "readonly");
-var objectStore = transaction.objectStore("name");
-var request = objectStore.openKeyCursor();
-request.onsuccess = function(event) {
-  var cursor = event.target.result;
-  if(cursor) {
+const transaction = db.transaction("name", "readonly");
+const objectStore = transaction.objectStore("name");
+const request = objectStore.openKeyCursor();
+request.onsuccess = (event) => {
+  const cursor = event.target.result;
+  if (cursor) {
     // cursor.key contains the key of the current record being iterated through
     // note that there is no cursor.value, unlike for openCursor
     // this is where you'd do something with the result
@@ -95,5 +96,4 @@ request.onsuccess = function(event) {
 - Setting a range of keys: {{domxref("IDBKeyRange")}}
 - Retrieving and making changes to your data: {{domxref("IDBObjectStore")}}
 - Using cursors: {{domxref("IDBCursor")}}
-- Reference example: [To-do
-  Notifications](https://github.com/mdn/to-do-notifications/tree/gh-pages) ([view example live](https://mdn.github.io/to-do-notifications/).)
+- Reference example: [To-do Notifications](https://github.com/mdn/to-do-notifications/tree/gh-pages) ([view example live](https://mdn.github.io/to-do-notifications/).)

@@ -1,6 +1,7 @@
 ---
 title: CSSTransformValue.values()
 slug: Web/API/CSSTransformValue/values
+page-type: web-api-instance-method
 tags:
   - API
   - CSS
@@ -16,7 +17,7 @@ browser-compat: api.CSSTransformValue.values
 {{APIRef("CSS Typed OM")}}{{SeeCompatTable}}
 
 The **`CSSTransformValue.values()`**  returns a
-new *array iterator* object that contains the values for
+new _array iterator_ object that contains the values for
 each index in the CSSTransformValue object.
 
 ## Syntax
@@ -27,7 +28,7 @@ values()
 
 ### Parameters
 
-None
+None.
 
 ### Return value
 

@@ -8,6 +8,8 @@ tags:
   - Statement
 browser-compat: javascript.statements.with
 ---
+{{Deprecated_Header}}
+
 > **Warning:** Use of the `with` statement is not recommended, as it may
 > be the source of confusing bugs and compatibility issues. See the "Ambiguity Contra"
 > paragraph in the "Description" section below for details.
@@ -27,8 +29,7 @@ with (expression)
   - : Adds the given expression to the scope chain used when evaluating the statement. The
     parentheses around the expression are required.
 - `statement`
-  - : Any statement. To execute multiple statements, use a [block](/en-US/docs/Web/JavaScript/Reference/Statements/block) statement ({
-    ... }) to group those statements.
+  - : Any statement. To execute multiple statements, use a [block](/en-US/docs/Web/JavaScript/Reference/Statements/block) statement (`{ ... }`) to group those statements.
 
 ## Description
 
@@ -39,10 +40,7 @@ its statement body. If an unqualified name used in the body matches a property i
 scope chain, then the name is bound to the property and the object containing the
 property. Otherwise a {{jsxref("ReferenceError")}} is thrown.
 
-> **Note:** Using `with` is not recommended, and is forbidden in
-> ECMAScript 5 [strict mode](/en-US/docs/Web/JavaScript/Reference/Functions_and_function_scope/Strict_mode).
-> The recommended alternative is to assign the object whose properties you
-> want to access to a temporary variable.
+> **Note:** Using `with` is not recommended, and is forbidden in [strict mode](/en-US/docs/Web/JavaScript/Reference/Strict_mode). The recommended alternative is to assign the object whose properties you want to access to a temporary variable.
 
 ### Performance pro & contra
 
@@ -73,11 +71,9 @@ function f(x, o) {
 }
 ```
 
-Only when `f` is called is `x` either found or not, and if found,
-either in `o` or (if no such property exists) in `f`'s activation
-object, where `x` names the first formal argument. If you forget to define
-`x` in the object you pass as the second argument, or if there's some similar
-bug or confusion, you won't get an error -- just unexpected results.
+Only when `f` is called can `x` be determined as found or not — and if found,
+whether as a property of `o`, or, if no such property exists, as `f`'s first formal argument. If you forget to define
+`x` in the object you pass as the second argument, you won't get an error — instead you'll just get unexpected results. (And it's also unclear what the actual intent of such code would be.)
 
 **Contra:** Code using `with` may not be forward compatible,
 especially when used with something other than a plain object. Consider this example:
@@ -93,11 +89,11 @@ function f(foo, values) {
 If you call `f([1,2,3], obj)` in an ECMAScript 5 environment, then the
 `values` reference inside the `with` statement will resolve to
 `obj`. However, ECMAScript 2015 introduces a `values` property
-on {{jsxref("Array.prototype")}} (so that it will be available on every array). So, in
+on [`Array.prototype`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) (so that it will be available on every array). So, in
 a JavaScript environment that supports ECMAScript 2015, the `values`
 reference inside the `with` statement could resolve to
 `[1,2,3].values`. However, in this particular example,
-{{jsxref("Array.prototype")}} has been defined with `values` in its
+[`Array.prototype`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) has been defined with `values` in its
 {{jsxref("Symbol.unscopables")}} object. If it were not, one can see how this would be
 a difficult issue to debug.
 
@@ -122,6 +118,44 @@ with (Math) {
 }
 ```
 
+### Avoiding with by destructuring properties into the current scope
+
+You can usually avoid using `with` through [property destructuring](/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment). Here we create an extra block to mimic the behavior of `with` creating an extra scope — but in actual usage, this block can usually be omitted.
+
+```js
+let a, x, y;
+const r = 10;
+
+{
+  const { PI, cos, sin } = Math;
+  a = PI * r * r;
+  x = r * cos(PI);
+  y = r * sin(PI / 2);
+}
+```
+
+### Using with with a proxy to create a dynamic namespace
+
+`with` will transform every variable lookup to a property lookup, while [Proxies](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy) allow trapping every property lookup call. You can create a dynamic namespace by combining them.
+
+```js
+const namespace = new Proxy({}, {
+  has(target, key) {
+    // Avoid trapping global properties like `console`
+    if (key in globalThis) return false;
+    // Trap all property lookups
+    return true;
+  },
+  get(target, key) {
+    return key;
+  },
+});
+
+with (namespace) {
+  console.log(a, b, c); // logs "a b c"
+}
+```
+
 ## Specifications
 
 {{Specifications}}
@@ -133,6 +167,6 @@ with (Math) {
 ## See also
 
 - {{jsxref("Statements/block", "block", "", 1)}}
-- [Strict mode](/en-US/docs/Web/JavaScript/Reference/Functions_and_function_scope/Strict_mode)
+- [Strict mode](/en-US/docs/Web/JavaScript/Reference/Strict_mode)
 - {{jsxref("Symbol.unscopables")}}
 - {{jsxref("Array.@@unscopables", "Array.prototype[@@unscopables]")}}

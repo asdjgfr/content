@@ -142,7 +142,7 @@ q::after {
   content: close-quote;
 }
 
-h1::before  {
+h1::before {
   content: "Chapter ";  /* The trailing space creates separation
                            between the added content and the
                            rest of the content */
@@ -292,5 +292,6 @@ This example replaces an element's content with an image. You can replace the co
 - {{Cssxref("::after")}}
 - {{Cssxref("::before")}}
 - {{Cssxref("::marker")}}
+- {{Cssxref("contain")}}
 - {{Cssxref("quotes")}}
 - {{cssxref("url", "url()")}} function

@@ -17,7 +17,7 @@ The HTTP {{HTTPHeader("Feature-Policy")}} header `xr-spatial-tracking` directive
 
 ## Syntax
 
-```
+```http
 Feature-Policy: xr-spatial-tracking <allowlist>;
 ```
 
@@ -39,7 +39,7 @@ The default allowlist is `'self'`.
 ## See also
 
 - [WebXR Device API](/en-US/docs/Web/API/WebXR_Device_API)
-- {{DOMxRef("XRSystem/requestSession","navigator.xr.requestSession()")}}, and {{DOMxRef("XRSystem/isSessionSupported","navigator.xr.isSessionSupported()")}} and {{Event("devicechange")}} event on {{DOMxRef("Navigator.xr","navigator.xr")}}
+- {{DOMxRef("XRSystem/requestSession","navigator.xr.requestSession()")}}, and {{DOMxRef("XRSystem/isSessionSupported","navigator.xr.isSessionSupported()")}} and {{domxref("XRSystem/devicechange_event", "devicechange")}} event on {{DOMxRef("Navigator.xr","navigator.xr")}}
 - {{HTTPHeader("Feature-Policy")}} header
 - [Feature Policy](/en-US/docs/Web/HTTP/Feature_Policy)
 - [Using Feature Policy](/en-US/docs/Web/HTTP/Feature_Policy/Using_Feature_Policy)

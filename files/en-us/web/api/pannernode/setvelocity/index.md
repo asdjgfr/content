@@ -1,6 +1,7 @@
 ---
 title: PannerNode.setVelocity()
 slug: Web/API/PannerNode/setVelocity
+page-type: web-api-instance-method
 tags:
   - API
   - Audio
@@ -13,9 +14,7 @@ tags:
   - setVelocity
 browser-compat: api.PannerNode.setVelocity
 ---
-{{ APIRef("Web Audio API") }}
-
-{{deprecated_header}}
+{{APIRef("Web Audio API")}}{{Deprecated_Header}}
 
 The `setVelocity()` method of the {{ domxref("PannerNode") }} Interface defines the velocity vector of the audio source — how fast it is moving and in what direction.
 
@@ -42,7 +41,7 @@ setVelocity(x, y, z)
 
 ### Return value
 
-{{jsxref('undefined')}}.
+None ({{jsxref("undefined")}}).
 
 ## Examples
 

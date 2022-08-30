@@ -1,6 +1,7 @@
 ---
 title: Selection.selectAllChildren()
 slug: Web/API/Selection/selectAllChildren
+page-type: web-api-instance-method
 tags:
   - API
   - HTML Editing
@@ -25,6 +26,10 @@ selectAllChildren(parentNode)
 - `parentNode`
   - : All children of `parentNode` will be selected. `parentNode`
     itself is not part of the selection.
+
+### Return value
+
+None ({{jsxref("undefined")}}).
 
 ## Examples
 
@@ -55,7 +60,7 @@ button.addEventListener('click', (e) => {
 
 ### Result
 
-{{EmbedLiveSample("Example", 700, 200)}}
+{{EmbedLiveSample("Examples", 700, 200)}}
 
 ## Specifications
 

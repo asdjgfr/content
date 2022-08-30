@@ -62,14 +62,14 @@ The configuration is set up in the `INSTALLED_APPS` and `MIDDLEWARE` sections of
 
 ```python
 INSTALLED_APPS = [
-    ...
+    # …
     'django.contrib.sessions',
-    ....
+    # …
 
 MIDDLEWARE = [
-    ...
+    # …
     'django.contrib.sessions.middleware.SessionMiddleware',
-    ....
+    # …
 ```
 
 ## Using sessions
@@ -108,7 +108,7 @@ By default, Django only saves to the session database and sends the session cook
 request.session['my_car'] = 'mini'
 ```
 
-If you're updating some information *within* session data, then Django will not recognize that you've made a change to the session and save the data (for example, if you were to change "`wheels`" data inside your "`my_car`" data, as shown below). In this case you will need to explicitly mark the session as having been modified.
+If you're updating some information _within_ session data, then Django will not recognize that you've made a change to the session and save the data (for example, if you were to change "`wheels`" data inside your "`my_car`" data, as shown below). In this case you will need to explicitly mark the session as having been modified.
 
 ```python
 # Session object not directly modified, only data within the session. Session changes not saved!
@@ -128,7 +128,7 @@ Open **/locallibrary/catalog/views.py**, and add the lines that contain `num_vis
 
 ```python
 def index(request):
-    ...
+    # …
 
     num_authors = Author.objects.count()  # The 'all()' is implied by default.
 

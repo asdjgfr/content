@@ -1,6 +1,7 @@
 ---
 title: Streams API
 slug: Web/API/Streams_API
+page-type: web-api-overview
 tags:
   - API
   - Experimental
@@ -8,6 +9,9 @@ tags:
   - Landing
   - Reference
   - Streams
+browser-compat:
+  - api.ReadableStream
+  - api.WritableStream
 ---
 {{DefaultAPISidebar("Streams")}}
 
@@ -33,7 +37,7 @@ More complicated uses involve creating your own stream using the {{domxref("Read
 
 You can also write data to streams using {{domxref("WritableStream")}}.
 
-> **Note:** You can find a lot more details about the theory and practice of streams in our articles — [Streams API concepts](/en-US/docs/Web/API/Streams_API/Concepts), [Using readable streams](/en-US/docs/Web/API/Streams_API/Using_readable_streams), and [Using writable streams](/en-US/docs/Web/API/Streams_API/Using_writable_streams).
+> **Note:** You can find a lot more details about the theory and practice of streams in our articles — [Streams API concepts](/en-US/docs/Web/API/Streams_API/Concepts), [Using readable streams](/en-US/docs/Web/API/Streams_API/Using_readable_streams), [Using readable byte streams](/en-US/docs/Web/API/Streams_API/Using_readable_byte_streams), and [Using writable streams](/en-US/docs/Web/API/Streams_API/Using_writable_streams).
 
 ## Stream interfaces
 
@@ -87,7 +91,7 @@ You can also write data to streams using {{domxref("WritableStream")}}.
 
 ## Examples
 
-We have created a directory of examples to go along with the Streams API documentation — see [mdn/dom-examples/streams](https://github.com/mdn/dom-examples/tree/master/streams). The examples are as follows:
+We have created a directory of examples to go along with the Streams API documentation — see [mdn/dom-examples/streams](https://github.com/mdn/dom-examples/tree/main/streams). The examples are as follows:
 
 - [Simple stream pump](https://mdn.github.io/dom-examples/streams/simple-pump/): This example shows how to consume a ReadableStream and pass its data to another.
 - [Grayscale a PNG](https://mdn.github.io/dom-examples/streams/grayscale-png/): This example shows how a ReadableStream of a PNG can be turned into grayscale.
@@ -102,22 +106,15 @@ Examples from other developers:
 
 ## Specifications
 
-| Specification                                               |
-| ----------------------------------------------------------- |
-| [Streams Living Standard](https://streams.spec.whatwg.org/) |
+{{Specifications}}
 
 ## Browser compatibility
 
-### ReadableStream
-
-{{Compat("api.ReadableStream")}}
-
-### WritableStream
-
-{{Compat("api.WritableStream")}}
+{{Compat}}
 
 ## See also
 
 - [Streams API concepts](/en-US/docs/Web/API/Streams_API/Concepts)
 - [Using readable streams](/en-US/docs/Web/API/Streams_API/Using_readable_streams)
+- [Using readable byte streams](/en-US/docs/Web/API/Streams_API/Using_readable_byte_streams)
 - [Using writable streams](/en-US/docs/Web/API/Streams_API/Using_writable_streams)

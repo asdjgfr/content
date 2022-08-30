@@ -22,7 +22,7 @@ To share memory using {{jsxref("SharedArrayBuffer")}} objects from one agent in 
 The structured clone algorithm accepts `SharedArrayBuffer` objects and typed arrays mapped onto `SharedArrayBuffer` objects. In both cases, the `SharedArrayBuffer` object is transmitted to the receiver resulting in a new, private `SharedArrayBuffer` object in the receiving agent (just as for {{jsxref("ArrayBuffer")}}). However, the shared data block referenced by the two `SharedArrayBuffer` objects is the same data block, and a side effect to the block in one agent will eventually become visible in the other agent.
 
 ```js
-var sab = new SharedArrayBuffer(1024);
+const sab = new SharedArrayBuffer(1024);
 worker.postMessage(sab);
 ```
 
@@ -47,7 +47,7 @@ For top-level documents, two headers will need to be set to cross-origin isolate
 - [`Cross-Origin-Opener-Policy`](/en-US/docs/Web/HTTP/Headers/Cross-Origin-Opener-Policy) with `same-origin` as value (protects your origin from attackers)
 - [`Cross-Origin-Embedder-Policy`](/en-US/docs/Web/HTTP/Headers/Cross-Origin-Embedder-Policy) with `require-corp` as value (protects victims from your origin)
 
-```plain
+```http
 Cross-Origin-Opener-Policy: same-origin
 Cross-Origin-Embedder-Policy: require-corp
 ```
@@ -69,13 +69,13 @@ See also [Planned changes to shared memory](/en-US/docs/Web/JavaScript/Reference
 `SharedArrayBuffer` objects must be constructed with the {{jsxref("Operators/new", "new")}} operator. Calling `SharedArrayBuffer()` as a function without using `new` will throw a {{jsxref("TypeError")}}.
 
 ```js example-bad
-var sab = SharedArrayBuffer(1024);
+const sab = SharedArrayBuffer(1024);
 // TypeError: calling a builtin SharedArrayBuffer constructor
 // without new is forbidden
 ```
 
 ```js example-good
-var sab = new SharedArrayBuffer(1024);
+const sab = new SharedArrayBuffer(1024);
 ```
 
 ## Constructor
@@ -98,7 +98,7 @@ var sab = new SharedArrayBuffer(1024);
 ### Creating a new SharedArrayBuffer
 
 ```js
-var sab = new SharedArrayBuffer(1024);
+const sab = new SharedArrayBuffer(1024);
 ```
 
 ### Slicing the SharedArrayBuffer

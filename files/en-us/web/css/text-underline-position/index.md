@@ -48,7 +48,7 @@ text-underline-position: unset;
   - : In vertical writing-modes, this keyword forces the line to be placed on the _left_ side of the text. In horizontal writing-modes, it is a synonym of `under`.
 - `right`
   - : In vertical writing-modes, this keyword forces the line to be placed on the _right_ side of the text. In horizontal writing-modes, it is a synonym of `under`.
-- `auto-pos` {{non-standard_inline}}
+- `auto-pos` {{non-standard_inline}} {{Experimental_Inline}}
   - : A synonym of `auto`, which should be used instead.
 - `above` {{non-standard_inline}}
   - : Forces the line to be above the text. When used with East-Asian text, using the `auto` keyword will lead to a similar effect.
@@ -130,4 +130,3 @@ Because the `text-underline-position` property inherits and is not reset by the 
 ## See also
 
 - The {{cssxref("text-decoration")}} property is a shorthand for setting most text-decoration properties, including {{cssxref("text-decoration-line")}}, {{cssxref("text-decoration-color")}}, and {{cssxref("text-decoration-style")}}. However, it does not set `text-underline-position`.
-- Microsoft [non-standard values documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/text-underline-position)

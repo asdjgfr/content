@@ -1,6 +1,7 @@
 ---
 title: URLPattern.test()
 slug: Web/API/URLPattern/test
+page-type: web-api-instance-method
 tags:
   - API
   - Method
@@ -11,8 +12,7 @@ tags:
   - Experimental
 browser-compat: api.URLPattern.test
 ---
-
-{{APIRef("URL Pattern API")}}
+{{APIRef("URL Pattern API")}}{{SeeCompatTable}}
 
 The **`test()`** method of the {{domxref("URLPattern")}} interface takes a URL or
 object of URL parts, and returns a boolean indicating if the given input matches

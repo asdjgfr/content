@@ -1,10 +1,10 @@
 ---
 title: MediaKeySession.remove()
 slug: Web/API/MediaKeySession/remove
+page-type: web-api-instance-method
 tags:
   - API
   - EncryptedMediaExtensions
-  - Experimental
   - MediaKeySession
   - Method
   - NeedsExample
@@ -21,6 +21,14 @@ The `MediaKeySession.remove()` method returns a {{jsxref('Promise')}} after remo
 ```js
 remove()
 ```
+
+### Parameters
+
+None.
+
+### Return value
+
+None ({{jsxref("undefined")}}).
 
 ## Return value
 

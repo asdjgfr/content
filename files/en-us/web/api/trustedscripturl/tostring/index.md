@@ -1,6 +1,7 @@
 ---
 title: TrustedScriptURL.toString()
 slug: Web/API/TrustedScriptURL/toString
+page-type: web-api-instance-method
 tags:
   - API
   - Method
@@ -19,9 +20,13 @@ The **`toString()`** method of the {{domxref("TrustedScriptURL")}} interface ret
 toString()
 ```
 
+### Parameters
+
+None.
+
 ### Return value
 
-A {{domxref("DOMString","string")}} containing the sanitized URL
+A string containing the sanitized URL
 
 ## Examples
 

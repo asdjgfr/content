@@ -8,6 +8,7 @@ tags:
   - Reference
   - Selector
   - Web
+  - Experimental
 browser-compat: css.selectors.target-text
 ---
 {{CSSRef}}{{SeeCompatTable}}
@@ -22,7 +23,9 @@ The **`::target-text`** [CSS](/en-US/docs/Web/CSS) [pseudo-element](/en-US/docs/
 
 ## Syntax
 
-{{csssyntax}}
+```
+::target-text
+```
 
 ## Examples
 

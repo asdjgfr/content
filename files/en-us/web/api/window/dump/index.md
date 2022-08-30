@@ -1,6 +1,7 @@
 ---
 title: Window.dump()
 slug: Web/API/Window/dump
+page-type: web-api-instance-method
 tags:
   - API
   - HTML DOM
@@ -25,6 +26,10 @@ dump(message)
 
 - `message`
   - : A string containing the message to log.
+
+### Return value
+
+None ({{jsxref("undefined")}}).
 
 ## Specifications
 

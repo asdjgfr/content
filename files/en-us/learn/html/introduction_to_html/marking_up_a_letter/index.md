@@ -76,7 +76,7 @@ For this project, your task is to mark up a letter that needs to be hosted on a 
 - Mark up the following five acronyms/abbreviations in the main text of the letter — "PhD," "HTML," "CSS," "BC," and "Esq." — to provide expansions of each one.
 - The six sub/superscripts should be marked up appropriately — in the chemical formulae, and the numbers 103 and 104 (they should be 10 to the power of 3 and 4, respectively).
 - Try to mark up at least two appropriate words in the text with strong importance/emphasis.
-- There are two places where the letter should have a hyperlink. Add appropriate links with titles. For the location that the links point to, you may use http\://example.com as the URL.
+- There are two places where the letter should have a hyperlink. Add appropriate links with titles. For the location that the links point to, you may use `http://example.com` as the URL.
 - Mark up the university motto quote and citation with appropriate elements.
 
 ### The head of the document
@@ -98,13 +98,13 @@ The following screenshot shows an example of what the letter might look like aft
 
 ## Assessment or further help
 
-If you would like your work assessed, or are stuck and want to ask for help:
+If you would like your work assessed or are stuck and want to ask for help:
 
 1. Put your work into an online shareable editor such as [CodePen](https://codepen.io/), [jsFiddle](https://jsfiddle.net/), or [Glitch](https://glitch.com/).
 2. Write a post asking for assessment and/or help at the [MDN Discourse forum Learning category](https://discourse.mozilla.org/c/mdn/learn/250). Your post should include:
 
     - A descriptive title such as "Assessment wanted for Marking up a letter".
-    - Details of what you have already tried, and what you would like us to do, e.g. if you are stuck and need help, or want an assessment.
+    - Details of what you have already tried and what you would like us to do; for example, tell us if you're stuck and need help or want an assessment.
     - A link to the example you want assessed or need help with, in an online shareable editor (as mentioned in step 1 above). This is a good practice to get into — it's very hard to help someone with a coding problem if you can't see their code.
     - A link to the actual task or assessment page, so we can find the question you want help with.
 

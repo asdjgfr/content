@@ -28,7 +28,7 @@ The **`SourceMap`** [HTTP](/en-US/docs/Web/HTTP) response header links generated
 
 ## Syntax
 
-```
+```http
 SourceMap: <url>
 X-SourceMap: <url> (deprecated)
 ```
@@ -40,15 +40,13 @@ X-SourceMap: <url> (deprecated)
 
 ## Examples
 
-```
+```http
 SourceMap: /path/to/file.js.map
 ```
 
 ## Specifications
 
-| Specification                                       | Title                          |
-| --------------------------------------------------- | ------------------------------ |
-| [Draft document](https://sourcemaps.info/spec.html) | Source Map Revision 3 Proposal |
+{{Specifications}}
 
 ## Browser compatibility
 

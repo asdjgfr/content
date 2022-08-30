@@ -1,6 +1,7 @@
 ---
 title: NodeList.item()
 slug: Web/API/NodeList/item
+page-type: web-api-instance-method
 tags:
   - API
   - DOM
@@ -13,13 +14,20 @@ browser-compat: api.NodeList.item
 
 Returns a node from a [`NodeList`](/en-US/docs/Web/API/NodeList) by index. This method
 doesn't throw exceptions as long as you provide arguments. A value of `null`
-is returned if the index is out of range, and a `TypeError` is thrown if no
+is returned if the index is out of range, and a {{jsxref("TypeError")}} is thrown if no
 argument is provided.
 
 ## Syntax
 
 ```js
 item(index)
+```
+
+JavaScript also offers an array-like bracketed syntax for obtaining an item from a
+NodeList by index:
+
+```js
+nodeItem = nodeList[index]
 ```
 
 ### Parameters
@@ -30,20 +38,16 @@ item(index)
 
 The `index`th node in the `nodeList` returned by the `item` method.
 
-## Alternate Syntax
+### Exceptions
 
-JavaScript also offers an array-like bracketed syntax for obtaining an item from a
-NodeList by index:
-
-```js
-nodeItem = nodeList[index]
-```
+- {{jsxref("TypeError")}}
+  - : Thrown if no argument is provided.
 
 ## Examples
 
 ```js
-var tables = document.getElementsByTagName("table");
-var firstTable = tables.item(1); // or tables[1] - returns the second table in the DOM
+const tables = document.getElementsByTagName("table");
+const firstTable = tables.item(1); // or tables[1] - returns the second table in the DOM
 ```
 
 ## Specifications

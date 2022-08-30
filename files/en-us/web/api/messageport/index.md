@@ -1,10 +1,11 @@
 ---
 title: MessagePort
 slug: Web/API/MessagePort
+page-type: web-api-interface
 tags:
   - API
   - Channel messaging
-  - HTML5
+  - HTML
   - Interface
   - MessagePort
   - Reference
@@ -13,6 +14,8 @@ browser-compat: api.MessagePort
 {{APIRef("HTML DOM")}}
 
 The **`MessagePort`** interface of the [Channel Messaging API](/en-US/docs/Web/API/Channel_Messaging_API) represents one of the two ports of a {{domxref("MessageChannel")}}, allowing messages to be sent from one port and listening out for them arriving at the other.
+
+`MessagePort` is a {{glossary("Transferable objects","transferable object")}}.
 
 {{AvailableInWorkers}}
 
@@ -45,9 +48,9 @@ When the IFrame has loaded, we register an {{domxref("MessagePort.onmessage","on
 When a message is received back from the IFrame, the `onMessage` function outputs the message to a paragraph.
 
 ```js
-var channel = new MessageChannel();
-var output = document.querySelector('.output');
-var iframe = document.querySelector('iframe');
+const channel = new MessageChannel();
+const output = document.querySelector('.output');
+const iframe = document.querySelector('iframe');
 
 // Wait for the iframe to load
 iframe.addEventListener("load", onLoad);
@@ -66,7 +69,7 @@ function onMessage(e) {
 }
 ```
 
-For a full working example, see our [channel messaging basic demo](https://github.com/mdn/dom-examples/tree/master/channel-messaging-basic) on GitHub ([run it live too](https://mdn.github.io/dom-examples/channel-messaging-basic/)).
+For a full working example, see our [channel messaging basic demo](https://github.com/mdn/dom-examples/tree/main/channel-messaging-basic) on GitHub ([run it live too](https://mdn.github.io/dom-examples/channel-messaging-basic/)).
 
 ## Specifications
 

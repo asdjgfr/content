@@ -5,7 +5,6 @@ tags:
   - '::part'
   - CSS
   - Draft
-  - NeedsBrowserCompatibility
   - NeedsExample
   - Pseudo-element
   - Reference
@@ -24,7 +23,9 @@ custom-element::part(foo) {
 
 ## Syntax
 
-{{CSSSyntax}}
+```
+::part( <ident>+ )
+```
 
 ## Examples
 
@@ -32,7 +33,7 @@ custom-element::part(foo) {
 
 ```html
 <template id="tabbed-custom-element">
-<style type="text/css">
+<style>
 *, ::before, ::after {
   box-sizing: border-box;
   padding: 1rem;

@@ -1,6 +1,7 @@
 ---
 title: Selection.containsNode()
 slug: Web/API/Selection/containsNode
+page-type: web-api-instance-method
 tags:
   - API
   - HTML Editing
@@ -31,6 +32,10 @@ containsNode(node, partialContainment)
     part of the node is part of the selection. When `false`,
     `containsNode()` only returns `true` when the entire node is
     part of the selection. If not specified, the default value `false` is used.
+
+### Return value
+
+None ({{jsxref("undefined")}}).
 
 ## Examples
 

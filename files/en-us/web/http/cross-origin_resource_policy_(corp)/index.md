@@ -5,6 +5,7 @@ tags:
   - HTTP
   - Reference
   - Security
+browser-compat: http.headers.Cross-Origin-Resource-Policy
 ---
 {{HTTPSidebar}}
 
@@ -33,7 +34,7 @@ Web applications set a Cross-Origin Resource Policy via the {{HTTPHeader("Cross-
 - `cross-origin`
   - : Requests from any _{{Glossary("origin")}}_ (both same-site and cross-site) can read the resource. This is useful when COEP is used (see below).
 
-```
+```http
 Cross-Origin-Resource-Policy: same-site | same-origin | cross-origin
 ```
 
@@ -55,13 +56,11 @@ In response, Chromium shipped [Cross-Origin Read Blocking](https://fetch.spec.wh
 
 ## Specifications
 
-| Specification                                                                    | Status                                                                       | Comment            |
-| -------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ------------------ |
-| {{SpecName("Fetch", '#cross-origin-resource-policy-header')}} | {{Spec2("Fetch", '#cross-origin-resource-policy-header')}} | Initial definition |
+{{Specifications}}
 
 ## Browser compatibility
 
-{{Compat("http.headers.Cross-Origin-Resource-Policy")}}
+{{Compat}}
 
 ## See also
 

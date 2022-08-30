@@ -1,6 +1,7 @@
 ---
 title: StorageEvent.initStorageEvent()
 slug: Web/API/StorageEvent/initStorageEvent
+page-type: web-api-instance-method
 tags:
   - API
   - Method
@@ -47,6 +48,10 @@ initStorageEvent(type, canBubble, cancelable, key, oldValue, newValue, url, stor
 - `storageArea` {{optional_inline}}
   - : The {{DOMxRef("Storage")}} object representing the storage area on which this event
     occurred.
+
+### Return value
+
+None ({{jsxref("undefined")}}).
 
 ## Specifications
 

@@ -38,7 +38,7 @@ a dedicated process for the to-be-loaded document, for example.
 
 ## Syntax
 
-```
+```http
 Large-Allocation: 0
 Large-Allocation: <megabytes>
 ```
@@ -53,7 +53,7 @@ Large-Allocation: <megabytes>
 
 ## Examples
 
-```
+```http
 Large-Allocation: 0
 Large-Allocation: 500
 ```
@@ -61,8 +61,7 @@ Large-Allocation: 500
 ## Troubleshooting errors
 
 The `Large-Allocation` header throws warnings or error messages when used
-incorrectly. You'll encounter them in the [web
-console](https://firefox-source-docs.mozilla.org/devtools-user/web_console/index.html).
+incorrectly. You'll encounter them in the [web console](https://firefox-source-docs.mozilla.org/devtools-user/web_console/index.html).
 
 - This page was loaded in a new process due to a `Large-Allocation` header.
   - : This message means that the browser saw the `Large-Allocation` header,

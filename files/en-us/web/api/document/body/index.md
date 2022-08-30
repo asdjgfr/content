@@ -1,6 +1,7 @@
 ---
 title: Document.body
 slug: Web/API/Document/body
+page-type: web-api-instance-property
 tags:
   - API
   - Document
@@ -17,7 +18,7 @@ The **`Document.body`** property represents the
 
 ## Value
 
-One of the followings:
+One of the following:
 
 - {{HTMLElement("body")}}
 - {{HTMLElement("frameset")}}

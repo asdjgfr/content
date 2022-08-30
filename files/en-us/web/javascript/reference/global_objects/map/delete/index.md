@@ -38,11 +38,11 @@ delete(key)
 ### Using delete()
 
 ```js
-var myMap = new Map();
+const myMap = new Map();
 myMap.set('bar', 'foo');
 
-myMap.delete('bar'); // Returns true. Successfully removed.
-myMap.has('bar');    // Returns false. The "bar" element is no longer present.
+console.log(myMap.delete('bar')); // Returns true. Successfully removed.
+console.log(myMap.has('bar')); // Returns false. The "bar" element is no longer present.
 ```
 
 ## Specifications

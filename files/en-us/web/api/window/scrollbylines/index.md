@@ -1,6 +1,7 @@
 ---
 title: Window.scrollByLines()
 slug: Web/API/Window/scrollByLines
+page-type: web-api-instance-method
 tags:
   - API
   - HTML DOM
@@ -25,6 +26,10 @@ scrollByLines(lines)
 
 - `lines` is the number of lines to scroll the document by. It may be a
   positive or negative integer.
+
+### Return value
+
+None ({{jsxref("undefined")}}).
 
 ## Examples
 

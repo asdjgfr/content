@@ -1,6 +1,7 @@
 ---
 title: SVGPointList.clear()
 slug: Web/API/SVGPointList/clear
+page-type: web-api-instance-method
 tags:
   - API
   - Method
@@ -23,9 +24,13 @@ clear()
 
 None.
 
+### Return value
+
+None ({{jsxref("undefined")}}).
+
 ### Exceptions
 
-- {{domxref("DOMException")}} `NoModificationAllowedError`
+- `NoModificationAllowedError` {{domxref("DOMException")}}
   - : Thrown if the list is read-only.
 
 ## Examples

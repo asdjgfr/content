@@ -1,6 +1,7 @@
 ---
 title: Element.setAttributeNode()
 slug: Web/API/Element/setAttributeNode
+page-type: web-api-instance-method
 tags:
   - API
   - DOM
@@ -69,3 +70,7 @@ used to change element's attributes.
 ## Browser compatibility
 
 {{Compat}}
+
+## See also
+
+- {{domxref("Document.createAttribute()")}}

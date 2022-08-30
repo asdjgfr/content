@@ -1,6 +1,7 @@
 ---
 title: TrustedScript.toString()
 slug: Web/API/TrustedScript/toString
+page-type: web-api-instance-method
 tags:
   - API
   - Method
@@ -19,9 +20,13 @@ The **`toString()`** method of the {{domxref("TrustedScript")}} interface return
 toString()
 ```
 
+### Parameters
+
+None.
+
 ### Return value
 
-A {{domxref("DOMString","string")}} containing the sanitized script.
+A string containing the sanitized script.
 
 ## Examples
 

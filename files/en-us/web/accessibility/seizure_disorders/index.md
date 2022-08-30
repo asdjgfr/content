@@ -25,15 +25,15 @@ This article introduces concepts behind making web content accessible for those 
 
 Seizures caused by light are known as photosensitive epilepsy. Content that flickers, flashes, or blinks can trigger photosensitive epilepsy. Web technologies that use video, animated gifs, animated pngs, animated SVGs, Canvas, and CSS or JavaScript animations are all capable of content that can induce seizures or other incapacitating physical reactions. Certain visual patterns, especially stripes, can also cause physical reactions even though they are not animated. Photosensitive epilepsy is actually a kind of "reflex epilepsy"—seizures occurring in response to a trigger. In the case of photosensitive epilepsy, seizures are triggered specifically by flashing lights, but other types of reflex epilepsies may be triggered by the act of reading, or by noises. Patterns and images can also trigger epilepsy.
 
-The fact that static images may cause seizures and other disorders is documented in articles such as ["Gamma Oscillations and photosensitive epilepsy"](https://doi.org/10.1016/j.cub.2017.03.076), where it is noted "_Certain visual images, even in the absence of motion or flicker, can trigger seizures in patients with photosensitive epilepsy_". The Epilepsy Foundation, in its article, ["Shedding Light on Photosensitivity, One of Epilepsy's Most Complex Conditions"](https://www.epilepsy.com/article/2014/3/shedding-light-photosensitivity-one-epilepsys-most-complex-conditions-0) talks about static images and patterns: "_Static or moving patterns of discernable light and dark stripes have the same effect as flashing lights because of the alternation of dark and bright areas."_ The Epilepsy Foundation of America Working Group is able to "quantify" the problem a little: _"A pattern with the potential for provoking seizures contains clearly discernible stripes, numbering more than five light-dark pairs of stripes in any orientation_". In addition to stripes, checkered patterns have also been known to cause photosensitive seizures, according to [Cedars-Sinai](https://www.cedars-sinai.edu/Patients/Health-Conditions/Photosensitive-Seizures.aspx).
+The fact that static images may cause seizures and other disorders is documented in articles such as ["Gamma Oscillations and photosensitive epilepsy"](https://linkinghub.elsevier.com/retrieve/pii/S0960982217304062), where it is noted "_Certain visual images, even in the absence of motion or flicker, can trigger seizures in patients with photosensitive epilepsy_". The Epilepsy Foundation, in its article, ["Shedding Light on Photosensitivity, One of Epilepsy's Most Complex Conditions"](https://www.epilepsy.com/stories/shedding-light-photosensitivity-one-epilepsys-most-complex-conditions-0) talks about static images and patterns: "_Static or moving patterns of discernable light and dark stripes have the same effect as flashing lights because of the alternation of dark and bright areas."_ The Epilepsy Foundation of America Working Group is able to "quantify" the problem a little: _"A pattern with the potential for provoking seizures contains clearly discernible stripes, numbering more than five light-dark pairs of stripes in any orientation_". In addition to stripes, checkered patterns have also been known to cause photosensitive seizures, according to [Cedars-Sinai](https://www.cedars-sinai.org/health-library/diseases-and-conditions/p/photosensitive-seizures.html).
 
 Although static images are possible as triggers, they are less consistent. The trigger that is well established and strong is flashing/strobe lights. Dr. Selim Benbadis of USF's Comprehensive Epilepsy Program notes, _"The only thing that is really documented is flashing lights, which can trigger seizures in patients with photosensitive epilepsy. Only a few types of epilepsies are photosensitive though, and the vast majority of epilepsies are not."_ In addition to seizures brought about by photosensitivity, listening to certain pieces of music can also trigger what are called musicogenic seizures, although these types of seizures seem to be much more rare. For a great introduction on the topic of musicogenic seizures, visit Epilepsy Ontario's web page on [Musicogenic Seizures](https://epilepsyontario.org/musicogenic-seizures/).
 
-Seizures and epilepsy are not the same. In its article ["A Revised Definition of Epilepsy"](https://www.epilepsy.com/article/2014/4/revised-definition-epilepsy), the Epilepsy Foundation notes that "_a seizure is an event and epilepsy is the disease involving recurrent unprovoked seizures_." According to the Epilepsy Foundation's page ["How Serious Are Seizures?"](https://www.epilepsy.com/start-here/about-epilepsy-basics/how-serious-are-seizures), _"Sudden unexpected death in epilepsy (SUDEP) is likely the most common disease-related cause of death in with epilepsy. It is not frequent but it is a very real problem and people need to be aware of its risk"_.
+Seizures and epilepsy are not the same. In its article ["A Revised Definition of Epilepsy"](https://www.epilepsy.com/stories/revised-definition-epilepsy), the Epilepsy Foundation notes that "_a seizure is an event and epilepsy is the disease involving recurrent unprovoked seizures_." According to the Epilepsy Foundation's page ["How Serious Are Seizures?"](https://www.epilepsy.com/what-is-epilepsy/understanding-seizures/how-serious-are-seizures), _"Sudden unexpected death in epilepsy (SUDEP) is likely the most common disease-related cause of death in with epilepsy. It is not frequent but it is a very real problem and people need to be aware of its risk"_.
 
 The point is, seizures most definitely can be and are fatal, and developers and designers are incredibly important for making the web a safer place for those with sensitivities to photosensitive or musicogenic triggers.
 
-Seizures can be fatal, but even the ones that are "only" debilitating can be of such severity that they render the user incapacitated. Other disorders, such as disorientation, nausea, vomiting, and more can also be so severe that the user is unable to function. The Epilepsy Foundation's article, ["Photosensitivity and Seizures"](https://www.epilepsy.com/learn/triggers-seizures/photosensitivity-and-seizures), provides a list of triggers that may cause seizures in photosensitive people; here's an excerpt from that list:
+Seizures can be fatal, but even the ones that are "only" debilitating can be of such severity that they render the user incapacitated. Other disorders, such as disorientation, nausea, vomiting, and more can also be so severe that the user is unable to function. The Epilepsy Foundation's article, ["Photosensitivity and Seizures"](https://www.epilepsy.com/what-is-epilepsy/seizure-triggers/photosensitivity), provides a list of triggers that may cause seizures in photosensitive people; here's an excerpt from that list:
 
 - Television screens or computer monitors due to the flicker or rolling images.
 - Certain video games or TV broadcasts containing rapid flashes or alternating patterns of different colors.
@@ -45,7 +45,7 @@ That same article continues that many factors must combine to trigger the photos
 
 You don't even need an image or video to cause harm. A {{HTMLElement('div')}} element set to change color and luminosity at high frequency, easily done via JavaScript, can cause real harm. And, flickering can occur everywhere. For example, "spinners" commonly used to display while pages load can easily "flicker" while spinning.
 
-Additional concerns exist for individuals with motor-skill problems. For example, the page for Trace Research & Development Center's [Photosensitive Epilepsy Analysis Tool](https://trace.umd.edu/peat) notes that _"Photosensitive seizures can be provoked by certain types of flashing in web or computer content, including mouse-overs that cause large areas of the screen to rapidly flash on and off repeatedly"_.
+Additional concerns exist for individuals with motor-skill problems. For example, the page for Trace Research & Development Center's [Photosensitive Epilepsy Analysis Tool](https://trace.umd.edu/peat/) notes that _"Photosensitive seizures can be provoked by certain types of flashing in web or computer content, including mouse-overs that cause large areas of the screen to rapidly flash on and off repeatedly"_.
 
 ### Other physical reactions
 
@@ -59,13 +59,13 @@ Nausea, vertigo (or dizziness), and disorientation are very nonspecific symptoms
 
 ## Flashing, blinking, & flickering
 
-Although "flashing" and "blinking" are sometimes used interchangeably, they are not the same. According to the W3C, blinking is a distraction problem, whereas flashing refers to content that occurs more than 3 times per second, and which is sufficiently large and bright. [Section 508](https://www.section508.gov/content/guide-accessible-web-design-development#flashing) prohibits flickering effects with a frequency greater than 3 Hz (flickers per second) and lower than 55 Hz. The Epilepsy Foundation's article ["Shedding Light on Photosensitivity, One of Epilepsy's Most Complex Conditions"](https://www.epilepsy.com/article/2014/3/shedding-light-photosensitivity-one-epilepsys-most-complex-conditions-0) notes that _"Generally, flashing lights between the frequencies of five to 30 flashes per second (Hertz) are most likely to trigger seizures. In order to be safe, the consensus recommends that photosensitive individuals should not be exposed to flashes greater than three per second."_ For some people, however, flashing/blinking can cause symptoms at less than 3 Hz.
+Although "flashing" and "blinking" are sometimes used interchangeably, they are not the same. According to the W3C, blinking is a distraction problem, whereas flashing refers to content that occurs more than 3 times per second, and which is sufficiently large and bright. [Section 508](https://www.section508.gov/content/guide-accessible-web-design-development/#flashing) prohibits flickering effects with a frequency greater than 3 Hz (flickers per second) and lower than 55 Hz. The Epilepsy Foundation's article ["Shedding Light on Photosensitivity, One of Epilepsy's Most Complex Conditions"](https://www.epilepsy.com/stories/shedding-light-photosensitivity-one-epilepsys-most-complex-conditions-0) notes that _"Generally, flashing lights between the frequencies of five to 30 flashes per second (Hertz) are most likely to trigger seizures. In order to be safe, the consensus recommends that photosensitive individuals should not be exposed to flashes greater than three per second."_ For some people, however, flashing/blinking can cause symptoms at less than 3 Hz.
 
 It's important to note that not all flashing and blinking is bad. NASA, in its document titled, ["Blinking, Flashing, and Temporal Response"](https://colorusage.arc.nasa.gov/flashing.php) notes that blinking and flashing can be powerful tools for drawing attention—as is necessary for warning buttons (this assumes that users can still see the screen while elements are flashing, which is not always true). For some users, blinking buttons also caution that they must be used sparingly, and with care. As it applies to web design, systems that alert company employees to danger by "hijacking" the screen to provide a flashing warning of emergency need to take into consideration the rate, size, and luminosity changes on the screen as these warnings are flashed.
 
 ### Flashing and flickering—how is danger quantified?
 
-According to the article ["Photic- and pattern-induced seizures: expert consensus of the Epilepsy Foundation of America Working Group",](https://www.epilepsy.com/sites/core/files/atoms/files/Epilepsia%20vol%2046%20issue%209%20Photosensitivity.pdf) _"A flash is a potential hazard if it has luminance ≥20 cd/m<sup>2</sup>, occurs at a frequency of ≥3 Hz, and occupies a solid visual angle of ≥0.006 steradians (approximately 10% of the central visual field or 25% of screen area at typical viewing distances)."_
+According to the article ["Photic- and pattern-induced seizures: expert consensus of the Epilepsy Foundation of America Working Group",](https://onlinelibrary.wiley.com/doi/epdf/10.1111/j.1528-1167.2005.31405.x) _"A flash is a potential hazard if it has luminance ≥20 cd/m<sup>2</sup>, occurs at a frequency of ≥3 Hz, and occupies a solid visual angle of ≥0.006 steradians (approximately 10% of the central visual field or 25% of screen area at typical viewing distances)."_
 
 How far is a typical viewing distance? The recommendation considered for a typical viewing distance at the time of writing was "_the area can be taken as applying to an area >25% of the area of a television screen, assuming standard viewing distances of ≥2 m (∼9 feet)"_. Much has changed since that time, and we are now much closer to our screen.
 
@@ -82,9 +82,9 @@ These standards are based on earlier research. In 2004, The Epilepsy Foundation 
 
 ### Size and distance
 
-#### How big? It depends.
+#### How big? It depends
 
-"Relative" size and distance both matter. According to [PEAT](https://trace.umd.edu/peat), _"The combined area of flashes occurring concurrently occupies no more than a total of one quarter of any 341 x 256 pixel rectangle anywhere on the displayed screen area when the content is viewed at 1024 by 768 pixels."_
+"Relative" size and distance both matter. According to [PEAT](https://trace.umd.edu/peat/), _"The combined area of flashes occurring concurrently occupies no more than a total of one quarter of any 341 x 256 pixel rectangle anywhere on the displayed screen area when the content is viewed at 1024 by 768 pixels."_
 
 The point that the field of vision is an important consideration arises in the article addressing WCAG 2.3.1 continues: "_The 1024 x 768 screen is used as the reference screen resolution for the evaluation. The 341 x 256 pixel block represents a 10 degree viewport at a typical viewing distance. (The 10 degree field is taken from the original specifications and represents the central vision portion of the eye, where people are most susceptible to photo stimuli.)_"
 
@@ -119,7 +119,7 @@ It has been demonstrated that [some colors are more likely to cause epileptic fi
 - **Red Desaturation tests:** The human eye is so sensitively tuned to red that ophthalmologists set up a test using it. The Red desaturation test assesses the integrity of the optic nerve. For more information as to how an ophthalmologist uses this test, see [Red Desaturation](https://www.smart-optometry.com/red-desaturation/).
 - **Red Environment:** Studies have shown that for those who suffer Traumatic Brain Injury, [cognitive function is reduced in a red environment](https://pubmed.ncbi.nlm.nih.gov/20649469/).
 
-[Saturated Red](/en-US/docs/Web/Accessibility/Understanding_Colors_and_Luminance) is a special, dangerous case, and there are special tests for it. In addition to a red environment affecting the cognitive function of those with Traumatic Brain Injury, color in the red spectrum wavelength seems to require special concern and special tests. Dr. Gregg Vanderheiden, when testing the Photosensitive Epilepsy Analysis Tool, noted that the seizure rates were much higher than expected. They found that we are much more sensitive to saturated red flashing. (See the video, [The Photosensitive Epilepsy Analysis Tool](https://www.pbs.org/video/university-place-the-photosensitive-epilepsy-analysis-tool-ep-429/]).)
+[Saturated Red](/en-US/docs/Web/Accessibility/Understanding_Colors_and_Luminance) is a special, dangerous case, and there are special tests for it. In addition to a red environment affecting the cognitive function of those with Traumatic Brain Injury, color in the red spectrum wavelength seems to require special concern and special tests. Dr. Gregg Vanderheiden, when testing the Photosensitive Epilepsy Analysis Tool, noted that the seizure rates were much higher than expected. They found that we are much more sensitive to saturated red flashing. (See the video, [The Photosensitive Epilepsy Analysis Tool](https://www.pbs.org/video/university-place-the-photosensitive-epilepsy-analysis-tool-ep-429/).)
 
 #### Websafe does not mean seizure-safe
 
@@ -149,13 +149,13 @@ In addition to the psychological variances, there are also physiological differe
 
 It's important to understand that light and its measurements are linear, but human vision and human perception are not. Investigation and discussion is ongoing as to how to relate the machine measurement of light as it passes from a computer screen, through the distance to the human eye, filtered by human vision, and then manipulated through the human brain.
 
-Even age and sex can play a role. According to the Epilepsy Foundation's article, ["Shedding Light on Photosensitivity, One of Epilepsy's Most Complex Conditions"](https://www.epilepsy.com/article/2014/3/shedding-light-photosensitivity-one-epilepsys-most-complex-conditions-0), _"Children and adolescents are more prone than adults to have an abnormal response to light stimulation, and the first light-induced seizure almost always occurs before age 20"._ The article follows with this statistic: _"Girls (60 percent) are more often affected than boys (40 percent), although seizures are more frequent in boys because they are more likely to be playing video games. Video games often contain potentially provocative light stimulation"_.
+Even age and sex can play a role. According to the Epilepsy Foundation's article, ["Shedding Light on Photosensitivity, One of Epilepsy's Most Complex Conditions"](https://www.epilepsy.com/stories/shedding-light-photosensitivity-one-epilepsys-most-complex-conditions-0), _"Children and adolescents are more prone than adults to have an abnormal response to light stimulation, and the first light-induced seizure almost always occurs before age 20"._ The article follows with this statistic: _"Girls (60 percent) are more often affected than boys (40 percent), although seizures are more frequent in boys because they are more likely to be playing video games. Video games often contain potentially provocative light stimulation"_.
 
 **User testing is very problematic**. Naturally, no one wants to subject a seizure-prone individual to user testing. It's dangerous. To that point, one of the most ethical thing that developers and designers can do is use tools that have been developed by experts in the field who have worked hand-in-hand with physicians to develop the tool. As of this writing, there are two commonly available tools that have been ethically and professionally developed by researchers and physicians for film/videos: **PEAT**, and the **Harding Test**.
 
 ### Photosensitive Epilepsy Analysis Tool (PEAT)
 
-The [Trace Research and Development Center](https://trace.umd.edu/) has set a gold standard for a [Photosensitive Epilepsy Analysis Tool](https://trace.umd.edu/peat), and they've made a point to make it **_free_** to download. PEAT can help authors determine whether animations or video in their content are likely to cause seizures. Please note the restriction on its use: **_Use of PEAT to assess material commercially produced for television broadcast, film, home entertainment, or gaming industries is prohibited. Use the Harding Test or other tools for commercial purposes._**
+The [Trace Research and Development Center](https://trace.umd.edu/) has set a gold standard for a [Photosensitive Epilepsy Analysis Tool](https://trace.umd.edu/peat/), and they've made a point to make it **_free_** to download. PEAT can help authors determine whether animations or video in their content are likely to cause seizures. Please note the restriction on its use: **_Use of PEAT to assess material commercially produced for television broadcast, film, home entertainment, or gaming industries is prohibited. Use the Harding Test or other tools for commercial purposes._**
 
 To get a free copy of the University of Maryland's Photosensitive Epilepsy Analysis Tool, visit the [Trace Research & Development Center](https://trace.umd.edu/).
 
@@ -196,7 +196,7 @@ Consider using metadata such as `<meta name="robots" content="noindex, nofollow"
 By not indexing the page, the likelihood that users will stumble upon it via search will be reduced.
 
 ```html
-<html>
+<html lang="en">
   <head>
     <title>…</title>
     <meta name="robots" content="noindex, nofollow">
@@ -210,7 +210,7 @@ All image types are potentially dangerous, however, animated gifs deserve specia
 
 #### Detect if a GIF is animated
 
-- [NPM's animated-gif-detector](https://www.npmjs.com/package/animated-gif-detector) allows for the ability to determine animate _as early as possible_ in a given HTTP request.
+- [npm's animated-gif-detector](https://www.npmjs.com/package/animated-gif-detector) allows for the ability to determine animate _as early as possible_ in a given HTTP request.
 - Zakirt provides a gist for [animated-gif-detect.js](https://gist.github.com/zakirt/faa4a58cec5a7505b10e3686a226f285)
 
 With animated GIFs, ensure animation is inactive until the user chooses to activate it. For example, the user must push a button or check a box in order to start the animation.
@@ -234,7 +234,7 @@ div {
 
 [`CSS Transitions`](https://www.w3.org/TR/css-transitions-1/) can be used to set the duration to zero for the initial stage of animation.
 
-```html
+```css
 div {
   transition-duration: 0s;
 }
@@ -258,7 +258,7 @@ The `HTMLMediaElement.controls` property reflects the `controls` HTML attribute,
 
 ##### Video
 
-To ensure that a video has controls that a user can access, ensure that you add the word "controls" to HTML5 video and audio elements.
+To ensure that a video has controls that a user can access, ensure that you add the word "controls" to HTML video and audio elements.
 
 `<video controls>`
 
@@ -266,8 +266,10 @@ To ensure that a video has controls that a user can access, ensure that you add 
 <video controls>
   <source src="myVideo.mp4" type="video/mp4">
   <source src="myVideo.webm" type="video/webm">
-  <p>Your browser doesn't support HTML5 video. Here is
-     a <a href="myVideo.mp4">link to the video</a> instead.</p>
+  <p>
+    Your browser doesn't support HTML video. Here is a
+    <a href="myVideo.mp4">link to the video</a> instead.
+  </p>
 </video>
 ```
 
@@ -313,30 +315,28 @@ The methods for sniffing them out is not a casual exercise. You may be intereste
 
 #### Text can also be animated
 
-Translations and transformations can animate text in a div, and do harm. Although it is experimental technology, [`CSSKeyframe.keyText`](/en-US/docs/Web/API/CSSKeyframeRule/keyText) is being developed. Moving text can induce seizures for the same reasons that moving images do, so avoid animating your text. It's a good idea to avoid using moving text anyhow, as many screenreaders cannot read moving text and it's bad user experience even for those with no vision or vestibular issues.
+Translations and transformations can animate text in a div, and do harm. Although it is experimental technology, [`CSSKeyframe.keyText`](/en-US/docs/Web/API/CSSKeyframeRule/keyText) is being developed. Moving text can induce seizures for the same reasons that moving images do, so avoid animating your text. It's a good idea to avoid using moving text anyhow, as many screen readers cannot read moving text and it's bad user experience even for those with no vision or vestibular issues.
 
 ### CSS for animation
 
 In the style sheet or within the {{HTMLElement('style')}} element, many options can combine together to create a powerful experience for the user. We've already mentioned the `animation` property earlier in this document. It's actually shorthand for all animation properties, including:
 
-- **`animation-play-state`**
-- **`animation-duration`** has a value of `<time>`; this is the duration an animation takes to complete one cycle. This may be specified in either seconds `(s)` or milliseconds `(ms)`. A default value of `0s` indicates no animation should occur.
-- **`animation-timing-function`**
+- `animation-play-state`
+- `animation-duration` has a value of `<time>`; this is the duration an animation takes to complete one cycle. This may be specified in either seconds `(s)` or milliseconds `(ms)`. A default value of `0s` indicates no animation should occur.
+- `animation-timing-function`
 
 The animation property is already powerful on its own, but combined with other properties and queries such as `prefers-reduced-motion`, a powerful set of options can be set up for the user. Setting `animation-duration` and `transition-duration` properties to a short duration rather than setting them to `animation: none` and `transition: none`, enables a safeguard to prevent issues in any case there is a dependency on the animation to run.
 
 ### JavaScript animation
 
-JavaScript is often used to control {{HTMLElement('canvas')}} elements and SVGs. Most JavaScript code that applies to HTML5 video also applies to audio. `HTMLMediaElement.playbackRate` is used to implement user controls for the playback rate for both video and audio. A value of 1.0 is default and considered normal speed; a value of 0.5 is half the speed, a value of 2.0 is twice the speed. A negative number plays the video or audio backwards. Set the playback rate property: `HTMLMediaElement.playbackRate = playbackspeed`.
+JavaScript is often used to control {{HTMLElement('canvas')}} elements and SVGs. Most JavaScript code that applies to HTML video also applies to audio. `HTMLMediaElement.playbackRate` is used to implement user controls for the playback rate for both video and audio. A value of 1.0 is default and considered normal speed; a value of 0.5 is half the speed, a value of 2.0 is twice the speed. A negative number plays the video or audio backwards. Set the playback rate property: `HTMLMediaElement.playbackRate = playbackspeed`.
 
 [document.getAnimations()](/en-US/docs/Web/API/Document/getAnimations) is an experimental technology, and includes [CSS Animations](/en-US/docs/Web/CSS/CSS_Animations), [CSS Transitions](/en-US/docs/Web/CSS/CSS_Transitions), and [Web Animations](/en-US/docs/Web/API/Web_Animations_API). The MDN page on [Document.getAnimations()](/en-US/docs/Web/API/Document/getAnimations) provides the following code sample of how to slow down all animations on a page to half speed:
 
 ```js
-document.getAnimations().forEach(
-  function (animation) {
-    animation.playbackRate *= .5;
-  }
-);
+document.getAnimations().forEach((animation) => {
+  animation.playbackRate *= 0.5;
+});
 ```
 
 **Image sources for animation**
@@ -426,16 +426,16 @@ Use the {{HTMLElement('link')}} element, alongside with and together with the at
 ```html
 <head>
   <title>Home Page</title>
-  <link href="main.css" rel="stylesheet" type="text/css" title="Default Style">
-  <link href="alternate1.css" rel="alternate stylesheet" type="text/css" title="Alternate One">
-  <link href="alternate2.css" rel="alternate stylesheet" type="text/css" title="Alternate Two">
+  <link href="main.css" rel="stylesheet" title="Default Style">
+  <link href="alternate1.css" rel="alternate stylesheet" title="Alternate One">
+  <link href="alternate2.css" rel="alternate stylesheet" title="Alternate Two">
 </head>
 ```
 
 **{{CSSxref('@import')}}** is also a way to incorporate style sheets, but it is not quite as well supported as the {{HTMLElement('link')}} element.
 
 ```html
-<style type="text/css">
+<style>
   @import url(alternate1.css);
   @import url(alternate2.css);
 </style>
@@ -490,7 +490,7 @@ This can be useful if the ambient light API is not available. Support is emergin
 
 ```css
 @media (prefers-color-scheme: dark) {
-    /* adjust styles for dark mode */
+  /* adjust styles for dark mode */
 }
 ```
 
@@ -507,14 +507,15 @@ A very old article, Tech Republic's ["Epilepsy and CRT/LCD screen flicker"](http
 - _"This effect is noticeable, and documented, up to 70 Hz."_
 - _"These studies would seem to indicate that you should stay away from refresh rates under 70 Hz, and use a rate not divisible by 10."_
 
-Eric Bailey, of CSS-Tricks, found an innovative use the update feature which, used in combination with animation-duration or transition-duration, to conclude at a rate that is imperceptible to the human eye. In other words, Eric's techniques address the refresh-rate problem. The CSS below is from the CSS-Tricks article, [" Revisiting prefers-reduced-motion, the reduced motion media query"](https://css-tricks.com/revisiting-prefers-reduced-motion-the-reduced-motion-media-query/).
+Eric Bailey, of CSS-Tricks, found an innovative use the update feature which, used in combination with animation-duration or transition-duration, to conclude at a rate that is imperceptible to the human eye. In other words, Eric's techniques address the refresh-rate problem. The CSS below is from the CSS-Tricks article, [" Revisiting prefers-reduced-motion, the reduced motion media query"](https://css-tricks.com/revisiting-prefers-reduced-motion/).
 
 ```css
 @media screen and (prefers-reduced-motion: reduce), (update: slow) {
-  * { animation-duration: 0.001ms !important;
-      animation-iteration-count: 1 !important; /* Hat tip Nick/cssremedy (https://css-tricks.com/revisiting-prefers-reduced-motion-the-reduced-motion-media-query/#comment-1700170) */
-      transition-duration: 0.001ms !important;
-    }
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important; /* Hat tip Nick/cssremedy (https://css-tricks.com/revisiting-prefers-reduced-motion/#comment-1700170) */
+    transition-duration: 0.001ms !important;
+  }
 }
 ```
 
@@ -586,7 +587,7 @@ The Web Animations model is intended to provide the features necessary for expre
 #### Color
 
 - [Color Tutorial: describing color](https://colortutorial.design/) Tom Jewett
-- [Formula to Determine Brightness of RGB color](https://stackoverflow.com/questions/596216/formula-to-determine-brightness-of-rgb-color) Stack Exchange Discussion Thread
+- [Formula to Determine Brightness of RGB color](https://stackoverflow.com/questions/596216/formula-to-determine-perceived-brightness-of-rgb-color) Stack Exchange Discussion Thread
 - [How the Color Red Influences Our Behavior](https://www.scientificamerican.com/article/how-the-color-red-influences-our-behavior/) Scientific American By Susana Martinez-Conde, Stephen L. Macknik on November 1, 2014
 
 #### Discussions
@@ -596,9 +597,9 @@ The Web Animations model is intended to provide the features necessary for expre
 
 #### Epilepsy and Seizures
 
-- [Shedding Light on Photosensitivity, One of Epilepsy's Most Complex Conditions](https://www.epilepsy.com/article/2014/3/shedding-light-photosensitivity-one-epilepsys-most-complex-conditions-0) Epilepsy Foundation: _"Certain individuals are born with special sensitivity to flashing lights or contrasting visual patterns, such as stripes, grids and checkerboards. Because of this condition, their brain will produce seizure-like discharges when exposed to this type of visual stimulation."_
-- [Gamma oscillations and photosensitive epilepsy](https://www.sciencedirect.com/science/article/pii/S0960982217304062?via%3Dihub) Current Biology [Volume 27, Issue 9](https://www.sciencedirect.com/science/journal/09609822/27/9), 8 May 2017, Pages R336-R338: _"Certain [visual images](https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/retina-image), even in the absence of [motion](https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/motion) or flicker, can trigger seizures in patients with photosensitive epilepsy."_
-- [Photosensitive Seizures. Cedars-Sinai](https://www.cedars-sinai.edu/Patients/Health-Conditions/Photosensitive-Seizures.aspx) "_Photosensitive seizures are triggered by flashing or flickering lights. These seizures can also be triggered by certain patterns such as stripes._"
+- [Shedding Light on Photosensitivity, One of Epilepsy's Most Complex Conditions](https://www.epilepsy.com/stories/shedding-light-photosensitivity-one-epilepsys-most-complex-conditions-0) Epilepsy Foundation: _"Certain individuals are born with special sensitivity to flashing lights or contrasting visual patterns, such as stripes, grids and checkerboards. Because of this condition, their brain will produce seizure-like discharges when exposed to this type of visual stimulation."_
+- [Gamma oscillations and photosensitive epilepsy](https://www.sciencedirect.com/science/article/pii/S0960982217304062?via%3Dihub) Current Biology [Volume 27, Issue 9](https://www.sciencedirect.com/journal/current-biology/vol/27/issue/9), 8 May 2017, Pages R336-R338: _"Certain [visual images](https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/retina-image), even in the absence of motion or flicker, can trigger seizures in patients with photosensitive epilepsy."_
+- [Photosensitive Seizures. Cedars-Sinai](https://www.cedars-sinai.org/health-library/diseases-and-conditions/p/photosensitive-seizures.html) "_Photosensitive seizures are triggered by flashing or flickering lights. These seizures can also be triggered by certain patterns such as stripes._"
 - [Photic-and pattern-induced seizures: expert consensus of the Epilepsy Foundation of America Working Group](https://pubmed.ncbi.nlm.nih.gov/16146438/) Eplepsia 2005 Sept, 46(9):1423-5 PubMed.gov NCBI [Harding G](https://pubmed.ncbi.nlm.nih.gov/?term=Harding%20G%5BAuthor%5D&cauthor=true&cauthor_uid=16146438), [Wilkins AJ](https://pubmed.ncbi.nlm.nih.gov/?term=Wilkins%20AJ%5BAuthor%5D&cauthor=true&cauthor_uid=16146438), [Erba G](https://pubmed.ncbi.nlm.nih.gov/?term=Erba%20G%5BAuthor%5D&cauthor=true&cauthor_uid=16146438), [Barkley GL](https://pubmed.ncbi.nlm.nih.gov/?term=Barkley%20GL%5BAuthor%5D&cauthor=true&cauthor_uid=16146438), [Fisher RS](https://pubmed.ncbi.nlm.nih.gov/?term=Fisher%20RS%5BAuthor%5D&cauthor=true&cauthor_uid=16146438); [Epilepsy Foundation of America Working Group](https://pubmed.ncbi.nlm.nih.gov/?term=Epilepsy%20Foundation%20of%20America%20Working%20Group%5BCorporate%20Author%5D).
 
 #### GPII
@@ -619,7 +620,7 @@ Along with the PEAT tool, is generally recognized to be one of the two "gold sta
 
 Along with the Harding tool, is generally recognized to be one of the two "gold standards" for analyzing flashes.
 
-- [Trace Research and Development Center](https://trace.umd.edu/peat)
+- [Trace Research and Development Center](https://trace.umd.edu/peat/)
 - [Using PEAT To Create Seizureless Web Animations](https://www.useragentman.com/blog/2017/04/02/using-peat-to-create-seizureless-web-animations/)
 
 #### W3C
@@ -631,12 +632,12 @@ Along with the Harding tool, is generally recognized to be one of the two "gold 
 - [Three Flashes or Below Threshold Understanding Success Criterion 2.3.1](https://www.w3.org/WAI/WCAG21/Understanding/three-flashes-or-below-threshold.html) Understanding WCAG 2.1
 - [Understanding Success Criteria 1.4.3: Contrast (Minimum)](https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html)
 - [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/)
-- [Web Animations Mode](https://www.w3.org/TR/web-animations-1/)l W3C Working Draft
+- [Web Animations Model](https://www.w3.org/TR/web-animations-1/) W3C Working Draft
 - [Web Content Accessibility Guidelines (WCAG) 2.0](https://www.w3.org/TR/WCAG20/#relativeluminancedef) definition of relative luminance
 - [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG21/)
 
 ## Contributors:
 
-Heartfelt thanks to Teal; Wayne Dick of the [Low Vision Task Force of the W3C](https://www.w3.org/WAI/GL/low-vision-a11y-tf/); Tom Jewett and Eric Eggert from [Knowbility](https://knowbility.org/); Jim Allan of the [Diagram Center](https://diagramcenter.org/); and Dr. Selim R. Benbadis, Director, [Comprehensive Epilepsy Program and Clinical Neurophysiology Laboratory at USF and TGH in Tampa, Florida](https://health.usf.edu/medicine/neurology/epilepsy) for their great, great assistance and discussions on this topic.
+Heartfelt thanks to Teal; Wayne Dick of the [Low Vision Task Force of the W3C](https://www.w3.org/WAI/GL/task-forces/low-vision-a11y-tf/); Tom Jewett and Eric Eggert from [Knowbility](https://knowbility.org/); Jim Allan of the [Diagram Center](https://diagramcenter.org/); and Dr. Selim R. Benbadis, Director, [Comprehensive Epilepsy Program and Clinical Neurophysiology Laboratory at USF and TGH in Tampa, Florida](https://health.usf.edu/medicine/neurology/epilepsy) for their great, great assistance and discussions on this topic.
 
-We are _all_ in tremendous gratitude to the Trace Research & Development Center for making their amazing tool, the [Photosensitive Epilepsy Analysis Tool (PEAT)](https://trace.umd.edu/peat) for free.
+We are _all_ in tremendous gratitude to the Trace Research & Development Center for making their amazing tool, the [Photosensitive Epilepsy Analysis Tool (PEAT)](https://trace.umd.edu/peat/) for free.

@@ -8,6 +8,7 @@ tags:
   - captions
   - subtitles
 ---
+
 IMSC allows you to add subtitles or captions to your online video. In this article we'll take you through what you need to get started, including basic document structure, and the basics of how to style, time, and position subtitles.
 
 > **Note:** IMSC can be used for any kind of timed text you might want to include on a web document, not just for subtitles and captions. But because subtitles and captions represent the most common use cases for IMSC, we will focus on those. For readability we only use the term subtitles. In the technical context we describe, the term "subtitles" is interchangeable with "captions".
@@ -27,7 +28,7 @@ If you are not already familiar with XML or HTML, read up on them first and then
 
 IMSC is always specified as a complete XML document. As a file it should have the extension "_ttml_".
 
-> **Note:** IMSC does not have native support in browsers at this current moment, but the [imscJS](https://github.com/sandflow/imscJS) polyfill can be used to bridge this gap. All the examples below are rendered by using imscJS. It creates dynamically HTML and CSS from an IMSC  XML document.
+> **Note:** IMSC does not have native support in browsers at this current moment, but the [imscJS](https://github.com/sandflow/imscJS) polyfill can be used to bridge this gap. All the examples below are rendered by using imscJS. It creates dynamically HTML and CSS from an IMSC XML document.
 
 Let's look at a minimal IMSC document and how it is rendered:
 
@@ -236,4 +237,24 @@ The more expanded example below gives you an idea what you can do with IMSC afte
 
 That's it for your crash course in IMSC code basics! We've only really scratched the surface here, and you'll go much deeper into the above topics in subsequent articles.
 
-<section id="Quick_links"><ol><li><a href="/en-US/docs/Related/IMSC/"><strong>IMSC</strong></a></li><li class="toggle"><details open><summary>IMSC guides</summary><ol><li><a href="/en-US/docs/Related/IMSC/Basics">IMSC basics</a></li><li><a href="/en-US/docs/Related/IMSC/Using_the_imscJS_polyfill">Using the imscJS polyfill</a></li><li><a href="/en-US/docs/Related/IMSC/Styling">Styling IMSC documents</a></li><li><a href="/en-US/docs/Related/IMSC/Subtitle_placement">Subtitle placement in IMSC</a></li><li><a href="/en-US/docs/Related/IMSC/Namespaces">Namespaces in IMSC</a></li><li><a href="/en-US/docs/Related/IMSC/Timing_in_IMSC">Timing in IMSC</a></li><li><a href="/en-US/docs/Related/IMSC/Mapping_video_time_codes_to_IMSC">Mapping video time codes to IMSC</a></li><li><a href="/en-US/docs/Related/IMSC/IMSC_and_other_standards">IMSC and other standards</a></li></ol></details></li></ol></section>
+<section id="Quick_links">
+  <ol>
+    <li><a href="/en-US/docs/Related/IMSC/"><strong>IMSC</strong></a></li>
+    <li class="toggle">
+      <details open>
+        <summary>IMSC guides</summary>
+        <ol>
+          <li><a href="/en-US/docs/Related/IMSC/Basics">IMSC basics</a></li>
+          <li><a href="/en-US/docs/Related/IMSC/Using_the_imscJS_polyfill">Using the imscJS polyfill</a></li>
+          <li><a href="/en-US/docs/Related/IMSC/Styling">Styling IMSC documents</a></li>
+          <li><a href="/en-US/docs/Related/IMSC/Subtitle_placement">Subtitle placement in IMSC</a></li>
+          <li><a href="/en-US/docs/Related/IMSC/Namespaces">Namespaces in IMSC</a></li>
+          <li><a href="/en-US/docs/Related/IMSC/Timing_in_IMSC">Timing in IMSC</a></li>
+          <li><a href="/en-US/docs/Related/IMSC/Mapping_video_time_codes_to_IMSC">Mapping video time codes to IMSC</a>
+          </li>
+          <li><a href="/en-US/docs/Related/IMSC/IMSC_and_other_standards">IMSC and other standards</a></li>
+        </ol>
+      </details>
+    </li>
+  </ol>
+</section>

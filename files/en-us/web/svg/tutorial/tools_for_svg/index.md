@@ -7,7 +7,7 @@ tags:
   - SVG
   - Tools
 ---
-{{ PreviousNext("Web/SVG/Tutorial/SVG_Image_Tag") }}
+{{ PreviousNext("Web/SVG/Tutorial/SVG_Image_Tag", "Web/SVG/Tutorial/SVG_and_CSS") }}
 
 Now that we covered the basics of the SVG internals, we will take a look at some tools to work with SVG files.
 
@@ -45,7 +45,7 @@ Several projects exist that can create a raster image from an SVG source. [Image
 
 ## Raphael JS
 
-URL: [raphaeljs.com](http://raphaeljs.com/)
+URL: [raphaeljs.com](https://raphaeljs.com/)
 
 This is a JavaScript library, that acts as an abstraction layer between browser implementations. Notably older versions of Internet Explorer are supported by generating VML, a vector markup language, that is one of two ancestors of SVG and exists since IE 5.5.
 
@@ -71,4 +71,4 @@ In GIS (Geographic Information System) applications SVG is often used as both st
 
 The W3C offers a [list of programs](https://www.w3.org/Graphics/SVG/WG/wiki/Implementations) that support SVG.
 
-{{ PreviousNext("Web/SVG/Tutorial/SVG_Image_Tag") }}
+{{ PreviousNext("Web/SVG/Tutorial/SVG_Image_Tag", "Web/SVG/Tutorial/SVG_and_CSS") }}

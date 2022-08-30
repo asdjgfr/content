@@ -17,7 +17,7 @@ string-length( [string] )
 
 ### Arguments
 
-- _`string`_(optional)
+- `string` (optional)
   - : The string to evaluate. If omitted, string used will be the same as the context node converted to a string.
 
 ### Returns
@@ -26,7 +26,7 @@ An integer equal to the number of characters in the string.
 
 ### Defined
 
-[XPath 1.0 4.2](https://www.w3.org/TR/xpath#function-string-length)
+[XPath 1.0 4.2](https://www.w3.org/TR/1999/REC-xpath-19991116/#function-string-length)
 
 ### Gecko support
 

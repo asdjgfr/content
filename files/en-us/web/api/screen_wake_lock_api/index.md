@@ -1,6 +1,7 @@
 ---
 title: Screen Wake Lock API
 slug: Web/API/Screen_Wake_Lock_API
+page-type: web-api-overview
 tags:
   - API
   - Overview
@@ -9,8 +10,10 @@ tags:
   - Wake Lock
   - WakeLock
   - screen
+  - Experimental
+browser-compat: api.WakeLock
 ---
-{{DefaultAPISidebar("Screen Wake Lock API")}}
+{{DefaultAPISidebar("Screen Wake Lock API")}}{{SeeCompatTable}}
 
 The Screen Wake Lock API provides a way to prevent devices from dimming or locking the screen when an application needs to keep running.
 
@@ -107,7 +110,7 @@ document.addEventListener('visibilitychange', async () => {
 
 ### Putting it all together
 
-You can find the [complete code on GitHub here](https://github.com/mdn/dom-examples/tree/master/screen-wake-lock-api). The [demo](https://mdn.github.io/dom-examples/screen-wake-lock-api/) uses a button to acquire a wake lock and also release it, which in turn updates the UI. The UI also updates if the wake lock is released automatically for any reason. There's a checkbox which when checked, will automatically reacquire the wake lock if the document's visibility state changes and becomes visible again.
+You can find the [complete code on GitHub here](https://github.com/mdn/dom-examples/tree/main/screen-wake-lock-api). The [demo](https://mdn.github.io/dom-examples/screen-wake-lock-api/) uses a button to acquire a wake lock and also release it, which in turn updates the UI. The UI also updates if the wake lock is released automatically for any reason. There's a checkbox which when checked, will automatically reacquire the wake lock if the document's visibility state changes and becomes visible again.
 
 ### Performance considerations
 
@@ -122,13 +125,11 @@ Access to Screen Wake Lock API is controlled by [Feature Policy](/en-US/docs/Web
 
 ## Specifications
 
-| Specification                                                   |
-| --------------------------------------------------------------- |
-| [Screen Wake Lock API](https://w3c.github.io/screen-wake-lock/) |
+{{Specifications}}
 
 ## Browser compatibility
 
-{{Compat("api.WakeLock")}}
+{{Compat}}
 
 ## See also
 

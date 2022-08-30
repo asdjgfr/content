@@ -1,6 +1,7 @@
 ---
 title: WritableStreamDefaultController.error()
 slug: Web/API/WritableStreamDefaultController/error
+page-type: web-api-instance-method
 tags:
   - API
   - Error
@@ -24,22 +25,22 @@ the underlying sink.
 ## Syntax
 
 ```js
-error(e)
+error(message)
 ```
 
 ### Parameters
 
-- e
+- `message`
   - : A string representing the error you want future interactions to
     fail with.
 
 ### Return value
 
-`undefined`.
+None ({{jsxref("undefined")}}).
 
 ### Exceptions
 
-- {{jsxsref("TypeError")}}
+- {{jsxref("TypeError")}}
   - : The stream you are trying to error is not a {{domxref("WritableStream")}}.
 
 ## Examples
@@ -53,13 +54,13 @@ const writableStream = new WritableStream({
     controller.error('My error is broken');
   },
   write(chunk, controller) {
-    ...
+    // ...
   },
   close(controller) {
-    ...
+    // ...
   },
   abort(err) {
-    ...
+    // ...
   }
 });
 ```

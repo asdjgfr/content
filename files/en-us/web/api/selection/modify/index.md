@@ -1,18 +1,18 @@
 ---
 title: Selection.modify()
 slug: Web/API/Selection/modify
+page-type: web-api-instance-method
 tags:
   - API
   - API:Mozilla Extensions
   - API:WebKit Extensions
   - HTML Editing
   - Method
-  - Non-standard
   - Reference
   - Selection
 browser-compat: api.Selection.modify
 ---
-{{APIRef("DOM")}}{{Non-standard_Header}}
+{{APIRef("DOM")}}
 
 The **`Selection.modify()`** method applies a change to the
 current selection or cursor position, using simple textual commands.
@@ -49,6 +49,10 @@ modify(alter, direction, granularity)
 > granularity no longer includes the following space, regardless of the default platform
 > behavior. This makes the behavior more consistent, as well as making it work the same
 > way WebKit used to work, but unfortunately they have recently changed their behavior.
+
+### Return value
+
+None ({{jsxref("undefined")}}).
 
 ## Examples
 
@@ -96,7 +100,7 @@ function modify() {
 
 ### Result
 
-{{EmbedLiveSample("Example", 700, 200)}}
+{{EmbedLiveSample("Examples", 700, 200)}}
 
 ## Specifications
 

@@ -7,9 +7,10 @@ tags:
   - CSS Property
   - Reference
   - recipe:css-property
+  - Experimental
 browser-compat: css.properties.animation-timeline
 ---
-{{CSSRef}}
+{{CSSRef}}{{SeeCompatTable}}
 
 The **`animation-timeline`** [CSS](/en-US/docs/Web/CSS) property specifies the names of one or more {{cssxref("@scroll-timeline")}} at-rules describing the scroll animations to apply to the element.
 
@@ -57,7 +58,7 @@ animation-timeline: unset;
 
 ## Examples
 
-### Simple example
+### Setting a scroll timeline
 
 A scroll timeline named `squareTimeline` is declared and applied to the `#square` element using `animation-timeline: squareTimeline`.
 
@@ -104,7 +105,9 @@ A scroll timeline named `squareTimeline` is declared and applied to the `#square
 
 #### Result
 
-{{EmbedLiveSample("Simple example")}}
+Scroll to see the animation.
+
+{{EmbedLiveSample("Setting a scroll timeline")}}
 
 ## Specifications
 

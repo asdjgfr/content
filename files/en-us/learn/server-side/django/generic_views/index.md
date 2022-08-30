@@ -170,7 +170,7 @@ If `book_list` is not empty, then we iterate through the list of books.
 ```
 
 The condition above only checks for one case, but you can test on additional conditions using the `elif` template tag (e.g. `{% elif var2 %}`).
-For more information about conditional operators see: [if](https://docs.djangoproject.com/en/4.0/ref/templates/builtins/#if), [ifequal/ifnotequal](https://docs.djangoproject.com/en/4.0/ref/templates/builtins/#ifequal-and-ifnotequal), and [ifchanged](https://docs.djangoproject.com/en/4.0/ref/templates/builtins/#ifchanged) in [Built-in template tags and filters](https://docs.djangoproject.com/en/4.0/ref/templates/builtins) (Django Docs).
+For more information about conditional operators see: [if](https://docs.djangoproject.com/en/4.0/ref/templates/builtins/#if), [ifequal/ifnotequal](https://docs.djangoproject.com/en/4.0/ref/templates/builtins/#ifequal-and-ifnotequal), and [ifchanged](https://docs.djangoproject.com/en/4.0/ref/templates/builtins/#ifchanged) in [Built-in template tags and filters](https://docs.djangoproject.com/en/4.0/ref/templates/builtins/) (Django Docs).
 
 #### For loops
 
@@ -289,7 +289,7 @@ The main parts of the syntax you will need to know for declaring the pattern mat
     </tr>
     <tr>
       <td>\d</td>
-      <td>Match a digit (0, 1, 2, ... 9)</td>
+      <td>Match a digit (0, 1, 2, … 9)</td>
     </tr>
     <tr>
       <td>\w</td>
@@ -569,7 +569,8 @@ This method is needed because you declare a `ForeignKey` (one-to many) field onl
 >
 > Last but not least, you should sort by an attribute/column that actually has an index (unique or not) on your database to avoid performance issues. Of course, this will not be necessary here (we are probably getting ahead of ourselves with so few books and users), but it is something worth keeping in mind for future projects.
 
-The second interesting (and non-obvious) thing in the template is where we set a class (`text-success`, `text-danger`, `text-warning`) to color-code the human readable status text for each book instance ("available", "maintenance", etc.). Astute readers will note that the method `BookInstance.get_status_display()` that we use to get the status text does not appear elsewhere in the code.
+The second interesting (and non-obvious) thing in the template is where we display the status text for each book instance ("available", "maintenance", etc.).
+Astute readers will note that the method `BookInstance.get_status_display()` that we use to get the status text does not appear elsewhere in the code.
 
 ```python
  <p class="{% if copy.status == 'a' %}text-success{% elif copy.status == 'm' %}text-danger{% else %}text-warning{% endif %}">
@@ -663,7 +664,7 @@ The pagination links are displayed on the bottom, with next/previous links being
 The challenge in this article is to create the author detail and list views required to complete the project. These should be made available at the following URLs:
 
 - `catalog/authors/` — The list of all authors.
-- `catalog/author/<id>` — The detail view for the specific author with a primary key field named *`<id>`*
+- `catalog/author/<id>` — The detail view for the specific author with a primary key field named `<id>`
 
 The code required for the URL mappers and the views should be virtually identical to the `Book` list and detail views we created above. The templates will be different but will share similar behavior.
 
@@ -698,7 +699,7 @@ In our next articles, we'll extend this library to support user accounts, and th
 - [Built-in class-based generic views](https://docs.djangoproject.com/en/4.0/topics/class-based-views/generic-display/) (Django docs)
 - [Generic display views](https://docs.djangoproject.com/en/4.0/ref/class-based-views/generic-display/) (Django docs)
 - [Introduction to class-based views](https://docs.djangoproject.com/en/4.0/topics/class-based-views/intro/) (Django docs)
-- [Built-in template tags and filters](https://docs.djangoproject.com/en/4.0/ref/templates/builtins) (Django docs)
+- [Built-in template tags and filters](https://docs.djangoproject.com/en/4.0/ref/templates/builtins/) (Django docs)
 - [Pagination](https://docs.djangoproject.com/en/4.0/topics/pagination/) (Django docs)
 - [Making queries > Related objects](https://docs.djangoproject.com/en/4.0/topics/db/queries/#related-objects) (Django docs)
 

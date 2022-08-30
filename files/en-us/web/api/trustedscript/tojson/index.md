@@ -1,6 +1,7 @@
 ---
 title: TrustedScript.toJSON()
 slug: Web/API/TrustedScript/toJSON
+page-type: web-api-instance-method
 tags:
   - API
   - Method
@@ -19,9 +20,13 @@ The **`toJSON()`** method of the {{domxref("TrustedScript")}} interface returns 
 toJSON()
 ```
 
+### Parameters
+
+None.
+
 ### Return value
 
-A {{domxref("DOMString","string")}} containing a JSON representation of the stored data.
+A string containing a JSON representation of the stored data.
 
 ## Examples
 

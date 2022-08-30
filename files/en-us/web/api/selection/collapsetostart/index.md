@@ -1,6 +1,7 @@
 ---
 title: Selection.collapseToStart()
 slug: Web/API/Selection/collapseToStart
+page-type: web-api-instance-method
 tags:
   - API
   - HTML Editing
@@ -23,7 +24,11 @@ collapseToStart()
 
 ### Parameters
 
-_None._
+None.
+
+### Return value
+
+None ({{jsxref("undefined")}}).
 
 ## Specifications
 

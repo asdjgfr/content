@@ -1,6 +1,7 @@
 ---
 title: PerformanceObserver()
 slug: Web/API/PerformanceObserver/PerformanceObserver
+page-type: web-api-constructor
 tags:
   - API
   - Constructor
@@ -21,12 +22,12 @@ registered, via the {{domxref("PerformanceObserver.observe","observe()")}} metho
 ## Syntax
 
 ```js
-new PerformanceObserver(callback);
+new PerformanceObserver(callback)
 ```
 
 ### Parameters
 
-- _`callback`_
+- `callback`
   - : A `PerformanceObserverCallback` callback that will be invoked when
     _observed_ performance events are recorded. When the callback is invoked, its
     first parameter is a {{domxref("PerformanceObserverEntryList","list of performance
@@ -41,9 +42,9 @@ A new {{domxref("PerformanceObserver")}} object which will call the specified
 ## Examples
 
 ```js
-var observer = new PerformanceObserver(function(list, obj) {
-  var entries = list.getEntries();
-  for (var i=0; i < entries.length; i++) {
+const observer = new PerformanceObserver((list, obj) => {
+  const entries = list.getEntries();
+  for (let i=0; i < entries.length; i++) {
     // Process "mark" and "frame" events
   }
 });
@@ -52,7 +53,7 @@ observer.observe({entryTypes: ["mark", "frame"]});
 function perf_observer(list, observer) {
   // Process the "measure" event
 }
-var observer2 = new PerformanceObserver(perf_observer);
+const observer2 = new PerformanceObserver(perf_observer);
 observer2.observe({entryTypes: ["measure"]});
 ```
 

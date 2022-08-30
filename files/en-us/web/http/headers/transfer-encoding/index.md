@@ -20,7 +20,7 @@ user.
 > HTTP 1.1's chunked transfer encoding mechanism, as it provides its own, more efficient,
 > mechanisms for data streaming.
 
-`Transfer-Encoding` is a [hop-by-hop header](/en-US/docs/Web/HTTP/Headers#hbh), that is applied to a
+`Transfer-Encoding` is a [hop-by-hop header](/en-US/docs/Web/HTTP/Headers#hop-by-hop_headers), that is applied to a
 message between two nodes, not to a resource itself. Each segment of a multi-node
 connection can use different `Transfer-Encoding` values. If you want to
 compress data over the whole connection, use the end-to-end
@@ -49,7 +49,7 @@ message.
 
 ## Syntax
 
-```
+```http
 Transfer-Encoding: chunked
 Transfer-Encoding: compress
 Transfer-Encoding: deflate
@@ -95,7 +95,7 @@ total size of the response may not be known until the request has been fully pro
 For example, when generating a large HTML table resulting from a database query or when
 transmitting large images. A chunked response looks like this:
 
-```
+```http
 HTTP/1.1 200 OK
 Content-Type: text/plain
 Transfer-Encoding: chunked

@@ -1,21 +1,23 @@
 ---
 title: VideoFrame.format
 slug: Web/API/VideoFrame/format
+page-type: web-api-instance-property
 tags:
   - API
   - Property
   - Reference
   - format
   - VideoFrame
+  - Experimental
 browser-compat: api.VideoFrame.format
 ---
-{{DefaultAPISidebar("Web Codecs API")}}
+{{APIRef("Web Codecs API")}}{{SeeCompatTable}}
 
 The **`format`** property of the {{domxref("VideoFrame")}} interface returns the pixel format of the `VideoFrame`.
 
 ## Value
 
-A {{domxref("DOMString","string")}} containing a video pixel format, one of:
+A string containing a video pixel format, one of:
 
 - `"I420"`
   - : Also known as *Planar YUV 4:2:0*, this format is composed of three distinct planes, one plane of luma and two planes of chroma, denoted Y, U and V, and present in this order. The U an V planes are sub-sampled horizontally and vertically by a factor of 2 compared to the Y plane. Each sample in this format is 8 bits.

@@ -10,7 +10,7 @@ tags:
   - HTTP
   - Security
   - frame-ancestors
-browser-compat: http.headers.csp.Content-Security-Policy.frame-ancestors
+browser-compat: http.headers.Content-Security-Policy.frame-ancestors
 ---
 {{HTTPSidebar}}
 
@@ -45,7 +45,7 @@ Setting this directive to `'none'` is similar to {{HTTPHeader("X-Frame-Options")
 
 One or more sources can be set for the `frame-ancestors` policy:
 
-```
+```http
 Content-Security-Policy: frame-ancestors <source>;
 Content-Security-Policy: frame-ancestors <source> <source>;
 ```
@@ -71,7 +71,7 @@ Content-Security-Policy: frame-ancestors <source> <source>;
 
   - : A scheme such as `http:` or `https:`. The colon is required and scheme should not be quoted. You can also specify data schemes (not recommended).
 
-    - `data:` Allows [`data:` URIs](/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs) to be used as a content source. _This is insecure; an attacker can also inject arbitrary data: URIs. Use this sparingly and definitely not for scripts._
+    - `data:` Allows [`data:` URLs](/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URLs) to be used as a content source. _This is insecure; an attacker can also inject arbitrary `data:` URLs. Use this sparingly and definitely not for scripts._
     - `mediastream:` Allows [`mediastream:` URIs](/en-US/docs/Web/API/Media_Streams_API) to be used as a content source.
     - `blob:` Allows [`blob:` URIs](/en-US/docs/Web/API/Blob) to be used as a content source.
     - `filesystem:` Allows [`filesystem:` URIs](/en-US/docs/Web/API/FileSystem) to be used as a content source.
@@ -83,7 +83,7 @@ Content-Security-Policy: frame-ancestors <source> <source>;
 
 ## Examples
 
-```
+```http
 Content-Security-Policy: frame-ancestors 'none';
 
 Content-Security-Policy: frame-ancestors 'self' https://www.example.org;

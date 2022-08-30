@@ -1,6 +1,7 @@
 ---
 title: Storage.removeItem()
 slug: Web/API/Storage/removeItem
+page-type: web-api-instance-method
 tags:
   - API
   - Method
@@ -32,7 +33,7 @@ removeItem(keyName)
 
 ### Return value
 
-{{jsxref("undefined")}}.
+None ({{jsxref("undefined")}}).
 
 ## Examples
 
@@ -73,5 +74,4 @@ function populateStorage() {
 
 ## See also
 
-[Using the Web
-Storage API](/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API)
+[Using the Web Storage API](/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API)

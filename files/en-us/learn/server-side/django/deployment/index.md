@@ -67,7 +67,7 @@ Other hosting providers support Django as part of a _Platform as a Service_ (Paa
 
 Some developers will choose the increased flexibility provided by IaaS over PaaS, while others will appreciate the reduced maintenance overhead and easier scaling of PaaS. When you're getting started, setting up your website on a PaaS system is much easier, and so that is what we'll do in this tutorial.
 
-> **Note:** If you choose a Python/Django-friendly hosting provider they should provide instructions on how to set up a Django website using different configurations of webserver, application server, reverse proxy, etc (this won't be relevant if you choose a PaaS). For example, there are many step-by-step guides for various configurations in the [Digital Ocean Django community docs](https://www.digitalocean.com/community/tutorials?q=django).
+> **Note:** If you choose a Python/Django-friendly hosting provider they should provide instructions on how to set up a Django website using different configurations of webserver, application server, reverse proxy, etc. (this won't be relevant if you choose a PaaS). For example, there are many step-by-step guides for various configurations in the [Digital Ocean Django community docs](https://www.digitalocean.com/community/tutorials?q=django).
 
 ## Choosing a hosting provider
 
@@ -100,7 +100,7 @@ The [Django skeleton website](/en-US/docs/Learn/Server-side/Django/skeleton_webs
 The critical settings that you must check are:
 
 - `DEBUG`. This should be set as `False` in production (`DEBUG = False`). This stops the sensitive/confidential debug trace and variable information from being displayed.
-- `SECRET_KEY`. This is a large random value used for CSRF protection etc. It is important that the key used in production is not in source control or accessible outside the production server. The Django documents suggest that this might best be loaded from an environment variable or read from a server-only file.
+- `SECRET_KEY`. This is a large random value used for CSRF protection, etc. It is important that the key used in production is not in source control or accessible outside the production server. The Django documents suggest that this might best be loaded from an environment variable or read from a server-only file.
 
   ```python
   # Read SECRET_KEY from an environment variable
@@ -175,7 +175,7 @@ While Heroku is perfect for hosting this demonstration it may not be perfect for
 
 Heroku runs Django websites within one or more "[Dynos](https://devcenter.heroku.com/articles/dynos)", which are isolated, virtualized Unix containers that provide the environment required to run an application. The dynos are completely isolated and have an _ephemeral_ file system (a short-lived file system that is cleaned/emptied every time the dyno restarts). The only thing that dynos share by default are application [configuration variables](https://devcenter.heroku.com/articles/config-vars). Heroku internally uses a load balancer to distribute web traffic to all "web" dynos. Since nothing is shared between them, Heroku can scale an app horizontally by adding more dynos (though of course you may also need to scale your database to accept additional connections).
 
-Because the file system is ephemeral you can't install services required by your application directly (e.g. databases, queues, caching systems, storage, email services, etc). Instead Heroku web applications use backing services provided as independent "add-ons" by Heroku or 3rd parties. Once attached to your web application, the dynos access the services using information contained in application configuration variables.
+Because the file system is ephemeral you can't install services required by your application directly (e.g. databases, queues, caching systems, storage, email services, etc.). Instead Heroku web applications use backing services provided as independent "add-ons" by Heroku or 3rd parties. Once attached to your web application, the dynos access the services using information contained in application configuration variables.
 
 In order to execute your application Heroku needs to be able to set up the appropriate environment and dependencies, and also understand how it is launched. For Django apps we provide this information in a number of text files:
 
@@ -213,7 +213,7 @@ There are a lot of ways to work with git, but one of the easiest is to first set
 
 4. Press **Create repository**.
 5. Click the green "**Clone or download**" button on your new repo page.
-6. Copy the URL value from the text field inside the dialog box that appears (it should be something like: **https\://github.com/_\<your_git_user_id>_/django_local_library.git**).
+6. Copy the URL value from the text field inside the dialog box that appears (it should be something like: `https://github.com/<your_git_user_id>/django_local_library`.git**).
 
 Now that the repository ("repo") is created we are going to want to clone it on our local computer:
 
@@ -312,7 +312,7 @@ While we won't need _Gunicorn_ to serve our LocalLibrary application during deve
 
 Install _Gunicorn_ locally on the command line using _pip_ (which we installed when [setting up the development environment](/en-US/docs/Learn/Server-side/Django/development_environment)):
 
-> **Note:** Make sure that you're in your Python virtual environment (use the `workon [name-of-virtual-environment]` command) before you install _Gunicorn_ and further modules with *pip*, or you might experience problems with importing these modules in your **/locallibrary/settings.py** file in the later sections.
+> **Note:** Make sure that you're in your Python virtual environment (use the `workon [name-of-virtual-environment]` command) before you install _Gunicorn_ and further modules with _pip_, or you might experience problems with importing these modules in your **/locallibrary/settings.py** file in the later sections.
 
 ```bash
 pip3 install gunicorn
@@ -324,14 +324,14 @@ We can't use the default SQLite database on Heroku because it is file-based, and
 
 The Heroku mechanism for handling this situation is to use a [database add-on](https://elements.heroku.com/addons#data-stores) and configure the web application using information from an environment [configuration variable](https://devcenter.heroku.com/articles/config-vars), set by the add-on. There are quite a lot of database options, but we'll use the [hobby tier](https://devcenter.heroku.com/articles/heroku-postgres-plans#plan-tiers) of the _Heroku postgres_ database as this is free, supported by Django, and automatically added to our new Heroku apps when using the free hobby dyno plan tier.
 
-The database connection information is supplied to the web dyno using a configuration variable named `DATABASE_URL`. Rather than hard-coding this information into Django, Heroku recommends that developers use the [dj-database-url](https://warehouse.python.org/project/dj-database-url/) package to parse the `DATABASE_URL` environment variable and automatically convert it to Django's desired configuration format. In addition to installing the _dj-database-url_ package we'll also need to install [psycopg2](https://www.psycopg.org/), as Django needs this to interact with Postgres databases.
+The database connection information is supplied to the web dyno using a configuration variable named `DATABASE_URL`. Rather than hard-coding this information into Django, Heroku recommends that developers use the [dj-database-url](https://pypi.org/project/dj-database-url/) package to parse the `DATABASE_URL` environment variable and automatically convert it to Django's desired configuration format. In addition to installing the _dj-database-url_ package we'll also need to install [psycopg2](https://www.psycopg.org/), as Django needs this to interact with Postgres databases.
 
 ##### dj-database-url (Django database configuration from environment variable)
 
 Install _dj-database-url_ locally so that it becomes part of our [requirements](#requirements) for Heroku to set up on the remote server:
 
 ```bash
-$ pip3 install dj-database-url
+pip3 install dj-database-url
 ```
 
 ##### settings.py
@@ -371,7 +371,7 @@ During development we used Django and the Django development web server to serve
 
 > **Note:** Serving static files via Django/web application is inefficient because the requests have to pass through unnecessary additional code (Django) rather than being handled directly by the web server or a completely separate CDN. While this doesn't matter for local use during development, it would have a significant performance impact if we were to use the same approach in production.
 
-To make it easy to host static files separately from the Django web application, Django provides the *collectstatic* tool to collect these files for deployment (there is a settings variable that defines where the files should be collected when _collectstatic_ is run). Django templates refer to the hosting location of the static files relative to a settings variable (`STATIC_URL`), so that this can be changed if the static files are moved to another host/server.
+To make it easy to host static files separately from the Django web application, Django provides the _collectstatic_ tool to collect these files for deployment (there is a settings variable that defines where the files should be collected when _collectstatic_ is run). Django templates refer to the hosting location of the static files relative to a settings variable (`STATIC_URL`), so that this can be changed if the static files are moved to another host/server.
 
 The relevant setting variables are:
 
@@ -394,15 +394,15 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 STATIC_URL = '/static/'
 ```
 
-We'll actually do the file serving using a library called [WhiteNoise](https://warehouse.python.org/project/whitenoise/), which we install and configure in the next section.
+We'll actually do the file serving using a library called [WhiteNoise](https://pypi.org/project/whitenoise/), which we install and configure in the next section.
 
 For more information, see [Django and Static Assets](https://devcenter.heroku.com/articles/django-assets) (Heroku docs).
 
 #### Whitenoise
 
-There are many ways to serve static files in production (we saw the relevant Django settings in the previous sections). Heroku recommends using the [WhiteNoise](https://warehouse.python.org/project/whitenoise/) project for serving of static assets directly from Gunicorn in production.
+There are many ways to serve static files in production (we saw the relevant Django settings in the previous sections). Heroku recommends using the [WhiteNoise](https://pypi.org/project/whitenoise/) project for serving of static assets directly from Gunicorn in production.
 
-> **Note:** Heroku automatically calls _collectstatic_ and prepares your static files for use by WhiteNoise after it uploads your application. Check out [WhiteNoise](https://warehouse.python.org/project/whitenoise/) documentation for an explanation of how it works and why the implementation is a relatively efficient method for serving these files.
+> **Note:** Heroku automatically calls _collectstatic_ and prepares your static files for use by WhiteNoise after it uploads your application. Check out [WhiteNoise](https://pypi.org/project/whitenoise/) documentation for an explanation of how it works and why the implementation is a relatively efficient method for serving these files.
 
 The steps to set up _WhiteNoise_ to use with the project are [given here](https://whitenoise.evans.io/en/stable/django.html) (and reproduced below):
 
@@ -411,7 +411,7 @@ The steps to set up _WhiteNoise_ to use with the project are [given here](https:
 Install whitenoise locally using the following command:
 
 ```bash
-$ pip3 install whitenoise
+pip3 install whitenoise
 ```
 
 ##### settings.py
@@ -435,7 +435,7 @@ Optionally, you can reduce the size of the static files when they are served (th
 
 ```python
 # Simplified static file serving.
-# https://warehouse.python.org/project/whitenoise/
+# https://pypi.org/project/whitenoise/
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 ```
 

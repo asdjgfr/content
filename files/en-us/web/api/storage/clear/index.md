@@ -1,6 +1,7 @@
 ---
 title: Storage.clear()
 slug: Web/API/Storage/clear
+page-type: web-api-instance-method
 tags:
   - API
   - Method
@@ -20,9 +21,13 @@ interface clears all keys stored in a given `Storage` object.
 clear()
 ```
 
+### Parameters
+
+None.
+
 ### Return value
 
-{{jsxref("undefined")}}.
+None ({{jsxref("undefined")}}).
 
 ## Examples
 
@@ -51,5 +56,4 @@ function populateStorage() {
 
 ## See also
 
-[Using the Web
-Storage API](/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API)
+[Using the Web Storage API](/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API)

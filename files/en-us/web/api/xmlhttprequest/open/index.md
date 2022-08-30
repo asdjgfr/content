@@ -1,6 +1,7 @@
 ---
 title: XMLHttpRequest.open()
 slug: Web/API/XMLHttpRequest/open
+page-type: web-api-instance-method
 tags:
   - API
   - HTTP
@@ -59,6 +60,10 @@ open(method, url, async, user, password)
   - : The optional password to use for authentication purposes; by default, this is the
     `null` value.
 
+### Return value
+
+None ({{jsxref("undefined")}}).
+
 ## Specifications
 
 {{Specifications}}
@@ -69,9 +74,8 @@ open(method, url, async, user, password)
 
 ## See also
 
-- [Using
-  XMLHttpRequest](/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest)
+- [Using XMLHttpRequest](/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest)
 - Related {{domxref("XMLHttpRequest")}} methods:
   {{domxref("XMLHttpRequest.setRequestHeader",
-    "setRequestHeader()")}},{{domxref("XMLHttpRequest.send", "send()")}}, and
+    "setRequestHeader()")}}, {{domxref("XMLHttpRequest.send", "send()")}}, and
   {{domxref("XMLHttpRequest.abort", "abort()")}}
