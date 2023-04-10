@@ -1,10 +1,8 @@
 ---
-title: Event.preventDefault()
+title: "Event: preventDefault() method"
+short-title: preventDefault()
 slug: Web/API/Event/preventDefault
 page-type: web-api-instance-method
-tags:
-  - Method
-  - Reference
 browser-compat: api.Event.preventDefault
 ---
 
@@ -25,8 +23,8 @@ non-cancelable event, such as one dispatched via
 
 ## Syntax
 
-```js
-event.preventDefault();
+```js-nolint
+event.preventDefault()
 ```
 
 ## Examples

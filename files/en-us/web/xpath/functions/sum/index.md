@@ -1,10 +1,8 @@
 ---
 title: sum
 slug: Web/XPath/Functions/sum
-tags:
-  - XSLT
-  - XSLT_Reference
 ---
+
 {{ XsltRef() }}
 
 The `sum` function returns a number that is the sum of the numeric values of each node in a given node-set.

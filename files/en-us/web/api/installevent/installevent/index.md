@@ -1,25 +1,21 @@
 ---
-title: InstallEvent()
+title: "InstallEvent: InstallEvent() constructor"
+short-title: InstallEvent()
 slug: Web/API/InstallEvent/InstallEvent
 page-type: web-api-constructor
-tags:
-  - API
-  - Constructor
-  - InstallEvent
-  - Reference
-  - Service Workers
-  - ServiceWorker
-  - Deprecated
-  - Non-standard
+status:
+  - deprecated
+  - non-standard
 browser-compat: api.InstallEvent.InstallEvent
 ---
+
 {{APIRef("Service Workers API")}}{{Deprecated_Header}}{{Non-standard_header}}
 
 The **`InstallEvent()`** constructor creates a new {{domxref("InstallEvent")}} object.
 
 ## Syntax
 
-```js
+```js-nolint
 new InstallEvent(type, options)
 ```
 

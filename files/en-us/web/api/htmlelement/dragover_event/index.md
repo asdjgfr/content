@@ -1,18 +1,11 @@
 ---
-title: 'HTMLElement: dragover event'
+title: "HTMLElement: dragover event"
+short-title: dragover
 slug: Web/API/HTMLElement/dragover_event
 page-type: web-api-event
-tags:
-  - API
-  - DOM
-  - HTMLElement
-  - DragEvent
-  - Event
-  - Reference
-  - Web
-  - drag and drop
 browser-compat: api.HTMLElement.dragover_event
 ---
+
 {{APIRef}}
 
 The `dragover` event is fired when an element or text selection is being dragged over a valid drop target (every few hundred milliseconds).
@@ -24,9 +17,9 @@ The event is fired on the drop target(s).
 Use the event name in methods like {{domxref("EventTarget.addEventListener", "addEventListener()")}}, or set an event handler property.
 
 ```js
-addEventListener('dragover', (event) => {});
+addEventListener("dragover", (event) => {});
 
-ondragover = (event) => { };
+ondragover = (event) => {};
 ```
 
 ## Event type
@@ -60,9 +53,7 @@ For a more complete example of drag and drop, see the page for the [`drag`](/en-
 
 ```html
 <div class="dropzone">
-  <div id="draggable" draggable="true">
-    This div is draggable
-  </div>
+  <div id="draggable" draggable="true">This div is draggable</div>
 </div>
 <div class="dropzone" id="droptarget"></div>
 ```

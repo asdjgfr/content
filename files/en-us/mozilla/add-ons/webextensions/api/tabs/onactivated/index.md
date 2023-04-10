@@ -1,25 +1,17 @@
 ---
 title: tabs.onActivated
 slug: Mozilla/Add-ons/WebExtensions/API/tabs/onActivated
-tags:
-  - API
-  - Add-ons
-  - Event
-  - Extensions
-  - Non-standard
-  - Reference
-  - WebExtensions
-  - onActivated
-  - tabs
+page-type: webextension-api-event
 browser-compat: webextensions.api.tabs.onActivated
 ---
+
 {{AddonSidebar()}}
 
 Fires when the active tab in a window changes. Note that the tab's URL may not be set at the time this event fired, but you can listen to {{WebExtAPIRef("tabs.onUpdated")}} events to be notified when a URL is set.
 
 ## Syntax
 
-```js
+```js-nolint
 browser.tabs.onActivated.addListener(listener)
 browser.tabs.onActivated.removeListener(listener)
 browser.tabs.onActivated.hasListener(listener)
@@ -43,7 +35,7 @@ Events have three functions:
   - : Function that will be called when this event occurs. The function will be passed the following arguments:
 
     - `activeInfo`
-      - : [`object`](#activeinfo). ID of the tab that was made active, and ID of its window.
+      - : `object`. ID of the tab that was made active, and ID of its window. See the [activeInfo](#activeinfo_2) section for more details.
 
 ## Additional objects
 

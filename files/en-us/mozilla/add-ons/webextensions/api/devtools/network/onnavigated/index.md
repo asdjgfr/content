@@ -1,23 +1,17 @@
 ---
 title: devtools.network.onNavigated
 slug: Mozilla/Add-ons/WebExtensions/API/devtools/network/onNavigated
-tags:
-  - API
-  - Add-ons
-  - Extensions
-  - Reference
-  - Event
-  - WebExtensions
-  - devtools.network
+page-type: webextension-api-event
 browser-compat: webextensions.api.devtools.network.onNavigated
 ---
+
 {{AddonSidebar()}}
 
 Fired when the user navigates the inspected window to a new page.
 
 ## Syntax
 
-```js
+```js-nolint
 browser.devtools.network.onNavigated.addListener(listener)
 browser.devtools.network.onNavigated.removeListener(listener)
 browser.devtools.network.onNavigated.hasListener(listener)
@@ -60,8 +54,6 @@ browser.devtools.network.onNavigated.addListener(handleNavigated);
 {{WebExtExamples}}
 
 > **Note:** This API is based on Chromium's [`chrome.devtools`](https://developer.chrome.com/docs/extensions/mv3/devtools/) API.
->
-> Microsoft Edge compatibility data is supplied by Microsoft Corporation and is included here under the Creative Commons Attribution 3.0 United States License.
 
 <!--
 // Copyright 2015 The Chromium Authors. All rights reserved.

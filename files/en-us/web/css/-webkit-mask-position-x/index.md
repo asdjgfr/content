@@ -1,15 +1,12 @@
 ---
-title: '-webkit-mask-position-x'
+title: "-webkit-mask-position-x"
 slug: Web/CSS/-webkit-mask-position-x
-tags:
-  - CSS
-  - CSS Masking
-  - CSS Property
-  - Non-standard
-  - Reference
-  - recipe:css-property
+page-type: css-property
+status:
+  - non-standard
 browser-compat: css.properties.-webkit-mask-position-x
 ---
+
 {{CSSRef}}{{Non-standard_header}}
 
 The `-webkit-mask-position-x` CSS property sets the initial horizontal position of a mask image.
@@ -34,6 +31,8 @@ The `-webkit-mask-position-x` CSS property sets the initial horizontal position 
 /* Global values */
 -webkit-mask-position-x: inherit;
 -webkit-mask-position-x: initial;
+-webkit-mask-position-x: revert;
+-webkit-mask-position-x: revert-layer;
 -webkit-mask-position-x: unset;
 ```
 
@@ -89,4 +88,4 @@ Not part of any standard.
 
 ## See also
 
-{{cssxref("-webkit-mask-position")}}, {{cssxref("-webkit-mask-position-y")}}, {{cssxref("-webkit-mask-origin")}}, {{cssxref("-webkit-mask-attachment")}}
+{{cssxref("mask-position", "-webkit-mask-position")}}, {{cssxref("-webkit-mask-position-y")}}, {{cssxref("mask-origin", "-webkit-mask-origin")}}, {{cssxref("-webkit-mask-attachment")}}

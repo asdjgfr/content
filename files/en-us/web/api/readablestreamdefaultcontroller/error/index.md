@@ -1,16 +1,11 @@
 ---
-title: ReadableStreamDefaultController.error()
+title: "ReadableStreamDefaultController: error() method"
+short-title: error()
 slug: Web/API/ReadableStreamDefaultController/error
 page-type: web-api-instance-method
-tags:
-  - API
-  - Error
-  - Method
-  - ReadableStreamDefaultController
-  - Reference
-  - Streams
 browser-compat: api.ReadableStreamDefaultController.error
 ---
+
 {{APIRef("Streams")}}
 
 The **`error()`** method of the
@@ -22,7 +17,7 @@ with the associated stream to error.
 
 ## Syntax
 
-```js
+```js-nolint
 error(e)
 ```
 

@@ -1,16 +1,13 @@
 ---
-title: Presentation.defaultRequest
+title: "Presentation: defaultRequest property"
+short-title: defaultRequest
 slug: Web/API/Presentation/defaultRequest
 page-type: web-api-instance-property
-tags:
-  - API
-  - Presentation
-  - Property
-  - Reference
-  - Web
-  - Experimental
+status:
+  - experimental
 browser-compat: api.Presentation.defaultRequest
 ---
+
 {{APIRef("Presentation API")}}{{SeeCompatTable}}{{SecureContext_Header}}
 
 In a [controlling user agent](https://www.w3.org/TR/presentation-api/#dfn-controlling-user-agent), the **`defaultRequest`** attribute _MUST_ return the [default presentation request](https://www.w3.org/TR/presentation-api/#dfn-default-presentation-request) if any, otherwise `null`. In a [receiving browsing context](https://www.w3.org/TR/presentation-api/#dfn-receiving-browsing-context), it _MUST_ return `null`.

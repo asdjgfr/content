@@ -1,17 +1,13 @@
 ---
-title: 'XRSession: visibilitychange event'
+title: "XRSession: visibilitychange event"
+short-title: visibilitychange
 slug: Web/API/XRSession/visibilitychange_event
 page-type: web-api-event
-tags:
-  - API
-  - Event
-  - Reference
-  - WebXR
-  - XR
-  - XRSession
-  - Experimental
+status:
+  - experimental
 browser-compat: api.XRSession.visibilitychange_event
 ---
+
 {{APIRef("WebXR Device API")}}{{SeeCompatTable}}
 
 The **`visibilitychange`** event is sent to an {{domxref("XRSession")}} to inform it when it becomes visible or hidden, or when it becomes visible but not currently focused. Upon receiving the event, you can check the value of the session's {{domxref("XRSession.visibilityState", "visibilityState")}} property to determine the new visibility state.

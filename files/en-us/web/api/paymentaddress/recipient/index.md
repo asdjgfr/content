@@ -1,19 +1,14 @@
 ---
-title: PaymentAddress.recipient
+title: "PaymentAddress: recipient property"
+short-title: recipient
 slug: Web/API/PaymentAddress/recipient
 page-type: web-api-instance-property
-tags:
-  - API
-  - Payment Request
-  - Payment Request API
-  - PaymentRequest
-  - Property
-  - Reference
-  - paymentAddress
-  - Deprecated
-  - Non-standard
+status:
+  - deprecated
+  - non-standard
 browser-compat: api.PaymentAddress.recipient
 ---
+
 {{APIRef("Payment Request API")}}{{Deprecated_Header}}{{Non-standard_Header}}
 
 The read-only **`recipient`** property of the

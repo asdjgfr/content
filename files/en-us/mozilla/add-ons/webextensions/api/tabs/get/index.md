@@ -1,18 +1,10 @@
 ---
 title: tabs.get()
 slug: Mozilla/Add-ons/WebExtensions/API/tabs/get
-tags:
-  - API
-  - Add-ons
-  - Extensions
-  - Method
-  - Non-standard
-  - Reference
-  - WebExtensions
-  - get
-  - tabs
+page-type: webextension-api-function
 browser-compat: webextensions.api.tabs.get
 ---
+
 {{AddonSidebar()}}
 
 Given a tab ID, get the tab's details as a {{WebExtAPIRef("tabs.Tab")}} object.
@@ -21,7 +13,7 @@ This is an asynchronous function that returns a [`Promise`](/en-US/docs/Web/Java
 
 ## Syntax
 
-```js
+```js-nolint
 let getting = browser.tabs.get(
   tabId              // integer
 )

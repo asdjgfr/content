@@ -1,16 +1,12 @@
 ---
-title: '@property'
+title: "@property"
 slug: Web/CSS/@property
-tags:
-  - At-rule
-  - CSS
-  - Reference
-  - Web
-  - Property
-  - Houdini
-  - Experimental
+page-type: css-at-rule
+status:
+  - experimental
 browser-compat: css.at-rules.property
 ---
+
 {{CSSRef}}{{SeeCompatTable}}
 
 The **`@property`** [CSS](/en-US/docs/Web/CSS) [at-rule](/en-US/docs/Web/CSS/At-rule) is part of the [CSS Houdini](/en-US/docs/Web/Guide/Houdini) umbrella of APIs, it allows developers to explicitly define their {{cssxref('--*', 'CSS custom properties')}}, allowing for property type checking, setting default values, and define whether a property can inherit values or not.
@@ -21,7 +17,7 @@ The `@property` rule represents a custom property registration directly in a sty
 
 ```css
 @property --property-name {
-  syntax: '<color>';
+  syntax: "<color>";
   inherits: false;
   initial-value: #c0ffee;
 }
@@ -50,7 +46,7 @@ Using [CSS](/en-US/docs/Web/CSS) {{cssxref('@property')}} [at-rule](/en-US/docs/
 
 ```css
 @property --my-color {
-  syntax: '<color>';
+  syntax: "<color>";
   inherits: false;
   initial-value: #c0ffee;
 }
@@ -60,20 +56,16 @@ Using [JavaScript](/en-US/docs/Web/JavaScript) {{domxref('CSS.registerProperty')
 
 ```js
 window.CSS.registerProperty({
-  name: '--my-color',
-  syntax: '<color>',
+  name: "--my-color",
+  syntax: "<color>",
   inherits: false,
-  initialValue: '#c0ffee',
+  initialValue: "#c0ffee",
 });
 ```
 
 ## Formal syntax
 
-```
-@property <custom-property-name> {
-  <declaration-list>
-}
-```
+{{csssyntax}}
 
 ## Specifications
 

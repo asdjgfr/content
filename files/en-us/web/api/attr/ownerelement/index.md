@@ -1,13 +1,11 @@
 ---
-title: Attr.ownerElement
+title: "Attr: ownerElement property"
+short-title: ownerElement
 slug: Web/API/Attr/ownerElement
 page-type: web-api-instance-property
-tags:
-  - Property
-  - Reference
-  - Read-only
 browser-compat: api.Attr.ownerElement
 ---
+
 {{APIRef("DOM")}}
 
 The read-only **`ownerElement`** property of the {{domxref("Attr")}} interface returns the {{domxref("Element")}} the attribute belongs to.

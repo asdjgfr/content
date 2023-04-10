@@ -2,17 +2,10 @@
 title: devtools.panels.ElementsPanel.setExpression()
 slug: >-
   Mozilla/Add-ons/WebExtensions/API/devtools/panels/ExtensionSidebarPane/setExpression
-tags:
-  - API
-  - Add-ons
-  - Extensions
-  - Method
-  - Reference
-  - WebExtensions
-  - devtools.panels
-  - setExpression
+page-type: webextension-api-function
 browser-compat: webextensions.api.devtools.panels.ExtensionSidebarPane.setExpression
 ---
+
 {{AddonSidebar()}}
 
 Evaluates an expression in the context of the inspected page, and displays the result in the extension sidebar pane.
@@ -25,7 +18,7 @@ This is an asynchronous function that returns a [`Promise`](/en-US/docs/Web/Java
 
 ## Syntax
 
-```js
+```js-nolint
 let evaluating = browser.devtools.panels.setExpression(
   expression,       // string
   rootTitle         // string

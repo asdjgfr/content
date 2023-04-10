@@ -1,13 +1,9 @@
 ---
 title: CSS reference
 slug: Web/CSS/Reference
-tags:
-  - CSS
-  - Guide
-  - Overview
-  - Reference
-  - l10n:priority
+page-type: landing-page
 ---
+
 {{CSSRef}}
 
 Use this **CSS reference** to browse an [alphabetical index](#index) of all of the standard [CSS](/en-US/docs/Web/CSS) properties, [pseudo-classes](/en-US/docs/Web/CSS/Pseudo-classes), [pseudo-elements](/en-US/docs/Web/CSS/Pseudo-elements), [data types](/en-US/docs/Web/CSS/CSS_Types), [functional notations](/en-US/docs/Web/CSS/CSS_Functions) and [at-rules](/en-US/docs/Web/CSS/At-rule). You can also browse [key CSS concepts](#concepts) and a list of [selectors organized by type](#selectors). Also included is a brief [DOM-CSS / CSSOM reference](#dom-css_cssom).
@@ -23,7 +19,7 @@ style-rule ::=
     }
 ```
 
-Where :
+Where:
 
 ```css
 selectors-list ::=
@@ -56,7 +52,7 @@ As the structure of at-rules varies widely, please see [At-rule](/en-US/docs/Web
 
 ## Index
 
-> **Note:** The property names in this index do **not** include the [JavaScript names](/en-US/docs/Web/CSS/CSS_Properties_Reference) where they differ from the CSS standard names.
+> **Note:** The property names in this index do **not** include the JavaScript names which do differ from the CSS standard names.
 
 {{CSS_Ref}}
 
@@ -113,7 +109,7 @@ Combinators are selectors that establish a relationship between two or more simp
 - [At-rules](/en-US/docs/Web/CSS/At-rule)
 - [Cascade](/en-US/docs/Web/CSS/Cascade)
 - [Comments](/en-US/docs/Web/CSS/Comments)
-- [Descriptor](</en-US/docs/Glossary/Descriptor_(CSS)>)
+- [Descriptor](/en-US/docs/Glossary/CSS_Descriptor)
 - [Inheritance](/en-US/docs/Web/CSS/inheritance)
 - [Shorthand properties](/en-US/docs/Web/CSS/Shorthand_properties)
 - [Specificity](/en-US/docs/Web/CSS/Specificity)
@@ -163,7 +159,6 @@ Combinators are selectors that establish a relationship between two or more simp
 
 - [Mozilla CSS extensions](/en-US/docs/Web/CSS/Mozilla_Extensions) (prefixed with `-moz-`)
 - [WebKit CSS extensions](/en-US/docs/Web/CSS/WebKit_Extensions) (mostly prefixed with `-webkit-`)
-- [Microsoft CSS extensions](/en-US/docs/Web/CSS/Microsoft_Extensions) (prefixed with `-ms-`)
 
 ## External Links
 

@@ -1,18 +1,10 @@
 ---
 title: menus.OnClickData
 slug: Mozilla/Add-ons/WebExtensions/API/menus/OnClickData
-tags:
-  - API
-  - Add-ons
-  - Extensions
-  - Non-standard
-  - OnClickData
-  - Reference
-  - Type
-  - WebExtensions
-  - contextMenus
+page-type: webextension-api-type
 browser-compat: webextensions.api.menus.OnClickData
 ---
+
 {{AddonSidebar()}}
 
 Information passed to the {{WebExtAPIRef("menus.onClicked")}} event listener when a menu item is clicked.

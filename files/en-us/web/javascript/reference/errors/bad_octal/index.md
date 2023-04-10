@@ -1,13 +1,9 @@
 ---
-title: 'Warning: 08/09 is not a legal ECMA-262 octal constant'
+title: "Warning: 08/09 is not a legal ECMA-262 octal constant"
 slug: Web/JavaScript/Reference/Errors/Bad_octal
-tags:
-  - Error
-  - Errors
-  - JavaScript
-  - SyntaxError
-  - Warning
+page-type: javascript-error
 ---
+
 {{jsSidebar("Errors")}}
 
 The JavaScript warning "08 (or 09) is not a legal ECMA-262 octal constant" occurs when
@@ -53,7 +49,7 @@ for more information.
 
 Use a leading zero followed by the letter "o";
 
-```js example-good
+```js-nolint example-good
 0O755;
 0o644;
 ```

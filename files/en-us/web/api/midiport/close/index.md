@@ -1,15 +1,11 @@
 ---
-title: MIDIPort.close()
+title: "MIDIPort: close() method"
+short-title: close()
 slug: Web/API/MIDIPort/close
 page-type: web-api-instance-method
-tags:
-  - API
-  - Method
-  - Reference
-  - close
-  - MIDIPort
 browser-compat: api.MIDIPort.close
 ---
+
 {{securecontext_header}}{{DefaultAPISidebar("Web MIDI API")}}
 
 The **`close()`** method of the {{domxref("MIDIPort")}} interface makes the access to the MIDI device connected to this `MIDIPort` unavailable.
@@ -18,7 +14,7 @@ If the port is successfully closed a new {{domxref("MIDIConnectionEvent")}} is q
 
 ## Syntax
 
-```js
+```js-nolint
 close()
 ```
 

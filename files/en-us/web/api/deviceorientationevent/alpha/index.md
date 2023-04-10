@@ -1,17 +1,11 @@
 ---
-title: DeviceOrientationEvent.alpha
+title: "DeviceOrientationEvent: alpha property"
+short-title: alpha
 slug: Web/API/DeviceOrientationEvent/alpha
 page-type: web-api-instance-property
-tags:
-  - API
-  - DeviceOrientation API
-  - NeedsBetterSpecLink
-  - NeedsExample
-  - NeedsMarkupWork
-  - Property
-  - Reference
 browser-compat: api.DeviceOrientationEvent.alpha
 ---
+
 {{ ApiRef("Device Orientation Events") }}
 
 Returns the rotation of the device around the Z axis; that is, the number of degrees by

@@ -1,15 +1,11 @@
 ---
 title: Pragma
 slug: Web/HTTP/Headers/Pragma
-tags:
-  - Caching
-  - Deprecated
-  - HTTP
-  - HTTP Header
-  - Request header
-  - Response header
+status:
+  - deprecated
 browser-compat: http.headers.Pragma
 ---
+
 {{HTTPSidebar}}{{Deprecated_Header}}
 
 The **`Pragma`** HTTP/1.0 general header is an

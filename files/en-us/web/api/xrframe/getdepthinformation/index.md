@@ -1,24 +1,20 @@
 ---
-title: XRFrame.getDepthInformation()
+title: "XRFrame: getDepthInformation() method"
+short-title: getDepthInformation()
 slug: Web/API/XRFrame/getDepthInformation
 page-type: web-api-instance-method
-tags:
-  - API
-  - Method
-  - Reference
-  - AR
-  - XR
-  - WebXR
-  - Experimental
+status:
+  - experimental
 browser-compat: api.XRFrame.getDepthInformation
 ---
+
 {{APIRef("WebXR Device API")}}{{SeeCompatTable}}
 
 The **`getDepthInformation()`** method of the {{domxref("XRFrame")}} interface returns an {{domxref("XRCPUDepthInformation")}} object containing CPU depth information for the active and animated frame.
 
 ## Syntax
 
-```js
+```js-nolint
 getDepthInformation(view)
 ```
 
@@ -36,6 +32,7 @@ An {{domxref("XRCPUDepthInformation")}} object.
 - `NotSupportedError` {{domxref("DOMException")}}
   - : Thrown if `"depth-sensing"` is not in the list of enabled features for this {{domxref("XRSession")}}.
 - `InvalidStateError` {{domxref("DOMException")}}
+
   - : Thrown if:
 
     - the `XRFrame` is not active nor animated. Obtaining depth information is only valid within the {{domxref("XRSession.requestAnimationFrame()", "requestAnimationFrame()")}} callback.

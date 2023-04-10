@@ -2,16 +2,11 @@
 title: PresentationConnectionCloseEvent
 slug: Web/API/PresentationConnectionCloseEvent
 page-type: web-api-interface
-tags:
-  - API
-  - Experimental
-  - Presentation API
-  - PresentationConnectionCloseEvent
-  - PresentationRequest
-  - Reference
-  - events
+status:
+  - experimental
 browser-compat: api.PresentationConnectionCloseEvent
 ---
+
 {{SeeCompatTable}}{{securecontext_header}}{{APIRef("Presentation API")}}
 
 The **`PresentationConnectionCloseEvent`** interface of the [Presentation API](/en-US/docs/Web/API/Presentation_API) is fired on a {{domxref("PresentationConnection")}} when it is closed.
@@ -23,7 +18,7 @@ The **`PresentationConnectionCloseEvent`** interface of the [Presentation API](/
 - {{domxref("PresentationConnectionCloseEvent.PresentationConnectionCloseEvent", "PresentationConnectionCloseEvent()")}} {{Experimental_Inline}}
   - : Creates a new PresentationConnectionCloseEvent.
 
-## Properties
+## Instance properties
 
 - {{DOMxRef("PresentationConnectionCloseEvent.message")}} {{ReadOnlyInline}} {{Experimental_Inline}}
   - : A human-readable message that provides more information about why the connection was closed.

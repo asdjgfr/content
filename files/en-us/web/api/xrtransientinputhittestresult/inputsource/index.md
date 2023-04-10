@@ -1,19 +1,13 @@
 ---
-title: XRTransientInputHitTestResult.inputSource
+title: "XRTransientInputHitTestResult: inputSource property"
+short-title: inputSource
 slug: Web/API/XRTransientInputHitTestResult/inputSource
 page-type: web-api-instance-property
-tags:
-  - API
-  - AR
-  - Augmented Reality
-  - Experimental
-  - Property
-  - Reference
-  - VR
-  - WebXR
-  - WebXR Device API
+status:
+  - experimental
 browser-compat: api.XRTransientInputHitTestResult.inputSource
 ---
+
 {{APIRef("WebXR Device API")}}{{SeeCompatTable}}
 
 The _read-only_ **`inputSource`** property of the {{DOMxRef("XRTransientInputHitTestResult")}} interface represents an {{domxref("XRInputSource")}} object that was used to compute the {{domxref("XRTransientInputHitTestResult.results", "results")}} array.
@@ -39,7 +33,7 @@ function onXRFrame(time, xrFrame) {
     }
   });
  }
- ```
+```
 
 ## Specifications
 

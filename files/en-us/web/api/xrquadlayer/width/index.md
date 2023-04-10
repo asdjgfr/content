@@ -1,19 +1,13 @@
 ---
-title: XRQuadLayer.width
+title: "XRQuadLayer: width property"
+short-title: width
 slug: Web/API/XRQuadLayer/width
 page-type: web-api-instance-property
-tags:
-  - API
-  - Property
-  - Reference
-  - VR
-  - WebXR
-  - WebXR API
-  - WebXR Device API
-  - XR
-  - Experimental
+status:
+  - experimental
 browser-compat: api.XRQuadLayer.width
 ---
+
 {{APIRef("WebXR Device API")}}{{SeeCompatTable}}
 
 The **`width`** property of the {{domxref("XRQuadLayer")}} interface represents the width of the layer in meters.

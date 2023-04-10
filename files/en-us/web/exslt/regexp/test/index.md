@@ -1,18 +1,15 @@
 ---
 title: regexp:test()
 slug: Web/EXSLT/regexp/test
-tags:
-  - EXSLT
-  - NeedsSpecTable
-  - Reference
 ---
+
 {{XSLTRef}}{{QuickLinksWithSubpages("/en-US/docs/Web/EXSLT")}}
 
 `regexp:test()` tests to see whether a string matches a specified regular expression.
 
 ## Syntax
 
-```js
+```js-nolint
 regexp:test(testString, regExpString[, flagsString])
 ```
 

@@ -1,17 +1,13 @@
 ---
 title: async function
 slug: Web/JavaScript/Reference/Statements/async_function
-tags:
-  - Example
-  - Function
-  - JavaScript
-  - Language feature
-  - Statement
+page-type: javascript-statement
 browser-compat: javascript.statements.async_function
 ---
+
 {{jsSidebar("Statements")}}
 
-An async function is a function declared with the `async` keyword, and the `await` keyword is permitted within it. The `async` and `await` keywords enable asynchronous, promise-based behavior to be written in a cleaner style, avoiding the need to explicitly configure promise chains.
+The **`async function`** declaration declares an async function where the `await` keyword is permitted within the function body. The `async` and `await` keywords enable asynchronous, promise-based behavior to be written in a cleaner style, avoiding the need to explicitly configure promise chains.
 
 Async functions may also be defined {{jsxref("Operators/async_function", "as
   expressions", "", 1)}}.
@@ -20,7 +16,7 @@ Async functions may also be defined {{jsxref("Operators/async_function", "as
 
 ## Syntax
 
-```js
+```js-nolint
 async function name(param0) {
   statements
 }
@@ -58,7 +54,7 @@ Async functions can contain zero or more {{jsxref("Operators/await", "await")}} 
 
 > **Note:** The purpose of `async`/`await` is to simplify the syntax
 > necessary to consume promise-based APIs. The behavior
-> of `async`/`await` is similar to combining [generators](/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators) and
+> of `async`/`await` is similar to combining [generators](/en-US/docs/Web/JavaScript/Guide/Iterators_and_generators) and
 > promises.
 
 Async functions always return a promise. If the return value of an async function is
@@ -135,29 +131,29 @@ In the following example, we successively await two promises. Progress moves thr
 function `foo` in three stages.
 
 1. The first line of the body of function `foo` is executed synchronously,
-    with the await expression configured with the pending promise. Progress through
-    `foo` is then suspended and control is yielded back to the function that
-    called `foo`.
+   with the await expression configured with the pending promise. Progress through
+   `foo` is then suspended and control is yielded back to the function that
+   called `foo`.
 2. Some time later, when the first promise has either been fulfilled or rejected,
-    control moves back into `foo`. The result of the first promise fulfillment
-    (if it was not rejected) is returned from the await expression. Here `1` is
-    assigned to `result1`. Progress continues, and the second await expression
-    is evaluated. Again, progress through `foo` is suspended and control is
-    yielded.
+   control moves back into `foo`. The result of the first promise fulfillment
+   (if it was not rejected) is returned from the await expression. Here `1` is
+   assigned to `result1`. Progress continues, and the second await expression
+   is evaluated. Again, progress through `foo` is suspended and control is
+   yielded.
 3. Some time later, when the second promise has either been fulfilled or rejected,
-    control re-enters `foo`. The result of the second promise resolution is
-    returned from the second await expression. Here `2` is assigned to
-    `result2`. Control moves to the return expression (if any). The default
-    return value of `undefined` is returned as the resolution value of the
-    current promise.
+   control re-enters `foo`. The result of the second promise resolution is
+   returned from the second await expression. Here `2` is assigned to
+   `result2`. Control moves to the return expression (if any). The default
+   return value of `undefined` is returned as the resolution value of the
+   current promise.
 
 ```js
 async function foo() {
   const result1 = await new Promise((resolve) =>
-    setTimeout(() => resolve("1"))
+    setTimeout(() => resolve("1")),
   );
   const result2 = await new Promise((resolve) =>
-    setTimeout(() => resolve("2"))
+    setTimeout(() => resolve("2")),
   );
 }
 foo();
@@ -181,6 +177,8 @@ async function foo() {
 }
 foo().catch(() => {}); // Attempt to swallow all errors...
 ```
+
+`async function` declarations are [hoisted](/en-US/docs/Glossary/Hoisting) to the top of their scope and can be called anywhere in their scope.
 
 ## Examples
 
@@ -234,7 +232,7 @@ function concurrentPromise() {
     (messages) => {
       console.log(messages[0]); // slow
       console.log(messages[1]); // fast
-    }
+    },
   );
 }
 

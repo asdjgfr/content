@@ -1,15 +1,11 @@
 ---
-title: WorkerNavigator.connection
+title: "WorkerNavigator: connection property"
+short-title: connection
 slug: Web/API/WorkerNavigator/connection
 page-type: web-api-instance-property
-tags:
-  - API
-  - Connection
-  - Property
-  - Reference
-  - WorkerNavigator
 browser-compat: api.WorkerNavigator.connection
 ---
+
 {{APIRef("Network Information API")}}
 
 The **`WorkerNavigator.connection`** read-only property returns

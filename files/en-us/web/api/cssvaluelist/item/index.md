@@ -1,16 +1,13 @@
 ---
-title: CSSValueList.item()
+title: "CSSValueList: item() method"
+short-title: item()
 slug: Web/API/CSSValueList/item
 page-type: web-api-instance-method
-tags:
-  - API
-  - CSSValueList
-  - Method
-  - Reference
-  - item
-  - Deprecated
+status:
+  - deprecated
 browser-compat: api.CSSValueList.item
 ---
+
 {{APIRef("CSSOM")}}{{Deprecated_header}}
 
 The **`item()`** method of the {{domxref("CSSValueList")}}
@@ -30,7 +27,7 @@ this method returns `null`.
 
 ## Syntax
 
-```js
+```js-nolint
 item(index)
 ```
 

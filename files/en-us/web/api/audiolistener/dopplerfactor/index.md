@@ -1,21 +1,13 @@
 ---
-title: AudioListener.dopplerFactor
+title: "AudioListener: dopplerFactor property"
+short-title: dopplerFactor
 slug: Web/API/AudioListener/dopplerFactor
 page-type: web-api-instance-property
-tags:
-  - API
-  - Audio
-  - AudioListener
-  - Deprecated
-  - Doppler
-  - Doppler Effect
-  - Property
-  - Reference
-  - Web Audio API
-  - dopplerFactor
-  - effects
+status:
+  - deprecated
 browser-compat: api.AudioListener.dopplerFactor
 ---
+
 {{ APIRef("Web Audio API") }}{{deprecated_header}}
 
 > **Note:** There is no direct replacement for this deprecated property. Instead, the general approach to controlling all aspects of audio spatialization is to use the [`PannerNode`](/en-US/docs/Web/API/PannerNode) interface. For how-to guidance on working with spatialization in the Web Audio API, see the [Web audio spatialization basics](/en-US/docs/Web/API/Web_Audio_API/Web_audio_spatialization_basics) article.
@@ -30,7 +22,7 @@ A double indicating the doppler effect's pitch shift value. The value is 1 by de
 
 ## Examples
 
-See [`BaseAudioContext.createPanner()`](/en-US/docs/Web/API/BaseAudioContext/createPanner#example) for example code.
+See [`BaseAudioContext.createPanner()`](/en-US/docs/Web/API/BaseAudioContext/createPanner#examples) for example code.
 
 ## Browser compatibility
 

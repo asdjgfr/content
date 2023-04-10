@@ -1,17 +1,14 @@
 ---
-title: HTMLContentElement.select
+title: "HTMLContentElement: select property"
+short-title: select
 slug: Web/API/HTMLContentElement/select
 page-type: web-api-instance-property
-tags:
-  - API
-  - HTML DOM
-  - Property
-  - Reference
-  - Web Components
-  - Deprecated
-  - Non-standard
+status:
+  - deprecated
+  - non-standard
 browser-compat: api.HTMLContentElement.select
 ---
+
 {{APIRef("Web Components")}}{{Deprecated_Header}}{{Non-standard_Header}}
 
 The **`HTMLContentElement.select`** property reflects the

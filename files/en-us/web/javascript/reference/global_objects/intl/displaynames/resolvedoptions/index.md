@@ -1,17 +1,10 @@
 ---
 title: Intl.DisplayNames.prototype.resolvedOptions()
 slug: Web/JavaScript/Reference/Global_Objects/Intl/DisplayNames/resolvedOptions
-tags:
-  - DisplayNames
-  - Internationalization
-  - Intl
-  - JavaScript
-  - Localization
-  - Method
-  - Prototype
-  - Reference
+page-type: javascript-instance-method
 browser-compat: javascript.builtins.Intl.DisplayNames.resolvedOptions
 ---
+
 {{JSRef}}
 
 The **`Intl.DisplayNames.prototype.resolvedOptions()`** method
@@ -21,7 +14,7 @@ object.
 
 ## Syntax
 
-```js
+```js-nolint
 resolvedOptions()
 ```
 
@@ -58,12 +51,12 @@ The object returned by `resolvedOptions()` has the following properties:
 ### Using resolvedOptions
 
 ```js
-const displayNames = new Intl.DisplayNames(['de-DE'], {type: 'region'});
+const displayNames = new Intl.DisplayNames(["de-DE"], { type: "region" });
 
 const usedOptions = displayNames.resolvedOptions();
-console.log(usedOptions.locale);   // "de-DE"
-console.log(usedOptions.style);    // "long"
-console.log(usedOptions.type);     // "region"
+console.log(usedOptions.locale); // "de-DE"
+console.log(usedOptions.style); // "long"
+console.log(usedOptions.type); // "region"
 console.log(usedOptions.fallback); // "code"
 ```
 

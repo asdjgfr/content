@@ -1,18 +1,11 @@
 ---
-title: Document.forms
+title: "Document: forms property"
+short-title: forms
 slug: Web/API/Document/forms
 page-type: web-api-instance-property
-tags:
-  - API
-  - DOM
-  - Document
-  - Forms
-  - HTML DOM
-  - HTML forms
-  - Property
-  - Reference
 browser-compat: api.Document.forms
 ---
+
 {{APIRef("DOM")}}
 
 The **`forms`** read-only property of
@@ -37,26 +30,32 @@ If the document has no forms, the returned collection is empty, with a length of
 ```html
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>document.forms example</title>
+  </head>
 
-<head>
-<title>document.forms example</title>
-</head>
+  <body>
+    <form id="robby">
+      <input
+        type="button"
+        onclick="alert(document.forms[0].id);"
+        value="robby's form" />
+    </form>
 
-<body>
+    <form id="dave">
+      <input
+        type="button"
+        onclick="alert(document.forms[1].id);"
+        value="dave's form" />
+    </form>
 
-<form id="robby">
-  <input type="button" onclick="alert(document.forms[0].id);" value="robby's form" />
-</form>
-
-<form id="dave">
-  <input type="button" onclick="alert(document.forms[1].id);" value="dave's form" />
-</form>
-
-<form id="paul">
-  <input type="button" onclick="alert(document.forms[2].id);" value="paul's form" />
-</form>
-
-</body>
+    <form id="paul">
+      <input
+        type="button"
+        onclick="alert(document.forms[2].id);"
+        value="paul's form" />
+    </form>
+  </body>
 </html>
 ```
 
@@ -72,24 +71,23 @@ const selectFormElement = document.forms[index].elements[index];
 ```html
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>document.forms example</title>
-</head>
+  <head>
+    <title>document.forms example</title>
+  </head>
 
-<body>
+  <body>
+    <form name="login">
+      <input name="email" type="email" />
+      <input name="password" type="password" />
+      <button type="submit">Log in</button>
+    </form>
 
-<form name="login">
-  <input name="email" type="email">
-  <input name="password" type="password">
-  <button type="submit">Log in</button>
-</form>
-
-<script>
-  const loginForm = document.forms.login; // Or document.forms['login']
-  loginForm.elements.email.placeholder = 'test@example.com';
-  loginForm.elements.password.placeholder = 'password';
-</script>
-</body>
+    <script>
+      const loginForm = document.forms.login; // Or document.forms['login']
+      loginForm.elements.email.placeholder = "test@example.com";
+      loginForm.elements.password.placeholder = "password";
+    </script>
+  </body>
 </html>
 ```
 

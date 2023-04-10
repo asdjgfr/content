@@ -1,15 +1,10 @@
 ---
 title: Map.prototype.get()
 slug: Web/JavaScript/Reference/Global_Objects/Map/get
-tags:
-  - ECMAScript 2015
-  - JavaScript
-  - Map
-  - Method
-  - Prototype
-  - Reference
+page-type: javascript-instance-method
 browser-compat: javascript.builtins.Map.get
 ---
+
 {{JSRef}}
 
 The **`get()`** method returns a specified element from a `Map` object. If the
@@ -21,7 +16,7 @@ modify it inside the `Map` object.
 
 ## Syntax
 
-```js
+```js-nolint
 get(key)
 ```
 

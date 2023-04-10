@@ -1,12 +1,9 @@
 ---
 title: GET
 slug: Web/HTTP/Methods/GET
-tags:
-  - HTTP
-  - Reference
-  - Request method
 browser-compat: http.methods.GET
 ---
+
 {{HTTPSidebar}}
 
 The **HTTP `GET` method** requests a representation of the specified resource. Requests using `GET` should only be used to request data (they shouldn't include data).

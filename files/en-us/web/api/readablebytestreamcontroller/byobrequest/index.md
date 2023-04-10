@@ -1,16 +1,11 @@
 ---
-title: ReadableByteStreamController.byobRequest
+title: "ReadableByteStreamController: byobRequest property"
+short-title: byobRequest
 slug: Web/API/ReadableByteStreamController/byobRequest
 page-type: web-api-instance-property
-tags:
-  - API
-  - Property
-  - ReadableByteStreamController
-  - Reference
-  - Streams
-  - byobRequest
 browser-compat: api.ReadableByteStreamController.byobRequest
 ---
+
 {{APIRef("Streams")}}
 
 The **`byobRequest`** read-only property of the {{domxref("ReadableByteStreamController")}} interface returns the current BYOB request, or `null` if there are no pending requests.

@@ -1,17 +1,13 @@
 ---
-title: SVGAltGlyphElement.glyphRef
+title: "SVGAltGlyphElement: glyphRef property"
+short-title: glyphRef
 slug: Web/API/SVGAltGlyphElement/glyphRef
 page-type: web-api-instance-property
-tags:
-  - API
-  - Deprecated
-  - Property
-  - Reference
-  - SVG
-  - SVGAltGlyphElement
-  - SVGAltGlyphRefElement
+status:
+  - deprecated
 browser-compat: api.SVGAltGlyphElement.glyphRef
 ---
+
 {{APIRef("SVGAltGlyphElement")}}{{Deprecated_Header}}
 
 The **`SVGAltGlyphElement.glyphRef`** property is a
@@ -27,7 +23,7 @@ format of the given font.
 ## Examples
 
 ```js
-myGlyph.glypRef = "#glyphID";
+myGlyph.glyphRef = "#glyphID";
 ```
 
 ## Specifications

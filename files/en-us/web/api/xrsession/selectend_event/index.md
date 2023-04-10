@@ -1,29 +1,13 @@
 ---
-title: 'XRSession: selectend event'
+title: "XRSession: selectend event"
+short-title: selectend
 slug: Web/API/XRSession/selectend_event
 page-type: web-api-event
-tags:
-  - API
-  - AR
-  - Event
-  - Input Sources
-  - Inputs
-  - Mixed
-  - Reality
-  - Reference
-  - VR
-  - Virtual
-  - WebXR
-  - WebXR API
-  - WebXR Device API
-  - XR
-  - XRSession
-  - augmented
-  - controllers
-  - selectend
-  - Experimental
+status:
+  - experimental
 browser-compat: api.XRSession.selectend_event
 ---
+
 {{APIRef("WebXR Device API")}}{{SeeCompatTable}}
 
 The WebXR event **`selectend`** is sent to an {{domxref("XRSession")}} when one of its input sources ends its [primary action](/en-US/docs/Web/API/WebXR_Device_API/Inputs#primary_actions) or when an input source that's in the process of handling an ongoing primary action is disconnected without successfully completing the action.

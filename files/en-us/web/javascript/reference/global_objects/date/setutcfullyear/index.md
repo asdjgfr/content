@@ -1,14 +1,10 @@
 ---
 title: Date.prototype.setUTCFullYear()
 slug: Web/JavaScript/Reference/Global_Objects/Date/setUTCFullYear
-tags:
-  - Date
-  - JavaScript
-  - Method
-  - Prototype
-  - Reference
+page-type: javascript-instance-method
 browser-compat: javascript.builtins.Date.setUTCFullYear
 ---
+
 {{JSRef}}
 
 The **`setUTCFullYear()`** method sets the full year for a
@@ -18,7 +14,7 @@ specified date according to universal time.
 
 ## Syntax
 
-```js
+```js-nolint
 setUTCFullYear(yearValue)
 setUTCFullYear(yearValue, monthValue)
 setUTCFullYear(yearValue, monthValue, dayValue)

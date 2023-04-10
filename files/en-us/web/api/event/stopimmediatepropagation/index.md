@@ -1,12 +1,11 @@
 ---
-title: Event.stopImmediatePropagation()
+title: "Event: stopImmediatePropagation() method"
+short-title: stopImmediatePropagation()
 slug: Web/API/Event/stopImmediatePropagation
 page-type: web-api-instance-method
-tags:
-  - Method
-  - Reference
 browser-compat: api.Event.stopImmediatePropagation
 ---
+
 {{APIRef("DOM")}}
 
 The **`stopImmediatePropagation()`** method of the
@@ -19,8 +18,8 @@ is invoked during one such call, no remaining listeners will be called.
 
 ## Syntax
 
-```js
-event.stopImmediatePropagation();
+```js-nolint
+event.stopImmediatePropagation()
 ```
 
 ## Specifications

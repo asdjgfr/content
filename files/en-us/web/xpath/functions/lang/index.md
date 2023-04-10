@@ -1,10 +1,8 @@
 ---
 title: lang
 slug: Web/XPath/Functions/lang
-tags:
-  - XSLT
-  - XSLT_Reference
 ---
+
 {{ XsltRef() }}
 
 The `lang` function determines whether the context node matches the given language and returns boolean true or false.

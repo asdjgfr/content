@@ -1,13 +1,8 @@
 ---
-title: OffscreenCanvasRenderingContext2D.commit()
+title: "OffscreenCanvasRenderingContext2D: commit() method"
+short-title: commit()
 slug: Web/API/OffscreenCanvasRenderingContext2D/commit
 page-type: web-api-instance-method
-tags:
-  - API
-  - Canvas
-  - OffscreenCanvasRenderingContext2D
-  - Method
-  - Reference
 browser-compat: api.OffscreenCanvasRenderingContext2D.commit
 ---
 
@@ -20,7 +15,7 @@ The copy operation is synchronous. Calling this method is not needed for the tra
 
 ## Syntax
 
-```js
+```js-nolint
 commit()
 ```
 

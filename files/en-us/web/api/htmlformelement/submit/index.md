@@ -1,16 +1,11 @@
 ---
-title: HTMLFormElement.submit()
+title: "HTMLFormElement: submit() method"
+short-title: submit()
 slug: Web/API/HTMLFormElement/submit
 page-type: web-api-instance-method
-tags:
-  - API
-  - HTML DOM
-  - HTMLFormElement
-  - Method
-  - NeedsSpecTable
-  - Reference
 browser-compat: api.HTMLFormElement.submit
 ---
+
 {{APIRef("HTML DOM")}}
 
 The **`HTMLFormElement.submit()`** method submits a given
@@ -20,7 +15,7 @@ This method is similar, but not identical to, activating a form's submit
 {{HtmlElement("button")}}. When invoking this method directly, however:
 
 - No {{domxref("HTMLFormElement/submit_event", "submit")}} event is raised. In particular, the form's `onsubmit` event handler is not run.
-- [Constraint validation](/en-US/docs/Web/Guide/HTML/Constraint_validation) is not triggered.
+- [Constraint validation](/en-US/docs/Web/HTML/Constraint_validation) is not triggered.
 
 The {{domxref("HTMLFormElement.requestSubmit()")}} method is identical to activating a
 form's submit {{HtmlElement("button")}} and does not have these differences.
@@ -34,7 +29,7 @@ submitted when you do it with original HTML form submit.
 
 ## Syntax
 
-```js
+```js-nolint
 submit()
 ```
 

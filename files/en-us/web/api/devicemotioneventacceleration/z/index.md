@@ -1,14 +1,11 @@
 ---
-title: 'DeviceMotionEventAcceleration: z'
+title: "DeviceMotionEventAcceleration: z property"
+short-title: z
 slug: Web/API/DeviceMotionEventAcceleration/z
 page-type: web-api-instance-property
-tags:
-  - API
-  - DeviceAcceleration
-  - Property
-  - Reference
 browser-compat: api.DeviceMotionEventAcceleration.z
 ---
+
 {{ APIRef("Device Orientation Events") }}
 
 The **`DeviceMotionEventAcceleration.x`** read-only property indicates the amount of acceleration that occurred along the Z

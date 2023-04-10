@@ -1,17 +1,14 @@
 ---
-title: HTMLContentElement.getDistributedNodes()
+title: "HTMLContentElement: getDistributedNodes() method"
+short-title: getDistributedNodes()
 slug: Web/API/HTMLContentElement/getDistributedNodes
 page-type: web-api-instance-method
-tags:
-  - API
-  - HTML DOM
-  - Property
-  - Reference
-  - Web Components
-  - Deprecated
-  - Non-standard
+status:
+  - deprecated
+  - non-standard
 browser-compat: api.HTMLContentElement.getDistributedNodes
 ---
+
 {{APIRef("Web Components")}}{{Deprecated_Header}}{{Non-standard_Header}}
 
 The **`HTMLContentElement.getDistributedNodes()`** method

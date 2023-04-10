@@ -1,12 +1,9 @@
 ---
 title: name
 slug: Web/Manifest/name
-tags:
-  - Manifest
-  - Web
-  - name
 browser-compat: html.manifest.name
 ---
+
 {{QuickLinksWithSubpages("/en-US/docs/Web/Manifest")}}
 
 <table class="properties">
@@ -14,10 +11,6 @@ browser-compat: html.manifest.name
     <tr>
       <th scope="row">Type</th>
       <td><code>String</code></td>
-    </tr>
-    <tr>
-      <th scope="row">Mandatory</th>
-      <td>Yes</td>
     </tr>
   </tbody>
 </table>

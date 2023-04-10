@@ -1,13 +1,9 @@
 ---
 title: X-Content-Type-Options
 slug: Web/HTTP/Headers/X-Content-Type-Options
-tags:
-  - HTTP
-  - HTTP Header
-  - Reference
-  - Response Header
 browser-compat: http.headers.X-Content-Type-Options
 ---
+
 {{HTTPSidebar}}
 
 The **`X-Content-Type-Options`** response HTTP header is a

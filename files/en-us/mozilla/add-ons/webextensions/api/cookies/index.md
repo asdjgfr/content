@@ -1,17 +1,10 @@
 ---
 title: cookies
 slug: Mozilla/Add-ons/WebExtensions/API/cookies
-tags:
-  - API
-  - Add-ons
-  - Cookies
-  - Extensions
-  - Interface
-  - Non-standard
-  - Reference
-  - WebExtensions
+page-type: webextension-api
 browser-compat: webextensions.api.cookies
 ---
+
 {{AddonSidebar}}
 
 Enables extensions to get and set cookies, and be notified when they change.

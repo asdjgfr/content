@@ -1,16 +1,8 @@
 ---
-title: CacheStorage.open()
+title: "CacheStorage: open() method"
+short-title: open()
 slug: Web/API/CacheStorage/open
 page-type: web-api-instance-method
-tags:
-  - API
-  - CacheStorage
-  - Method
-  - Reference
-  - Service Workers
-  - Service worker API
-  - ServiceWorker
-  - open
 browser-compat: api.CacheStorage.open
 ---
 
@@ -29,7 +21,7 @@ You can access `CacheStorage` through the global
 
 ## Syntax
 
-```js
+```js-nolint
 open(cacheName)
 ```
 

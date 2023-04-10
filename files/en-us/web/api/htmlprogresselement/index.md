@@ -2,20 +2,16 @@
 title: HTMLProgressElement
 slug: Web/API/HTMLProgressElement
 page-type: web-api-interface
-tags:
-  - API
-  - HTML DOM
-  - Interface
-  - Reference
 browser-compat: api.HTMLProgressElement
 ---
+
 {{ APIRef("HTML DOM") }}
 
 The **`HTMLProgressElement`** interface provides special properties and methods (beyond the regular {{domxref("HTMLElement")}} interface it also has available to it by inheritance) for manipulating the layout and presentation of {{HTMLElement("progress")}} elements.
 
 {{InheritanceDiagram}}
 
-## Properties
+## Instance properties
 
 _Inherits properties from its parent, {{domxref("HTMLElement")}}._
 
@@ -28,9 +24,9 @@ _Inherits properties from its parent, {{domxref("HTMLElement")}}._
 - {{domxref("HTMLProgressElement.labels")}} {{ReadOnlyInline}}
   - : Returns {{domxref("NodeList")}} containing the list of {{HTMLElement("label")}} elements that are labels for this element.
 
-## Methods
+## Instance methods
 
-_No specific method; inherits properties from its parent, {{domxref("HTMLElement")}}._
+_No specific method; inherits methods from its parent, {{domxref("HTMLElement")}}._
 
 ## Specifications
 

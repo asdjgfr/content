@@ -1,15 +1,10 @@
 ---
 title: inset
 slug: Web/CSS/inset
-tags:
-  - CSS
-  - CSS Logical Property
-  - CSS Property
-  - Property
-  - Reference
-  - recipe:css-property
+page-type: css-shorthand-property
 browser-compat: css.properties.inset
 ---
+
 {{CSSRef}}
 
 The **`inset`** [CSS](/en-US/docs/Web/CSS) property is a shorthand that corresponds to the {{cssxref("top")}}, {{cssxref("right")}}, {{cssxref("bottom")}}, and/or {{cssxref("left")}} properties. It has the same multi-value syntax of the {{cssxref("margin")}} shorthand.

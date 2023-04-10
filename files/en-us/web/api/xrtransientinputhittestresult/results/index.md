@@ -1,19 +1,13 @@
 ---
-title: XRTransientInputHitTestResult.results
+title: "XRTransientInputHitTestResult: results property"
+short-title: results
 slug: Web/API/XRTransientInputHitTestResult/results
 page-type: web-api-instance-property
-tags:
-  - API
-  - AR
-  - Augmented Reality
-  - Experimental
-  - Property
-  - Reference
-  - VR
-  - WebXR
-  - WebXR Device API
+status:
+  - experimental
 browser-compat: api.XRTransientInputHitTestResult.results
 ---
+
 {{APIRef("WebXR Device API")}}{{SeeCompatTable}}
 
 The _read-only_ **`results`** property of the {{DOMxRef("XRTransientInputHitTestResult")}} interface represents an array of {{domxref("XRHitTestResult")}} objects containing the hit test results for the input source, ordered by the distance along the ray used to perform the hit test, with the closest result at position 0.
@@ -40,7 +34,7 @@ function onXRFrame(time, xrFrame) {
     });
   });
  }
- ```
+```
 
 ## Specifications
 

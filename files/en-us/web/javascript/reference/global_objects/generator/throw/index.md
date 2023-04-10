@@ -1,15 +1,10 @@
 ---
 title: Generator.prototype.throw()
 slug: Web/JavaScript/Reference/Global_Objects/Generator/throw
-tags:
-  - ECMAScript 2015
-  - Generator
-  - JavaScript
-  - Method
-  - Prototype
-  - Reference
+page-type: javascript-instance-method
 browser-compat: javascript.builtins.Generator.throw
 ---
+
 {{JSRef}}
 
 The **`throw()`** method of a generator acts as if a `throw` statement is inserted in the generator's body at the current suspended position, which informs the generator of an error condition and allows it to handle the error, or perform cleanup and close itself.
@@ -17,7 +12,8 @@ The **`throw()`** method of a generator acts as if a `throw` statement is insert
 ## Syntax
 
 <!-- We don't usually add the "generatorObject" subject for methods. However, it is necessary here, because "throw" is a keyword, so otherwise it's invalid syntax. -->
-```js
+
+```js-nolint
 generatorObject.throw(exception)
 ```
 

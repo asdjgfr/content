@@ -1,12 +1,10 @@
 ---
 title: Resolved value
 slug: Web/CSS/resolved_value
-tags:
-  - CSS
-  - Guide
-  - Reference
+page-type: guide
 spec-urls: https://drafts.csswg.org/cssom/#resolved-values
 ---
+
 {{CSSRef}}
 
 The **resolved value** of a [CSS](/en-US/docs/Web/CSS) property is the value returned by {{domxref("Window.getComputedStyle", "getComputedStyle()")}}.

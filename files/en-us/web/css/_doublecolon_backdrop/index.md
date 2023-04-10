@@ -1,20 +1,10 @@
 ---
-title: '::backdrop'
+title: "::backdrop"
 slug: Web/CSS/::backdrop
-tags:
-  - API
-  - CSS
-  - Dialog
-  - Fullscreen
-  - Fullscreen API
-  - HTML DOM
-  - Layout
-  - Pseudo-element
-  - Reference
-  - Selector
-  - fullscreen
+page-type: css-pseudo-element
 browser-compat: css.selectors.backdrop
 ---
+
 {{CSSRef}}
 
 The **`::backdrop`** [CSS](/en-US/docs/Web/CSS) [pseudo-element](/en-US/docs/Web/CSS/Pseudo-elements) is a box the size of the {{Glossary("viewport")}} which is rendered immediately beneath any element being presented in fullscreen mode. This includes both elements which have been placed in fullscreen mode using the [Fullscreen API](/en-US/docs/Web/API/Fullscreen_API) and {{HTMLElement("dialog")}} elements.
@@ -24,7 +14,7 @@ When multiple elements have been placed into fullscreen mode, the backdrop is dr
 ```css
 /* Backdrop is only displayed when dialog is opened with dialog.showModal() */
 dialog::backdrop {
-  background: rgba(255,0,0,.25);
+  background: rgba(255, 0, 0, 0.25);
 }
 ```
 
@@ -34,8 +24,10 @@ All fullscreen elements are placed in a last-in/first out (LIFO) stack in the to
 
 ## Syntax
 
-```
-::backdrop
+```css
+::backdrop {
+  /* ... */
+}
 ```
 
 ## Examples

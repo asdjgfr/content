@@ -1,15 +1,10 @@
 ---
 title: privacy
 slug: Mozilla/Add-ons/WebExtensions/API/privacy
-tags:
-  - API
-  - Add-ons
-  - Extensions
-  - Privacy
-  - Reference
-  - WebExtensions
+page-type: webextension-api
 browser-compat: webextensions.api.privacy
 ---
+
 {{AddonSidebar}}
 
 Access and modify various privacy-related browser settings.

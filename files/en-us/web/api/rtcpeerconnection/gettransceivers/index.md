@@ -1,20 +1,11 @@
 ---
-title: RTCPeerConnection.getTransceivers()
+title: "RTCPeerConnection: getTransceivers() method"
+short-title: getTransceivers()
 slug: Web/API/RTCPeerConnection/getTransceivers
 page-type: web-api-instance-method
-tags:
-  - API
-  - Media
-  - Method
-  - RTCPeerConnection
-  - RTCRtpTransceiver
-  - RTP
-  - Reference
-  - Transceiver
-  - WebRTC
-  - getTransceivers
 browser-compat: api.RTCPeerConnection.getTransceivers
 ---
+
 {{APIRef("WebRTC")}}
 
 The {{domxref("RTCPeerConnection")}} interface's
@@ -24,7 +15,7 @@ connection.
 
 ## Syntax
 
-```js
+```js-nolint
 getTransceivers()
 ```
 

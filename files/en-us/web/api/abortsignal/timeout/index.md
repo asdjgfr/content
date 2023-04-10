@@ -1,15 +1,11 @@
 ---
-title: AbortSignal.timeout()
+title: "AbortSignal: timeout() static method"
+short-title: timeout()
 slug: Web/API/AbortSignal/timeout
 page-type: web-api-static-method
-tags:
-  - API
-  - AbortSignal
-  - Method
-  - Reference
-  - timeout
 browser-compat: api.AbortSignal.timeout
 ---
+
 {{APIRef("DOM")}}
 
 The static **`AbortSignal.timeout()`** method returns an {{domxref("AbortSignal")}} that will automatically abort after a specified time.
@@ -20,11 +16,11 @@ This allow UIs to differentiate timeout errors, which typically require user not
 The timeout is based on active rather than elapsed time, and will effectively be paused if the code is running in a suspended worker, or while the document is in a back-forward cache ("[bfcache](https://web.dev/bfcache/)").
 
 > **Note:** At time of writing there is no way to combine multiple signals.
-> This means you that you can't directly abort a download using either a timeout signal or by calling {{domxref("AbortController.abort()")}}.
+> This means that you can't directly abort a download using either a timeout signal or by calling {{domxref("AbortController.abort()")}}.
 
 ## Syntax
 
-```js
+```js-nolint
 timeout(time)
 ```
 
@@ -55,7 +51,9 @@ try {
   if (err.name === "TimeoutError") {
     console.error("Timeout: It took more than 5 seconds to get the result!");
   } else if (err.name === "AbortError") {
-    console.error("Fetch aborted by user action (browser stop button, closing tab, etc.");
+    console.error(
+      "Fetch aborted by user action (browser stop button, closing tab, etc."
+    );
   } else if (err.name === "TypeError") {
     console.error("AbortSignal.timeout() method is not supported");
   } else {

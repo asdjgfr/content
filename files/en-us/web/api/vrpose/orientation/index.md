@@ -1,20 +1,14 @@
 ---
-title: VRPose.orientation
+title: "VRPose: orientation property"
+short-title: orientation
 slug: Web/API/VRPose/orientation
 page-type: web-api-instance-property
-tags:
-  - API
-  - Deprecated
-  - Orientation
-  - Property
-  - Reference
-  - VR
-  - VRPose
-  - Virtual Reality
-  - WebVR
-  - Non-standard
+status:
+  - deprecated
+  - non-standard
 browser-compat: api.VRPose.orientation
 ---
+
 {{APIRef("WebVR API")}}{{Deprecated_Header}}{{Non-standard_Header}}
 
 The **`orientation`** read-only property of the {{domxref("VRPose")}} interface returns the orientation of the sensor at the current {{domxref("VRPose.timestamp")}}, as a quarternion value.

@@ -1,18 +1,10 @@
 ---
 title: downloads.getFileIcon()
 slug: Mozilla/Add-ons/WebExtensions/API/downloads/getFileIcon
-tags:
-  - API
-  - Add-ons
-  - Extensions
-  - Method
-  - Non-standard
-  - Reference
-  - WebExtensions
-  - downloads
-  - getFileIcon
+page-type: webextension-api-function
 browser-compat: webextensions.api.downloads.getFileIcon
 ---
+
 {{AddonSidebar()}}
 
 The **`getFileIcon()`** function of the {{WebExtAPIRef("downloads")}} API retrieves an icon for the specified download.
@@ -25,7 +17,7 @@ This is an asynchronous function that returns a [`Promise`](/en-US/docs/Web/Java
 
 ## Syntax
 
-```js
+```js-nolint
 let gettingIcon = browser.downloads.getFileIcon(
   downloadId,           // integer
   options               // optional object
@@ -83,8 +75,6 @@ searching.then(getIcon, onError);
 {{WebExtExamples}}
 
 > **Note:** This API is based on Chromium's [`chrome.downloads`](https://developer.chrome.com/docs/extensions/reference/downloads/#method-getFileIcon) API.
->
-> Microsoft Edge compatibility data is supplied by Microsoft Corporation and is included here under the Creative Commons Attribution 3.0 United States License.
 
 <!--
 // Copyright 2015 The Chromium Authors. All rights reserved.

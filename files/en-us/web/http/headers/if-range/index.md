@@ -1,15 +1,9 @@
 ---
 title: If-Range
 slug: Web/HTTP/Headers/If-Range
-tags:
-  - Conditional Requests
-  - HTTP
-  - HTTP Header
-  - Range Requests
-  - Reference
-  - Request header
 browser-compat: http.headers.If-Range
 ---
+
 {{HTTPSidebar}}
 
 The **`If-Range`** HTTP request header makes a range request

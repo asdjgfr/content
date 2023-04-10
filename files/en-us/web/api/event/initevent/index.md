@@ -1,13 +1,13 @@
 ---
-title: Event.initEvent()
+title: "Event: initEvent() method"
+short-title: initEvent()
 slug: Web/API/Event/initEvent
 page-type: web-api-instance-method
-tags:
-  - Deprecated
-  - Method
-  - Reference
+status:
+  - deprecated
 browser-compat: api.Event.initEvent
 ---
+
 {{ ApiRef("DOM") }}{{deprecated_header}}
 
 The **`Event.initEvent()`** method is used to initialize the
@@ -25,8 +25,8 @@ Once dispatched, it doesn't do anything anymore.
 
 ## Syntax
 
-```js
-event.initEvent(type, bubbles, cancelable);
+```js-nolint
+event.initEvent(type, bubbles, cancelable)
 ```
 
 ### Parameters
@@ -49,16 +49,20 @@ None.
 
 ```js
 // Create the event.
-const event = document.createEvent('Event');
+const event = document.createEvent("Event");
 
 // Create a click event that bubbles up and
 // cannot be canceled
-event.initEvent('click', true, false);
+event.initEvent("click", true, false);
 
 // Listen for the event.
-elem.addEventListener('click', (e) => {
-  // e.target matches elem
-}, false);
+elem.addEventListener(
+  "click",
+  (e) => {
+    // e.target matches elem
+  },
+  false
+);
 
 elem.dispatchEvent(event);
 ```

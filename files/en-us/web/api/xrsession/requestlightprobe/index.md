@@ -1,22 +1,13 @@
 ---
-title: XRSession.requestLightProbe()
+title: "XRSession: requestLightProbe() method"
+short-title: requestLightProbe()
 slug: Web/API/XRSession/requestLightProbe
 page-type: web-api-instance-method
-tags:
-  - API
-  - AR
-  - Augmented Reality
-  - Experimental
-  - Method
-  - Reference
-  - VR
-  - Virtual Reality
-  - WebXR
-  - WebXR Device API
-  - XR
-  - XRSession
+status:
+  - experimental
 browser-compat: api.XRSession.requestLightProbe
 ---
+
 {{APIRef("WebXR Device API")}}{{SeeCompatTable}}
 
 The **`requestLightProbe()`** method of the
@@ -24,7 +15,7 @@ The **`requestLightProbe()`** method of the
 
 ## Syntax
 
-```js
+```js-nolint
 requestLightProbe()
 requestLightProbe(options)
 ```

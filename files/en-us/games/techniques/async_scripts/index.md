@@ -1,11 +1,6 @@
 ---
 title: Async scripts for asm.js
 slug: Games/Techniques/Async_scripts
-tags:
-  - Games
-  - JavaScript
-  - asm.js
-  - async
 ---
 
 {{GamesSidebar}}
@@ -36,7 +31,7 @@ Two common situations in which a script is \*not\* async (as [defined by the HTM
 
 ```html
 <script async>
-  code;
+  code();
 </script>
 ```
 
@@ -44,7 +39,7 @@ and
 
 ```js
 const script = document.createElement("script");
-script.textContent = "code";
+script.textContent = "code()";
 document.body.appendChild(script);
 ```
 

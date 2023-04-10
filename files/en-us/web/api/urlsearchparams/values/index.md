@@ -1,16 +1,11 @@
 ---
-title: URLSearchParams.values()
+title: "URLSearchParams: values() method"
+short-title: values()
 slug: Web/API/URLSearchParams/values
 page-type: web-api-instance-method
-tags:
-  - API
-  - Iterator
-  - Method
-  - Reference
-  - URL API
-  - URLSearchParams
 browser-compat: api.URLSearchParams.values
 ---
+
 {{APIRef("URL API")}}
 
 The **`values()`** method of the {{domxref("URLsearchParams")}}
@@ -22,7 +17,7 @@ objects.
 
 ## Syntax
 
-```js
+```js-nolint
 values()
 ```
 

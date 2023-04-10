@@ -1,12 +1,9 @@
 ---
 title: Host
 slug: Web/HTTP/Headers/Host
-tags:
-  - HTTP
-  - Reference
-  - header
 browser-compat: http.headers.Host
 ---
+
 {{HTTPSidebar}}
 
 The **`Host`** request header specifies the host and port

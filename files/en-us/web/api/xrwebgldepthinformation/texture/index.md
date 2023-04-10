@@ -1,19 +1,13 @@
 ---
-title: XRWebGLDepthInformation.texture
+title: "XRWebGLDepthInformation: texture property"
+short-title: texture
 slug: Web/API/XRWebGLDepthInformation/texture
 page-type: web-api-instance-property
-tags:
-  - API
-  - AR
-  - Augmented Reality
-  - Experimental
-  - Property
-  - Reference
-  - VR
-  - WebXR
-  - WebXR Device API
+status:
+  - experimental
 browser-compat: api.XRWebGLDepthInformation.texture
 ---
+
 {{APIRef("WebXR Device API")}}{{SeeCompatTable}}
 
 The _read-only_ **`texture`** property of the {{DOMxRef("XRWebGLDepthInformation")}} interface is a {{domxref("WebGLTexture")}} containing depth buffer information as an opaque texture.

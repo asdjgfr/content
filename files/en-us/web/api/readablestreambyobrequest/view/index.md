@@ -1,16 +1,11 @@
 ---
-title: ReadableStreamBYOBRequest.view
+title: "ReadableStreamBYOBRequest: view property"
+short-title: view
 slug: Web/API/ReadableStreamBYOBRequest/view
 page-type: web-api-instance-property
-tags:
-  - API
-  - Property
-  - ReadableStreamBYOBRequest
-  - Reference
-  - Streams
-  - View
 browser-compat: api.ReadableStreamBYOBRequest.view
 ---
+
 {{APIRef("Streams")}}
 
 The **`view`** getter property of the {{domxref("ReadableStreamBYOBRequest")}} interface returns the current view.

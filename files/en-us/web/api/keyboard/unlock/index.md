@@ -1,18 +1,13 @@
 ---
-title: Keyboard.unlock()
+title: "Keyboard: unlock() method"
+short-title: unlock()
 slug: Web/API/Keyboard/unlock
 page-type: web-api-instance-method
-tags:
-  - API
-  - Keyboard API
-  - Keyboard Lock
-  - Method
-  - Reference
-  - keyboard
-  - unLock
-  - Experimental
+status:
+  - experimental
 browser-compat: api.Keyboard.unlock
 ---
+
 {{APIRef("Keyboard API")}}{{SeeCompatTable}}{{securecontext_header}}
 
 The **`unlock()`** method of the
@@ -21,7 +16,7 @@ The **`unlock()`** method of the
 
 ## Syntax
 
-```js
+```js-nolint
 unlock()
 ```
 

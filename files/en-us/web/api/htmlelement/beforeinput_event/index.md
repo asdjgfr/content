@@ -1,17 +1,11 @@
 ---
-title: 'HTMLElement: beforeinput event'
+title: "HTMLElement: beforeinput event"
+short-title: beforeinput
 slug: Web/API/HTMLElement/beforeinput_event
 page-type: web-api-event
-tags:
-  - API
-  - Event
-  - HTML DOM
-  - HTMLElement
-  - InputEvent
-  - Reference
-  - beforeinput
 browser-compat: api.HTMLElement.beforeinput_event
 ---
+
 {{APIRef}}
 
 The DOM **`beforeinput`** event fires when the value of an {{HTMLElement("input")}}, or {{HTMLElement("textarea")}} element is about to be modified. The event also applies to elements with {{domxref("HTMLElement.contentEditable", "contenteditable")}} enabled, and to any element when {{domxref("Document.designMode", "designMode")}} is turned on.
@@ -25,9 +19,9 @@ In the case of `contenteditable` and `designMode`, the event target is the **edi
 Use the event name in methods like {{domxref("EventTarget.addEventListener", "addEventListener()")}}, or set an event handler property.
 
 ```js
-addEventListener('beforeinput', (event) => {});
+addEventListener("beforeinput", (event) => {});
 
-onbeforeinput = (event) => { };
+onbeforeinput = (event) => {};
 ```
 
 ## Event type
@@ -57,7 +51,10 @@ The following function returns true if `beforeinput`, and thus `getTargetRanges`
 
 ```js
 function isBeforeInputEventAvailable() {
-  return window.InputEvent && typeof InputEvent.prototype.getTargetRanges === "function";
+  return (
+    window.InputEvent &&
+    typeof InputEvent.prototype.getTargetRanges === "function"
+  );
 }
 ```
 
@@ -68,17 +65,17 @@ This example logs the current value of the element, immediately before replacing
 #### HTML
 
 ```html
-<input placeholder="Enter some text" name="name"/>
+<input placeholder="Enter some text" name="name" />
 <p id="values"></p>
 ```
 
 #### JavaScript
 
 ```js
-const input = document.querySelector('input');
-const log = document.getElementById('values');
+const input = document.querySelector("input");
+const log = document.getElementById("values");
 
-input.addEventListener('beforeinput', updateValue);
+input.addEventListener("beforeinput", updateValue);
 
 function updateValue(e) {
   log.textContent = e.target.value;

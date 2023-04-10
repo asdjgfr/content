@@ -1,19 +1,13 @@
 ---
-title: PannerNode.setVelocity()
+title: "PannerNode: setVelocity() method"
+short-title: setVelocity()
 slug: Web/API/PannerNode/setVelocity
 page-type: web-api-instance-method
-tags:
-  - API
-  - Audio
-  - Deprecated
-  - Doppler Effect
-  - Method
-  - PannerNode
-  - Reference
-  - Web Audio API
-  - setVelocity
+status:
+  - deprecated
 browser-compat: api.PannerNode.setVelocity
 ---
+
 {{APIRef("Web Audio API")}}{{Deprecated_Header}}
 
 The `setVelocity()` method of the {{ domxref("PannerNode") }} Interface defines the velocity vector of the audio source — how fast it is moving and in what direction.
@@ -22,11 +16,11 @@ This method was removed from the specification because of gaps in its design and
 
 The velocity relative to the listener is used to control the pitch change needed to conform with the [Doppler effect](https://en.wikipedia.org/wiki/Doppler_effect) due to the relative speed.
 
-As the vector controls both the direction of travel and its velocity, the three parameters `x`, `y` and `z` are expressed in _meters per second`.`_ The default value of the velocity vector is `(0,` `0,` `0)`.
+As the vector controls both the direction of travel and its velocity, the three parameters `x`, `y` and `z` are expressed in _meters per second_. The default value of the velocity vector is `(0, 0, 0)`.
 
 ## Syntax
 
-```js
+```js-nolint
 setVelocity(x, y, z)
 ```
 
@@ -45,7 +39,7 @@ None ({{jsxref("undefined")}}).
 
 ## Examples
 
-See [`BaseAudioContext.createPanner()`](/en-US/docs/Web/API/BaseAudioContext/createPanner#example) for example code.
+See [`BaseAudioContext.createPanner()`](/en-US/docs/Web/API/BaseAudioContext/createPanner#examples) for example code.
 
 ## Specifications
 

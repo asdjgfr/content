@@ -1,18 +1,12 @@
 ---
-title: FileSystemFileHandle.createWritable()
+title: "FileSystemFileHandle: createWritable() method"
+short-title: createWritable()
 slug: Web/API/FileSystemFileHandle/createWritable
 page-type: web-api-instance-method
-tags:
-  - Directory
-  - File
-  - File System Access API
-  - FileSystemFileHandle
-  - Method
-  - stream
-  - working with files
 browser-compat: api.FileSystemFileHandle.createWritable
 ---
-{{securecontext_header}}{{DefaultAPISidebar("File System Access API")}}
+
+{{securecontext_header}}{{APIRef("File System Access API")}}
 
 The **`createWritable()`** method of the
 {{domxref("FileSystemFileHandle")}} interface creates
@@ -26,8 +20,8 @@ the temporary file when the writable filestream is closed.
 
 ## Syntax
 
-```js
-const fileStreamPromise = FileSystemFileHandle.createWritable();
+```js-nolint
+createWritable()
 ```
 
 ### Parameters

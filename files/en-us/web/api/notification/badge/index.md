@@ -1,18 +1,13 @@
 ---
-title: Notification.badge
+title: "Notification: badge property"
+short-title: badge
 slug: Web/API/Notification/badge
 page-type: web-api-instance-property
-tags:
-  - API
-  - Notification
-  - Notifications
-  - Notifications API
-  - Property
-  - Reference
-  - badge
-  - Experimental
+status:
+  - experimental
 browser-compat: api.Notification.badge
 ---
+
 {{APIRef("Web Notifications")}}{{AvailableInWorkers}}{{SecureContext_Header}}{{SeeCompatTable}}
 
 The **`badge`** property of the {{domxref("Notification")}}

@@ -1,12 +1,9 @@
 ---
-title: 'SyntaxError: missing ) after condition'
+title: "SyntaxError: missing ) after condition"
 slug: Web/JavaScript/Reference/Errors/Missing_parenthesis_after_condition
-tags:
-  - Error
-  - Errors
-  - JavaScript
-  - SyntaxError
+page-type: javascript-error
 ---
+
 {{jsSidebar("Errors")}}
 
 The JavaScript exception "missing ) after condition" occurs when there is an error with
@@ -88,7 +85,7 @@ Or even better:
 
 ```js example-good
 if (done) {
- console.log("we are done!");
+  console.log("we are done!");
 }
 ```
 

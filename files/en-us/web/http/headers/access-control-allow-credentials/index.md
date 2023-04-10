@@ -1,15 +1,9 @@
 ---
 title: Access-Control-Allow-Credentials
 slug: Web/HTTP/Headers/Access-Control-Allow-Credentials
-tags:
-  - Access-Control-Allow-Credentials
-  - CORS
-  - HTTP
-  - Reference
-  - credentials
-  - header
 browser-compat: http.headers.Access-Control-Allow-Credentials
 ---
+
 {{HTTPSidebar}}
 
 The **`Access-Control-Allow-Credentials`** response header
@@ -75,7 +69,7 @@ Using [XHR](/en-US/docs/Web/API/XMLHttpRequest) with credentials:
 
 ```js
 const xhr = new XMLHttpRequest();
-xhr.open('GET', 'http://example.com/', true);
+xhr.open("GET", "http://example.com/", true);
 xhr.withCredentials = true;
 xhr.send(null);
 ```
@@ -84,8 +78,8 @@ Using [Fetch](/en-US/docs/Web/API/Fetch_API) with credentials:
 
 ```js
 fetch(url, {
-  credentials: 'include'
-})
+  credentials: "include",
+});
 ```
 
 ## Specifications

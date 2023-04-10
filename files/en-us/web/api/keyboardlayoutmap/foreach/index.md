@@ -1,19 +1,13 @@
 ---
-title: KeyboardLayoutMap.forEach()
+title: "KeyboardLayoutMap: forEach() method"
+short-title: forEach()
 slug: Web/API/KeyboardLayoutMap/forEach
 page-type: web-api-instance-method
-tags:
-  - API
-  - Experimental
-  - Keyboard API
-  - Keyboard Map
-  - KeyboardLayoutMap
-  - Method
-  - Reference
-  - forEach()
-  - keyboard
+status:
+  - experimental
 browser-compat: api.KeyboardLayoutMap.forEach
 ---
+
 {{APIRef("Keyboard API")}}{{SeeCompatTable}}
 
 The **`forEach()`** method of the
@@ -22,7 +16,7 @@ each element of the map.
 
 ## Syntax
 
-```js
+```js-nolint
 // Arrow function
 forEach((currentValue) => { /* … */ } )
 forEach((currentValue, index) => { /* … */ } )

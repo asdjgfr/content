@@ -1,13 +1,11 @@
 ---
-title: Attr.prefix
+title: "Attr: prefix property"
+short-title: prefix
 slug: Web/API/Attr/prefix
 page-type: web-api-instance-property
-tags:
-  - Property
-  - Reference
-  - Read-only
 browser-compat: api.Attr.prefix
 ---
+
 {{APIRef("DOM")}}
 
 The read-only **`prefix`** property of the {{domxref("Attr")}} returns the namespace prefix of the attribute, or `null` if no prefix is specified.

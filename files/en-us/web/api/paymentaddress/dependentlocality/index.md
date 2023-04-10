@@ -1,19 +1,14 @@
 ---
-title: PaymentAddress.dependentLocality
+title: "PaymentAddress: dependentLocality property"
+short-title: dependentLocality
 slug: Web/API/PaymentAddress/dependentLocality
 page-type: web-api-instance-property
-tags:
-  - API
-  - Payment Request
-  - Payment Request API
-  - PaymentRequest
-  - Property
-  - Reference
-  - paymentAddress
-  - Deprecated
-  - Non-standard
+status:
+  - deprecated
+  - non-standard
 browser-compat: api.PaymentAddress.dependentLocality
 ---
+
 {{APIRef("Payment Request API")}}{{Deprecated_Header}}{{Non-standard_Header}}
 
 The read-only **`dependentLocality`**

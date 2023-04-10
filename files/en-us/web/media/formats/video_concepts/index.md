@@ -1,26 +1,8 @@
 ---
 title: Digital video concepts
 slug: Web/Media/Formats/Video_concepts
-tags:
-  - Beginner
-  - Chroma
-  - Digital
-  - Eye
-  - Guide
-  - Image
-  - Light
-  - Luma
-  - Sampling
-  - Subsampling
-  - Video
-  - Vision
-  - Y'CbCr
-  - Y'UV
-  - YCbCr
-  - YUV
-  - color
-  - rgb
 ---
+
 {{QuickLinksWithSubpages("/en-US/docs/Web/Media")}}
 
 In this article, we explore important concepts that are useful to understand in order to fully grasp how to work with video on the web.

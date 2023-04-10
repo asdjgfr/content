@@ -2,20 +2,9 @@
 title: URL API
 slug: Web/API/URL_API
 page-type: web-api-overview
-tags:
-  - API
-  - Address
-  - Domain
-  - Forms
-  - Host
-  - IP
-  - Overview
-  - URL
-  - URL API
-  - Web
-  - hostname
 browser-compat: api.URL
 ---
+
 {{DefaultAPISidebar("URL API")}}
 
 The URL API is a component of the URL standard, which defines what constitutes a valid {{Glossary("URL", "Uniform Resource Locator")}} and the API that accesses and manipulates URLs. The URL standard also defines concepts such as domains, hosts, and IP addresses, and also attempts to describe in a standard way the legacy `application/x-www-form-urlencoded` {{Glossary("MIME type")}} used to submit web forms' contents as a set of key/value pairs.
@@ -24,7 +13,7 @@ The URL API is a component of the URL standard, which defines what constitutes a
 
 ## URL concepts and usage
 
-The majority of the URL standard is taken up by the [definition of a URL](/en-US/docs/Learn/Common_questions/What_is_a_URL) and how it is structured and parsed. Also covered are definitions of various terms related to addressing of computers on a network, and the algorithms for parsing IP addresses and DOM addresses are specified. More interesting to most developers is the API itself.
+The majority of the URL standard is taken up by the [definition of a URL](/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_URL) and how it is structured and parsed. Also covered are definitions of various terms related to addressing of computers on a network, and the algorithms for parsing IP addresses and DOM addresses are specified. More interesting to most developers is the API itself.
 
 ### Accessing URL components
 

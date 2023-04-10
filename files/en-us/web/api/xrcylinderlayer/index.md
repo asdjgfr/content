@@ -2,21 +2,11 @@
 title: XRCylinderLayer
 slug: Web/API/XRCylinderLayer
 page-type: web-api-interface
-tags:
-  - API
-  - AR
-  - Augmented Reality
-  - Interface
-  - Reference
-  - VR
-  - Virtual Reality
-  - WebXR
-  - WebXR Device API
-  - XR
-  - XRCylinderLayer
-  - Experimental
+status:
+  - experimental
 browser-compat: api.XRCylinderLayer
 ---
+
 {{securecontext_header}}{{APIRef("WebXR Device API")}}{{SeeCompatTable}}
 
 The **`XRCylinderLayer`** interface of the [WebXR Device API](/en-US/docs/Web/API/WebXR_Device_API) is a layer that takes up a curved rectangular space in the virtual environment. Only the front of the layer is visible.
@@ -32,7 +22,7 @@ To present layers to the XR device, add them to the `layers` render state using 
 
 {{InheritanceDiagram}}
 
-## Properties
+## Instance properties
 
 _Inherits properties from its parent, {{domxref("XRCompositionLayer")}}._
 
@@ -47,7 +37,7 @@ _Inherits properties from its parent, {{domxref("XRCompositionLayer")}}._
 - {{domxref("XRCylinderLayer.transform")}} {{Experimental_Inline}}
   - : An {{domxref("XRRigidTransform")}} representing the offset and orientation relative to `space`.
 
-## Methods
+## Instance methods
 
 _Inherits methods from its parents, {{domxref("XRCompositionLayer")}} and {{domxref("EventTarget")}}_.
 

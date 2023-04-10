@@ -1,18 +1,10 @@
 ---
 title: bookmarks.create()
 slug: Mozilla/Add-ons/WebExtensions/API/bookmarks/create
-tags:
-  - API
-  - Add-ons
-  - Bookmarks
-  - Create
-  - Extensions
-  - Method
-  - Non-standard
-  - Reference
-  - WebExtensions
+page-type: webextension-api-function
 browser-compat: webextensions.api.bookmarks.create
 ---
+
 {{AddonSidebar()}}
 
 Creates a bookmark or folder as a child of the {{WebExtAPIRef("bookmarks.BookmarkTreeNode", "BookmarkTreeNode")}} with the specified `parentId`. To create a folder, omit or leave empty the {{WebExtAPIRef("bookmarks.CreateDetails", "CreateDetails", "url")}} parameter.
@@ -23,7 +15,7 @@ This is an asynchronous function that returns a [`Promise`](/en-US/docs/Web/Java
 
 ## Syntax
 
-```js
+```js-nolint
 let createBookmark = browser.bookmarks.create(
   bookmark                  // CreateDetails object
 )
@@ -51,7 +43,7 @@ function onCreated(node) {
 
 let createBookmark = browser.bookmarks.create({
   title: "bookmarks.create() on MDN",
-  url: "https://developer.mozilla.org/Add-ons/WebExtensions/API/bookmarks/create"
+  url: "https://developer.mozilla.org/Add-ons/WebExtensions/API/bookmarks/create",
 });
 
 createBookmark.then(onCreated);
@@ -64,8 +56,6 @@ createBookmark.then(onCreated);
 {{Compat}}
 
 > **Note:** This API is based on Chromium's [`chrome.bookmarks`](https://developer.chrome.com/docs/extensions/reference/bookmarks/#method-create) API. This documentation is derived from [`bookmarks.json`](https://chromium.googlesource.com/chromium/src/+/master/chrome/common/extensions/api/bookmarks.json) in the Chromium code.
->
-> Microsoft Edge compatibility data is supplied by Microsoft Corporation and is included here under the Creative Commons Attribution 3.0 United States License.
 
 <!--
 // Copyright 2015 The Chromium Authors. All rights reserved.

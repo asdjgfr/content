@@ -1,19 +1,13 @@
 ---
-title: XRWebGLSubImage.colorTexture
+title: "XRWebGLSubImage: colorTexture property"
+short-title: colorTexture
 slug: Web/API/XRWebGLSubImage/colorTexture
 page-type: web-api-instance-property
-tags:
-  - API
-  - Property
-  - Reference
-  - VR
-  - WebXR
-  - WebXR API
-  - WebXR Device API
-  - XR
-  - Experimental
+status:
+  - experimental
 browser-compat: api.XRWebGLSubImage.colorTexture
 ---
+
 {{APIRef("WebXR Device API")}}{{SeeCompatTable}}
 
 The read-only **`colorTexture`** property of the {{domxref("XRWebGLSubImage")}} interface represents the color {{domxref("WebGLTexture")}} object for the {{domxref("XRCompositionLayer")}} to render.

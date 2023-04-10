@@ -1,18 +1,11 @@
 ---
-title: Element.setAttribute()
+title: "Element: setAttribute() method"
+short-title: setAttribute()
 slug: Web/API/Element/setAttribute
 page-type: web-api-instance-method
-tags:
-  - API
-  - DOM
-  - Element
-  - Method
-  - NeedsBrowserCompatibility
-  - NeedsSpecTable
-  - Reference
-  - setAttribute
 browser-compat: api.Element.setAttribute
 ---
+
 {{APIRef("DOM")}}
 
 Sets the value of an attribute on the specified element. If
@@ -25,7 +18,7 @@ To get the current value of an attribute, use {{domxref("Element.getAttribute",
 
 ## Syntax
 
-```js
+```js-nolint
 setAttribute(name, value)
 ```
 

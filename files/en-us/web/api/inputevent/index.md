@@ -2,16 +2,9 @@
 title: InputEvent
 slug: Web/API/InputEvent
 page-type: web-api-interface
-tags:
-  - API
-  - DOM
-  - DOM Events
-  - Input
-  - Interface
-  - Reference
-  - events
 browser-compat: api.InputEvent
 ---
+
 {{APIRef("UI Events")}}
 
 The **`InputEvent`** interface represents an event notifying the user of editable content changes.
@@ -23,7 +16,7 @@ The **`InputEvent`** interface represents an event notifying the user of editabl
 - {{DOMxRef("InputEvent.InputEvent", "InputEvent()")}}
   - : Creates an `InputEvent` object.
 
-## Properties
+## Instance properties
 
 _This interface inherits properties from its parents, {{DOMxRef("UIEvent")}} and {{DOMxRef("Event")}}._
 
@@ -36,7 +29,7 @@ _This interface inherits properties from its parents, {{DOMxRef("UIEvent")}} and
 - {{DOMxRef("InputEvent.isComposing")}} {{ReadOnlyInline}}
   - : Returns a {{JSxRef("Boolean")}} value indicating if the event is fired after {{domxref("Element/compositionstart_event", "compositionstart")}} and before {{domxref("Element/compositionend_event", "compositionend")}}.
 
-## Methods
+## Instance methods
 
 _This interface inherits methods from its parents, {{DOMxRef("UIEvent")}} and {{DOMxRef("Event")}}._
 

@@ -1,21 +1,11 @@
 ---
-title: RTCDTMFSender.toneBuffer
+title: "RTCDTMFSender: toneBuffer property"
+short-title: toneBuffer
 slug: Web/API/RTCDTMFSender/toneBuffer
 page-type: web-api-instance-property
-tags:
-  - Audio
-  - DTMF
-  - Media
-  - Property
-  - RTCDTMFSender
-  - Reference
-  - Telephony
-  - Touch-tone
-  - WebRTC
-  - WebRTC API
-  - toneBuffer
 browser-compat: api.RTCDTMFSender.toneBuffer
 ---
+
 {{APIRef("WebRTC")}}
 
 The {{domxref("RTCDTMFSender")}} interface's toneBuffer property returns a string

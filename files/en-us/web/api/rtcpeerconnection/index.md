@@ -2,22 +2,9 @@
 title: RTCPeerConnection
 slug: Web/API/RTCPeerConnection
 page-type: web-api-interface
-tags:
-  - API
-  - Audio
-  - Communication
-  - Interface
-  - Media
-  - NeedsUpdate
-  - Networking
-  - RTCPeerConnection
-  - Reference
-  - Telecom
-  - Video
-  - WebRTC
-  - WebRTC API
 browser-compat: api.RTCPeerConnection
 ---
+
 {{APIRef('WebRTC')}}
 
 The **`RTCPeerConnection`** interface represents a WebRTC connection between the local computer and a remote peer. It provides methods to connect to a remote peer, maintain and monitor the connection, and close the connection once it's no longer needed.
@@ -30,13 +17,7 @@ The **`RTCPeerConnection`** interface represents a WebRTC connection between the
   - : Returns a newly-created `RTCPeerConnection`,
     which represents a connection between the local device and a remote peer.
 
-## Static methods
-
-- {{DOMxRef("RTCPeerConnection.generateCertificate", "generateCertificate()")}}
-  - : Creates an X.509 certificate and its corresponding private key,
-    returning a {{jsxref("Promise")}} that resolves with the new {{DOMxRef("RTCCertificate")}} once it is generated.
-
-## Properties
+## Instance properties
 
 _Also inherits properties from {{DOMxRef("EventTarget")}}._
 
@@ -119,7 +100,13 @@ _Also inherits properties from {{DOMxRef("EventTarget")}}._
     `stable`, `have-local-offer`, `have-remote-offer`,
     `have-local-pranswer`, `have-remote-pranswer`, or `closed`.
 
-## Methods
+## Static methods
+
+- {{DOMxRef("RTCPeerConnection.generateCertificate", "generateCertificate()")}}
+  - : Creates an X.509 certificate and its corresponding private key,
+    returning a {{jsxref("Promise")}} that resolves with the new {{DOMxRef("RTCCertificate")}} once it is generated.
+
+## Instance methods
 
 _Also inherits methods from {{DOMxRef("EventTarget")}}._
 
@@ -236,12 +223,6 @@ _Also inherits methods from {{DOMxRef("EventTarget")}}._
   - : Creates a new {{DOMxRef("RTCDTMFSender")}},
     associated to a specific {{DOMxRef("MediaStreamTrack")}},
     that will be able to send {{Glossary("DTMF")}} phone signaling over the connection.
-- {{DOMxRef("RTCPeerConnection.getStreamById", "getStreamById()")}} {{Deprecated_Inline}} {{Non-standard_Inline}}
-  - : Returns the {{DOMxRef("MediaStream")}} with the given id
-    that is associated with local or remote end of the connection.
-    This property has been replaced
-    with the {{DOMxRef("RTCPeerConnection.getSenders", "getSenders()")}}
-    and {{DOMxRef("RTCPeerConnection.getReceivers", "getReceivers()")}} methods.
 - {{DOMxRef("RTCPeerConnection.removeStream", "removeStream()")}} {{Deprecated_Inline}} {{Non-standard_Inline}}
   - : Removes a {{DOMxRef("MediaStream")}} as a local source of audio or video.
     Because this method is obsolete,

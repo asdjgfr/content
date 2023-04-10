@@ -1,16 +1,13 @@
 ---
-title: ImageTrackList.length
+title: "ImageTrackList: length property"
+short-title: length
 slug: Web/API/ImageTrackList/length
 page-type: web-api-instance-property
-tags:
-  - API
-  - Property
-  - Reference
-  - length
-  - ImageTrackList
-  - Experimental
+status:
+  - experimental
 browser-compat: api.ImageTrackList.length
 ---
+
 {{APIRef("WebCodecs API")}}{{SeeCompatTable}}
 
 The **`length`** property of the {{domxref("ImageTrackList")}} interface returns the length of the `ImageTrackList`.

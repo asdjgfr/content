@@ -1,14 +1,10 @@
 ---
 title: Number.prototype.valueOf()
 slug: Web/JavaScript/Reference/Global_Objects/Number/valueOf
-tags:
-  - JavaScript
-  - Method
-  - Number
-  - Prototype
-  - Reference
+page-type: javascript-instance-method
 browser-compat: javascript.builtins.Number.valueOf
 ---
+
 {{JSRef}}
 
 The **`valueOf()`** method returns the wrapped primitive value
@@ -18,7 +14,7 @@ of a {{jsxref("Number")}} object.
 
 ## Syntax
 
-```js
+```js-nolint
 valueOf()
 ```
 

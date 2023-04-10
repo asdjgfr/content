@@ -1,12 +1,10 @@
 ---
 title: <foreignObject>
 slug: Web/SVG/Element/foreignObject
-tags:
-  - Element
-  - Reference
-  - SVG
+page-type: svg-element
 browser-compat: svg.elements.foreignObject
 ---
+
 {{SVGRef}}
 
 The **`<foreignObject>`** [SVG](/en-US/docs/Web/SVG) element includes elements from a different XML namespace. In the context of a browser, it is most likely (X)HTML.
@@ -14,7 +12,11 @@ The **`<foreignObject>`** [SVG](/en-US/docs/Web/SVG) element includes elements f
 ## Example
 
 ```css hidden
-html,body,svg { height:100% }
+html,
+body,
+svg {
+  height: 100%;
+}
 ```
 
 ```html
@@ -38,10 +40,9 @@ html,body,svg { height:100% }
       context of an SVG document
     -->
     <div xmlns="http://www.w3.org/1999/xhtml">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Sed mollis mollis mi ut ultricies. Nullam magna ipsum,
-      porta vel dui convallis, rutrum imperdiet eros. Aliquam
-      erat volutpat.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis mollis
+      mi ut ultricies. Nullam magna ipsum, porta vel dui convallis, rutrum
+      imperdiet eros. Aliquam erat volutpat.
     </div>
   </foreignObject>
 </svg>

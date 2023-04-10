@@ -1,12 +1,10 @@
 ---
 title: <set>
 slug: Web/SVG/Element/set
-tags:
-  - Element
-  - SVG
-  - SVG Animation
+page-type: svg-element
 browser-compat: svg.elements.set
 ---
+
 {{SVGRef}}
 
 The SVG **`<set>`** element provides a simple means of just setting the value of an attribute for a specified duration.
@@ -18,14 +16,23 @@ It supports all attribute types, including those that cannot reasonably be inter
 ## Example
 
 ```css hidden
-html,body,svg { height:100% }
+html,
+body,
+svg {
+  height: 100%;
+}
 ```
 
 ```html
 <svg viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
   <style>
-    rect { cursor: pointer }
-    .round { rx: 5px; fill: green; }
+    rect {
+      cursor: pointer;
+    }
+    .round {
+      rx: 5px;
+      fill: green;
+    }
   </style>
 
   <rect id="me" width="10" height="10">

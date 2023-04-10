@@ -1,15 +1,10 @@
 ---
 title: RegExp.prototype.ignoreCase
 slug: Web/JavaScript/Reference/Global_Objects/RegExp/ignoreCase
-tags:
-  - JavaScript
-  - Property
-  - Prototype
-  - Reference
-  - RegExp
-  - Regular Expressions
+page-type: javascript-instance-accessor-property
 browser-compat: javascript.builtins.RegExp.ignoreCase
 ---
+
 {{JSRef}}
 
 The **`ignoreCase`** accessor property indicates whether or not the `i` flag is used with the regular expression.

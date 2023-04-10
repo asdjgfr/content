@@ -1,18 +1,13 @@
 ---
-title: Notification.actions
+title: "Notification: actions property"
+short-title: actions
 slug: Web/API/Notification/actions
 page-type: web-api-instance-property
-tags:
-  - API
-  - Notification
-  - Notifications
-  - Notifications API
-  - Property
-  - Reference
-  - actions
-  - Experimental
+status:
+  - experimental
 browser-compat: api.Notification.actions
 ---
+
 {{APIRef("Web Notifications")}}{{AvailableInWorkers}}{{SecureContext_Header}}{{SeeCompatTable}}
 
 The **`actions`** read-only property of the {{domxref("Notification")}} interface provides the actions available for users to choose from for interacting with the notification.

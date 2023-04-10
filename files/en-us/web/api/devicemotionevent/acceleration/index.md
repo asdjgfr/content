@@ -1,17 +1,11 @@
 ---
-title: DeviceMotionEvent.acceleration
+title: "DeviceMotionEvent: acceleration property"
+short-title: acceleration
 slug: Web/API/DeviceMotionEvent/acceleration
 page-type: web-api-instance-property
-tags:
-  - API
-  - Device Orientation
-  - Mobile
-  - Motion
-  - Orientation
-  - Property
-  - Reference
 browser-compat: api.DeviceMotionEvent.acceleration
 ---
+
 {{APIRef("Device Orientation Events")}}
 
 The **`acceleration`** property returns the amount of acceleration recorded by

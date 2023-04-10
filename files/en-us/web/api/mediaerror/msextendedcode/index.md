@@ -1,8 +1,10 @@
 ---
-title: MediaError.msExtendedCode
+title: "MediaError: msExtendedCode property"
+short-title: msExtendedCode
 slug: Web/API/MediaError/msExtendedCode
 page-type: web-api-instance-property
 ---
+
 {{APIRef("DOM")}}
 
 {{Non-standard_header()}}
@@ -20,12 +22,20 @@ Type: **long**; The platform specific error code.
 ```js
 const video1 = object.getElementById("video1");
 
-video1.addEventListener('error', () => {
-  const error = video1.error.msExtendedCode;
-  //…
-}, false);
+video1.addEventListener(
+  "error",
+  () => {
+    const error = video1.error.msExtendedCode;
+    //…
+  },
+  false
+);
 
-video.addEventListener('canplay', () => {
-  video1.play();
-}, false);
+video.addEventListener(
+  "canplay",
+  () => {
+    video1.play();
+  },
+  false
+);
 ```

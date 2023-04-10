@@ -1,16 +1,10 @@
 ---
 title: 'SVG attribute: crossorigin'
 slug: Web/SVG/Attribute/crossorigin
-tags:
-  - Advanced
-  - Attribute
-  - CORS
-  - SVG
-  - NeedsContent
-  - Reference
-  - Security
+page-type: svg-attribute
 browser-compat: api.SVGImageElement.crossOrigin
 ---
+
 {{SVGRef}}
 
 The crossorigin attribute, valid on the {{ SVGElement("image") }} element, provides support for [CORS](/en-US/docs/Web/HTTP/CORS), defining how the element handles crossorigin requests, thereby enabling the configuration of the CORS requests for the element's fetched data. It is a CORS settings attribute.
@@ -50,7 +44,7 @@ This table shows all possible keywords and their meaning:
   </tbody>
 </table>
 
-It follows the same processing rules as the HTML attribute {{htmlattrxref("crossorigin")}}.
+It follows the same processing rules as the HTML attribute [`crossorigin`](/en-US/docs/Web/HTML/Global_attributes#crossorigin).
 
 ## Specifications
 

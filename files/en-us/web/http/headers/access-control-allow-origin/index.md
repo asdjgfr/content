@@ -1,21 +1,9 @@
 ---
 title: Access-Control-Allow-Origin
 slug: Web/HTTP/Headers/Access-Control-Allow-Origin
-tags:
-  - Access Control
-  - Access-Control-Allow-Origin
-  - CORS
-  - Dealing with CORS
-  - HTTP
-  - HTTP Header
-  - How to Fix CORS
-  - Reference
-  - Security
-  - cross-origin issue
-  - header
-  - origin
 browser-compat: http.headers.Access-Control-Allow-Origin
 ---
+
 {{HTTPSidebar}}
 
 The **`Access-Control-Allow-Origin`** response header indicates whether the response can be shared with requesting code from the given {{glossary("origin")}}.

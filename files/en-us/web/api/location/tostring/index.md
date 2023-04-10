@@ -1,15 +1,11 @@
 ---
-title: location.toString()
+title: "location: toString() method"
+short-title: toString()
 slug: Web/API/Location/toString
 page-type: web-api-instance-method
-tags:
-  - API
-  - Location
-  - Method
-  - Reference
-  - Stringifier
 browser-compat: api.Location.toString
 ---
+
 {{ApiRef("Location")}}
 
 The **`toString()`** {{Glossary("stringifier")}} method of the
@@ -18,7 +14,7 @@ whole URL. It is a read-only version of {{domxref("Location.href")}}.
 
 ## Syntax
 
-```js
+```js-nolint
 toString()
 ```
 

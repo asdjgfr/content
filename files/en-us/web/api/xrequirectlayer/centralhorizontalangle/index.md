@@ -1,19 +1,13 @@
 ---
-title: XREquirectLayer.centralHorizontalAngle
+title: "XREquirectLayer: centralHorizontalAngle property"
+short-title: centralHorizontalAngle
 slug: Web/API/XREquirectLayer/centralHorizontalAngle
 page-type: web-api-instance-property
-tags:
-  - API
-  - Property
-  - Reference
-  - VR
-  - WebXR
-  - WebXR API
-  - WebXR Device API
-  - XR
-  - Experimental
+status:
+  - experimental
 browser-compat: api.XREquirectLayer.centralHorizontalAngle
 ---
+
 {{APIRef("WebXR Device API")}}{{SeeCompatTable}}
 
 The **`centralHorizontalAngle`** property of the {{domxref("XREquirectLayer")}} interface represents the central horizontal angle in radians for the sphere.

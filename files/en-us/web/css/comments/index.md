@@ -1,11 +1,9 @@
 ---
 title: Comments
 slug: Web/CSS/Comments
-tags:
-  - CSS
-  - Guide
-  - Reference
+page-type: guide
 ---
+
 {{CSSRef}}
 
 A CSS **comment** is used to add explanatory notes to the code or to prevent the browser from interpreting specific parts of the style sheet. By design, comments have no effect on the layout of a document.

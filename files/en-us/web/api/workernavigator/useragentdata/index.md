@@ -1,16 +1,13 @@
 ---
-title: WorkerNavigator.userAgentData
+title: "WorkerNavigator: userAgentData property"
+short-title: userAgentData
 slug: Web/API/WorkerNavigator/userAgentData
 page-type: web-api-instance-property
-tags:
-  - API
-  - Navigator
-  - Property
-  - Reference
-  - NavigatorUAData
-  - Experimental
+status:
+  - experimental
 browser-compat: api.WorkerNavigator.userAgentData
 ---
+
 {{APIRef("User-Agent Client Hints API")}}{{SeeCompatTable}}
 
 The **`userAgentData`** read-only property of the {{domxref("WorkerNavigator")}} interface returns an {{domxref("NavigatorUAData")}} object

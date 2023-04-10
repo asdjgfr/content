@@ -1,13 +1,11 @@
 ---
 title: background_color
 slug: Web/Manifest/background_color
-tags:
-  - Manifest
-  - Web
-  - background_color
-  - Experimental
+status:
+  - experimental
 browser-compat: html.manifest.background_color
 ---
+
 {{QuickLinksWithSubpages("/en-US/docs/Web/Manifest")}}{{SeeCompatTable}}
 
 <table class="properties">
@@ -15,10 +13,6 @@ browser-compat: html.manifest.background_color
     <tr>
       <th scope="row">Type</th>
       <td><code>String</code></td>
-    </tr>
-    <tr>
-      <th scope="row">Mandatory</th>
-      <td>No</td>
     </tr>
   </tbody>
 </table>

@@ -2,20 +2,16 @@
 title: GamepadButton
 slug: Web/API/GamepadButton
 page-type: web-api-interface
-tags:
-  - API
-  - Gamepad API
-  - Games
-  - Reference
 browser-compat: api.GamepadButton
 ---
+
 {{APIRef("Gamepad API")}}{{securecontext_header}}
 
 The **`GamepadButton`** interface defines an individual button of a gamepad or other controller, allowing access to the current state of different types of buttons available on the control device.
 
 A `GamepadButton` object is returned by querying any value of the array returned by the `buttons` property of the {{domxref("Gamepad")}} interface.
 
-## Properties
+## Instance properties
 
 - {{domxref("GamepadButton.pressed")}} {{ReadOnlyInline}}
   - : A boolean value indicating whether the button is currently pressed (`true`) or unpressed (`false`).
@@ -46,7 +42,7 @@ function gameLoop() {
   ball.style.top = `${b * 2}px`;
 
   requestAnimationFrame(gameLoop);
-};
+}
 ```
 
 ## Specifications

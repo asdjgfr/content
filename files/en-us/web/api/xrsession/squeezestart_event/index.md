@@ -1,31 +1,13 @@
 ---
-title: 'XRSession: squeezestart event'
+title: "XRSession: squeezestart event"
+short-title: squeezestart
 slug: Web/API/XRSession/squeezestart_event
 page-type: web-api-event
-tags:
-  - API
-  - AR
-  - Event
-  - Input Sources
-  - Inputs
-  - Mixed
-  - Primary Squeeze Actions
-  - Reality
-  - Reference
-  - Squeeze Actions
-  - VR
-  - Virtual
-  - WebXR
-  - WebXR API
-  - WebXR Device API
-  - XR
-  - XRSession
-  - augmented
-  - controllers
-  - squeezestart
-  - Experimental
+status:
+  - experimental
 browser-compat: api.XRSession.squeezestart_event
 ---
+
 {{APIRef("WebXR Device API")}}{{SeeCompatTable}}
 
 The [WebXR](/en-US/docs/Web/API/WebXR_Device_API) event **`squeezestart`** is sent to an {{domxref("XRSession")}} when the user begins a [primary squeeze action](/en-US/docs/Web/API/WebXR_Device_API/Inputs#primary_squeeze_actions) on one of its input sources.

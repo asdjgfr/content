@@ -1,15 +1,9 @@
 ---
 title: aria-readonly
 slug: Web/Accessibility/ARIA/Attributes/aria-readonly
-tags:
-  - Accessibility
-  - ARIA
-  - ARIA attribute
-  - ARIA property
-  - aria-readonly
-  - Reference
 spec-urls: https://w3c.github.io/aria/#aria-readonly
 ---
+
 The `aria-readonly` attribute indicates that the element is not editable, but is otherwise operable.
 
 ## Description

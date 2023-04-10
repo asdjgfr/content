@@ -1,16 +1,11 @@
 ---
-title: PublicKeyCredential.isUserVerifyingPlatformAuthenticatorAvailable()
+title: "PublicKeyCredential: isUserVerifyingPlatformAuthenticatorAvailable() static method"
+short-title: isUserVerifyingPlatformAuthenticatorAvailable()
 slug: Web/API/PublicKeyCredential/isUserVerifyingPlatformAuthenticatorAvailable
 page-type: web-api-static-method
-tags:
-  - API
-  - Method
-  - PublicKeyCredential
-  - Reference
-  - Web Authentication API
-  - WebAuthn
 browser-compat: api.PublicKeyCredential.isUserVerifyingPlatformAuthenticatorAvailable
 ---
+
 {{APIRef("Web Authentication API")}}{{securecontext_header}}
 
 **`isUserVerifyingPlatformAuthenticatorAvailable()`** is a
@@ -31,7 +26,7 @@ from the user in order to identify them. Common user-verifying platform authenti
 
 ## Syntax
 
-```js
+```js-nolint
 isUserVerifyingPlatformAuthenticatorAvailable()
 ```
 
@@ -62,7 +57,8 @@ PublicKeyCredential.isUserVerifyingPlatformAuthenticatorAvailable()
       // Use another kind of authenticator or a classical login/password
       // workflow
     }
-  }).catch((err) => {
+  })
+  .catch((err) => {
     // Something went wrong
     console.error(err);
   });

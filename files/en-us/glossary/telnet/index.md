@@ -1,10 +1,9 @@
 ---
 title: Telnet
 slug: Glossary/Telnet
-tags:
-  - Glossary
-  - Infrastructure
+page-type: glossary-definition
 ---
+
 **Telnet** is a command line tool and an underlying TCP/IP protocol for accessing remote computers.
 
 ## See also

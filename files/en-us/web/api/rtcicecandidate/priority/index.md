@@ -1,21 +1,11 @@
 ---
-title: RTCIceCandidate.priority
+title: "RTCIceCandidate: priority property"
+short-title: priority
 slug: Web/API/RTCIceCandidate/priority
 page-type: web-api-instance-property
-tags:
-  - API
-  - Candidate
-  - ICE
-  - Property
-  - RTCIceCandidate
-  - Read-only
-  - Reference
-  - SDP
-  - WebRTC
-  - WebRTC API
-  - priority
 browser-compat: api.RTCIceCandidate.priority
 ---
+
 {{APIRef("WebRTC")}}
 
 The **{{domxref("RTCIceCandidate")}}** interface's read-only **`priority`** property specifies the candidate's priority according to the remote peer; the higher this value is, the better the remote peer considers the candidate to be.
@@ -56,7 +46,7 @@ let bestCandidate = {
   candidate: "",
   sdpMid: null,
   sdpMLineIndex: null,
-  priority: 0
+  priority: 0,
 };
 
 function handleCandidate(candidateString) {

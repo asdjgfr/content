@@ -1,13 +1,8 @@
 ---
 title: Add-ons
 slug: Mozilla/Add-ons
-tags:
-  - Add-ons
-  - Extension
-  - Extensions
-  - Landing
-  - Mozilla
 ---
+
 {{AddonSidebarMain}}
 
 Add-ons allow developers to extend and modify the functionality of Firefox. They are written using standard Web technologies - JavaScript, HTML, and CSS - plus some dedicated JavaScript APIs.

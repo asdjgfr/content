@@ -1,14 +1,9 @@
 ---
 title: Typical use cases of flexbox
 slug: Web/CSS/CSS_Flexible_Box_Layout/Typical_Use_Cases_of_Flexbox
-tags:
-  - CSS
-  - Flexible Box
-  - Guide
-  - common uses
-  - flexbox
-  - patterns
+page-type: guide
 ---
+
 {{CSSRef}}
 
 In this guide, we will take a look at some of the common use cases for flexbox — those places where it makes more sense than another layout method.

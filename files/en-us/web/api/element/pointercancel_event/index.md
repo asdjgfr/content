@@ -1,18 +1,11 @@
 ---
-title: 'Element: pointercancel event'
+title: "Element: pointercancel event"
+short-title: pointercancel
 slug: Web/API/Element/pointercancel_event
-tags:
-  - Event
-  - HTML DOM
-  - Element
-  - Pointer Events
-  - PointerEvent
-  - Reference
-  - pointercancel
-  - user input
 browser-compat: api.Element.pointercancel_event
 page-type: web-api-event
 ---
+
 {{APIRef}}
 
 The **`pointercancel`** event is fired when the browser determines that there are unlikely to be any more pointer events, or if after the {{domxref("Element/pointerdown_event", "pointerdown")}} event is fired, the pointer is then used to manipulate the viewport by panning, zooming, or scrolling.
@@ -31,9 +24,9 @@ Some examples of situations that will trigger a `pointercancel` event:
 Use the event name in methods like {{domxref("EventTarget.addEventListener", "addEventListener()")}}, or set an event handler property.
 
 ```js
-addEventListener('pointercancel', (event) => {});
+addEventListener("pointercancel", (event) => {});
 
-onpointercancel = (event) => { };
+onpointercancel = (event) => {};
 ```
 
 ## Event type
@@ -63,7 +56,7 @@ _This interface inherits properties from {{domxref("MouseEvent")}} and {{domxref
 - {{ domxref('PointerEvent.twist')}} {{ReadOnlyInline}}
   - : The clockwise rotation of the pointer (e.g. pen stylus) around its major axis in degrees, with a value in the range `0` to `359`.
 - {{ domxref('PointerEvent.pointerType')}} {{ReadOnlyInline}}
-  - : Indicates the device type that caused the event (mouse, pen, touch, etc.)
+  - : Indicates the device type that caused the event (mouse, pen, touch, etc.).
 - {{ domxref('PointerEvent.isPrimary')}} {{ReadOnlyInline}}
   - : Indicates if the pointer represents the primary pointer of this pointer type.
 
@@ -72,20 +65,20 @@ _This interface inherits properties from {{domxref("MouseEvent")}} and {{domxref
 Using `addEventListener()`:
 
 ```js
-const para = document.querySelector('p');
+const para = document.querySelector("p");
 
-para.addEventListener('pointercancel', (event) => {
-  console.log('Pointer event cancelled');
+para.addEventListener("pointercancel", (event) => {
+  console.log("Pointer event cancelled");
 });
 ```
 
 Using the `onpointercancel` event handler property:
 
 ```js
-const para = document.querySelector('p');
+const para = document.querySelector("p");
 
 para.onpointercancel = (event) => {
-  console.log('Pointer event cancelled');
+  console.log("Pointer event cancelled");
 };
 ```
 
@@ -101,8 +94,8 @@ para.onpointercancel = (event) => {
 
 - Related events
 
-  - [`gotpointercapture`](/en-US/docs/Web/API/HTMLElement/gotpointercapture_event)
-  - [`lostpointercapture`](/en-US/docs/Web/API/HTMLElement/lostpointercapture_event)
+  - [`gotpointercapture`](/en-US/docs/Web/API/Element/gotpointercapture_event)
+  - [`lostpointercapture`](/en-US/docs/Web/API/Element/lostpointercapture_event)
   - [`pointerover`](/en-US/docs/Web/API/Element/pointerover_event)
   - [`pointerenter`](/en-US/docs/Web/API/Element/pointerenter_event)
   - [`pointerdown`](/en-US/docs/Web/API/Element/pointerdown_event)
@@ -110,5 +103,3 @@ para.onpointercancel = (event) => {
   - [`pointerup`](/en-US/docs/Web/API/Element/pointerup_event)
   - [`pointerout`](/en-US/docs/Web/API/Element/pointerout_event)
   - [`pointerleave`](/en-US/docs/Web/API/Element/pointerleave_event)
-
-- This event on `Document` targets: [`pointercancel`](/en-US/docs/Web/API/Document/pointercancel_event) event

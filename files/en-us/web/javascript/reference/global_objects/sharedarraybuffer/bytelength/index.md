@@ -1,14 +1,10 @@
 ---
 title: SharedArrayBuffer.prototype.byteLength
 slug: Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer/byteLength
-tags:
-  - JavaScript
-  - Property
-  - Shared Memory
-  - SharedArrayBuffer
-  - TypedArrays
+page-type: javascript-instance-accessor-property
 browser-compat: javascript.builtins.SharedArrayBuffer.byteLength
 ---
+
 {{JSRef}}
 
 The **`byteLength`** accessor property represents the length of an {{jsxref("SharedArrayBuffer")}} in bytes.

@@ -1,14 +1,10 @@
 ---
 title: Date.prototype.setMonth()
 slug: Web/JavaScript/Reference/Global_Objects/Date/setMonth
-tags:
-  - Date
-  - JavaScript
-  - Method
-  - Prototype
-  - Reference
+page-type: javascript-instance-method
 browser-compat: javascript.builtins.Date.setMonth
 ---
+
 {{JSRef}}
 
 The **`setMonth()`** method sets the month for a specified date according to the currently set year.
@@ -17,7 +13,7 @@ The **`setMonth()`** method sets the month for a specified date according to the
 
 ## Syntax
 
-```js
+```js-nolint
 setMonth(monthValue)
 setMonth(monthValue, dayValue)
 ```

@@ -1,17 +1,10 @@
 ---
 title: browserAction.getBadgeTextColor()
 slug: Mozilla/Add-ons/WebExtensions/API/browserAction/getBadgeTextColor
-tags:
-  - API
-  - Add-ons
-  - Extensions
-  - Method
-  - Reference
-  - WebExtensions
-  - browserAction
-  - getBadgeTextColor
+page-type: webextension-api-function
 browser-compat: webextensions.api.browserAction.getBadgeTextColor
 ---
+
 {{AddonSidebar()}}
 
 Gets the text color for the browser action's badge.
@@ -24,7 +17,7 @@ This is an asynchronous function that returns a [`Promise`](/en-US/docs/Web/Java
 
 ## Syntax
 
-```js
+```js-nolint
 browser.browserAction.getBadgeTextColor(
   details // object
 )

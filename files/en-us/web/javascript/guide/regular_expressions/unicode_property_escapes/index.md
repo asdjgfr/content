@@ -1,27 +1,22 @@
 ---
 title: Unicode property escapes
-slug: Web/JavaScript/Guide/Regular_Expressions/Unicode_Property_Escapes
-tags:
-  - Guide
-  - JavaScript
-  - Reference
-  - Regular Expressions
-  - regex
-  - unicode property escapes
+slug: Web/JavaScript/Guide/Regular_expressions/Unicode_property_escapes
+page-type: guide
 ---
+
 {{jsSidebar("JavaScript Guide")}}
 
-**Unicode property escapes** [Regular Expressions](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions) allows for matching characters based on their Unicode properties. A character is described by several properties which are either binary ("boolean-like") or non-binary. For instance, unicode property escapes can be used to match emojis, punctuations, letters (even letters from specific languages or scripts), etc.
+**Unicode property escapes** [Regular Expressions](/en-US/docs/Web/JavaScript/Guide/Regular_expressions) allows for matching characters based on their Unicode properties. A character is described by several properties which are either binary ("boolean-like") or non-binary. For instance, unicode property escapes can be used to match emojis, punctuations, letters (even letters from specific languages or scripts), etc.
+
+> **Note:** For Unicode property escapes to work, a regular expression must use [the `u` flag](/en-US/docs/Web/JavaScript/Guide/Regular_expressions#advanced_searching_with_flags) which indicates a string must be considered as a series of Unicode code points. See also [`RegExp.prototype.unicode`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/unicode).
+
+> **Note:** Some Unicode properties encompasses many more characters than some [character classes](/en-US/docs/Web/JavaScript/Guide/Regular_expressions/Character_classes) (such as `\w` which matches only latin letters, `a` to `z`) but the latter is better supported among browsers (as of January 2020).
 
 {{EmbedInteractiveExample("pages/js/regexp-unicode-property-escapes.html", "taller")}}
 
-> **Note:** For Unicode property escapes to work, a regular expression must use [the `u` flag](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#advanced_searching_with_flags) which indicates a string must be considered as a series of Unicode code points. See also [`RegExp.prototype.unicode`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/unicode).
-
-> **Note:** Some Unicode properties encompasses many more characters than some [character classes](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Character_Classes) (such as `\w` which matches only latin letters, `a` to `z`) but the latter is better supported among browsers (as of January 2020).
-
 ## Syntax
 
-```js
+```js-nolint
 // Non-binary values
 \p{UnicodePropertyValue}
 \p{UnicodePropertyName=UnicodePropertyValue}
@@ -89,8 +84,8 @@ mixedCharacters.match(/\p{Script=Latin}/u); // a
 // Using a short alias for the script
 mixedCharacters.match(/\p{Script=Greek}/u); // ε
 
-// Using the short name Sc for the Script property
-mixedCharacters.match(/\p{Sc=Cyrillic}/u); // Л
+// Using the short name sc for the Script property
+mixedCharacters.match(/\p{sc=Cyrillic}/u); // Л
 ```
 
 For more details, please refer to [the Unicode specification](https://unicode.org/reports/tr24/#Script) and the [Scripts table in the ECMAScript specification](https://tc39.es/ecma262/multipage/text-processing.html#table-unicode-script-values).
@@ -111,7 +106,7 @@ If a character is used in a limited set of scripts, the `Script` property will o
 
 ### Unicode property escapes vs. character classes
 
-With JavaScript regular expressions, it is also possible to use [character classes](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Character_Classes) and especially `\w` or `\d` to match letters or digits. However, such forms only match characters from the _Latin_ script (in other words, `a` to `z` and `A` to `Z` for `\w` and `0` to `9` for `\d`). As shown in [this example](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Character_Classes#looking_for_a_word_from_unicode_characters), it might be a bit clumsy to work with non Latin texts.
+With JavaScript regular expressions, it is also possible to use [character classes](/en-US/docs/Web/JavaScript/Guide/Regular_expressions/Character_classes) and especially `\w` or `\d` to match letters or digits. However, such forms only match characters from the _Latin_ script (in other words, `a` to `z` and `A` to `Z` for `\w` and `0` to `9` for `\d`). As shown in [this example](/en-US/docs/Web/JavaScript/Guide/Regular_expressions/Character_classes#looking_for_a_word_from_unicode_characters), it might be a bit clumsy to work with non Latin texts.
 
 Unicode property escapes categories encompass much more characters and `\p{Letter}` or `\p{Number}` will work for any script.
 
@@ -131,12 +126,12 @@ console.table(nonEnglishText.match(regexpUPE));
 
 ## See also
 
-- [Regular expressions guide](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
+- [Regular expressions guide](/en-US/docs/Web/JavaScript/Guide/Regular_expressions)
 
-  - [Character classes](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Character_Classes)
-  - [Assertions](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Assertions)
-  - [Quantifiers](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Quantifiers)
-  - [Groups and backreferences](/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Groups_and_Backreferences)
+  - [Character classes](/en-US/docs/Web/JavaScript/Guide/Regular_expressions/Character_classes)
+  - [Assertions](/en-US/docs/Web/JavaScript/Guide/Regular_expressions/Assertions)
+  - [Quantifiers](/en-US/docs/Web/JavaScript/Guide/Regular_expressions/Quantifiers)
+  - [Groups and backreferences](/en-US/docs/Web/JavaScript/Guide/Regular_expressions/Groups_and_backreferences)
 
 - [The `RegExp()` constructor](/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp)
 - [`RegExp.prototype.unicode`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/unicode)

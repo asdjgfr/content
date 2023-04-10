@@ -1,16 +1,11 @@
 ---
 title: ECT
 slug: Web/HTTP/Headers/ECT
-tags:
-  - ect
-  - Client hints
-  - HTTP
-  - HTTP Header
-  - Request header
-  - Client hints
-  - Experimental
+status:
+  - experimental
 browser-compat: http.headers.ect
 ---
+
 {{HTTPSidebar}} {{SeeCompatTable}}
 
 The **`ECT`** [Client hint](/en-US/docs/Web/HTTP/Client_hints) request header field indicates the {{Glossary("effective connection type")}}: `slow-2g`, `2g`, `3g`, `4g`.
@@ -80,5 +75,5 @@ ECT: 2g
   - {{HTTPHeader("Save-Data")}}
 
 - {{HTTPHeader("Accept-CH")}}
-- [HTTP Caching > Varying responses](/en-US/docs/Web/HTTP/Caching#varying_responses) and {{HTTPHeader("Vary")}}
+- [HTTP Caching > Vary](/en-US/docs/Web/HTTP/Caching#vary) and {{HTTPHeader("Vary")}}
 - {{domxref("NetworkInformation.effectiveType")}}

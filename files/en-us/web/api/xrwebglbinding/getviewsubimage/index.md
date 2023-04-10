@@ -1,24 +1,20 @@
 ---
-title: XRWebGLBinding.getViewSubImage()
+title: "XRWebGLBinding: getViewSubImage() method"
+short-title: getViewSubImage()
 slug: Web/API/XRWebGLBinding/getViewSubImage
 page-type: web-api-instance-method
-tags:
-  - API
-  - Method
-  - Reference
-  - AR
-  - XR
-  - WebXR
-  - Experimental
+status:
+  - experimental
 browser-compat: api.XRWebGLBinding.getViewSubImage
 ---
+
 {{APIRef("WebXR Device API")}}{{SeeCompatTable}}
 
 The **`getViewSubImage()`** method of the {{domxref("XRWebGLBinding")}} interface returns a {{domxref("XRWebGLSubImage")}} object representing the WebGL texture to render for a view.
 
 ## Syntax
 
-```js
+```js-nolint
 getViewSubImage(layer, view)
 ```
 

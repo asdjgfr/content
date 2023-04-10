@@ -1,19 +1,13 @@
 ---
 title: TypedArray.from()
 slug: Web/JavaScript/Reference/Global_Objects/TypedArray/from
-tags:
-  - ECMAScript 2015
-  - JavaScript
-  - Method
-  - TypedArray
-  - TypedArrays
-  - from
-  - Polyfill
+page-type: javascript-static-method
 browser-compat: javascript.builtins.TypedArray.from
 ---
+
 {{JSRef}}
 
-The **`TypedArray.from()`** method creates a new
+The **`TypedArray.from()`** static method creates a new
 [typed array](/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray#typedarray_objects)
 from an array-like or iterable object. This method is nearly the same as
 {{jsxref("Array.from()")}}.
@@ -22,20 +16,9 @@ from an array-like or iterable object. This method is nearly the same as
 
 ## Syntax
 
-```js
-// Arrow function
-TypedArray.from(arrayLike, (element) => { /* ... */ } )
-TypedArray.from(arrayLike, (element, index) => { /* ... */ } )
-
-// Mapping function
+```js-nolint
 TypedArray.from(arrayLike, mapFn)
 TypedArray.from(arrayLike, mapFn, thisArg)
-
-// Inline mapping function
-TypedArray.from(arrayLike, function mapFn(element) { /* ... */ })
-TypedArray.from(arrayLike, function mapFn(element, index) { /* ... */ })
-TypedArray.from(arrayLike, function mapFn(element) { /* ... */ }, thisArg)
-TypedArray.from(arrayLike, function mapFn(element, index) { /* ... */ }, thisArg)
 ```
 
 Where `TypedArray` is one of:
@@ -55,9 +38,13 @@ Where `TypedArray` is one of:
 ### Parameters
 
 - `arrayLike`
-  - : An array-like or iterable object to convert to a typed array.
+  - : An iterable or array-like object to convert to a typed array.
 - `mapFn` {{optional_inline}}
-  - : Map function to call on every element of the typed array.
+  - : A function to call on every element of the typed array. If provided, every value to be added to the array is first passed through this function, and `mapFn`'s return value is added to the typed array instead. The function is called with the following arguments:
+    - `element`
+      - : The current element being processed in the typed array.
+    - `index`
+      - : The index of the current element being processed in the typed array.
 - `thisArg` {{optional_inline}}
   - : Value to use as `this` when executing `mapFn`.
 
@@ -118,7 +105,7 @@ Uint8Array.from(s);
 ### From a string
 
 ```js
-Int16Array.from('123');
+Int16Array.from("123");
 // Int16Array [ 1, 2, 3 ]
 ```
 
@@ -134,7 +121,7 @@ Float32Array.from([1, 2, 3], (x) => x + x);
 ### Generate a sequence of numbers
 
 ```js
-Uint8Array.from({length: 5}, (v, k) => k);
+Uint8Array.from({ length: 5 }, (v, k) => k);
 // Uint8Array [ 0, 1, 2, 3, 4 ]
 ```
 
@@ -152,4 +139,3 @@ Uint8Array.from({length: 5}, (v, k) => k);
 - {{jsxref("TypedArray.of()")}}
 - {{jsxref("Array.from()")}}
 - {{jsxref("Array.prototype.map()")}}
-- [A polyfill](https://github.com/behnammodi/polyfill/blob/v0.0.1/int-8-array.polyfill.js)

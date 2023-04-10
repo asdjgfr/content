@@ -2,19 +2,9 @@
 title: WebRTC Statistics API
 slug: Web/API/WebRTC_Statistics_API
 page-type: web-api-overview
-tags:
-  - API
-  - Draft
-  - Identifiers
-  - Identifiers for WebRTC Statistics API
-  - Landing
-  - RTP
-  - Statistics
-  - Stats
-  - WebRTC
-  - WebRTC Statistics API
 browser-compat: api.RTCStatsReport
 ---
+
 {{DefaultAPISidebar("WebRTC")}}
 
 The WebRTC API has a vast array of statistics available, covering the entire breadth of the WebRTC connectivity system, from sender to receiver and peer to peer.

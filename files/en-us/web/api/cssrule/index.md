@@ -2,17 +2,14 @@
 title: CSSRule
 slug: Web/API/CSSRule
 page-type: web-api-interface
-tags:
-  - API
-  - CSSOM
-  - Interface
-  - Reference
 browser-compat: api.CSSRule
 ---
+
 {{APIRef("CSSOM")}}
 
 The **`CSSRule`** interface represents a single CSS rule. There are several types of rules which inherit properties from `CSSRule`.
 
+- {{DOMXRef("CSSGroupingRule")}}
 - {{DOMXRef("CSSStyleRule")}}
 - {{DOMXRef("CSSImportRule")}}
 - {{DOMXRef("CSSMediaRule")}}
@@ -22,12 +19,14 @@ The **`CSSRule`** interface represents a single CSS rule. There are several type
 - {{DOMXRef("CSSKeyframesRule")}}
 - {{DOMXRef("CSSKeyframeRule")}}
 - {{DOMXRef("CSSCounterStyleRule")}}
-- {{DOMXRef("CSSDocumentRule")}}
 - {{DOMXRef("CSSSupportsRule")}}
 - {{DOMXRef("CSSFontFeatureValuesRule")}}
-- {{DOMXRef("CSSViewportRule")}}
+- {{DOMXRef("CSSFontPaletteValuesRule")}}
+- {{DOMXRef("CSSLayerBlockRule")}}
+- {{DOMXRef("CSSLayerStatementRule")}}
+- {{DOMXRef("CSSPropertyRule")}}
 
-## Properties common to all CSSRule instances
+## Instance properties
 
 The `CSSRule` interface specifies the properties common to all rules, while properties unique to specific rule types are specified in the more specialized interfaces for those rules' respective types.
 

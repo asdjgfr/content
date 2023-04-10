@@ -1,12 +1,9 @@
 ---
 title: OPTIONS
 slug: Web/HTTP/Methods/OPTIONS
-tags:
-  - HTTP
-  - Reference
-  - Request method
 browser-compat: http.methods.OPTIONS
 ---
+
 {{HTTPSidebar}}
 
 The **HTTP `OPTIONS` method** requests permitted communication options for a given URL or server. A client can specify a URL with this method, or an asterisk (`*`) to refer to the entire server.
@@ -93,12 +90,12 @@ The server now can respond if it will accept a request under these circumstances
 - {{HTTPHeader("Access-Control-Allow-Methods")}}
   - : {{HTTPMethod("POST")}}, {{HTTPMethod("GET")}}, and `OPTIONS` are permitted methods for the URL. (This header is similar to the {{HTTPHeader("Allow")}} response header, but used only for [CORS](/en-US/docs/Web/HTTP/CORS).)
 - {{HTTPHeader("Access-Control-Allow-Headers")}}
-  - : Any script inspecting the response is permitted to read the values of the `X-PINGOTHER` and `Content-Type` headers.
+  - : `X-PINGOTHER` and `Content-Type` are permitted request headers for the URL.
 - {{HTTPHeader("Access-Control-Max-Age")}}
   - : The above permissions may be cached for 86,400 seconds (1 day).
 
 ```http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 No Content
 Date: Mon, 01 Dec 2008 01:15:39 GMT
 Server: Apache/2.0.61 (Unix)
 Access-Control-Allow-Origin: https://foo.example
@@ -109,6 +106,10 @@ Vary: Accept-Encoding, Origin
 Keep-Alive: timeout=2, max=100
 Connection: Keep-Alive
 ```
+
+## Status Code
+
+Both {{HTTPStatus("200")}} OK and {{HTTPStatus("204")}} No Content are [permitted status codes](https://fetch.spec.whatwg.org/#ref-for-ok-status), but some browsers incorrectly believe `204 No Content` applies to the resource and do not send the subsequent request to fetch it.
 
 ## Specifications
 

@@ -1,18 +1,12 @@
 ---
 title: List group with badges
 slug: Web/CSS/Layout_cookbook/List_group_with_badges
-tags:
-  - CSS
-  - Guide
-  - Layout
-  - box alignment
-  - cookbook
-  - flexbox
-  - lists
+page-type: guide
 browser-compat:
   - css.properties.justify-content
   - css.properties.align-items
 ---
+
 {{CSSRef}}
 
 In this recipe we will create a list group pattern with badges that indicate a count.

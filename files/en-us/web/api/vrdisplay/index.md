@@ -2,20 +2,12 @@
 title: VRDisplay
 slug: Web/API/VRDisplay
 page-type: web-api-interface
-tags:
-  - API
-  - DOM
-  - Interface
-  - Media
-  - Reference
-  - VR
-  - VRDisplay
-  - Virtual Reality
-  - WebVR
-  - Deprecated
-  - Non-standard
+status:
+  - deprecated
+  - non-standard
 browser-compat: api.VRDisplay
 ---
+
 {{APIRef("WebVR API")}}{{Deprecated_Header}}{{Non-standard_Header}}
 
 The **`VRDisplay`** interface of the [WebVR API](/en-US/docs/Web/API/WebVR_API) represents any VR device supported by this API. It includes generic information such as device IDs and descriptions, as well as methods for starting to present a VR scene, retrieving eye parameters and display capabilities, and other important functionality.
@@ -24,7 +16,7 @@ The **`VRDisplay`** interface of the [WebVR API](/en-US/docs/Web/API/WebVR_API) 
 
 An array of all connected VR Devices can be returned by invoking the {{domxref("Navigator.getVRDisplays()")}} method.
 
-## Properties
+## Instance properties
 
 - {{domxref("VRDisplay.capabilities")}} {{ReadOnlyInline}} {{Deprecated_Inline}} {{Non-standard_Inline}}
   - : Returns a {{domxref("VRDisplayCapabilities")}} object that indicates the various capabilities of the `VRDisplay`.
@@ -43,7 +35,7 @@ An array of all connected VR Devices can be returned by invoking the {{domxref("
 - {{domxref("VRDisplay.stageParameters")}} {{ReadOnlyInline}} {{Deprecated_Inline}} {{Non-standard_Inline}}
   - : Returns a {{domxref("VRStageParameters")}} object containing room-scale parameters, if the `VRDisplay` is capable of supporting room-scale experiences.
 
-## Methods
+## Instance methods
 
 - {{domxref("VRDisplay.getEyeParameters()")}} {{Deprecated_Inline}} {{Non-standard_Inline}}
   - : Returns the {{domxref("VREyeParameters")}} object containing the eye parameters for the specified eye.
@@ -72,7 +64,7 @@ An array of all connected VR Devices can be returned by invoking the {{domxref("
 
 ```js
 if (navigator.getVRDisplays) {
-  console.log('WebVR 1.1 supported');
+  console.log("WebVR 1.1 supported");
   // Then get the displays attached to the computer
   navigator.getVRDisplays().then((displays) => {
     // If a display is available, use it to present the scene
@@ -84,7 +76,7 @@ if (navigator.getVRDisplays) {
 }
 ```
 
-> **Note:** You can see this complete code at [raw-webgl-example](https://github.com/mdn/webvr-tests/blob/master/raw-webgl-example/webgl-demo.js).
+> **Note:** You can see this complete code at [raw-webgl-example](https://github.com/mdn/webvr-tests/blob/main/webvr/raw-webgl-example/webgl-demo.js).
 
 ## Specifications
 

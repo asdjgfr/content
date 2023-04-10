@@ -1,10 +1,8 @@
 ---
 title: concat
 slug: Web/XPath/Functions/concat
-tags:
-  - XSLT
-  - XSLT_Reference
 ---
+
 {{ XsltRef() }}
 
 The `concat` function concatenates two or more strings and returns the resulting string.

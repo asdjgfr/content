@@ -1,13 +1,8 @@
 ---
 title: Less than
 slug: WebAssembly/Reference/Numeric/Less_than
-tags:
-  - WebAssembly
-  - wasm
-  - Reference
-  - Numeric
-  - Comparison
 ---
+
 {{WebAssemblySidebar}}
 
 The **`lt`** instructions, short for _less than_, check if a number is less than another number. If the first number is less than the second number equal `1` will be pushed on to the stack, otherwise `0` will be pushed on to the stack.

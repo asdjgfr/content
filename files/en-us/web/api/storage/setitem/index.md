@@ -1,15 +1,11 @@
 ---
-title: Storage.setItem()
+title: "Storage: setItem() method"
+short-title: setItem()
 slug: Web/API/Storage/setItem
 page-type: web-api-instance-method
-tags:
-  - API
-  - Method
-  - Reference
-  - Storage
-  - Web Storage
 browser-compat: api.Storage.setItem
 ---
+
 {{APIRef("Web Storage API")}}
 
 The **`setItem()`** method of the {{domxref("Storage")}}
@@ -18,7 +14,7 @@ interface, when passed a key name and value, will add that key to the given
 
 ## Syntax
 
-```js
+```js-nolint
 setItem(keyName, keyValue)
 ```
 
@@ -45,13 +41,13 @@ The following function creates three data items inside local storage.
 
 ```js
 function populateStorage() {
-  localStorage.setItem('bgcolor', 'red');
-  localStorage.setItem('font', 'Helvetica');
-  localStorage.setItem('image', 'myCat.png');
+  localStorage.setItem("bgcolor", "red");
+  localStorage.setItem("font", "Helvetica");
+  localStorage.setItem("image", "myCat.png");
 }
 ```
 
-> **Note:** To see this used within a real world example, see our [Web Storage Demo](https://mdn.github.io/dom-examples/web-storage/).
+> **Note:** To see this used within a real-world example, see our [Web Storage Demo](https://mdn.github.io/dom-examples/web-storage/).
 
 ## Specifications
 

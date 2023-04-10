@@ -1,14 +1,10 @@
 ---
 title: Date.prototype.getUTCMonth()
 slug: Web/JavaScript/Reference/Global_Objects/Date/getUTCMonth
-tags:
-  - Date
-  - JavaScript
-  - Method
-  - Prototype
-  - Reference
+page-type: javascript-instance-method
 browser-compat: javascript.builtins.Date.getUTCMonth
 ---
+
 {{JSRef}}
 
 The **`getUTCMonth()`** returns the month of the specified date
@@ -19,7 +15,7 @@ of the year).
 
 ## Syntax
 
-```js
+```js-nolint
 getUTCMonth()
 ```
 

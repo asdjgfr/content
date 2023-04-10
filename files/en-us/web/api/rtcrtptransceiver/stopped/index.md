@@ -1,19 +1,13 @@
 ---
-title: RTCRtpTransceiver.stopped
+title: "RTCRtpTransceiver: stopped property"
+short-title: stopped
 slug: Web/API/RTCRtpTransceiver/stopped
 page-type: web-api-instance-property
-tags:
-  - API
-  - Deprecated
-  - Media
-  - Property
-  - RTCRtpTransceiver
-  - RTP
-  - Reference
-  - WebRTC
-  - stopped
+status:
+  - deprecated
 browser-compat: api.RTCRtpTransceiver.stopped
 ---
+
 {{APIRef("WebRTC")}}{{deprecated_header}}
 
 The read-only **`stopped`** property

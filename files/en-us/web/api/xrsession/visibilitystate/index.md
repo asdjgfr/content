@@ -1,22 +1,13 @@
 ---
-title: XRSession.visibilityState
+title: "XRSession: visibilityState property"
+short-title: visibilityState
 slug: Web/API/XRSession/visibilityState
 page-type: web-api-instance-property
-tags:
-  - API
-  - AR
-  - Augmented Reality
-  - Experimental
-  - Property
-  - Reference
-  - VR
-  - Virtual Reality
-  - WebXR
-  - WebXR Device API
-  - XRSession
-  - visibilityState
+status:
+  - experimental
 browser-compat: api.XRSession.visibilityState
 ---
+
 {{APIRef("WebXR Device API")}}{{SeeCompatTable}}
 
 The _read-only_ **`visibilityState`** property of the
@@ -73,5 +64,4 @@ computer's monitor.
 
 ## See also
 
-- {{DOMxRef("XRSession.onvisibilitychange")}}
 - {{DOMxRef("XRSession.visibilitychange_event","visibilitychange")}} event

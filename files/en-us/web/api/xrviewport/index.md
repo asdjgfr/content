@@ -2,31 +2,14 @@
 title: XRViewport
 slug: Web/API/XRViewport
 page-type: web-api-interface
-tags:
-  - API
-  - AR
-  - Graphics
-  - Interface
-  - Reality
-  - Reference
-  - VR
-  - Virtual
-  - WebGL
-  - WebXR
-  - WebXR API
-  - WebXR Device API
-  - XR
-  - XRViewport
-  - augmented
-  - render
-  - viewport
 browser-compat: api.XRViewport
 ---
+
 {{APIRef("WebXR Device API")}}{{SecureContext_Header}}
 
 The WebXR Device API's **`XRViewport`** interface provides properties used to describe the size and position of the current viewport within the {{domxref("XRWebGLLayer")}} being used to render the 3D scene.
 
-## Properties
+## Instance properties
 
 - {{domxref("XRViewport.height", "height")}} {{ReadOnlyInline}}
   - : The height, in pixels, of the viewport.

@@ -1,18 +1,13 @@
 ---
-title: Presentation.receiver
+title: "Presentation: receiver property"
+short-title: receiver
 slug: Web/API/Presentation/receiver
 page-type: web-api-instance-property
-tags:
-  - API
-  - Presentation
-  - Presentation API
-  - Property
-  - Read-only
-  - Reference
-  - receiver
-  - Experimental
+status:
+  - experimental
 browser-compat: api.Presentation.receiver
 ---
+
 {{APIRef("Presentation")}}{{SeeCompatTable}}
 
 The **read-only** {{domxref("Presentation")}} attribute

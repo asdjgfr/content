@@ -1,11 +1,9 @@
 ---
 title: Shapes from images
 slug: Web/CSS/CSS_Shapes/Shapes_From_Images
-tags:
-  - CSS
-  - CSS Shapes
-  - Guide
+page-type: guide
 ---
+
 {{CSSRef}}
 
 In this guide, we will take a look at how we can create a shape from an image file with an alpha channel or even from a CSS Gradient. This is a very flexible way to create shapes. Rather than drawing a path with a complex polygon in CSS, you can create the shape in a graphics program and then use the path created by the pixels less opaque than a threshold value.

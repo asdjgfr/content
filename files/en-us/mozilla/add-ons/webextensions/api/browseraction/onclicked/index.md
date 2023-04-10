@@ -1,18 +1,10 @@
 ---
 title: browserAction.onClicked
 slug: Mozilla/Add-ons/WebExtensions/API/browserAction/onClicked
-tags:
-  - API
-  - Add-ons
-  - Event
-  - Extensions
-  - Non-standard
-  - Reference
-  - WebExtensions
-  - browserAction
-  - onClicked
+page-type: webextension-api-event
 browser-compat: webextensions.api.browserAction.onClicked
 ---
+
 {{AddonSidebar()}}
 
 Fired when a browser action icon is clicked. This event will not fire if the browser action has a popup.
@@ -21,7 +13,7 @@ To define a right-click action, use the [`contextMenus`](/en-US/docs/Mozilla/Add
 
 ## Syntax
 
-```js
+```js-nolint
 browser.browserAction.onClicked.addListener(listener)
 browser.browserAction.onClicked.removeListener(listener)
 browser.browserAction.onClicked.hasListener(listener)
@@ -77,8 +69,6 @@ browser.browserAction.onClicked.addListener((tab) => {
 > **Note:**
 >
 > This API is based on Chromium's [`chrome.browserAction`](https://developer.chrome.com/docs/extensions/reference/browserAction/#event-onClicked) API. This documentation is derived from [`browser_action.json`](https://chromium.googlesource.com/chromium/src/+/master/chrome/common/extensions/api/browser_action.json) in the Chromium code.
->
-> Microsoft Edge compatibility data is supplied by Microsoft Corporation and is included here under the Creative Commons Attribution 3.0 United States License.
 
 <!--
 // Copyright 2015 The Chromium Authors. All rights reserved.

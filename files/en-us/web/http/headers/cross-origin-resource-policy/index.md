@@ -1,14 +1,9 @@
 ---
 title: Cross-Origin-Resource-Policy
 slug: Web/HTTP/Headers/Cross-Origin-Resource-Policy
-tags:
-  - HTTP
-  - HTTP Header
-  - Reference
-  - Response Header
-  - header
 browser-compat: http.headers.Cross-Origin-Resource-Policy
 ---
+
 {{HTTPSidebar}}
 
 The HTTP **`Cross-Origin-Resource-Policy`** response header

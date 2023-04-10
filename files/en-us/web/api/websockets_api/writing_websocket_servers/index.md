@@ -2,17 +2,8 @@
 title: Writing WebSocket servers
 slug: Web/API/WebSockets_API/Writing_WebSocket_servers
 page-type: guide
-tags:
-  - Guide
-  - HTML
-  - NeedsContent
-  - NeedsExample
-  - NeedsMarkupWork
-  - Tutorial
-  - WebSocket
-  - WebSocket API
-  - WebSockets
 ---
+
 {{APIRef("Websockets API")}}
 
 A WebSocket server is nothing more than an application listening on any port of a TCP server that follows a specific protocol. The task of creating a custom server tends to scare people; however, it can be straightforward to implement a simple WebSocket server on your platform of choice.
@@ -89,7 +80,7 @@ Either the client or the server can choose to send a message at any time — tha
 
 ### Format
 
-Each data frame (from the client to the server or vice-versa) follows this same format:
+Each data frame (from the client to the server or vice versa) follows this same format:
 
 ```bash
 Frame format:
@@ -137,7 +128,7 @@ const MASK = [1, 2, 3, 4]; // 4-byte mask
 const ENCODED = [105, 103, 111, 104, 110]; // encoded string "hello"
 
 // Create the byte Array of decoded payload
-const DECODED = Uint8Array.from(ENCODED, (elt, i) => elt ^ mask[i % 4]); // Perform an XOR on the mask
+const DECODED = Uint8Array.from(ENCODED, (elt, i) => elt ^ MASK[i % 4]); // Perform an XOR on the mask
 ```
 
 Now you can figure out what **DECODED** means depending on your application.
@@ -181,7 +172,7 @@ WebSocket extensions and subprotocols are negotiated via headers during [the han
 
 ### Extensions
 
-Think of an extension as compressing a file before e-mailing it to someone. Whatever you do, you're sending the _same_ data in different forms. The recipient will eventually be able to get the same data as your local copy, but it is sent differently. That's what an extension does. WebSockets defines a protocol and a simple way to send data, but an extension such as compression could allow sending the same data but in a shorter format.
+Think of an extension as compressing a file before emailing it to someone. Whatever you do, you're sending the _same_ data in different forms. The recipient will eventually be able to get the same data as your local copy, but it is sent differently. That's what an extension does. WebSockets defines a protocol and a simple way to send data, but an extension such as compression could allow sending the same data but in a shorter format.
 
 > **Note:** Extensions are explained in sections 5.8, 9, 11.3.2, and 11.4 of the spec.
 

@@ -1,23 +1,11 @@
 ---
-title: Element.getAnimations()
+title: "Element: getAnimations() method"
+short-title: getAnimations()
 slug: Web/API/Element/getAnimations
 page-type: web-api-instance-method
-tags:
-  - API
-  - Animatable
-  - CSS
-  - CSS Animations
-  - CSS Transitions
-  - Element
-  - Method
-  - Reference
-  - Transitions
-  - Web Animations
-  - getAnimations
-  - waapi
-  - web animations api
 browser-compat: api.Element.getAnimations
 ---
+
 {{APIRef("Web Animations")}}
 
 The `getAnimations()` method of the {{domxref("Element")}} interface
@@ -30,7 +18,7 @@ elements too.
 
 ## Syntax
 
-```js
+```js-nolint
 getAnimations()
 getAnimations(options)
 ```
@@ -60,8 +48,7 @@ descendants to finish before removing the element from the document.
 
 ```js
 Promise.all(
-  elem.getAnimations({ subtree: true })
-    .map((animation) => animation.finished)
+  elem.getAnimations({ subtree: true }).map((animation) => animation.finished)
 ).then(() => elem.remove());
 ```
 

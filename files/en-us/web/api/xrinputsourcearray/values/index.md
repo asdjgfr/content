@@ -1,30 +1,13 @@
 ---
-title: XRInputSourceArray.values()
+title: "XRInputSourceArray: values() method"
+short-title: values()
 slug: Web/API/XRInputSourceArray/values
 page-type: web-api-instance-method
-tags:
-  - API
-  - AR
-  - Input Sources
-  - Inputs
-  - Iterator
-  - Method
-  - Mixed
-  - Reality
-  - Reference
-  - Sources
-  - VR
-  - Virtual
-  - WebXR
-  - WebXR API
-  - WebXR API Reference
-  - XR
-  - XRInputSourceArray
-  - augmented
-  - values
-  - Experimental
+status:
+  - experimental
 browser-compat: api.XRInputSourceArray.values
 ---
+
 {{APIRef("WebXR Device API")}}{{SeeCompatTable}}
 
 The {{domxref("XRInputSourceArray")}}
@@ -35,7 +18,7 @@ array, from first to last.
 
 ## Syntax
 
-```js
+```js-nolint
 values()
 ```
 
@@ -54,7 +37,7 @@ list.
 ## Examples
 
 This example snippet walks through each input and calls the
-function `checkInput()`  with each returned value.
+function `checkInput()` with each returned value.
 
 ```js
 for (const source of xrSession.inputSources.values()) {

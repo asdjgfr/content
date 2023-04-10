@@ -1,13 +1,9 @@
 ---
 title: 304 Not Modified
 slug: Web/HTTP/Status/304
-tags:
-  - HTTP
-  - Redirection
-  - Reference
-  - Status code
 browser-compat: http.status.304
 ---
+
 {{HTTPSidebar}}
 
 The HTTP **`304 Not Modified`** client redirection response
@@ -28,7 +24,7 @@ headers {{HTTPHeader("Cache-Control")}}, {{HTTPHeader("Content-Location")}},
 
 ## Status
 
-```
+```http
 304 Not Modified
 ```
 

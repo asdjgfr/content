@@ -1,22 +1,13 @@
 ---
-title: XRSession.requestHitTestSource()
+title: "XRSession: requestHitTestSource() method"
+short-title: requestHitTestSource()
 slug: Web/API/XRSession/requestHitTestSource
 page-type: web-api-instance-method
-tags:
-  - API
-  - AR
-  - Augmented Reality
-  - Experimental
-  - Method
-  - Reference
-  - VR
-  - Virtual Reality
-  - WebXR
-  - WebXR Device API
-  - XR
-  - XRSession
+status:
+  - experimental
 browser-compat: api.XRSession.requestHitTestSource
 ---
+
 {{APIRef("WebXR Device API")}}{{SeeCompatTable}}
 
 The **`requestHitTestSource()`** method of the
@@ -24,7 +15,7 @@ The **`requestHitTestSource()`** method of the
 
 ## Syntax
 
-```js
+```js-nolint
 requestHitTestSource(options)
 ```
 

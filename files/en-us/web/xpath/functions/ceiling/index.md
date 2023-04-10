@@ -1,10 +1,8 @@
 ---
 title: ceiling
 slug: Web/XPath/Functions/ceiling
-tags:
-  - XSLT
-  - XSLT_Reference
 ---
+
 {{ XsltRef() }}
 
 The `ceiling` function evaluates a decimal number and returns the smallest integer greater than or equal to the decimal number.

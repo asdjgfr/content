@@ -1,14 +1,10 @@
 ---
 title: DataView
 slug: Web/JavaScript/Reference/Global_Objects/DataView
-tags:
-  - Class
-  - DataView
-  - JavaScript
-  - TypedArrays
-  - Polyfill
+page-type: javascript-class
 browser-compat: javascript.builtins.DataView
 ---
+
 {{JSRef}}
 
 The **`DataView`** view provides a low-level interface for reading and writing multiple number types in a binary {{jsxref("ArrayBuffer")}}, without having to care about the platform's [endianness](/en-US/docs/Glossary/Endianness).
@@ -65,60 +61,66 @@ function getUint64BigInt(dataview, byteOffset, littleEndian) {
 
 ## Constructor
 
-- [`DataView()`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/DataView)
+- {{jsxref("DataView/DataView", "DataView()")}}
   - : Creates a new `DataView` object.
 
 ## Instance properties
 
+These properties are defined on `DataView.prototype` and shared by all `DataView` instances.
+
 - {{jsxref("DataView.prototype.buffer")}}
   - : The {{jsxref("ArrayBuffer")}} referenced by this view. Fixed at construction time and thus **read only.**
 - {{jsxref("DataView.prototype.byteLength")}}
-  - : The length (in bytes) of this view from the start of its {{jsxref("ArrayBuffer")}}. Fixed at construction time and thus **read only.**
+  - : The length (in bytes) of this view. Fixed at construction time and thus **read only.**
 - {{jsxref("DataView.prototype.byteOffset")}}
   - : The offset (in bytes) of this view from the start of its {{jsxref("ArrayBuffer")}}. Fixed at construction time and thus **read only.**
+- {{jsxref("Object/constructor", "DataView.prototype.constructor")}}
+  - : The constructor function that created the instance object. For `DataView` instances, the initial value is the {{jsxref("DataView/DataView", "DataView")}} constructor.
+- `DataView.prototype[@@toStringTag]`
+  - : The initial value of the [`@@toStringTag`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/toStringTag) property is the string `"DataView"`. This property is used in {{jsxref("Object.prototype.toString()")}}.
 
 ## Instance methods
 
-- {{jsxref("DataView.prototype.getInt8()")}}
-  - : Gets a signed 8-bit integer (byte) at the specified byte offset from the start of the view.
-- {{jsxref("DataView.prototype.getUint8()")}}
-  - : Gets an unsigned 8-bit integer (unsigned byte) at the specified byte offset from the start of the view.
-- {{jsxref("DataView.prototype.getInt16()")}}
-  - : Gets a signed 16-bit integer (short) at the specified byte offset from the start of the view.
-- {{jsxref("DataView.prototype.getUint16()")}}
-  - : Gets an unsigned 16-bit integer (unsigned short) at the specified byte offset from the start of the view.
-- {{jsxref("DataView.prototype.getInt32()")}}
-  - : Gets a signed 32-bit integer (long) at the specified byte offset from the start of the view.
-- {{jsxref("DataView.prototype.getUint32()")}}
-  - : Gets an unsigned 32-bit integer (unsigned long) at the specified byte offset from the start of the view.
-- {{jsxref("DataView.prototype.getFloat32()")}}
-  - : Gets a signed 32-bit float (float) at the specified byte offset from the start of the view.
-- {{jsxref("DataView.prototype.getFloat64()")}}
-  - : Gets a signed 64-bit float (double) at the specified byte offset from the start of the view.
 - {{jsxref("DataView.prototype.getBigInt64()")}}
   - : Gets a signed 64-bit integer (long long) at the specified byte offset from the start of the view.
 - {{jsxref("DataView.prototype.getBigUint64()")}}
   - : Gets an unsigned 64-bit integer (unsigned long long) at the specified byte offset from the start of the view.
-- {{jsxref("DataView.prototype.setInt8()")}}
-  - : Stores a signed 8-bit integer (byte) value at the specified byte offset from the start of the view.
-- {{jsxref("DataView.prototype.setUint8()")}}
-  - : Stores an unsigned 8-bit integer (unsigned byte) value at the specified byte offset from the start of the view.
-- {{jsxref("DataView.prototype.setInt16()")}}
-  - : Stores a signed 16-bit integer (short) value at the specified byte offset from the start of the view.
-- {{jsxref("DataView.prototype.setUint16()")}}
-  - : Stores an unsigned 16-bit integer (unsigned short) value at the specified byte offset from the start of the view.
-- {{jsxref("DataView.prototype.setInt32()")}}
-  - : Stores a signed 32-bit integer (long) value at the specified byte offset from the start of the view.
-- {{jsxref("DataView.prototype.setUint32()")}}
-  - : Stores an unsigned 32-bit integer (unsigned long) value at the specified byte offset from the start of the view.
-- {{jsxref("DataView.prototype.setFloat32()")}}
-  - : Stores a signed 32-bit float (float) value at the specified byte offset from the start of the view.
-- {{jsxref("DataView.prototype.setFloat64()")}}
-  - : Stores a signed 64-bit float (double) value at the specified byte offset from the start of the view.
+- {{jsxref("DataView.prototype.getFloat32()")}}
+  - : Gets a signed 32-bit float (float) at the specified byte offset from the start of the view.
+- {{jsxref("DataView.prototype.getFloat64()")}}
+  - : Gets a signed 64-bit float (double) at the specified byte offset from the start of the view.
+- {{jsxref("DataView.prototype.getInt16()")}}
+  - : Gets a signed 16-bit integer (short) at the specified byte offset from the start of the view.
+- {{jsxref("DataView.prototype.getInt32()")}}
+  - : Gets a signed 32-bit integer (long) at the specified byte offset from the start of the view.
+- {{jsxref("DataView.prototype.getInt8()")}}
+  - : Gets a signed 8-bit integer (byte) at the specified byte offset from the start of the view.
+- {{jsxref("DataView.prototype.getUint16()")}}
+  - : Gets an unsigned 16-bit integer (unsigned short) at the specified byte offset from the start of the view.
+- {{jsxref("DataView.prototype.getUint32()")}}
+  - : Gets an unsigned 32-bit integer (unsigned long) at the specified byte offset from the start of the view.
+- {{jsxref("DataView.prototype.getUint8()")}}
+  - : Gets an unsigned 8-bit integer (unsigned byte) at the specified byte offset from the start of the view.
 - {{jsxref("DataView.prototype.setBigInt64()")}}
   - : Stores a signed 64-bit integer (long long) value at the specified byte offset from the start of the view.
 - {{jsxref("DataView.prototype.setBigUint64()")}}
   - : Stores an unsigned 64-bit integer (unsigned long long) value at the specified byte offset from the start of the view.
+- {{jsxref("DataView.prototype.setFloat32()")}}
+  - : Stores a signed 32-bit float (float) value at the specified byte offset from the start of the view.
+- {{jsxref("DataView.prototype.setFloat64()")}}
+  - : Stores a signed 64-bit float (double) value at the specified byte offset from the start of the view.
+- {{jsxref("DataView.prototype.setInt16()")}}
+  - : Stores a signed 16-bit integer (short) value at the specified byte offset from the start of the view.
+- {{jsxref("DataView.prototype.setInt32()")}}
+  - : Stores a signed 32-bit integer (long) value at the specified byte offset from the start of the view.
+- {{jsxref("DataView.prototype.setInt8()")}}
+  - : Stores a signed 8-bit integer (byte) value at the specified byte offset from the start of the view.
+- {{jsxref("DataView.prototype.setUint16()")}}
+  - : Stores an unsigned 16-bit integer (unsigned short) value at the specified byte offset from the start of the view.
+- {{jsxref("DataView.prototype.setUint32()")}}
+  - : Stores an unsigned 32-bit integer (unsigned long) value at the specified byte offset from the start of the view.
+- {{jsxref("DataView.prototype.setUint8()")}}
+  - : Stores an unsigned 8-bit integer (unsigned byte) value at the specified byte offset from the start of the view.
 
 ## Examples
 

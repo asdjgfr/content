@@ -1,16 +1,11 @@
 ---
-title: Document.implementation
+title: "Document: implementation property"
+short-title: implementation
 slug: Web/API/Document/implementation
 page-type: web-api-instance-property
-tags:
-  - API
-  - DOM
-  - Document
-  - NeedsContent
-  - Property
-  - Reference
 browser-compat: api.Document.implementation
 ---
+
 {{ ApiRef("DOM") }}
 
 The **`Document.implementation`** property returns a

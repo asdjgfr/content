@@ -1,18 +1,15 @@
 ---
 title: set:leading()
 slug: Web/EXSLT/set/leading
-tags:
-  - EXSLT
-  - NeedsSpecTable
-  - Reference
 ---
+
 {{XSLTRef}}{{QuickLinksWithSubpages("/en-US/docs/Web/EXSLT")}}
 
 `set:leading()` returns the nodes in one node-set that come before the first node in the other node-set.
 
 ## Syntax
 
-```js
+```js-nolint
 set:leading(nodeSet1, nodeSet2)
 ```
 

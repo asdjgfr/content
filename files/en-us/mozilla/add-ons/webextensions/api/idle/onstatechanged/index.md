@@ -1,18 +1,10 @@
 ---
 title: idle.onStateChanged
 slug: Mozilla/Add-ons/WebExtensions/API/idle/onStateChanged
-tags:
-  - API
-  - Add-ons
-  - Event
-  - Extensions
-  - Idle
-  - Non-standard
-  - Reference
-  - WebExtensions
-  - onStateChanged
+page-type: webextension-api-event
 browser-compat: webextensions.api.idle.onStateChanged
 ---
+
 {{AddonSidebar()}}
 
 Fired when the system changes to an active, idle or locked state. The event listener is passed a string that has one of three values:
@@ -23,7 +15,7 @@ Fired when the system changes to an active, idle or locked state. The event list
 
 ## Syntax
 
-```js
+```js-nolint
 browser.idle.onStateChanged.addListener(listener)
 browser.idle.onStateChanged.removeListener(listener)
 browser.idle.onStateChanged.hasListener(listener)
@@ -66,8 +58,6 @@ browser.idle.onStateChanged.addListener(newState);
 {{WebExtExamples}}
 
 > **Note:** This API is based on Chromium's [`chrome.idle`](https://developer.chrome.com/docs/extensions/reference/idle/#event-onStateChanged) API. This documentation is derived from [`idle.json`](https://chromium.googlesource.com/chromium/src/+/master/extensions/common/api/idle.json) in the Chromium code.
->
-> Microsoft Edge compatibility data is supplied by Microsoft Corporation and is included here under the Creative Commons Attribution 3.0 United States License.
 
 <!--
 // Copyright 2015 The Chromium Authors. All rights reserved.

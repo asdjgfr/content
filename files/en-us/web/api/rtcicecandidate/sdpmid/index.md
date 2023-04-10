@@ -1,23 +1,11 @@
 ---
-title: RTCIceCandidate.sdpMid
+title: "RTCIceCandidate: sdpMid property"
+short-title: sdpMid
 slug: Web/API/RTCIceCandidate/sdpMid
 page-type: web-api-instance-property
-tags:
-  - API
-  - ICE
-  - Identification
-  - Property
-  - RTCIceCandidate
-  - Read-only
-  - SDP
-  - WebRTC
-  - WebRTC API
-  - id
-  - identification-tag
-  - sdpMid
-  - stream
 browser-compat: api.RTCIceCandidate.sdpMid
 ---
+
 {{APIRef("WebRTC")}}
 
 The read-only property **`sdpMid`** on the {{domxref("RTCIceCandidate")}} interface returns a string

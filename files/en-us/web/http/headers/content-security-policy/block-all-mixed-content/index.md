@@ -1,18 +1,11 @@
 ---
-title: 'CSP: block-all-mixed-content'
+title: "CSP: block-all-mixed-content"
 slug: Web/HTTP/Headers/Content-Security-Policy/block-all-mixed-content
-tags:
-  - CSP
-  - Content-Security-Policy
-  - Directive
-  - HTTP
-  - Mixed Content
-  - Reference
-  - Security
-  - block-all-mixed-content
-  - Deprecated
+status:
+  - deprecated
 browser-compat: http.headers.Content-Security-Policy.block-all-mixed-content
 ---
+
 {{HTTPSidebar}}{{deprecated_header}}
 
 > **Warning:** This directive is marked as obsolete in the specification: all mixed content is now blocked if it can't be autoupgraded.

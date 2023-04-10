@@ -1,20 +1,13 @@
 ---
-title: XRSession.domOverlayState
+title: "XRSession: domOverlayState property"
+short-title: domOverlayState
 slug: Web/API/XRSession/domOverlayState
 page-type: web-api-instance-property
-tags:
-  - API
-  - AR
-  - Augmented Reality
-  - Experimental
-  - Property
-  - Reference
-  - VR
-  - WebXR
-  - WebXR Device API
-  - XRSession
+status:
+  - experimental
 browser-compat: api.XRSession.domOverlayState
 ---
+
 {{APIRef("WebXR Device API")}}{{SeeCompatTable}}
 
 The _read-only_ **`domOverlayState`** property of an `immersive-ar`

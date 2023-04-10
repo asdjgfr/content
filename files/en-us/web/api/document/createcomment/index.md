@@ -1,12 +1,8 @@
 ---
-title: Document.createComment()
+title: "Document: createComment() method"
+short-title: createComment()
 slug: Web/API/Document/createComment
 page-type: web-api-instance-method
-tags:
-  - API
-  - DOM
-  - Method
-  - Reference
 browser-compat: api.Document.createComment
 ---
 
@@ -17,7 +13,7 @@ it.
 
 ## Syntax
 
-```js
+```js-nolint
 createComment(data)
 ```
 

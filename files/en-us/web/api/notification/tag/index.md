@@ -1,17 +1,11 @@
 ---
-title: Notification.tag
+title: "Notification: tag property"
+short-title: tag
 slug: Web/API/Notification/tag
 page-type: web-api-instance-property
-tags:
-  - API
-  - Notification
-  - Notifications
-  - Notifications API
-  - Property
-  - Reference
-  - tag
 browser-compat: api.Notification.tag
 ---
+
 {{APIRef("Web Notifications")}}{{AvailableInWorkers}}{{securecontext_header}}
 
 The **`tag`** read-only property of the

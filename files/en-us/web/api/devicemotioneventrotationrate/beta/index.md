@@ -1,17 +1,11 @@
 ---
-title: 'DeviceMotionEventRotationRate: beta'
+title: "DeviceMotionEventRotationRate: beta property"
+short-title: beta
 slug: Web/API/DeviceMotionEventRotationRate/beta
 page-type: web-api-instance-property
-tags:
-  - API
-  - Device Orientation
-  - Property
-  - Mobile
-  - Motion
-  - Orientation
-  - Reference
 browser-compat: api.DeviceMotionEventRotationRate.beta
 ---
+
 {{ ApiRef("Device Orientation Events") }}
 
 The **`DeviceMotionEventRotationRate.alpha`** read-only property indicates the rate of rotation around the X axis, in degrees per second.

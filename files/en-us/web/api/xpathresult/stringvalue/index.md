@@ -1,16 +1,11 @@
 ---
-title: XPathResult.stringValue
+title: "XPathResult: stringValue property"
+short-title: stringValue
 slug: Web/API/XPathResult/stringValue
 page-type: web-api-instance-property
-tags:
-  - API
-  - DOM XPath API
-  - Property
-  - Reference
-  - XPath
-  - XPathResult
 browser-compat: api.XPathResult.stringValue
 ---
+
 {{APIRef("DOM XPath")}}
 
 The read-only **`stringValue`** property of the

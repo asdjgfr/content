@@ -1,11 +1,8 @@
 ---
 title: MDN Product Advisory Board
 slug: MDN/MDN_Product_Advisory_Board
-tags:
-  - MDN
-  - PAB
-  - Product advisory board
 ---
+
 {{MDNSidebar}}
 
 MDN Web Docs is a trusted source of technical documentation for web developers, built on an open-source web development documentation platform based on wiki technology, which allows virtually anyone to write and edit content.

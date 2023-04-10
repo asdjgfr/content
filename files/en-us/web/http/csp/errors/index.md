@@ -1,16 +1,8 @@
 ---
 title: CSP errors and warnings (Content Security Policy)
 slug: Web/HTTP/CSP/Errors
-tags:
-  - CSP
-  - Errors
-  - HTTP
-  - Landing
-  - Messages
-  - Warnings
-  - console
-  - log
 ---
+
 {{HTTPSidebar}}
 
 When you see any of the following messages logged in the browser devtools console, it indicates that a problem related to [CSP](/en-US/docs/Web/HTTP/CSP) has occurred.

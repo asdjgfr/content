@@ -1,22 +1,13 @@
 ---
-title: XRRenderState.baseLayer
+title: "XRRenderState: baseLayer property"
+short-title: baseLayer
 slug: Web/API/XRRenderState/baseLayer
 page-type: web-api-instance-property
-tags:
-  - API
-  - AR
-  - Augmented Reality
-  - Experimental
-  - Property
-  - Reference
-  - VR
-  - Virtual Reality
-  - WebXR
-  - WebXR Device API
-  - XRRenderState
-  - baseLayer
+status:
+  - experimental
 browser-compat: api.XRRenderState.baseLayer
 ---
+
 {{APIRef("WebXR Device API")}}{{SeeCompatTable}}
 
 The read-only **`baseLayer`** property of the

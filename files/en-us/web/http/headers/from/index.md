@@ -1,12 +1,9 @@
 ---
 title: From
 slug: Web/HTTP/Headers/From
-tags:
-  - HTTP
-  - Reference
-  - header
 browser-compat: http.headers.From
 ---
+
 {{HTTPSidebar}}
 
 The **`From`** request header contains an Internet email

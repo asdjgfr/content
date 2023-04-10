@@ -1,16 +1,11 @@
 ---
-title: RTCDataChannel.label
+title: "RTCDataChannel: label property"
+short-title: label
 slug: Web/API/RTCDataChannel/label
 page-type: web-api-instance-property
-tags:
-  - Property
-  - RTCDataChannel
-  - Read-only
-  - Reference
-  - WebRTC
-  - label
 browser-compat: api.RTCDataChannel.label
 ---
+
 {{APIRef("WebRTC")}}
 
 The read-only `RTCDataChannel` property **`label`**
@@ -44,7 +39,9 @@ const dc = pc.createDataChannel("my channel");
 
 // …
 
-document.getElementById("channel-name").innerHTML = `<span class='channelName'>${dc.label}</span>`;
+document.getElementById(
+  "channel-name"
+).innerHTML = `<span class='channelName'>${dc.label}</span>`;
 ```
 
 ## Specifications

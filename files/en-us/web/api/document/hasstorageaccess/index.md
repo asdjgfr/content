@@ -1,17 +1,11 @@
 ---
-title: Document.hasStorageAccess()
+title: "Document: hasStorageAccess() method"
+short-title: hasStorageAccess()
 slug: Web/API/Document/hasStorageAccess
 page-type: web-api-instance-method
-tags:
-  - API
-  - DOM
-  - Document
-  - Method
-  - Reference
-  - Storage Access API
-  - hasStorageAccess
 browser-compat: api.Document.hasStorageAccess
 ---
+
 {{APIRef("Storage Access API")}}
 
 The **`hasStorageAccess()`** method of the {{domxref("Document")}} interface returns a {{jsxref("Promise")}} that resolves with a boolean value indicating whether the document has access to its first-party storage.
@@ -20,7 +14,7 @@ This method is part of the [Storage Access API](/en-US/docs/Web/API/Storage_Acce
 
 ## Syntax
 
-```js
+```js-nolint
 hasStorageAccess()
 ```
 

@@ -1,22 +1,11 @@
 ---
-title: 'HTMLElement: input event'
+title: "HTMLElement: input event"
+short-title: input
 slug: Web/API/HTMLElement/input_event
 page-type: web-api-event
-tags:
-  - Content
-  - Edit
-  - Event
-  - Forms
-  - HTML DOM
-  - HTMLElement
-  - Input
-  - InputEvent
-  - NeedsMobileBrowserCompatibility
-  - Reference
-  - data
-  - value
 browser-compat: api.HTMLElement.input_event
 ---
+
 {{APIRef}}
 
 The **`input`** event fires when the `value` of an {{HTMLElement("input")}}, {{HTMLElement("select")}}, or {{HTMLElement("textarea")}} element has been changed.
@@ -34,9 +23,9 @@ For {{htmlelement("textarea")}} and {{htmlelement("input")}} elements that accep
 Use the event name in methods like {{domxref("EventTarget.addEventListener", "addEventListener()")}}, or set an event handler property.
 
 ```js
-addEventListener('input', (event) => {});
+addEventListener("input", (event) => {});
 
-oninput = (event) => { };
+oninput = (event) => {};
 ```
 
 ## Event type
@@ -50,17 +39,17 @@ This example logs the value whenever you change the value of the {{HtmlElement("
 ### HTML
 
 ```html
-<input placeholder="Enter some text" name="name"/>
+<input placeholder="Enter some text" name="name" />
 <p id="values"></p>
 ```
 
 ### JavaScript
 
 ```js
-const input = document.querySelector('input');
-const log = document.getElementById('values');
+const input = document.querySelector("input");
+const log = document.getElementById("values");
 
-input.addEventListener('input', updateValue);
+input.addEventListener("input", updateValue);
 
 function updateValue(e) {
   log.textContent = e.target.value;

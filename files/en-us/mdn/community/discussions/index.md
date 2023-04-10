@@ -1,12 +1,9 @@
 ---
-title: Community Discussions
+title: Community discussions
 slug: MDN/Community/Discussions
 page-type: mdn-community-guide
-tags:
-  - meta
-  - community-guidelines
-  - governance
 ---
+
 {{MDNSidebar}}
 
 On MDN Web Docs, we encourage our community to start and/or engage in discussions around topics related to the overall project. Discussions are categorized by different topic areas. We ask that you keep each discussion focused on the topic at hand instead of covering multiple topics in one discussion.

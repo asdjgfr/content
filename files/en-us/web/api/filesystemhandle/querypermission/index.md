@@ -1,16 +1,13 @@
 ---
-title: FileSystemHandle.queryPermission()
+title: "FileSystemHandle: queryPermission() method"
+short-title: queryPermission()
 slug: Web/API/FileSystemHandle/queryPermission
 page-type: web-api-instance-method
-tags:
-  - Directory
-  - File
-  - File System Access API
-  - FileSystemHandle
-  - Method
-  - Experimental
+status:
+  - experimental
 browser-compat: api.FileSystemHandle.queryPermission
 ---
+
 {{securecontext_header}}{{APIRef("File System Access API")}}{{SeeCompatTable}}
 
 The **`queryPermission()`** method of the
@@ -19,8 +16,8 @@ current handle.
 
 ## Syntax
 
-```js
-queryPermission(FileSystemHandlePermissionDescriptor)
+```js-nolint
+queryPermission(fileSystemHandlePermissionDescriptor)
 ```
 
 ### Parameters
@@ -62,16 +59,16 @@ permissions to the file handle. Permission is requested if not.
 async function verifyPermission(fileHandle, withWrite) {
   const opts = {};
   if (withWrite) {
-    opts.mode = 'readwrite';
+    opts.mode = "readwrite";
   }
 
   // Check if we already have permission, if so, return true.
-  if (await fileHandle.queryPermission(opts) === 'granted') {
+  if ((await fileHandle.queryPermission(opts)) === "granted") {
     return true;
   }
 
   // Request permission to the file, if the user grants permission, return true.
-  if (await fileHandle.requestPermission(opts) === 'granted') {
+  if ((await fileHandle.requestPermission(opts)) === "granted") {
     return true;
   }
 

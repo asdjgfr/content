@@ -1,10 +1,8 @@
 ---
 title: not
 slug: Web/XPath/Functions/not
-tags:
-  - XSLT
-  - XSLT_Reference
 ---
+
 {{ XsltRef() }}
 
 The `not` function evaluates a boolean expression and returns the opposite value.

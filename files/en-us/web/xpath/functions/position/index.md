@@ -1,10 +1,8 @@
 ---
 title: position
 slug: Web/XPath/Functions/position
-tags:
-  - XSLT
-  - XSLT_Reference
 ---
+
 {{ XsltRef() }}
 
 The `position` function returns a number equal to the context position from the expression evaluation context.

@@ -1,14 +1,10 @@
 ---
 title: order
 slug: Web/CSS/order
-tags:
-  - CSS
-  - CSS Flexible Boxes
-  - CSS Property
-  - Reference
-  - recipe:css-property
+page-type: css-property
 browser-compat: css.properties.order
 ---
+
 {{CSSRef}}
 
 The **`order`** [CSS](/en-US/docs/Web/CSS) property sets the order to lay out an item in a flex or grid container. Items in a container are sorted by ascending `order` value and then by their source code order.
@@ -75,10 +71,22 @@ This example uses CSS to create a classic two-sidebar layout surrounding a conte
 #### CSS
 
 ```css
-main { display: flex;  text-align:center; }
-main > article { flex:1;        order: 2; }
-main > nav     { width: 200px;  order: 1; }
-main > aside   { width: 200px;  order: 3; }
+main {
+  display: flex;
+  text-align: center;
+}
+main > article {
+  flex: 1;
+  order: 2;
+}
+main > nav {
+  width: 200px;
+  order: 1;
+}
+main > aside {
+  width: 200px;
+  order: 3;
+}
 ```
 
 #### Result

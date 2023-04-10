@@ -2,15 +2,9 @@
 title: OscillatorNode
 slug: Web/API/OscillatorNode
 page-type: web-api-interface
-tags:
-  - API
-  - Interface
-  - Media
-  - OscillatorNode
-  - Reference
-  - Web Audio API
 browser-compat: api.OscillatorNode
 ---
+
 {{APIRef("Web Audio API")}}
 
 The **`OscillatorNode`** interface represents a periodic waveform, such as a sine wave. It is an {{domxref("AudioScheduledSourceNode")}} audio-processing module that causes a specified frequency of a given wave to be created—in effect, a constant tone.
@@ -45,9 +39,9 @@ The **`OscillatorNode`** interface represents a periodic waveform, such as a sin
 ## Constructor
 
 - {{domxref("OscillatorNode.OscillatorNode", "OscillatorNode()")}}
-  - : Creates a new instance of an `OscillatorNode` object, optionally providing an object specifying default values for the node's [properties](#properties).  As an alternative, you can use the {{domxref("BaseAudioContext.createOscillator()")}} factory method; see [Creating an AudioNode](/en-US/docs/Web/API/AudioNode#creating_an_audionode).
+  - : Creates a new instance of an `OscillatorNode` object, optionally providing an object specifying default values for the node's [properties](#instance_properties). As an alternative, you can use the {{domxref("BaseAudioContext.createOscillator()")}} factory method; see [Creating an AudioNode](/en-US/docs/Web/API/AudioNode#creating_an_audionode).
 
-## Properties
+## Instance properties
 
 _Inherits properties from its parent, {{domxref("AudioScheduledSourceNode")}}, and adds the following properties:_
 
@@ -63,7 +57,7 @@ _Inherits properties from its parent, {{domxref("AudioScheduledSourceNode")}}, a
 - {{domxref("OscillatorNode.onended")}}
   - : Sets the event handler for the {{domxref("AudioScheduledSourceNode/ended_event", "ended")}} event, which fires when the tone has stopped playing.
 
-## Methods
+## Instance methods
 
 _Inherits methods from its parent, {{domxref("AudioScheduledSourceNode")}}, and adds the following:_
 
@@ -85,7 +79,7 @@ const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
 // create Oscillator node
 const oscillator = audioCtx.createOscillator();
 
-oscillator.type = 'square';
+oscillator.type = "square";
 oscillator.frequency.setValueAtTime(440, audioCtx.currentTime); // value in hertz
 oscillator.connect(audioCtx.destination);
 oscillator.start();

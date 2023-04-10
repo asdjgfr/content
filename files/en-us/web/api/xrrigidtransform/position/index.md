@@ -1,25 +1,11 @@
 ---
-title: XRRigidTransform.position
+title: "XRRigidTransform: position property"
+short-title: position
 slug: Web/API/XRRigidTransform/position
 page-type: web-api-instance-property
-tags:
-  - 3D
-  - API
-  - AR
-  - Coordinates
-  - Location
-  - Point
-  - Position
-  - Property
-  - Reference
-  - VR
-  - WebXR
-  - WebXR API
-  - XR
-  - XRRigidTransform
-  - transform
 browser-compat: api.XRRigidTransform.position
 ---
+
 {{APIRef("WebXR Device API")}}
 
 The read-only {{domxref("XRRigidTransform")}} property
@@ -69,7 +55,7 @@ function refSpaceCreated(refSpace) {
 
 After setting up the graphics context for WebXR use, this begins by looking to see if a
 variable `immersiveSession` is `true`; if so, we first request a
-`bounded-floor` reference space. if that fails (probably because
+`bounded-floor` reference space. If that fails (probably because
 `bounded-floor` isn't supported), we try requesting a
 `local-floor` reference space.
 

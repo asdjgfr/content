@@ -1,14 +1,10 @@
 ---
 title: Date.prototype.getUTCMinutes()
 slug: Web/JavaScript/Reference/Global_Objects/Date/getUTCMinutes
-tags:
-  - Date
-  - JavaScript
-  - Method
-  - Prototype
-  - Reference
+page-type: javascript-instance-method
 browser-compat: javascript.builtins.Date.getUTCMinutes
 ---
+
 {{JSRef}}
 
 The **`getUTCMinutes()`** method returns the minutes in the
@@ -18,7 +14,7 @@ specified date according to universal time.
 
 ## Syntax
 
-```js
+```js-nolint
 getUTCMinutes()
 ```
 

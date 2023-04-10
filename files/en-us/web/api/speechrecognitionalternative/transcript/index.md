@@ -1,18 +1,11 @@
 ---
-title: SpeechRecognitionAlternative.transcript
+title: "SpeechRecognitionAlternative: transcript property"
+short-title: transcript
 slug: Web/API/SpeechRecognitionAlternative/transcript
 page-type: web-api-instance-property
-tags:
-  - API
-  - Property
-  - Reference
-  - SpeechRecognitionAlternative
-  - Web Speech API
-  - recognition
-  - speech
-  - transcript
 browser-compat: api.SpeechRecognitionAlternative.transcript
 ---
+
 {{APIRef("Web Speech API")}}
 
 The **`transcript`** read-only property of the
@@ -46,7 +39,7 @@ recognition.onresult = (event) => {
   const color = event.results[0][0].transcript;
   diagnostic.textContent = `Result received: ${color}.`;
   bg.style.backgroundColor = color;
-}
+};
 ```
 
 ## Specifications

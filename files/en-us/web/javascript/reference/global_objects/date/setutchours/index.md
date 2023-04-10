@@ -1,14 +1,10 @@
 ---
 title: Date.prototype.setUTCHours()
 slug: Web/JavaScript/Reference/Global_Objects/Date/setUTCHours
-tags:
-  - Date
-  - JavaScript
-  - Method
-  - Prototype
-  - Reference
+page-type: javascript-instance-method
 browser-compat: javascript.builtins.Date.setUTCHours
 ---
+
 {{JSRef}}
 
 The **`setUTCHours()`** method sets the hour for a specified
@@ -20,7 +16,7 @@ instance.
 
 ## Syntax
 
-```js
+```js-nolint
 setUTCHours(hoursValue)
 setUTCHours(hoursValue, minutesValue)
 setUTCHours(hoursValue, minutesValue, secondsValue)

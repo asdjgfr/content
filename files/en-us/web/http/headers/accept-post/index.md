@@ -1,13 +1,9 @@
 ---
 title: Accept-Post
 slug: Web/HTTP/Headers/Accept-Post
-tags:
-  - Accept-Post
-  - HTTP
-  - HTTP Header
-  - Response Header
 spec-urls: https://www.w3.org/TR/ldp/#header-accept-post
 ---
+
 {{HTTPSidebar}}
 
 The **`Accept-Post`** response HTTP header advertises which [media types](/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types) are accepted by the server for HTTP post requests.

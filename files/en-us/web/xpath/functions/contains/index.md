@@ -1,10 +1,8 @@
 ---
 title: contains
 slug: Web/XPath/Functions/contains
-tags:
-  - XSLT
-  - XSLT_Reference
 ---
+
 {{ XsltRef() }}
 
 The `contains` function determines whether the first argument string contains the second argument string and returns boolean true or false.

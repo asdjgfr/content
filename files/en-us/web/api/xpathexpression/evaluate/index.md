@@ -1,16 +1,11 @@
 ---
-title: XPathExpression.evaluate()
+title: "XPathExpression: evaluate() method"
+short-title: evaluate()
 slug: Web/API/XPathExpression/evaluate
 page-type: web-api-instance-method
-tags:
-  - API
-  - DOM XPath API
-  - Method
-  - Reference
-  - XPath
-  - XPathExpression
 browser-compat: api.XPathExpression.evaluate
 ---
+
 {{APIRef("DOM XPath")}}
 
 The **`evaluate()`** method of the
@@ -19,7 +14,7 @@ returns an {{domxref("XPathResult")}}.
 
 ## Syntax
 
-```js
+```js-nolint
 evaluate(contextNode)
 evaluate(contextNode, type)
 evaluate(contextNode, type, result)

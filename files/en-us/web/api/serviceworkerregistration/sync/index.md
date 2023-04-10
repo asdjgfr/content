@@ -1,17 +1,13 @@
 ---
-title: ServiceWorkerRegistration.sync
+title: "ServiceWorkerRegistration: sync property"
+short-title: sync
 slug: Web/API/ServiceWorkerRegistration/sync
 page-type: web-api-instance-property
-tags:
-  - API
-  - Experimental
-  - Property
-  - Reference
-  - Service Workers
-  - ServiceWorkerRegistration
-  - Sync
+status:
+  - experimental
 browser-compat: api.ServiceWorkerRegistration.sync
 ---
+
 {{APIRef("Service Workers API")}}{{SeeCompatTable}}
 
 The **`sync`** property of the

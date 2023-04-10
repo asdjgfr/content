@@ -1,19 +1,9 @@
 ---
-title: 'CSS: Cascading Style Sheets'
+title: "CSS: Cascading Style Sheets"
 slug: Web/CSS
-tags:
-  - CSS
-  - Cascading Style Sheets
-  - Design
-  - Guide
-  - Landing
-  - Layout
-  - Reference
-  - Style Sheets
-  - Styles
-  - Stylesheets
-  - l10n:priority
+page-type: landing-page
 ---
+
 {{CSSRef}}
 
 **Cascading Style Sheets** (**CSS**) is a [stylesheet](/en-US/docs/Web/API/StyleSheet) language used to describe the presentation of a document written in [HTML](/en-US/docs/Web/HTML) or [XML](/en-US/docs/Web/XML/XML_introduction) (including XML dialects such as [SVG](/en-US/docs/Web/SVG), [MathML](/en-US/docs/Web/MathML) or {{Glossary("XHTML")}}). CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.
@@ -90,7 +80,7 @@ The [CSS layout cookbook](/en-US/docs/Web/CSS/Layout_cookbook) aims to bring tog
 
 ## Meta bugs
 
-- Firefox: {{bug(1323667)}}
+- Firefox: [Firefox bug 1323667](https://bugzil.la/1323667)
 
 ## See also
 

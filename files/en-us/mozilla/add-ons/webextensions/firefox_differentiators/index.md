@@ -1,15 +1,9 @@
 ---
 title: Firefox differentiators
 slug: Mozilla/Add-ons/WebExtensions/Firefox_differentiators
-tags:
-  - Add-ons
-  - Draft
-  - Extensions
-  - Firefox
-  - NeedsMarkupWork
-  - Themes
-  - WebExtensions
+page-type: guide
 ---
+
 {{AddonSidebar}}
 
 Firefox is a great place to begin your browser extension development. To start, you get the highest compliance with the proposed browser extension API including use of the `browser.*` namespace and promises for handling asynchronous events. Then, there is a highly supportive community of extension developers, ready to assist you.

@@ -1,16 +1,10 @@
 ---
 title: RegExp.prototype[@@match]()
 slug: Web/JavaScript/Reference/Global_Objects/RegExp/@@match
-tags:
-  - JavaScript
-  - Method
-  - Prototype
-  - Reference
-  - RegExp
-  - Regular Expressions
-  - Polyfill
+page-type: javascript-instance-method
 browser-compat: javascript.builtins.RegExp.@@match
 ---
+
 {{JSRef}}
 
 The **`[@@match]()`** method of a regular expression specifies how [`String.prototype.match()`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match) should behave. In addition, its presence (or absence) can influence whether an object is regarded as a regular expression.
@@ -19,7 +13,7 @@ The **`[@@match]()`** method of a regular expression specifies how [`String.prot
 
 ## Syntax
 
-```js
+```js-nolint
 regexp[Symbol.match](str)
 ```
 
@@ -42,9 +36,9 @@ This method is called internally in {{jsxref("String.prototype.match()")}}.
 For example, the following two examples return same result.
 
 ```js
-'abc'.match(/a/);
+"abc".match(/a/);
 
-/a/[Symbol.match]('abc');
+/a/[Symbol.match]("abc");
 ```
 
 If the regex is global (with the `g` flag), the regex's [`exec()`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/exec) method will be repeatedly called until `exec()` returns `null`. Otherwise, `exec()` would only be called once and its result becomes the return value of `@@match`.
@@ -88,9 +82,9 @@ This method can be used in _almost_ the same way as {{jsxref("String.prototype.m
 
 ```js
 const re = /[0-9]+/g;
-const str = '2016-01-02';
+const str = "2016-01-02";
 const result = re[Symbol.match](str);
-console.log(result);  // ["2016", "01", "02"]
+console.log(result); // ["2016", "01", "02"]
 ```
 
 ### Using @@match in subclasses
@@ -105,13 +99,13 @@ class MyRegExp extends RegExp {
     return {
       group(n) {
         return result[n];
-      }
+      },
     };
   }
 }
 
-const re = new MyRegExp('([0-9]+)-([0-9]+)-([0-9]+)');
-const str = '2016-01-02';
+const re = new MyRegExp("([0-9]+)-([0-9]+)-([0-9]+)");
+const str = "2016-01-02";
 const result = str.match(re); // String.prototype.match calls re[@@match].
 console.log(result.group(1)); // 2016
 console.log(result.group(2)); // 01

@@ -1,15 +1,11 @@
 ---
-title: AbortSignal.abort()
+title: "AbortSignal: abort() static method"
+short-title: abort()
 slug: Web/API/AbortSignal/abort
 page-type: web-api-static-method
-tags:
-  - API
-  - AbortSignal
-  - Method
-  - Reference
-  - abort
 browser-compat: api.AbortSignal.abort
 ---
+
 {{APIRef("DOM")}}
 
 The static **`AbortSignal.abort()`** method returns an {{domxref("AbortSignal")}} that is already set as aborted (and which does not trigger an {{domxref("AbortSignal/abort_event","abort")}} event).
@@ -28,7 +24,7 @@ This could, for example, be passed to a fetch method in order to run its abort l
 
 ## Syntax
 
-```js
+```js-nolint
 abort()
 abort(reason)
 ```

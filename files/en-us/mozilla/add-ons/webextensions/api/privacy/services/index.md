@@ -1,16 +1,10 @@
 ---
 title: privacy.services
 slug: Mozilla/Add-ons/WebExtensions/API/privacy/services
-tags:
-  - API
-  - Add-ons
-  - Extensions
-  - Privacy
-  - Property
-  - Reference
-  - Services
+page-type: webextension-api-property
 browser-compat: webextensions.api.privacy.services
 ---
+
 {{AddonSidebar}}
 
 The {{WebExtAPIRef("privacy.services")}} property contains privacy-related settings controlling services offered by the browser or by third parties. Each property is a {{WebExtAPIRef("types.BrowserSetting")}} object.

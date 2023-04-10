@@ -1,23 +1,11 @@
 ---
-title: RTCIceCandidate.component
+title: "RTCIceCandidate: component property"
+short-title: component
 slug: Web/API/RTCIceCandidate/component
 page-type: web-api-instance-property
-tags:
-  - API
-  - ICE
-  - Property
-  - RTCIceCandidate
-  - RTCP
-  - RTP
-  - Read-only
-  - Reference
-  - SDP
-  - Transport
-  - WebRTC
-  - WebRTC API
-  - component
 browser-compat: api.RTCIceCandidate.component
 ---
+
 {{APIRef("WebRTC")}}
 
 The read-only **`component`** property

@@ -1,23 +1,20 @@
 ---
-title: XRRay()
+title: "XRRay: XRRay() constructor"
+short-title: XRRay()
 slug: Web/API/XRRay/XRRay
 page-type: web-api-constructor
-tags:
-  - API
-  - Constructor
-  - Reference
-  - WebXR
-  - XR
-  - Experimental
+status:
+  - experimental
 browser-compat: api.XRRay.XRRay
 ---
+
 {{APIRef("WebXR Device API")}}{{SeeCompatTable}}
 
 The **`XRRay()`** constructor creates a new {{domxref("XRRay")}} object which is a geometric ray described by an origin point and a direction vector.
 
 ## Syntax
 
-```js
+```js-nolint
 new XRRay()
 new XRRay(origin)
 new XRRay(origin, direction)

@@ -1,18 +1,11 @@
 ---
-title: window.cancelIdleCallback()
+title: "Window: cancelIdleCallback() method"
+short-title: cancelIdleCallback()
 slug: Web/API/Window/cancelIdleCallback
 page-type: web-api-instance-method
-tags:
-  - API
-  - HTML DOM
-  - JavaScript timers
-  - Method
-  - Reference
-  - Window
-  - cancelIdleCallback
-  - polyfill
 browser-compat: api.Window.cancelIdleCallback
 ---
+
 {{APIRef}}
 
 ## Summary
@@ -22,7 +15,7 @@ previously scheduled with {{domxref("window.requestIdleCallback()")}}.
 
 ## Syntax
 
-```js
+```js-nolint
 cancelIdleCallback(handle)
 ```
 

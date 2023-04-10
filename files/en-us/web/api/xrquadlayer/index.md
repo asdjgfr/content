@@ -2,21 +2,11 @@
 title: XRQuadLayer
 slug: Web/API/XRQuadLayer
 page-type: web-api-interface
-tags:
-  - API
-  - AR
-  - Augmented Reality
-  - Interface
-  - Reference
-  - VR
-  - Virtual Reality
-  - WebXR
-  - WebXR Device API
-  - XR
-  - XRQuadLayer
-  - Experimental
+status:
+  - experimental
 browser-compat: api.XRQuadLayer
 ---
+
 {{securecontext_header}}{{APIRef("WebXR Device API")}}{{SeeCompatTable}}
 
 The **`XRQuadLayer`** interface of the [WebXR Device API](/en-US/docs/Web/API/WebXR_Device_API) is a layer that takes up a flat rectangular space in the virtual environment. An `XRQuadLayer` has no thickness. It is a two-dimensional object positioned and oriented in 3D space. The position of a quad refers to the center of the quad. Only the front of the layer is visible.
@@ -32,7 +22,7 @@ To present layers to the XR device, add them to the `layers` render state using 
 
 {{InheritanceDiagram}}
 
-## Properties
+## Instance properties
 
 _Inherits properties from its parent, {{domxref("XRCompositionLayer")}}._
 
@@ -45,7 +35,7 @@ _Inherits properties from its parent, {{domxref("XRCompositionLayer")}}._
 - {{domxref("XRQuadLayer.width")}} {{Experimental_Inline}}
   - : Represents the width of the layer in meters.
 
-## Methods
+## Instance methods
 
 _Inherits methods from its parents, {{domxref("XRCompositionLayer")}} and {{domxref("EventTarget")}}_.
 

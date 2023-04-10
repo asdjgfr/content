@@ -1,10 +1,8 @@
 ---
 title: string
 slug: Web/XPath/Functions/string
-tags:
-  - XSLT
-  - XSLT_Reference
 ---
+
 {{ XsltRef() }}
 
 The `string` function converts the given argument to a string.

@@ -1,19 +1,14 @@
 ---
-title: VideoPlaybackQuality.totalFrameDelay
+title: "VideoPlaybackQuality: totalFrameDelay property"
+short-title: totalFrameDelay
 slug: Web/API/VideoPlaybackQuality/totalFrameDelay
 page-type: web-api-instance-property
-tags:
-  - API
-  - Media Source Extensions
-  - Deprecated
-  - Property
-  - Reference
-  - Video
-  - VideoPlaybackQuality
-  - totalFrameDelay
-  - Non-standard
+status:
+  - deprecated
+  - non-standard
 browser-compat: api.VideoPlaybackQuality.totalFrameDelay
 ---
+
 {{APIRef("Media Source Extensions")}}{{deprecated_header}}{{Non-standard_header}}
 
 The **`VideoPlaybackQuality.totalFrameDelay`** read-only
@@ -29,7 +24,7 @@ A number.
 ## Examples
 
 ```js
-const videoElt = document.getElementById('my_vid');
+const videoElt = document.getElementById("my_vid");
 const quality = videoElt.getVideoPlaybackQuality();
 
 alert(quality.totalFrameDelay);

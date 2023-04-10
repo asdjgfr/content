@@ -1,14 +1,9 @@
 ---
 title: Via
 slug: Web/HTTP/Headers/Via
-tags:
-  - HTTP
-  - HTTP Header
-  - Request header
-  - Response header
-  - Reference
 browser-compat: http.headers.Via
 ---
+
 {{HTTPSidebar}}
 
 The **`Via`** general header is added by proxies, both forward

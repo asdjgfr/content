@@ -1,17 +1,11 @@
 ---
-title: 'XMLHttpRequest: timeout event'
+title: "XMLHttpRequest: timeout event"
+short-title: timeout
 slug: Web/API/XMLHttpRequest/timeout_event
 page-type: web-api-event
-tags:
-  - API
-  - Event
-  - Reference
-  - XHR
-  - XMLHttpRequest
-  - events
-  - timeout
 browser-compat: api.XMLHttpRequest.timeout_event
 ---
+
 {{APIRef}}
 
 The **`timeout`** event is fired when progression is terminated due to preset time expiring.

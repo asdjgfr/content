@@ -1,12 +1,9 @@
 ---
-title: 'RangeError: BigInt division by zero'
+title: "RangeError: BigInt division by zero"
 slug: Web/JavaScript/Reference/Errors/BigInt_division_by_zero
-tags:
-  - Error
-  - Errors
-  - JavaScript
-  - RangeError
+page-type: javascript-error
 ---
+
 {{jsSidebar("Errors")}}
 
 The JavaScript exception "BigInt division by zero" occurs when a {{jsxref("BigInt")}} is divided by `0n`.

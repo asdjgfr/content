@@ -2,21 +2,16 @@
 title: SVGSVGElement
 slug: Web/API/SVGSVGElement
 page-type: web-api-interface
-tags:
-  - API
-  - NeedsExample
-  - Reference
-  - SVG
-  - SVG DOM
 browser-compat: api.SVGSVGElement
 ---
+
 {{APIRef("SVG")}}
 
 The **`SVGSVGElement`** interface provides access to the properties of {{SVGElement("svg")}} elements, as well as methods to manipulate them. This interface contains also various miscellaneous commonly-used utility methods, such as matrix operations and the ability to control the time of redraw on visual rendering devices.
 
 {{InheritanceDiagram}}
 
-## Properties
+## Instance properties
 
 _This interface also inherits properties from its parent, {{domxref("SVGGraphicsElement")}} and also implements the ones from {{domxref("SVGFitToViewBox")}}._
 
@@ -28,8 +23,6 @@ _This interface also inherits properties from its parent, {{domxref("SVGGraphics
   - : An {{domxref("SVGAnimatedLength")}} corresponding to the {{SVGAttr("width")}} attribute of the given {{SVGElement("svg")}} element.
 - {{domxref("SVGSVGElement.height")}} {{ReadOnlyInline}}
   - : An {{domxref("SVGAnimatedLength")}} corresponding to the {{SVGAttr("height")}} attribute of the given {{SVGElement("svg")}} element.
-- {{domxref("SVGSVGElement.contentScriptType")}}
-  - : An {{domxref("SVGAnimatedLength")}} corresponding to the {{SVGAttr("contentScriptType")}} attribute of the given {{SVGElement("svg")}} element.
 - {{domxref("SVGSVGElement.contentStyleType")}}
   - : An {{domxref("SVGAnimatedLength")}} corresponding to the {{SVGAttr("contentStyleType")}} attribute of the given {{SVGElement("svg")}} element.
 - {{domxref("SVGSVGElement.pixelUnitToMillimeterX")}} {{Deprecated_Inline}}
@@ -69,7 +62,7 @@ _This interface also inherits properties from its parent, {{domxref("SVGGraphics
 - {{domxref("SVGSVGElement.currentTranslate")}} {{ReadOnlyInline}}
   - : An {{domxref("SVGPoint")}} representing the translation factor that takes into account user "magnification" corresponding to an outermost {{SVGElement("svg")}} element. The behavior is undefined for `<svg>` elements that are not at the outermost level.
 
-## Methods
+## Instance methods
 
 _This interface also inherits methods from its parent, {{domxref("SVGGraphicsElement")}} and also implements the ones from {{domxref("SVGFitToViewBox")}}._
 
@@ -84,13 +77,13 @@ _This interface also inherits methods from its parent, {{domxref("SVGGraphicsEle
     To suspend redraw actions as a collection of SVG DOM changes occur, precede the changes to the SVG DOM with a method call similar to:
 
     ```js
-    const suspendHandleID = suspendRedraw(maxWaitMilliseconds)
+    const suspendHandleID = suspendRedraw(maxWaitMilliseconds);
     ```
 
     and follow the changes with a method call similar to:
 
     ```js
-    unsuspendRedraw(suspendHandleID)
+    unsuspendRedraw(suspendHandleID);
     ```
 
     Note that multiple `suspendRedraw()` calls can be used at once, and that each such method call is treated independently of the other `suspendRedraw()` method calls.
@@ -130,7 +123,7 @@ _This interface also inherits methods from its parent, {{domxref("SVGGraphicsEle
 - {{domxref("SVGSVGElement.createSVGPoint()")}}
   - : Creates an {{domxref("SVGPoint")}} object outside of any document trees. The object is initialized to the point `(0,0)` in the user coordinate system.
 - {{domxref("SVGSVGElement.createSVGMatrix()")}}
-  - : Creates an {{domxref("SVGMatrix")}} object outside of any document trees. The object is initialized to the identity matrix.
+  - : Creates an {{domxref("DOMMatrix", "SVGMatrix")}} object outside of any document trees. The object is initialized to the identity matrix.
 - {{domxref("SVGSVGElement.createSVGRect()")}}
   - : Creates an {{domxref("SVGRect")}} object outside of any document trees. The object is initialized such that all values are set to `0` user units.
 - {{domxref("SVGSVGElement.createSVGTransform()")}}

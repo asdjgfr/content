@@ -1,22 +1,18 @@
 ---
-title: WebGLRenderingContext.pixelStorei()
+title: "WebGLRenderingContext: pixelStorei() method"
+short-title: pixelStorei()
 slug: Web/API/WebGLRenderingContext/pixelStorei
 page-type: web-api-instance-method
-tags:
-  - API
-  - Method
-  - Reference
-  - WebGL
-  - WebGLRenderingContext
 browser-compat: api.WebGLRenderingContext.pixelStorei
 ---
+
 {{APIRef("WebGL")}}
 
 The **`WebGLRenderingContext.pixelStorei()`** method of the [WebGL API](/en-US/docs/Web/API/WebGL_API) specifies the pixel storage modes.
 
 ## Syntax
 
-```js
+```js-nolint
 pixelStorei(pname, param)
 ```
 

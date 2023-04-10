@@ -1,15 +1,11 @@
 ---
-title: WebGL2RenderingContext.compressedTexSubImage3D()
+title: "WebGL2RenderingContext: compressedTexSubImage3D() method"
+short-title: compressedTexSubImage3D()
 slug: Web/API/WebGL2RenderingContext/compressedTexSubImage3D
 page-type: web-api-instance-method
-tags:
-  - API
-  - Method
-  - Reference
-  - WebGL
-  - WebGL2
 browser-compat: api.WebGL2RenderingContext.compressedTexSubImage3D
 ---
+
 {{APIRef("WebGL")}}
 
 The **`WebGL2RenderingContext.compressedTexSubImage3D()`**
@@ -18,7 +14,7 @@ three-dimensional sub-rectangle for a texture image in a compressed format.
 
 ## Syntax
 
-```js
+```js-nolint
 compressedTexSubImage3D(target, level, xoffset, yoffset, zoffset, width, height, depth, format, imageSize, offset)
 
 compressedTexSubImage3D(target, level, xoffset, yoffset, zoffset, width, height, depth, format, srcData)
@@ -83,7 +79,17 @@ None ({{jsxref("undefined")}}).
 ## Examples
 
 ```js
-gl.compressedTexSubImage3D(gl.TEXTURE_3D, 0, 0, 0, 512, 512, 512, gl.COMPRESSED_R11_EAC, textureData);
+gl.compressedTexSubImage3D(
+  gl.TEXTURE_3D,
+  0,
+  0,
+  0,
+  512,
+  512,
+  512,
+  gl.COMPRESSED_R11_EAC,
+  textureData
+);
 ```
 
 ## Specifications

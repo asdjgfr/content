@@ -1,17 +1,10 @@
 ---
 title: Intl.Locale.prototype.baseName
 slug: Web/JavaScript/Reference/Global_Objects/Intl/Locale/baseName
-tags:
-  - Internationalization
-  - Intl
-  - JavaScript
-  - Property
-  - Locale
-  - Localization
-  - Prototype
-  - Reference
+page-type: javascript-instance-accessor-property
 browser-compat: javascript.builtins.Intl.Locale.baseName
 ---
+
 {{JSRef}}
 
 The **`Intl.Locale.prototype.baseName`** property returns a substring of the `Locale`'s string representation, containing core information about the `Locale`.

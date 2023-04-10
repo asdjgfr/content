@@ -1,18 +1,11 @@
 ---
-title: window.requestIdleCallback()
+title: "window: requestIdleCallback() method"
+short-title: requestIdleCallback()
 slug: Web/API/Window/requestIdleCallback
 page-type: web-api-instance-method
-tags:
-  - API
-  - HTML DOM
-  - JavaScript timers
-  - Method
-  - Reference
-  - Window
-  - requestIdleCallback
-  - polyfill
 browser-compat: api.Window.requestIdleCallback
 ---
+
 {{APIRef("HTML DOM")}}
 
 The **`window.requestIdleCallback()`** method queues a function
@@ -32,7 +25,7 @@ loop.
 
 ## Syntax
 
-```js
+```js-nolint
 requestIdleCallback(callback)
 requestIdleCallback(callback, options)
 ```

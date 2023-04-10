@@ -1,14 +1,10 @@
 ---
 title: DataView.prototype.byteOffset
 slug: Web/JavaScript/Reference/Global_Objects/DataView/byteOffset
-tags:
-  - DataView
-  - JavaScript
-  - Property
-  - Prototype
-  - TypedArrays
+page-type: javascript-instance-accessor-property
 browser-compat: javascript.builtins.DataView.byteOffset
 ---
+
 {{JSRef}}
 
 The **`byteOffset`** accessor property represents the offset (in bytes) of this view from the start of its {{jsxref("ArrayBuffer")}} or {{jsxref("SharedArrayBuffer")}}.

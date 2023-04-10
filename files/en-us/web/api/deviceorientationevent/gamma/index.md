@@ -1,18 +1,11 @@
 ---
-title: DeviceOrientationEvent.gamma
+title: "DeviceOrientationEvent: gamma property"
+short-title: gamma
 slug: Web/API/DeviceOrientationEvent/gamma
 page-type: web-api-instance-property
-tags:
-  - API
-  - Device Orientation API
-  - DeviceOrientationEvent
-  - NeedsBetterSpecLink
-  - NeedsExample
-  - NeedsMarkupWork
-  - Property
-  - Reference
 browser-compat: api.DeviceOrientationEvent.gamma
 ---
+
 {{ apiref("Device Orientation Events") }}
 
 Returns the rotation of the device around the Y axis; that is, the number of degrees,

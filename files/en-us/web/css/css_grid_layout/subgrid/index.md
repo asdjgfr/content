@@ -1,14 +1,10 @@
 ---
 title: Subgrid
 slug: Web/CSS/CSS_Grid_Layout/Subgrid
-tags:
-  - CSS
-  - CSS Display
-  - CSS Grid
-  - Guide
-  - subgrid
+page-type: guide
 browser-compat: css.properties.grid-template-columns.subgrid
 ---
+
 {{CSSRef}}
 
 Level 2 of the CSS Grid Layout specification includes a `subgrid` value for {{cssxref("grid-template-columns")}} and {{cssxref("grid-template-rows")}}. This guide details what subgrid does, and gives some use cases and design patterns that are solved by the feature.

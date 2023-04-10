@@ -2,10 +2,8 @@
 title: What we write
 slug: MDN/Writing_guidelines/What_we_write
 page-type: mdn-writing-guide
-tags:
-  - meta
-  - writing-guide
 ---
+
 {{MDNSidebar}}
 
 MDN Web Docs contains _browser-neutral_ documentation that enables web developers to write _browser-agnostic_ code. In this article, you'll find information about whether or not a given topic and/or type of content should be included on MDN Web Docs.
@@ -24,7 +22,7 @@ Outbound links to commercial sites that are relevant to the topic from which the
 
 Articles on MDN Web Docs must maintain a [neutral point-of-view](https://en.wikipedia.org/wiki/Wikipedia:Neutral_point_of_view), reporting on browser variations without editorial bias. Derogatory comments about any browser or user agent is not acceptable.
 
-### Open web topics
+### Standardization
 
 Web technologies to be documented on MDN Web Docs should be on a standards track and must be implemented by at least one rendering engine. Variations in browser support are documented in the [browser compatibility](/en-US/docs/MDN/Writing_guidelines/Page_structures/Compatibility_tables) section of an article.
 

@@ -1,19 +1,14 @@
 ---
-title: VRFrameData()
+title: "VRFrameData: VRFrameData() constructor"
+short-title: VRFrameData()
 slug: Web/API/VRFrameData/VRFrameData
 page-type: web-api-constructor
-tags:
-  - API
-  - Constructor
-  - Deprecated
-  - Reference
-  - VR
-  - VRFrameData
-  - Virtual Reality
-  - WebVR
-  - Non-standard
+status:
+  - deprecated
+  - non-standard
 browser-compat: api.VRFrameData.VRFrameData
 ---
+
 {{APIRef("WebVR API")}}{{Deprecated_Header}}{{Non-standard_Header}}
 
 The **`VRFrameData()`** constructor creates a {{domxref("VRFrameData")}} object instance.
@@ -22,7 +17,7 @@ The **`VRFrameData()`** constructor creates a {{domxref("VRFrameData")}} object 
 
 ## Syntax
 
-```js
+```js-nolint
 new VRFrameData()
 ```
 

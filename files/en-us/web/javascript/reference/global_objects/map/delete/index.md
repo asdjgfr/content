@@ -1,15 +1,10 @@
 ---
 title: Map.prototype.delete()
 slug: Web/JavaScript/Reference/Global_Objects/Map/delete
-tags:
-  - ECMAScript 2015
-  - JavaScript
-  - Map
-  - Method
-  - Prototype
-  - Reference
+page-type: javascript-instance-method
 browser-compat: javascript.builtins.Map.delete
 ---
+
 {{JSRef}}
 
 The **`delete()`** method removes the specified element from a `Map` object by
@@ -19,7 +14,7 @@ key.
 
 ## Syntax
 
-```js
+```js-nolint
 delete(key)
 ```
 

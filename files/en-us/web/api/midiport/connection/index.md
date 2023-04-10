@@ -1,15 +1,11 @@
 ---
-title: MIDIPort.connection
+title: "MIDIPort: connection property"
+short-title: connection
 slug: Web/API/MIDIPort/connection
 page-type: web-api-instance-property
-tags:
-  - API
-  - Property
-  - Reference
-  - connection
-  - MIDIPort
 browser-compat: api.MIDIPort.connection
 ---
+
 {{securecontext_header}}{{DefaultAPISidebar("Web MIDI API")}}
 
 The **`connection`** property of the {{domxref("MIDIPort")}} interface returns the connection state of the port.

@@ -1,11 +1,8 @@
 ---
 title: str:concat()
 slug: Web/EXSLT/str/concat
-tags:
-  - EXSLT
-  - NeedsSpecTable
-  - Reference
 ---
+
 {{XSLTRef}}{{QuickLinksWithSubpages("/en-US/docs/Web/EXSLT")}}
 
 `str:concat()` returns a string containing all the string values in a node-set concatenated together.

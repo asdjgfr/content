@@ -1,12 +1,12 @@
 ---
 title: glyphRef
 slug: Web/SVG/Attribute/glyphRef
-tags:
-  - Deprecated
-  - SVG
-  - SVG Attribute
+page-type: svg-attribute
+status:
+  - deprecated
 browser-compat: svg.elements.altGlyph.glyphRef
 ---
+
 {{SVGRef}}{{Deprecated_Header}}
 
 The **`glyphRef`** attribute represents the glyph identifier, the format of which is dependent on the {{SVGAttr("format")}} of the given font.

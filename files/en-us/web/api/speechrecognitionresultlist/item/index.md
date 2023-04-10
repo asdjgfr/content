@@ -1,19 +1,11 @@
 ---
-title: SpeechRecognitionResultList.item()
+title: "SpeechRecognitionResultList: item() method"
+short-title: item()
 slug: Web/API/SpeechRecognitionResultList/item
 page-type: web-api-instance-method
-tags:
-  - API
-  - Getter
-  - Method
-  - Reference
-  - SpeechRecognitionResultList
-  - Web Speech API
-  - item
-  - recognition
-  - speech
 browser-compat: api.SpeechRecognitionResultList.item
 ---
+
 {{APIRef("Web Speech API")}}
 
 The **`item`** getter of the
@@ -23,7 +15,7 @@ syntax.
 
 ## Syntax
 
-```js
+```js-nolint
 item(index)
 ```
 
@@ -55,7 +47,7 @@ recognition.onresult = (event) => {
   const color = event.results[0][0].transcript;
   diagnostic.textContent = `Result received: ${color}.`;
   bg.style.backgroundColor = color;
-}
+};
 ```
 
 ## Specifications

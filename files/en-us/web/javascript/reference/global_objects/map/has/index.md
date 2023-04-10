@@ -1,15 +1,10 @@
 ---
 title: Map.prototype.has()
 slug: Web/JavaScript/Reference/Global_Objects/Map/has
-tags:
-  - ECMAScript 2015
-  - JavaScript
-  - Map
-  - Method
-  - Prototype
-  - Reference
+page-type: javascript-instance-method
 browser-compat: javascript.builtins.Map.has
 ---
+
 {{JSRef}}
 
 The **`has()`** method returns a boolean indicating whether an element with the
@@ -19,7 +14,7 @@ specified key exists or not.
 
 ## Syntax
 
-```js
+```js-nolint
 has(key)
 ```
 

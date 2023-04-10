@@ -1,18 +1,11 @@
 ---
-title: console.countReset()
+title: "console: countReset() method"
+short-title: countReset()
 slug: Web/API/console/countReset
 page-type: web-api-instance-method
-tags:
-  - API
-  - DOM
-  - Debugging
-  - Method
-  - Reference
-  - Web Development
-  - console
-  - web console
 browser-compat: api.console.countReset
 ---
+
 {{APIRef("Console API")}}
 
 The **`console.countReset()`** method resets counter used with
@@ -22,7 +15,7 @@ The **`console.countReset()`** method resets counter used with
 
 ## Syntax
 
-```js
+```js-nolint
 countReset()
 countReset(label)
 ```

@@ -1,16 +1,11 @@
 ---
-title: Element.ariaLive
+title: "Element: ariaLive property"
+short-title: ariaLive
 slug: Web/API/Element/ariaLive
 page-type: web-api-instance-property
-tags:
-  - API
-  - Property
-  - Reference
-  - ariaLive
-  - AriaAttributes
-  - Element
 browser-compat: api.Element.ariaLive
 ---
+
 {{DefaultAPISidebar("DOM")}}
 
 The **`ariaLive`** property of the {{domxref("Element")}} interface reflects the value of the [`aria-live`](/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions) attribute, which indicates that an element will be updated, and describes the types of updates the user agents, assistive technologies, and user can expect from the live region.
@@ -38,7 +33,7 @@ In this example the [`aria-live`](/en-US/docs/Web/Accessibility/ARIA/Attributes/
 ```
 
 ```js
-let el = document.getElementById('planetInfo');
+let el = document.getElementById("planetInfo");
 console.log(el.ariaLive); // "polite"
 el.ariaLive = "assertive";
 console.log(el.ariaLive); // assertive

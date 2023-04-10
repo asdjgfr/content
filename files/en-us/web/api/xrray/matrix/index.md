@@ -1,19 +1,13 @@
 ---
-title: XRRay.matrix
+title: "XRRay: matrix property"
+short-title: matrix
 slug: Web/API/XRRay/matrix
 page-type: web-api-instance-property
-tags:
-  - API
-  - AR
-  - Augmented Reality
-  - Experimental
-  - Property
-  - Reference
-  - VR
-  - WebXR
-  - WebXR Device API
+status:
+  - experimental
 browser-compat: api.XRRay.matrix
 ---
+
 {{APIRef("WebXR Device API")}}{{SeeCompatTable}}
 
 The _read-only_ **`matrix`** property of the {{DOMxRef("XRRay")}} interface is a transform that can be used to position objects along the `XRRay`. This is a 4 by 4 matrix given as a 16 element {{jsxref("Float32Array")}} in column major order.

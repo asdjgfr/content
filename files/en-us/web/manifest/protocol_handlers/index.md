@@ -1,13 +1,11 @@
 ---
 title: protocol_handlers
 slug: Web/Manifest/protocol_handlers
-tags:
-  - protocol_handlers
-  - Manifest
-  - Web
-  - Experimental
+status:
+  - experimental
 browser-compat: html.manifest.protocol_handlers
 ---
+
 {{QuickLinksWithSubpages("/en-US/docs/Web/Manifest")}}{{SeeCompatTable}}
 
 <table class="properties">
@@ -15,10 +13,6 @@ browser-compat: html.manifest.protocol_handlers
     <tr>
       <th scope="row">Type</th>
       <td><code>Array</code></td>
-    </tr>
-    <tr>
-      <th scope="row">Mandatory</th>
-      <td>No</td>
     </tr>
   </tbody>
 </table>

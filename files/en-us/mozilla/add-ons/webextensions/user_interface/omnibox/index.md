@@ -1,10 +1,9 @@
 ---
 title: Address bar suggestions
 slug: Mozilla/Add-ons/WebExtensions/user_interface/Omnibox
-tags:
-  - User Interface
-  - WebExtensions
+page-type: guide
 ---
+
 {{AddonSidebar()}}
 
 Using the {{WebExtAPIRef("omnibox")}} API, extensions can customize the suggestions offered in the browser address bar's drop-down when the user enters a keyword.

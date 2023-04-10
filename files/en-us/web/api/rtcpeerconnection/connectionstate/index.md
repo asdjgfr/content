@@ -1,15 +1,11 @@
 ---
-title: RTCPeerConnection.connectionState
+title: "RTCPeerConnection: connectionState property"
+short-title: connectionState
 slug: Web/API/RTCPeerConnection/connectionState
 page-type: web-api-instance-property
-tags:
-  - Property
-  - RTCPeerConnection
-  - Reference
-  - WebRTC
-  - connectionState
 browser-compat: api.RTCPeerConnection.connectionState
 ---
+
 {{APIRef("WebRTC")}}
 
 The read-only **`connectionState`** property
@@ -29,8 +25,8 @@ is sent to the {{domxref("RTCPeerConnection")}} instance.
 
 ## Syntax
 
-```js
-const connectionState = RTCPeerConnection.connectionState;
+```js-nolint
+const connectionState = RTCPeerConnection.connectionState
 ```
 
 ## Value

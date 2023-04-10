@@ -1,19 +1,10 @@
 ---
 title: StorageArea.set()
 slug: Mozilla/Add-ons/WebExtensions/API/storage/StorageArea/set
-tags:
-  - API
-  - Add-ons
-  - Extensions
-  - Method
-  - Non-standard
-  - Reference
-  - Storage
-  - StorageArea
-  - WebExtensions
-  - set
+page-type: webextension-api-function
 browser-compat: webextensions.api.storage.StorageArea.set
 ---
+
 {{AddonSidebar()}}
 
 Stores one or more items in the storage area, or update existing items.
@@ -26,7 +17,7 @@ This is an asynchronous function that returns a [`Promise`](/en-US/docs/Web/Java
 
 ## Syntax
 
-```js
+```js-nolint
 let settingItem = browser.storage.<storageType>.set(
   keys             // object
 )

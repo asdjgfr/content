@@ -1,16 +1,13 @@
 ---
-title: CSSPrimitiveValue.getCounterValue()
+title: "CSSPrimitiveValue: getCounterValue() method"
+short-title: getCounterValue()
 slug: Web/API/CSSPrimitiveValue/getCounterValue
 page-type: web-api-instance-method
-tags:
-  - API
-  - CSSPrimitiveValue
-  - Method
-  - NeedsExample
-  - getCounterValue
-  - Deprecated
+status:
+  - deprecated
 browser-compat: api.CSSPrimitiveValue.getCounterValue
 ---
+
 {{APIRef("CSSOM")}}{{deprecated_header}}
 
 The **`getCounterValue()`** method of the
@@ -29,7 +26,7 @@ is raised. Modification to the corresponding style property can be achieved usin
 
 ## Syntax
 
-```js
+```js-nolint
 getCounterValue()
 ```
 

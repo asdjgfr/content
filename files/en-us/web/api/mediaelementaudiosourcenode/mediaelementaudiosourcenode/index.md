@@ -1,23 +1,18 @@
 ---
-title: MediaElementAudioSourceNode()
+title: "MediaElementAudioSourceNode: MediaElementAudioSourceNode() constructor"
+short-title: MediaElementAudioSourceNode()
 slug: Web/API/MediaElementAudioSourceNode/MediaElementAudioSourceNode
 page-type: web-api-constructor
-tags:
-  - API
-  - Audio
-  - Constructor
-  - MediaElementAudioSourceNode
-  - Reference
-  - Web Audio API
 browser-compat: api.MediaElementAudioSourceNode.MediaElementAudioSourceNode
 ---
+
 {{APIRef("Web Audio API")}}
 
 The **`MediaElementAudioSourceNode()`** constructor creates a new {{domxref("MediaElementAudioSourceNode")}} object instance.
 
 ## Syntax
 
-```js
+```js-nolint
 new MediaElementAudioSourceNode(context, options)
 ```
 
@@ -52,7 +47,7 @@ A new {{domxref("MediaElementAudioSourceNode")}} object instance.
 
 ```js
 const ac = new AudioContext();
-const mediaElement = document.createElement('audio');
+const mediaElement = document.createElement("audio");
 
 const myAudioSource = new MediaElementAudioSourceNode(ac, {
   mediaElement,

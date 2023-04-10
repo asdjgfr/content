@@ -1,12 +1,9 @@
 ---
 title: Content-Encoding
 slug: Web/HTTP/Headers/Content-Encoding
-tags:
-  - HTTP
-  - Headers
-  - Reference
 browser-compat: http.headers.Content-Encoding
 ---
+
 {{HTTPSidebar}}
 
 The **`Content-Encoding`** {{Glossary("representation header")}} lists any encodings that have been applied to the representation (message payload), and in what order.

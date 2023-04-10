@@ -1,13 +1,13 @@
 ---
-title: Event.returnValue
+title: "Event: returnValue property"
+short-title: returnValue
 slug: Web/API/Event/returnValue
 page-type: web-api-instance-property
-tags:
-  - Property
-  - Reference
-  - Deprecated
+status:
+  - deprecated
 browser-compat: api.Event.returnValue
 ---
+
 {{APIRef("DOM")}}{{Deprecated_Header}}
 
 The {{domxref("Event")}} property
@@ -40,3 +40,7 @@ The value of `returnValue` is the opposite of the value returned by
 ## Browser compatibility
 
 {{Compat}}
+
+## See also
+
+- {{domxref("HTMLDialogElement.returnValue")}}: the return value for the {{HTMLElement("dialog")}}.

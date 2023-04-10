@@ -1,24 +1,18 @@
 ---
-title: Element.matches()
+title: "Element: matches() method"
+short-title: matches()
 slug: Web/API/Element/matches
 page-type: web-api-instance-method
-tags:
-  - API
-  - CSS Selector
-  - DOM
-  - Element
-  - Method
-  - Reference
-  - Selector
 browser-compat: api.Element.matches
 ---
+
 {{APIRef("DOM")}}
 
 The **`matches()`** method of the {{domxref("Element")}} interface tests whether the element would be selected by the specified [CSS selector](/en-US/docs/Learn/CSS/Building_blocks/Selectors).
 
 ## Syntax
 
-```js
+```js-nolint
 matches(selectors)
 ```
 
@@ -51,10 +45,10 @@ matches(selectors)
 ### JavaScript
 
 ```js
-const birds = document.querySelectorAll('li');
+const birds = document.querySelectorAll("li");
 
 for (const bird of birds) {
-  if (bird.matches('.endangered')) {
+  if (bird.matches(".endangered")) {
     console.log(`The ${bird.textContent} is endangered!`);
   }
 }

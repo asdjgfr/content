@@ -1,23 +1,18 @@
 ---
-title: VideoFrame.copyTo()
+title: "VideoFrame: copyTo() method"
+short-title: copyTo()
 slug: Web/API/VideoFrame/copyTo
 page-type: web-api-instance-method
-tags:
-  - API
-  - Method
-  - Reference
-  - copyTo
-  - VideoFrame
-  - Experimental
 browser-compat: api.VideoFrame.copyTo
 ---
-{{APIRef("Web Codecs API")}}{{SeeCompatTable}}
+
+{{APIRef("Web Codecs API")}}
 
 The **`copyTo()`** method of the {{domxref("VideoFrame")}} interface copies the contents of the `VideoFrame` to an `ArrayBuffer`.
 
 ## Syntax
 
-```js
+```js-nolint
 copyTo(destination)
 copyTo(destination, options)
 ```
@@ -40,7 +35,7 @@ copyTo(destination, options)
           - : An integer representing the offset in bytes where the given plane begins.
         - `stride`
           - : An integer representing the number of bytes, including padding, used by each row of the plane.
-        Planes may not overlap. If no `layout` is specified, the planes will be tightly packed.
+            Planes may not overlap. If no `layout` is specified, the planes will be tightly packed.
 
 ### Return value
 

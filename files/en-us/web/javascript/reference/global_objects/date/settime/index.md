@@ -1,14 +1,10 @@
 ---
 title: Date.prototype.setTime()
 slug: Web/JavaScript/Reference/Global_Objects/Date/setTime
-tags:
-  - Date
-  - JavaScript
-  - Method
-  - Prototype
-  - Reference
+page-type: javascript-instance-method
 browser-compat: javascript.builtins.Date.setTime
 ---
+
 {{JSRef}}
 
 The **`setTime()`** method sets the {{jsxref("Date")}} object
@@ -18,7 +14,7 @@ to the time represented by a number of milliseconds since January 1, 1970, 00:00
 
 ## Syntax
 
-```js
+```js-nolint
 setTime(timeValue)
 ```
 
@@ -43,7 +39,7 @@ Use the `setTime()` method to help assign a date and time to another
 ### Using setTime()
 
 ```js
-const theBigDay = new Date('July 1, 1999');
+const theBigDay = new Date("July 1, 1999");
 const sameAsBigDay = new Date();
 sameAsBigDay.setTime(theBigDay.getTime());
 ```

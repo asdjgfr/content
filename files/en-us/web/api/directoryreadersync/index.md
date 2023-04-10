@@ -2,13 +2,12 @@
 title: DirectoryReaderSync
 slug: Web/API/DirectoryReaderSync
 page-type: web-api-interface
-tags:
-  - API
-  - Reference
-  - Non-standard
-  - Deprecated
+status:
+  - deprecated
+  - non-standard
 browser-compat: api.DirectoryReaderSync
 ---
+
 {{APIRef("File and Directory Entries API")}}{{Non-standard_Header}}{{Deprecated_Header}}
 
 The `DirectoryReaderSync` interface lets you read the entries in a directory.
@@ -41,7 +40,7 @@ worker.onmessage = (e) => {
   });
 };
 
-worker.postMessage({cmd: "list"});
+worker.postMessage({ cmd: "list" });
 ```
 
 The following is `worker.js` code that gets the contents of the directory.
@@ -88,7 +87,7 @@ self.onmessage = (e) => {
 
     getAllEntries(fs.root.createReader());
 
-    self.postMessage({entries: paths});
+    self.postMessage({ entries: paths });
   } catch (e) {
     onError(e);
   }

@@ -1,22 +1,9 @@
 ---
 title: Shapes from box values
 slug: Web/CSS/CSS_Shapes/From_box_values
-tags:
-  - Boundaries
-  - Boxes
-  - CSS
-  - CSS Shapes
-  - Guide
-  - Margins
-  - border-box
-  - border-radius
-  - box values
-  - content-box
-  - float
-  - margin-box
-  - padding-box
-  - shapes
+page-type: guide
 ---
+
 {{CSSRef}}
 
 A straightforward way to create a shape is to use a value from the CSS Box Model. This article explains how to do this.

@@ -1,21 +1,13 @@
 ---
-title: PresentationConnection.state
+title: "PresentationConnection: state property"
+short-title: state
 slug: Web/API/PresentationConnection/state
 page-type: web-api-instance-property
-tags:
-  - API
-  - NeedsBrowserCompatibility
-  - NeedsContent
-  - NeedsMarkupWork
-  - Presentation
-  - Presentation API
-  - PresentationConnection
-  - Property
-  - Reference
-  - state
-  - Experimental
+status:
+  - experimental
 browser-compat: api.PresentationConnection.state
 ---
+
 {{APIRef("Presentation API")}}{{SeeCompatTable}}
 
 The **`state`** attribute reflects the [presentation connection](https://www.w3.org/TR/presentation-api/#dfn-presentation-connection)'s current state. Depending on the current [`PresentationConnectionState`](https://www.w3.org/TR/presentation-api/#idl-def-presentationconnectionstate), the `state` attribute can hold one of the following values.

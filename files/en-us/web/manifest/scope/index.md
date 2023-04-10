@@ -1,12 +1,9 @@
 ---
 title: scope
 slug: Web/Manifest/scope
-tags:
-  - Manifest
-  - Web
-  - scope
 browser-compat: html.manifest.scope
 ---
+
 {{QuickLinksWithSubpages("/en-US/docs/Web/Manifest")}}
 
 <table class="properties">
@@ -14,10 +11,6 @@ browser-compat: html.manifest.scope
     <tr>
       <th scope="row">Type</th>
       <td><code>String</code></td>
-    </tr>
-    <tr>
-      <th scope="row">Mandatory</th>
-      <td>No</td>
     </tr>
   </tbody>
 </table>

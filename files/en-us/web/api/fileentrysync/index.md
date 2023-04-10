@@ -2,16 +2,12 @@
 title: FileEntrySync
 slug: Web/API/FileEntrySync
 page-type: web-api-interface
-tags:
-  - API
-  - File
-  - File and Directory Entries API
-  - Interface
-  - Non-standard
-  - Reference
-  - Deprecated
+status:
+  - deprecated
+  - non-standard
 browser-compat: api.FileEntrySync
 ---
+
 {{APIRef("File and Directory Entries API")}} {{Non-standard_header}}{{Deprecated_Header}}
 
 The `FileEntrySync` interface represents a file in a file system. It lets you write content to a file.
@@ -42,7 +38,7 @@ To write content to file, create a FileWriter object by calling [`createWriter()
   </tbody>
 </table>
 
-## Methods
+## Instance methods
 
 ### createWriter()
 

@@ -1,14 +1,8 @@
 ---
 title: Writing mathematics with MathML
 slug: Learn/MathML
-tags:
-  - Beginner
-  - Guide
-  - MathML
-  - Intro
-  - Learn
-  - Topic
 ---
+
 {{LearnSidebar}}
 
 Mathematical Markup Language — or {{glossary("MathML")}} — is the markup language used to write mathematical formulas in web pages using fractions, scripts, radicals, matrices, integrals, series, etc. Although it was originally designed as an independent XML language, MathML is generally embedded inside {{Glossary('HTML')}} documents and can be seen as an extension of HTML.

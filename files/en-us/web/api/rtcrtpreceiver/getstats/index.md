@@ -1,20 +1,11 @@
 ---
-title: RTCRtpReceiver.getStats()
+title: "RTCRtpReceiver: getStats() method"
+short-title: getStats()
 slug: Web/API/RTCRtpReceiver/getStats
 page-type: web-api-instance-method
-tags:
-  - API
-  - Media
-  - Method
-  - RTCRtpReceiver
-  - Reference
-  - WebRTC
-  - WebRTC API
-  - WebRTC Statistics
-  - WebRTC Statistics API
-  - getStats
 browser-compat: api.RTCRtpReceiver.getStats
 ---
+
 {{APIRef("WebRTC")}}
 
 The {{domxref("RTCRtpReceiver")}} method **`getStats()`**
@@ -25,7 +16,7 @@ results are available.
 
 ## Syntax
 
-```js
+```js-nolint
 getStats()
 ```
 

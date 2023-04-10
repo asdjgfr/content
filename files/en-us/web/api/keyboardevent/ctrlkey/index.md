@@ -1,16 +1,11 @@
 ---
-title: KeyboardEvent.ctrlKey
+title: "KeyboardEvent: ctrlKey property"
+short-title: ctrlKey
 slug: Web/API/KeyboardEvent/ctrlKey
 page-type: web-api-instance-property
-tags:
-  - API
-  - DOM
-  - KeyboardEvent
-  - Property
-  - Read-only
-  - Reference
 browser-compat: api.KeyboardEvent.ctrlKey
 ---
+
 {{APIRef("UI Events")}}
 
 The **`KeyboardEvent.ctrlKey`** read-only property returns a

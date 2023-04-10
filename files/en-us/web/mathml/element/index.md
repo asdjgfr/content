@@ -1,15 +1,13 @@
 ---
 title: MathML element reference
 slug: Web/MathML/Element
-tags:
-  - MathML
-  - MathML Reference
 ---
+
 {{MathMLRef}}
 
 This is an alphabetical list of MathML elements. All of them implement the {{domxref("MathMLElement")}} class.
 
-> **Note:** As explained on the main [MathML](/en-US/docs/Web/MathML) page, documentation is focused on a subset of the language that is relevant for browsers. See the [MathML Full](https://w3c.github.io/mathml/) specification if you want details about other MathML elements.
+> **Note:** As explained on the main [MathML](/en-US/docs/Web/MathML) page, MDN uses [MathML Core](https://w3c.github.io/mathml-core/) as a reference specification. However, legacy features that are still implemented by some browsers are also documented. You can find further details for these and other features in [MathML 4](https://w3c.github.io/mathml/).
 
 ## MathML elements A to Z
 
@@ -20,6 +18,8 @@ This is an alphabetical list of MathML elements. All of them implement the {{dom
 ### A
 
 - {{MathMLElement("maction")}} (Bound actions to sub-expressions)
+- {{MathMLElement("annotation")}} (Data annotations)
+- {{MathMLElement("annotation-xml")}} (XML annotations)
 
 ### E
 
@@ -52,6 +52,7 @@ This is an alphabetical list of MathML elements. All of them implement the {{dom
 
 - {{MathMLElement("mpadded")}} (Space around content)
 - {{MathMLElement("mphantom")}} (Invisible content with reserved space)
+- {{MathMLElement("mprescripts")}} (delimiter for prescripts)
 
 ### R
 
@@ -61,6 +62,7 @@ This is an alphabetical list of MathML elements. All of them implement the {{dom
 ### S
 
 - {{MathMLElement("ms")}} (String literal)
+- {{MathMLElement("semantics")}} (Container for semantic annotations)
 - {{MathMLElement("mspace")}} (Space)
 - {{MathMLElement("msqrt")}} (Square root without an index)
 - {{MathMLElement("mstyle")}} (Style change)
@@ -79,12 +81,6 @@ This is an alphabetical list of MathML elements. All of them implement the {{dom
 
 - {{MathMLElement("munder")}} (Underscript)
 - {{MathMLElement("munderover")}} (Underscript-overscript pair)
-
-### Other elements
-
-- {{MathMLElement("semantics")}} (Container for semantic annotations)
-- [`<annotation>`](/en-US/docs/Web/MathML/Element/semantics#annotation) (Data annotations)
-- [`<annotation-xml>`](/en-US/docs/Web/MathML/Element/semantics#annotation-xml) (XML annotations)
 
 ## MathML elements by category
 
@@ -124,7 +120,6 @@ This is an alphabetical list of MathML elements. All of them implement the {{dom
 - {{MathMLElement("msup")}}
 - {{MathMLElement("munder")}}
 - {{MathMLElement("munderover")}}
-- {{MathMLElement("none")}}
 
 ### Tabular math
 
@@ -138,8 +133,8 @@ This is an alphabetical list of MathML elements. All of them implement the {{dom
 
 ## Semantic annotations
 
-- [`<annotation>`](/en-US/docs/Web/MathML/Element/semantics#annotation)
-- [`<annotation-xml>`](/en-US/docs/Web/MathML/Element/semantics#annotation-xml)
+- {{MathMLElement("annotation")}}
+- {{MathMLElement("annotation-xml")}}
 - {{MathMLElement("semantics")}}
 
 ## See also

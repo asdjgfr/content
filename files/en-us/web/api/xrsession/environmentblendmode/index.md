@@ -1,24 +1,13 @@
 ---
-title: XRSession.environmentBlendMode
+title: "XRSession: environmentBlendMode property"
+short-title: environmentBlendMode
 slug: Web/API/XRSession/environmentBlendMode
 page-type: web-api-instance-property
-tags:
-  - API
-  - AR
-  - Property
-  - Read-only
-  - Reality
-  - Reference
-  - VR
-  - Virtual
-  - WebXR Augmented Reality
-  - WebXR Augmented Reality API
-  - XRSession
-  - augmented
-  - environmentBlendMode
-  - Experimental
+status:
+  - experimental
 browser-compat: api.XRSession.environmentBlendMode
 ---
+
 {{APIRef("WebXR Device API")}}{{SeeCompatTable}}
 
 The {{domxref("XRSession")}} interface's _read-only_ **`environmentBlendMode`**

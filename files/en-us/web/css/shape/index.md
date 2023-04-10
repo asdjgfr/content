@@ -1,17 +1,12 @@
 ---
 title: <shape>
 slug: Web/CSS/shape
-tags:
-  - CSS
-  - CSS Data Type
-  - CSS Function
-  - Data Type
-  - Deprecated
-  - Layout
-  - Reference
-  - Web
+page-type: css-type
+status:
+  - deprecated
 browser-compat: css.types.shape
 ---
+
 {{CSSRef}}{{deprecated_header}}
 
 The **`<shape>`** [CSS](/en-US/docs/Web/CSS) [data type](/en-US/docs/Web/CSS/CSS_Types) defines the specific form (shape) of a region. The region represents the part of an element to which the {{cssxref("clip")}} property applies.

@@ -1,12 +1,8 @@
 ---
 title: MathML first steps overview
 slug: Learn/MathML/First_steps
-tags:
-  - Beginner
-  - MathML
-  - Landing
-  - first steps
 ---
+
 {{LearnSidebar}}
 
 MathML is the markup language used to write mathematical formulas in web pages. This module provides a gentle beginning to your path towards MathML mastery with the basics of how it works, what the syntax looks like, and how you can start using it inside HTML.

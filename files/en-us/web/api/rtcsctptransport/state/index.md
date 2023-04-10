@@ -1,20 +1,11 @@
 ---
-title: RTCSctpTransport.state
+title: "RTCSctpTransport: state property"
+short-title: state
 slug: Web/API/RTCSctpTransport/state
 page-type: web-api-instance-property
-tags:
-  - API
-  - Draft
-  - NeedsCompatTable
-  - NeedsExample
-  - Property
-  - RTCSctpTransport
-  - Read-only
-  - Reference
-  - WebRTC
-  - state
 browser-compat: api.RTCSctpTransport.state
 ---
+
 {{APIRef("WebRTC")}}
 
 The **`state`** read-only property of the

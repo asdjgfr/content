@@ -1,23 +1,18 @@
 ---
-title: AnimationEvent()
+title: "AnimationEvent: AnimationEvent() constructor"
+short-title: AnimationEvent()
 slug: Web/API/AnimationEvent/AnimationEvent
 page-type: web-api-constructor
-tags:
-  - API
-  - AnimationEvent
-  - CSSOM
-  - Constructor
-  - Reference
-  - Web Animations
 browser-compat: api.AnimationEvent.AnimationEvent
 ---
-{{APIRef("Web Animations API")}}
+
+{{APIRef("Web Animations")}}
 
 The **`AnimationEvent()`** constructor returns a new {{domxref("AnimationEvent")}} object, representing an event in relation with an animation.
 
 ## Syntax
 
-```js
+```js-nolint
 new AnimationEvent(type)
 new AnimationEvent(type, options)
 ```

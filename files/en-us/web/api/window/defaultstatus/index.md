@@ -1,19 +1,12 @@
 ---
-title: Window.defaultStatus
+title: "Window: defaultStatus property"
+short-title: defaultStatus
 slug: Web/API/Window/defaultStatus
 page-type: web-api-instance-property
-tags:
-  - API
-  - HTML DOM
-  - NeedsCompatTable
-  - NeedsExample
-  - NeedsMarkupWork
-  - NeedsSpecTable
-  - Deprecated
-  - Property
-  - Reference
-  - Window
+status:
+  - deprecated
 ---
+
 {{APIRef()}}{{deprecated_header}}
 
 > **Note:** This method was removed from Firefox 23 and onward.

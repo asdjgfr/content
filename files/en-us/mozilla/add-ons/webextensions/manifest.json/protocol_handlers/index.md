@@ -1,13 +1,10 @@
 ---
 title: protocol_handlers
 slug: Mozilla/Add-ons/WebExtensions/manifest.json/protocol_handlers
-tags:
-  - Add-ons
-  - Extensions
-  - WebExtensions
-  - manifest.json
+page-type: webextension-manifest-key
 browser-compat: webextensions.manifest.protocol_handlers
 ---
+
 {{AddonSidebar}}
 
 <table class="fullwidth-table standard-table">

@@ -1,19 +1,10 @@
 ---
 title: Conditional (ternary) operator
-slug: Web/JavaScript/Reference/Operators/Conditional_Operator
-tags:
-  - Conditional
-  - Decision
-  - JS
-  - JavaScript
-  - Language feature
-  - Operator
-  - Reference
-  - else
-  - if
-  - ternary
+slug: Web/JavaScript/Reference/Operators/Conditional_operator
+page-type: javascript-operator
 browser-compat: javascript.operators.conditional
 ---
+
 {{jsSidebar("Operators")}}
 
 The **conditional (ternary) operator** is the only JavaScript operator that takes three operands:
@@ -24,7 +15,7 @@ This operator is frequently used as an alternative to an [`if...else`](/en-US/do
 
 ## Syntax
 
-```js
+```js-nolint
 condition ? exprIfTrue : exprIfFalse
 ```
 
@@ -60,10 +51,10 @@ One common usage is to handle a value that may be `null`:
 const greeting = (person) => {
   const name = person ? person.name : "stranger";
   return `Howdy, ${name}`;
-}
+};
 
-console.log(greeting({ name: "Alice" }));  // "Howdy, Alice"
-console.log(greeting(null));             // "Howdy, stranger"
+console.log(greeting({ name: "Alice" })); // "Howdy, Alice"
+console.log(greeting(null)); // "Howdy, stranger"
 ```
 
 ### Conditional chains
@@ -106,7 +97,7 @@ function example() {
 ## See also
 
 - [if statement](/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
-- [Nullish coalescing operator](/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_operator)
+- [Nullish coalescing operator](/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing)
 - [Optional chaining](/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining)
 - [Making decisions in your code — conditionals](/en-US/docs/Learn/JavaScript/Building_blocks/conditionals)
-- [Expressions and operators](/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators)
+- [Expressions and operators](/en-US/docs/Web/JavaScript/Guide/Expressions_and_operators)

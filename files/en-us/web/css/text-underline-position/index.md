@@ -1,14 +1,10 @@
 ---
 title: text-underline-position
 slug: Web/CSS/text-underline-position
-tags:
-  - CSS
-  - CSS Property
-  - CSS Text Decoration
-  - Reference
-  - recipe:css-property
+page-type: css-property
 browser-compat: css.properties.text-underline-position
 ---
+
 {{CSSRef}}
 
 The **`text-underline-position`** [CSS](/en-US/docs/Web/CSS) property specifies the position of the underline which is set using the {{cssxref("text-decoration")}} property's `underline` value.
@@ -70,15 +66,17 @@ text-underline-position: unset;
 Let's take a couple of simple example paragraphs:
 
 ```html
-<p class="horizontal">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-Nullam consectetur ac turpis vel laoreet. Nullam volutpat pharetra lorem, sit
-amet feugiat tortor volutpat quis. Nam eget sodales quam. Aliquam accumsan
-tellus ac erat posuere.</p>
+<p class="horizontal">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur ac
+  turpis vel laoreet. Nullam volutpat pharetra lorem, sit amet feugiat tortor
+  volutpat quis. Nam eget sodales quam. Aliquam accumsan tellus ac erat posuere.
+</p>
 
-<p class="vertical">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-Nullam consectetur ac turpis vel laoreet. Nullam volutpat pharetra lorem, sit
-amet feugiat tortor volutpat quis. Nam eget sodales quam. Aliquam accumsan
-tellus ac erat posuere.</p>
+<p class="vertical">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur ac
+  turpis vel laoreet. Nullam volutpat pharetra lorem, sit amet feugiat tortor
+  volutpat quis. Nam eget sodales quam. Aliquam accumsan tellus ac erat posuere.
+</p>
 ```
 
 Our CSS looks like this:

@@ -1,12 +1,10 @@
 ---
 title: Initial value
 slug: Web/CSS/initial_value
-tags:
-  - CSS
-  - Guide
-  - Reference
+page-type: guide
 spec-urls: https://www.w3.org/TR/CSS22/cascade.html#specified-value
 ---
+
 {{CSSRef}}
 
 The **initial value** of a [CSS](/en-US/docs/Web/CSS) property is its default value, as listed in its definition table in the specification. The usage of the initial value depends on whether a property is inherited or not:

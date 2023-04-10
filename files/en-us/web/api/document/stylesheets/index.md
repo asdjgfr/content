@@ -1,15 +1,11 @@
 ---
-title: Document.styleSheets
+title: "Document: styleSheets property"
+short-title: styleSheets
 slug: Web/API/Document/styleSheets
 page-type: web-api-instance-property
-tags:
-  - API
-  - Document
-  - Property
-  - Reference
-  - Stylesheets
 browser-compat: api.Document.styleSheets
 ---
+
 {{APIRef("CSSOM")}}
 
 The **`styleSheets`** read-only property of the {{domxref("Document")}} interface returns a {{domxref('StyleSheetList')}} of {{domxref('CSSStyleSheet')}} objects, for stylesheets explicitly linked into or embedded in a document.

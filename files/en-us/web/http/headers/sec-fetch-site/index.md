@@ -1,15 +1,9 @@
 ---
 title: Sec-Fetch-Site
 slug: Web/HTTP/Headers/Sec-Fetch-Site
-tags:
-  - Sec-Fetch-Site
-  - Fetch Metadata Request Headers
-  - HTTP
-  - HTTP Header
-  - Reference
-  - Request header
 browser-compat: http.headers.Sec-Fetch-Site
 ---
+
 {{HTTPSidebar}}
 
 The **`Sec-Fetch-Site`** {{Glossary("Fetch metadata request header", "fetch metadata request header")}} indicates the relationship between a request initiator's origin and the origin of the requested resource.

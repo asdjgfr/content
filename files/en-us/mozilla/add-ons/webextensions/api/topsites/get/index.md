@@ -1,18 +1,10 @@
 ---
 title: topSites.get()
 slug: Mozilla/Add-ons/WebExtensions/API/topSites/get
-tags:
-  - API
-  - Add-ons
-  - Extensions
-  - Method
-  - Non-standard
-  - Reference
-  - WebExtensions
-  - get
-  - topSites
+page-type: webextension-api-function
 browser-compat: webextensions.api.topSites.get
 ---
+
 {{AddonSidebar()}}
 
 Gets an array containing information about pages that the user has visited often and recently.
@@ -31,7 +23,7 @@ To use the topSites API you must have the "topSites" [API permission](/en-US/doc
 
 ## Syntax
 
-```js
+```js-nolint
 let gettingTopSites = browser.topSites.get(
     options  // object
 )

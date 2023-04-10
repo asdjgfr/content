@@ -2,12 +2,9 @@
 title: File API
 slug: Web/API/File_API
 page-type: web-api-overview
-tags:
-  - API
-  - Overview
-  - Reference
 spec-urls: https://w3c.github.io/FileAPI/
 ---
+
 {{DefaultAPISidebar("File API")}}
 
 ## Concepts and Usage
@@ -49,7 +46,7 @@ In this example, we provide a [file `<input>` element](/en-US/docs/Web/HTML/Elem
 #### HTML
 
 ```html
-<input type="file">
+<input type="file" />
 <div class="output"></div>
 ```
 
@@ -67,7 +64,7 @@ In this example, we provide a [file `<input>` element](/en-US/docs/Web/HTML/Elem
 
 ```js
 const fileInput = document.querySelector("input[type=file]");
-const output = document.querySelector('.output');
+const output = document.querySelector(".output");
 
 fileInput.addEventListener("change", () => {
   const [file] = fileInput.files;
@@ -78,7 +75,7 @@ fileInput.addEventListener("change", () => {
     });
     reader.readAsText(file);
   }
-})
+});
 ```
 
 ### Result

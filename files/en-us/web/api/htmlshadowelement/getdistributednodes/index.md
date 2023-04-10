@@ -1,17 +1,14 @@
 ---
-title: HTMLShadowElement.getDistributedNodes()
+title: "HTMLShadowElement: getDistributedNodes() method"
+short-title: getDistributedNodes()
 slug: Web/API/HTMLShadowElement/getDistributedNodes
 page-type: web-api-instance-method
-tags:
-  - API
-  - HTML DOM
-  - Property
-  - Reference
-  - Web Components
-  - Deprecated
-  - Non-standard
+status:
+  - deprecated
+  - non-standard
 browser-compat: api.HTMLShadowElement.getDistributedNodes
 ---
+
 {{APIRef("Web Components")}}{{Deprecated_Header}}{{Non-standard_Header}}
 
 The **`HTMLShadowElement.getDistributedNodes()`** method

@@ -1,28 +1,11 @@
 ---
-title: XRInputSourceEvent.frame
+title: "XRInputSourceEvent: frame property"
+short-title: frame
 slug: Web/API/XRInputSourceEvent/frame
 page-type: web-api-instance-property
-tags:
-  - API
-  - AR
-  - Input Sources
-  - Inputs
-  - Mixed
-  - Property
-  - Read-only
-  - Reality
-  - Reference
-  - VR
-  - Virtual
-  - WebXR
-  - WebXR API
-  - WebXR Device API
-  - XR
-  - XRInputSourceEvent
-  - augmented
-  - events
 browser-compat: api.XRInputSourceEvent.frame
 ---
+
 {{APIRef("WebXR Device API")}}
 
 The read-only {{domxref("XRInputSourceEvent")}} property

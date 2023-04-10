@@ -1,16 +1,11 @@
 ---
-title: MediaKeyStatusMap.forEach()
+title: "MediaKeyStatusMap: forEach() method"
+short-title: forEach()
 slug: Web/API/MediaKeyStatusMap/forEach
 page-type: web-api-instance-method
-tags:
-  - API
-  - EncryptedMediaExtensions
-  - MediaKeyStatusMap
-  - Method
-  - Reference
-  - forEach()
 browser-compat: api.MediaKeyStatusMap.forEach
 ---
+
 {{APIRef("EncryptedMediaExtensions API")}}
 
 The **`forEach`** property of the
@@ -20,7 +15,7 @@ the callback.
 
 ## Syntax
 
-```js
+```js-nolint
 // Arrow function
 forEach((currentValue) => { /* … */ } )
 forEach((currentValue, index) => { /* … */ } )

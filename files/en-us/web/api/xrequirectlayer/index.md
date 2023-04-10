@@ -2,21 +2,11 @@
 title: XREquirectLayer
 slug: Web/API/XREquirectLayer
 page-type: web-api-interface
-tags:
-  - API
-  - AR
-  - Augmented Reality
-  - Interface
-  - Reference
-  - VR
-  - Virtual Reality
-  - WebXR
-  - WebXR Device API
-  - XR
-  - XREquirectLayer
-  - Experimental
+status:
+  - experimental
 browser-compat: api.XREquirectLayer
 ---
+
 {{securecontext_header}}{{APIRef("WebXR Device API")}}{{SeeCompatTable}}
 
 The **`XREquirectLayer`** interface of the [WebXR Device API](/en-US/docs/Web/API/WebXR_Device_API) is a layer that maps [equirectangular](https://en.wikipedia.org/wiki/Equirectangular_projection) coded data onto the inside of a sphere.
@@ -32,7 +22,7 @@ To present layers to the XR device, add them to the `layers` render state using 
 
 {{InheritanceDiagram}}
 
-## Properties
+## Instance properties
 
 _Inherits properties from its parent, {{domxref("XRCompositionLayer")}}._
 
@@ -49,7 +39,7 @@ _Inherits properties from its parent, {{domxref("XRCompositionLayer")}}._
 - {{domxref("XREquirectLayer.upperVerticalAngle")}} {{Experimental_Inline}}
   - : A number indicating the upper vertical angle in radians for the sphere.
 
-## Methods
+## Instance methods
 
 _Inherits methods from its parents, {{domxref("XRCompositionLayer")}} and {{domxref("EventTarget")}}_.
 

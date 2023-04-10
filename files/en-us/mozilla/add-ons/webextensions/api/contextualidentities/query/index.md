@@ -1,17 +1,10 @@
 ---
 title: contextualIdentities.query()
 slug: Mozilla/Add-ons/WebExtensions/API/contextualIdentities/query
-tags:
-  - API
-  - Add-ons
-  - Extensions
-  - Method
-  - Reference
-  - WebExtensions
-  - contextualIdentities
-  - query
+page-type: webextension-api-function
 browser-compat: webextensions.api.contextualIdentities.query
 ---
+
 {{AddonSidebar()}}
 
 Gets information about all contextual identities, or about those contextual identities that match a given filter argument.
@@ -20,7 +13,7 @@ This is an asynchronous function that returns a [`Promise`](/en-US/docs/Web/Java
 
 ## Syntax
 
-```js
+```js-nolint
 let getContext = browser.contextualIdentities.query(
   details                  // object
 )

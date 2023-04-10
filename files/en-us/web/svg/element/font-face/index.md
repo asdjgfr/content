@@ -1,17 +1,12 @@
 ---
 title: <font-face>
 slug: Web/SVG/Element/font-face
-tags:
-  - Deprecated
-  - Element
-  - NeedsBrowserCompatibility
-  - NeedsExample
-  - NeedsMobileBrowserCompatibility
-  - Reference
-  - SVG
-  - SVG Font
+page-type: svg-element
+status:
+  - deprecated
 browser-compat: svg.elements.font-face
 ---
+
 {{SVGRef}}{{deprecated_header}}
 
 The **`<font-face>`** [SVG](/en-US/docs/Web/SVG) element corresponds to the CSS {{cssxref("@font-face")}} rule. It defines a font's outer properties.

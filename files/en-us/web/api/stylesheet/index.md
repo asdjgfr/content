@@ -2,21 +2,14 @@
 title: StyleSheet
 slug: Web/API/StyleSheet
 page-type: web-api-interface
-tags:
-  - API
-  - CSS
-  - CSSOM
-  - DOM
-  - Interface
-  - Reference
-  - StyleSheet
 browser-compat: api.StyleSheet
 ---
+
 {{APIRef("CSSOM")}}
 
 An object implementing the `StyleSheet` interface represents a single style sheet. CSS style sheets will further implement the more specialized {{domxref("CSSStyleSheet")}} interface.
 
-## Properties
+## Instance properties
 
 - {{domxref("StyleSheet.disabled")}}
   - : A boolean value representing whether the current stylesheet has been applied or not.

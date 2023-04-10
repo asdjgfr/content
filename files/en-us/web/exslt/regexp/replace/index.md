@@ -1,11 +1,8 @@
 ---
 title: regexp:replace()
 slug: Web/EXSLT/regexp/replace
-tags:
-  - EXSLT
-  - NeedsSpecTable
-  - Reference
 ---
+
 {{XSLTRef}}{{QuickLinksWithSubpages("/en-US/docs/Web/EXSLT")}}
 
 `regexp:replace()` replaces the portions of a string that match a given regular expression with the contents of another string.

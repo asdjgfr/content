@@ -1,11 +1,10 @@
 ---
 title: font-family
 slug: Web/SVG/Attribute/font-family
-tags:
-  - SVG
-  - SVG Attribute
+page-type: svg-attribute
 browser-compat: svg.attributes.presentation.font-family
 ---
+
 {{SVGRef}}
 
 The **`font-family`** attribute indicates which font family will be used to render the text, specified as a prioritized list of font family names and/or generic family names.
@@ -23,7 +22,9 @@ You can use this attribute with the following SVG elements:
 ## Example
 
 ```css hidden
-html, body, svg {
+html,
+body,
+svg {
   height: 100%;
 }
 ```

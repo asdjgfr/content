@@ -1,24 +1,11 @@
 ---
-title: RTCRtpSender.setStreams()
+title: "RTCRtpSender: setStreams() method"
+short-title: setStreams()
 slug: Web/API/RTCRtpSender/setStreams
 page-type: web-api-instance-method
-tags:
-  - API
-  - Audio
-  - Media
-  - MediaStream
-  - Method
-  - RTCRtpSender
-  - RTP
-  - Reference
-  - Streams
-  - Video
-  - WebRTC
-  - WebRTC API
-  - WebRTC API Reference
-  - setStreams
 browser-compat: api.RTCRtpSender.setStreams
 ---
+
 {{DefaultAPISidebar("WebRTC API")}}
 
 The {{domxref("RTCRtpSender")}} method **`setStreams()`**
@@ -27,7 +14,7 @@ associates the sender's {{domxref("RTCRtpSender.track", "track")}} with the spec
 
 ## Syntax
 
-```js
+```js-nolint
 setStreams()
 setStreams(mediaStream)
 setStreams(mediaStreams)
@@ -71,7 +58,7 @@ function addTracksToStream(stream) {
   let senders = pc.getSenders();
 
   senders.forEach((sender) => {
-    if (sender.track && (sender.transport.state === connected)) {
+    if (sender.track && sender.transport.state === connected) {
       sender.setStreams(stream);
     }
   });

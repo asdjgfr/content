@@ -1,19 +1,13 @@
 ---
-title: XRCompositionLayer.mipLevels
+title: "XRCompositionLayer: mipLevels property"
+short-title: mipLevels
 slug: Web/API/XRCompositionLayer/mipLevels
 page-type: web-api-instance-property
-tags:
-  - API
-  - Property
-  - Reference
-  - VR
-  - WebXR
-  - WebXR API
-  - WebXR Device API
-  - XR
-  - Experimental
+status:
+  - experimental
 browser-compat: api.XRCompositionLayer.mipLevels
 ---
+
 {{APIRef("WebXR Device API")}}{{SeeCompatTable}}
 
 The read-only **`mipLevels`** property of the {{domxref("XRCompositionLayer")}} interface is a layer's number of mip levels in the color and texture data. See also [Mipmap](https://en.wikipedia.org/wiki/Mipmap) on Wikipedia.

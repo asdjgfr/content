@@ -1,13 +1,7 @@
 ---
 title: <display-legacy>
 slug: Web/CSS/display-legacy
-tags:
-  - CSS
-  - CSS Data Type
-  - CSS Display
-  - Data Type
-  - Reference
-  - display-legacy
+page-type: css-type
 spec-urls: https://drafts.csswg.org/css-display/#typedef-display-legacy
 browser-compat:
   - css.properties.display.inline-block
@@ -15,6 +9,7 @@ browser-compat:
   - css.properties.display.inline-flex
   - css.properties.display.inline-grid
 ---
+
 {{CSSRef}}
 
 CSS 2 used a single-keyword syntax for the `display` property, requiring separate keywords for block-level and inline-level variants of the same layout mode. This page details those values.

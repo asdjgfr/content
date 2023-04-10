@@ -1,13 +1,10 @@
 ---
 title: <polygon>
 slug: Web/SVG/Element/polygon
-tags:
-  - Element
-  - Reference
-  - SVG
-  - SVG Graphics
+page-type: svg-element
 browser-compat: svg.elements.polygon
 ---
+
 {{SVGRef}}
 
 The **`<polygon>`** element defines a closed shape consisting of a set of connected straight line segments. The last point is connected to the first point.
@@ -17,7 +14,11 @@ For open shapes, see the {{SVGElement("polyline")}} element.
 ## Example
 
 ```css hidden
-html,body,svg { height:100% }
+html,
+body,
+svg {
+  height: 100%;
+}
 ```
 
 ```html
@@ -26,8 +27,7 @@ html,body,svg { height:100% }
   <polygon points="0,100 50,25 50,75 100,0" />
 
   <!-- Example of the same polygon shape with stroke and no fill -->
-  <polygon points="100,100 150,25 150,75 200,0"
-            fill="none" stroke="black" />
+  <polygon points="100,100 150,25 150,75 200,0" fill="none" stroke="black" />
 </svg>
 ```
 

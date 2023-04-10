@@ -1,11 +1,8 @@
 ---
 title: math:highest()
 slug: Web/EXSLT/math/highest
-tags:
-  - EXSLT
-  - NeedsSpecTable
-  - Reference
 ---
+
 {{XSLTRef}}{{QuickLinksWithSubpages("/en-US/docs/Web/EXSLT")}}
 
 `math:highest()` returns the node in the specified node-set with the highest value (where the highest value calculated using [`math:max()`](/en-US/docs/Web/EXSLT/math/max)).

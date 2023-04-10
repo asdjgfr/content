@@ -1,13 +1,6 @@
 ---
 title: 2D maze game with device orientation
 slug: Games/Tutorials/HTML5_Gamedev_Phaser_Device_Orientation
-tags:
-  - Canvas
-  - Device Orientation API
-  - Game Development
-  - HTML
-  - Phaser
-  - Vibration API
 ---
 
 {{GamesSidebar}}
@@ -282,7 +275,7 @@ Here we're adding a sprite at the given place on the screen and using the `'ball
 
 #### Controlling the ball
 
-It's cool to have the ball ready to be thrown around in the play area, but it's also important to be able to actually move it! Now we will add the ability to control the ball with the keyboard on the desktop devices, and then we will move to the implementation of the Device Orientation API. Let's focus on the keyboard first by adding the following to the `create()` function :
+It's cool to have the ball ready to be thrown around in the play area, but it's also important to be able to actually move it! Now we will add the ability to control the ball with the keyboard on the desktop devices, and then we will move to the implementation of the Device Orientation API. Let's focus on the keyboard first by adding the following to the `create()` function:
 
 ```js
 this.keys = this.game.input.keyboard.createCursorKeys();
@@ -330,7 +323,7 @@ The more you tilt the device, the more force is applied to the ball, therefore t
 
 ![An explanation of the X, Y and Z axes of a Flame mobile device with the Cyber Orb game demo on the screen.](cyber-orb-flame-orientation.png)
 
-> **Note:** To find more out about implementing device orientation and what raw code would look like, read [Keep it level: responding to device orientation changes](/en-US/docs/Web/Apps/Fundamentals/gather_and_modify_data/responding_to_device_orientation_changes).
+> **Note:** To find out more about implementing device orientation and what raw code would look like, read [Keep it level: responding to device orientation changes](/en-US/docs/Web/Apps/Fundamentals/gather_and_modify_data/responding_to_device_orientation_changes).
 
 #### Adding the hole
 

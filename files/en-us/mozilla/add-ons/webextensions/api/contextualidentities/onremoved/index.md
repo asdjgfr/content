@@ -1,24 +1,17 @@
 ---
 title: contextualIdentities.onRemoved
 slug: Mozilla/Add-ons/WebExtensions/API/contextualIdentities/onRemoved
-tags:
-  - API
-  - Add-ons
-  - Event
-  - Extensions
-  - Reference
-  - WebExtensions
-  - contextualIdentities
-  - onRemoved
+page-type: webextension-api-event
 browser-compat: webextensions.api.contextualIdentities.onRemoved
 ---
+
 {{AddonSidebar()}}
 
 Fired when a new contextual identity is removed. Contextual identities may be removed by extensions using the `contextualIdentities` API, or directly by the user, using the browser's user interface.
 
 ## Syntax
 
-```js
+```js-nolint
 browser.contextualIdentities.onRemoved.addListener(listener)
 browser.contextualIdentities.onRemoved.removeListener(listener)
 browser.contextualIdentities.onRemoved.hasListener(listener)

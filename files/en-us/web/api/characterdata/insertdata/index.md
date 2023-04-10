@@ -1,10 +1,8 @@
 ---
-title: CharacterData.insertData()
+title: "CharacterData: insertData() method"
+short-title: insertData()
 slug: Web/API/CharacterData/insertData
 page-type: web-api-instance-method
-tags:
-  - Method
-  - Reference
 browser-compat: api.CharacterData.insertData
 ---
 
@@ -17,7 +15,7 @@ The provided data is spliced into the existing data.
 
 ## Syntax
 
-```js
+```js-nolint
 characterData.insertData(offset, data)
 ```
 

@@ -1,12 +1,8 @@
 ---
 title: math:min()
 slug: Web/EXSLT/math/min
-tags:
-  - EXSLT
-  - NeedsCompatTable
-  - NeedsSpecTable
-  - Reference
 ---
+
 {{XSLTRef}}{{QuickLinksWithSubpages("/en-US/docs/Web/EXSLT")}}
 
 `math:min()` returns the minimum value of a node-set.

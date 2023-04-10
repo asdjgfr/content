@@ -1,18 +1,10 @@
 ---
 title: downloads.setShelfEnabled()
 slug: Mozilla/Add-ons/WebExtensions/API/downloads/setShelfEnabled
-tags:
-  - API
-  - Add-ons
-  - Extensions
-  - Method
-  - Non-standard
-  - Reference
-  - WebExtensions
-  - downloads
-  - setShelfEnabled
+page-type: webextension-api-function
 browser-compat: webextensions.api.downloads.setShelfEnabled
 ---
+
 {{AddonSidebar()}}
 
 The **`setShelfEnabled()`** function of the {{WebExtAPIRef("downloads")}} API enables or disables the gray shelf at the bottom of every window associated with the current browser profile. The shelf will be disabled as long as at least one extension has disabled it.
@@ -23,7 +15,7 @@ If you try to enable the shelf when at least one other extension has already dis
 
 ## Syntax
 
-```js
+```js-nolint
 chrome.downloads.setShelfEnabled(enabled);
 ```
 
@@ -41,8 +33,6 @@ This API is also available as `browser.downloads.setShelfEnabled()`.
 {{WebExtExamples}}
 
 > **Note:** This API is based on Chromium's [`chrome.downloads`](https://developer.chrome.com/docs/extensions/reference/downloads/#method-setShelfEnabled) API.
->
-> Microsoft Edge compatibility data is supplied by Microsoft Corporation and is included here under the Creative Commons Attribution 3.0 United States License.
 
 <!--
 // Copyright 2015 The Chromium Authors. All rights reserved.

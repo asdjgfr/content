@@ -1,16 +1,13 @@
 ---
-title: ImageDecoder.complete
+title: "ImageDecoder: complete property"
+short-title: complete
 slug: Web/API/ImageDecoder/complete
 page-type: web-api-instance-property
-tags:
-  - API
-  - Property
-  - Reference
-  - complete
-  - ImageDecoder
-  - Experimental
+status:
+  - experimental
 browser-compat: api.ImageDecoder.complete
 ---
+
 {{securecontext_header}}{{APIRef("WebCodecs API")}}{{SeeCompatTable}}
 
 The **`complete`** read-only property of the {{domxref("ImageDecoder")}} interface returns true if encoded data has completed buffering.

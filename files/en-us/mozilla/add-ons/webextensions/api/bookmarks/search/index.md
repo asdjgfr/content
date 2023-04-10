@@ -1,18 +1,10 @@
 ---
 title: bookmarks.search()
 slug: Mozilla/Add-ons/WebExtensions/API/bookmarks/search
-tags:
-  - API
-  - Add-ons
-  - Bookmarks
-  - Extensions
-  - Method
-  - Non-standard
-  - Reference
-  - Search
-  - WebExtensions
+page-type: webextension-api-function
 browser-compat: webextensions.api.bookmarks.search
 ---
+
 {{AddonSidebar()}}
 
 The **`bookmarks.search()`** function searches for bookmark tree nodes matching the given query.
@@ -23,7 +15,7 @@ This is an asynchronous function that returns a [`Promise`](/en-US/docs/Web/Java
 
 ## Syntax
 
-```js
+```js-nolint
 let searching = browser.bookmarks.search(
   query                  // string or object
 )
@@ -103,8 +95,6 @@ browser.browserAction.onClicked.addListener(checkActiveTab);
 {{Compat}}
 
 > **Note:** This API is based on Chromium's [`chrome.bookmarks`](https://developer.chrome.com/docs/extensions/reference/bookmarks/#method-search) API. This documentation is derived from [`bookmarks.json`](https://chromium.googlesource.com/chromium/src/+/master/chrome/common/extensions/api/bookmarks.json) in the Chromium code.
->
-> Microsoft Edge compatibility data is supplied by Microsoft Corporation and is included here under the Creative Commons Attribution 3.0 United States License.
 
 <!--
 // Copyright 2015 The Chromium Authors. All rights reserved.

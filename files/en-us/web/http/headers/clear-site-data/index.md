@@ -1,14 +1,9 @@
 ---
 title: Clear-Site-Data
 slug: Web/HTTP/Headers/Clear-Site-Data
-tags:
-  - HTTP
-  - HTTP Header
-  - Reference
-  - Response Header
-  - header
 browser-compat: http.headers.Clear-Site-Data
 ---
+
 {{securecontext_header}}{{HTTPSidebar}}
 
 The **`Clear-Site-Data`** header clears browsing data (cookies, storage, cache) associated with the requesting website. It allows web developers to have more control over the data stored by a client browser for their origins.
@@ -57,7 +52,7 @@ Clear-Site-Data: "*"
     - sessionStorage (executes `sessionStorage.clear`),
     - IndexedDB (for each database execute {{domxref("IDBFactory.deleteDatabase")}}),
     - Service worker registrations (for each service worker registration, execute {{domxref("ServiceWorkerRegistration.unregister")}}),
-    - WebSQL databases,
+    - Web SQL databases (deprecated),
     - [FileSystem API data](/en-US/docs/Web/API/File_and_Directory_Entries_API),
     - Plugin data (Flash via [`NPP_ClearSiteData`](https://wiki.mozilla.org/NPAPI:ClearSiteData)).
 

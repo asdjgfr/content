@@ -1,17 +1,13 @@
 ---
-title: UIEvent.which
+title: "UIEvent: which property"
+short-title: which
 slug: Web/API/UIEvent/which
 page-type: web-api-instance-property
-tags:
-  - API
-  - DOM
-  - UIEvent
-  - Property
-  - Read-only
-  - Reference
-  - Deprecated
+status:
+  - deprecated
 browser-compat: api.UIEvent.which
 ---
+
 {{APIRef("UI Events")}}{{Deprecated_Header}}
 
 The **`UIEvent.which`** read-only property of the {{domxref("UIEvent")}} interface returns a number that indicates which button was pressed on the mouse, or the numeric `keyCode` or the character code (`charCode`) of the key pressed on the keyboard.

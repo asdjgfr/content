@@ -1,16 +1,10 @@
 ---
 title: ellipse()
 slug: Web/CSS/basic-shape/ellipse
-tags:
-  - CSS
-  - CSS Data Type
-  - CSS Shapes
-  - ellipse
-  - CSS Functions
-  - Data Type
-  - Reference
+page-type: css-function
 browser-compat: css.types.basic-shape.ellipse
 ---
+
 {{CSSRef}}
 
 The **`ellipse()`** [CSS](/en-US/docs/Web/CSS) function is one of the {{cssxref("&lt;basic-shape&gt;")}} [data types](/en-US/docs/Web/CSS/CSS_Types).

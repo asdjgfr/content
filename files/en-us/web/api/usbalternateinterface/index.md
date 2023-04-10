@@ -2,17 +2,11 @@
 title: USBAlternateInterface
 slug: Web/API/USBAlternateInterface
 page-type: web-api-interface
-tags:
-  - API
-  - Experimental
-  - Interface
-  - NeedsExample
-  - Reference
-  - USBAlternateInterface
-  - WebUSB
-  - WebUSB API
+status:
+  - experimental
 browser-compat: api.USBAlternateInterface
 ---
+
 {{securecontext_header}}{{APIRef("WebUSB API")}}{{SeeCompatTable}}
 
 The `USBAlternateInterface` interface of the [WebUSB API](/en-US/docs/Web/API/WebUSB_API) provides information about a particular configuration of an interface provided by the USB device. An interface includes one or more alternate settings which can configure a set of endpoints based on the operating mode of the device.
@@ -22,7 +16,7 @@ The `USBAlternateInterface` interface of the [WebUSB API](/en-US/docs/Web/API/We
 - {{domxref("USBAlternateInterface.USBAlternateInterface", "USBAlternateInterface()")}} {{Experimental_Inline}}
   - : Creates a new `USBAlternateInterface` object which will be populated with information about the alternate interface of the provided `USBInterface` with the given alternate setting number.
 
-## Properties
+## Instance properties
 
 - {{domxref("USBAlternateInterface.alternateSetting")}} {{ReadOnlyInline}} {{Experimental_Inline}}
   - : Returns the alternate setting number of this interface. This is equal to the `bAlternateSetting` field of the interface descriptor defining this interface.

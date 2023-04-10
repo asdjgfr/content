@@ -1,16 +1,13 @@
 ---
-title: XRWebGLBinding()
+title: "XRWebGLBinding: XRWebGLBinding() constructor"
+short-title: XRWebGLBinding()
 slug: Web/API/XRWebGLBinding/XRWebGLBinding
 page-type: web-api-constructor
-tags:
-  - API
-  - Constructor
-  - Reference
-  - WebXR
-  - XR
-  - Experimental
+status:
+  - experimental
 browser-compat: api.XRWebGLBinding.XRWebGLBinding
 ---
+
 {{APIRef("WebXR Device API")}}{{SeeCompatTable}}
 
 The **`XRWebGLBinding()`** constructor creates and
@@ -18,7 +15,7 @@ returns a new {{domxref("XRWebGLBinding")}} object.
 
 ## Syntax
 
-```js
+```js-nolint
 new XRWebGLBinding(session, context)
 ```
 
@@ -34,7 +31,7 @@ new XRWebGLBinding(session, context)
 
 ### Return value
 
-A newly-created {{domxref("XRWebGLBinding")}}.
+A new {{domxref("XRWebGLBinding")}}.
 
 ### Exceptions
 

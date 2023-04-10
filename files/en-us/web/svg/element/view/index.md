@@ -1,13 +1,10 @@
 ---
 title: <view>
 slug: Web/SVG/Element/view
-tags:
-  - Element
-  - NeedsExample
-  - Reference
-  - SVG
+page-type: svg-element
 browser-compat: svg.elements.view
 ---
+
 {{SVGRef}}
 
 A view is a defined way to view the image, like a zoom level or a detail view.

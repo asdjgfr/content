@@ -2,10 +2,8 @@
 title: Guidelines for styling shell prompt code examples
 slug: MDN/Writing_guidelines/Writing_style_guide/Code_style_guide/Shell
 page-type: mdn-writing-guide
-tags:
-  - meta
-  - writing-guide
 ---
+
 {{MDNSidebar}}
 
 A shell is a program that waits for you to type in a command and then press the return key. To indicate which commands you should type, content on MDN Web Docs lists them in a code block, similar to code examples. Such a block looks like this:

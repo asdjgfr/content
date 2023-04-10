@@ -1,16 +1,12 @@
 ---
 title: CSS Paged Media
 slug: Web/CSS/CSS_Pages
-tags:
-  - CSS
-  - CSS Paged Media
-  - Guide
-  - Overview
-  - Reference
+page-type: css-module
 spec-urls:
   - https://drafts.csswg.org/css-page/
   - https://drafts.csswg.org/css-break/
 ---
+
 {{CSSRef}}
 
 **CSS Paged Media** is a module of CSS that defines how page switches are handled.

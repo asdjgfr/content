@@ -1,17 +1,10 @@
 ---
 title: webNavigation
 slug: Mozilla/Add-ons/WebExtensions/API/webNavigation
-tags:
-  - API
-  - Add-ons
-  - Extensions
-  - Interface
-  - Non-standard
-  - Reference
-  - WebExtensions
-  - webNavigation
+page-type: webextension-api
 browser-compat: webextensions.api.webNavigation
 ---
+
 {{AddonSidebar}}
 
 Add event listeners for the various stages of a navigation. A navigation consists of a frame in the browser transitioning from one URL to another, usually (but not always) in response to a user action like clicking a link or entering a URL in the location bar.
@@ -20,7 +13,7 @@ Compared with the {{WebExtAPIRef("webRequest")}} API: navigations usually result
 
 Each event corresponds to a particular stage in the navigation. The sequence of events is like this:
 
-![](we-flow.png)
+![Visualization of the primary flow and additional flows described below.](we-flow.png)
 
 - The primary flow is:
 
@@ -86,8 +79,6 @@ To use this API you need to have the "webNavigation" [permission](/en-US/docs/Mo
 {{WebExtExamples("h2")}}
 
 > **Note:** This API is based on Chromium's [`chrome.webNavigation`](https://developer.chrome.com/docs/extensions/reference/webNavigation/) API. This documentation is derived from [`web_navigation.json`](https://chromium.googlesource.com/chromium/src/+/master/chrome/common/extensions/api/web_navigation.json) in the Chromium code.
->
-> Microsoft Edge compatibility data is supplied by Microsoft Corporation and is included here under the Creative Commons Attribution 3.0 United States License.
 
 <!--
 // Copyright 2015 The Chromium Authors. All rights reserved.

@@ -1,10 +1,8 @@
 ---
 title: system-property
 slug: Web/XPath/Functions/system-property
-tags:
-  - XSLT
-  - XSLT_Reference
 ---
+
 {{ XsltRef() }}
 
 The `system-property` function returns an object representing the given system-property.

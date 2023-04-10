@@ -1,14 +1,10 @@
 ---
 title: Grid wrapper
 slug: Web/CSS/Layout_cookbook/Grid_wrapper
-tags:
-  - CSS
-  - Guide
-  - Layout
-  - cookbook
-  - recipes
+page-type: guide
 browser-compat: css.properties.grid-template-columns
 ---
+
 {{CSSRef}}
 
 The grid wrapper pattern is useful for aligning grid content within a central wrapper, while also allowing items to break out and align to the edge of the containing element or page when desired.

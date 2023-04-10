@@ -1,14 +1,10 @@
 ---
 title: translateY()
 slug: Web/CSS/transform-function/translateY
-tags:
-  - CSS
-  - CSS Function
-  - CSS Transforms
-  - Function
-  - Reference
+page-type: css-function
 browser-compat: css.types.transform-function.translateY
 ---
+
 {{CSSRef}}
 
 The **`translateY()`** [CSS](/en-US/docs/Web/CSS) [function](/en-US/docs/Web/CSS/CSS_Functions) repositions an element vertically on the 2D plane. Its result
@@ -177,3 +173,4 @@ div {
 
 - {{cssxref("transform")}}
 - {{cssxref("&lt;transform-function&gt;")}}
+- {{cssxref("translate")}}

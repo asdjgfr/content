@@ -1,22 +1,11 @@
 ---
-title: RTCRtpTransceiver.setCodecPreferences()
+title: "RTCRtpTransceiver: setCodecPreferences() method"
+short-title: setCodecPreferences()
 slug: Web/API/RTCRtpTransceiver/setCodecPreferences
 page-type: web-api-instance-method
-tags:
-  - API
-  - Codec
-  - Codec Configuration
-  - Codec Parameters
-  - Codec Preferences
-  - Media
-  - Method
-  - RTCRtpTransceiver
-  - Reference
-  - Settings
-  - WebRTC
-  - setCodecPreferences
 browser-compat: api.RTCRtpTransceiver.setCodecPreferences
 ---
+
 {{APIRef("WebRTC")}}
 
 The {{domxref("RTCRtpTransceiver")}} method
@@ -39,7 +28,7 @@ characteristics—can be found in [Codecs used by WebRTC](/en-US/docs/Web/Media/
 
 ## Syntax
 
-```js
+```js-nolint
 setCodecPreferences(codecs)
 ```
 

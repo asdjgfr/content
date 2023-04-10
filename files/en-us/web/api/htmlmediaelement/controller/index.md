@@ -1,17 +1,14 @@
 ---
-title: HTMLMediaElement.controller
+title: "HTMLMediaElement: controller property"
+short-title: controller
 slug: Web/API/HTMLMediaElement/controller
 page-type: web-api-instance-property
-tags:
-  - API
-  - HTML DOM
-  - HTMLMediaElement
-  - Property
-  - Web
-  - Deprecated
-  - Non-standard
+status:
+  - deprecated
+  - non-standard
 browser-compat: api.HTMLMediaElement.controller
 ---
+
 {{APIRef("HTML DOM")}}{{Deprecated_Header}}{{Non-standard_Header}}
 
 The **`HTMLMediaElement.controller`** property represents the media controller assigned to the element.

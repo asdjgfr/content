@@ -1,12 +1,13 @@
 ---
-title: InputDeviceCapabilities.firesTouchEvents
+title: "InputDeviceCapabilities: firesTouchEvents property"
+short-title: firesTouchEvents
 slug: Web/API/InputDeviceCapabilities/firesTouchEvents
 page-type: web-api-instance-property
-tags:
-  - needsTags
-  - Experimental
+status:
+  - experimental
 browser-compat: api.InputDeviceCapabilities.firesTouchEvents
 ---
+
 {{APIRef}}{{SeeCompatTable}}
 
 The **`InputDeviceCapabilities.firesTouchEvents`** read-only
@@ -20,7 +21,7 @@ touch events on mobile browsers.
 
 ## Syntax
 
-```js
+```js-nolint
 const boolean = InputDeviceCapabilities.firesTouchEvents
 ```
 
@@ -31,9 +32,8 @@ A {{jsxref('Boolean')}}
 ## Example
 
 ```js
-myButton.addEventListener('mousedown', (e) => {
-  if (!e.sourceCapabilities.firesTouchEvents)
-    myButton.classList.add("pressed");
+myButton.addEventListener("mousedown", (e) => {
+  if (!e.sourceCapabilities.firesTouchEvents) myButton.classList.add("pressed");
 });
 ```
 

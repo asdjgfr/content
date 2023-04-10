@@ -1,13 +1,8 @@
 ---
 title: Right rotate
 slug: WebAssembly/Reference/Numeric/Right_rotate
-tags:
-  - WebAssembly
-  - wasm
-  - Reference
-  - Numeric
-  - Bitwise
 ---
+
 {{WebAssemblySidebar}}
 
 The **`rotr`** instructions, short for _rotate-right_, are used for performing a bitwise right-rotate.

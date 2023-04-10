@@ -1,16 +1,13 @@
 ---
-title: ImageTrackList.selectedTrack
+title: "ImageTrackList: selectedTrack property"
+short-title: selectedTrack
 slug: Web/API/ImageTrackList/selectedTrack
 page-type: web-api-instance-property
-tags:
-  - API
-  - Property
-  - Reference
-  - selectedTrack
-  - ImageTrackList
-  - Experimental
+status:
+  - experimental
 browser-compat: api.ImageTrackList.selectedTrack
 ---
+
 {{APIRef("WebCodecs API")}}{{SeeCompatTable}}
 
 The **`selectedTrack`** property of the {{domxref("ImageTrackList")}} interface returns an {{domxref("ImageTrack")}} object representing the currently selected track.

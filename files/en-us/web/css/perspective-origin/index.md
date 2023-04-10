@@ -1,20 +1,10 @@
 ---
 title: perspective-origin
 slug: Web/CSS/perspective-origin
-tags:
-  - 3D
-  - CSS
-  - CSS Property
-  - CSS Transforms
-  - Graphics
-  - Property
-  - Reference
-  - Transforms
-  - perspective
-  - perspective-origin
-  - recipe:css-property
+page-type: css-property
 browser-compat: css.properties.perspective-origin
 ---
+
 {{CSSRef}}
 
 The **`perspective-origin`** [CSS](/en-US/docs/Web/CSS) property determines the position at which the viewer is looking. It is used as the _vanishing point_ by the {{cssxref("perspective")}} property.

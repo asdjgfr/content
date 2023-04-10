@@ -1,19 +1,13 @@
 ---
-title: XRCylinderLayer.radius
+title: "XRCylinderLayer: radius property"
+short-title: radius
 slug: Web/API/XRCylinderLayer/radius
 page-type: web-api-instance-property
-tags:
-  - API
-  - Property
-  - Reference
-  - VR
-  - WebXR
-  - WebXR API
-  - WebXR Device API
-  - XR
-  - Experimental
+status:
+  - experimental
 browser-compat: api.XRCylinderLayer.radius
 ---
+
 {{APIRef("WebXR Device API")}}{{SeeCompatTable}}
 
 The **`radius`** property of the {{domxref("XRCylinderLayer")}} interface represents the radius of the cylinder.

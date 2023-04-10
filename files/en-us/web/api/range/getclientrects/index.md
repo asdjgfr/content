@@ -1,15 +1,11 @@
 ---
-title: Range.getClientRects()
+title: "Range: getClientRects() method"
+short-title: getClientRects()
 slug: Web/API/Range/getClientRects
 page-type: web-api-instance-method
-tags:
-  - API
-  - CSSOM View
-  - Method
-  - Range
-  - Reference
 browser-compat: api.Range.getClientRects
 ---
+
 {{ApiRef("DOM")}}
 
 The **`Range.getClientRects()`** method returns a list of {{
@@ -18,7 +14,7 @@ The **`Range.getClientRects()`** method returns a list of {{
 
 ## Syntax
 
-```js
+```js-nolint
 getClientRects()
 ```
 

@@ -1,17 +1,10 @@
 ---
-title: ':scope'
+title: ":scope"
 slug: Web/CSS/:scope
-tags:
-  - ':scope'
-  - CSS
-  - Layout
-  - Pseudo-class
-  - Reference
-  - Scoped Elements
-  - Selector
-  - Web
+page-type: css-pseudo-class
 browser-compat: css.selectors.scope
 ---
+
 {{CSSRef}}
 
 The **`:scope`** [CSS](/en-US/docs/Web/CSS) [pseudo-class](/en-US/docs/Web/CSS/Pseudo-classes) represents elements that are a reference point for selectors to match against.
@@ -27,8 +20,10 @@ Currently, when used in a stylesheet, `:scope` is the same as {{cssxref(":root")
 
 ## Syntax
 
-```
-:scope
+```css
+:scope {
+  /* ... */
+}
 ```
 
 ## Examples
@@ -68,30 +63,29 @@ A situation where the `:scope` pseudo-class prove to be useful is when you need 
 #### JavaScript
 
 ```js
-const context = document.getElementById('context');
-const selected = context.querySelectorAll(':scope > div');
+const context = document.getElementById("context");
+const selected = context.querySelectorAll(":scope > div");
 
-document.getElementById('results').innerHTML = Array.prototype.map.call(
-  selected,
-  (element) => `#${element.getAttribute('id')}`,
-).join(', ');
+document.getElementById("results").innerHTML = Array.prototype.map
+  .call(selected, (element) => `#${element.getAttribute("id")}`)
+  .join(", ");
 ```
 
 #### HTML
 
 ```html
 <div id="context">
-    <div id="element-1">
-        <div id="element-1.1"></div>
-        <div id="element-1.2"></div>
-    </div>
-    <div id="element-2">
-        <div id="element-2.1"></div>
-    </div>
+  <div id="element-1">
+    <div id="element-1.1"></div>
+    <div id="element-1.2"></div>
+  </div>
+  <div id="element-2">
+    <div id="element-2.1"></div>
+  </div>
 </div>
 <p>
-    Selected elements ids :
-    <span id="results"></span>
+  Selected elements ids :
+  <span id="results"></span>
 </p>
 ```
 

@@ -1,11 +1,9 @@
 ---
 title: 'ReferenceError: "x" is not defined'
 slug: Web/JavaScript/Reference/Errors/Not_defined
-tags:
-  - Error
-  - JavaScript
-  - ReferenceError
+page-type: javascript-error
 ---
+
 {{jsSidebar("Errors")}}
 
 The JavaScript exception "_variable_ is not defined" occurs when there is a
@@ -44,7 +42,7 @@ The "foo" variable isn't defined anywhere. It needs to be some string, so that t
 {{jsxref("String.prototype.substring()")}} method will work.
 
 ```js example-good
-const foo = 'bar';
+const foo = "bar";
 foo.substring(1); // "ar"
 ```
 

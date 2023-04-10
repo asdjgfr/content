@@ -1,25 +1,20 @@
 ---
-title: XRView.requestViewportScale()
+title: "XRView: requestViewportScale() method"
+short-title: requestViewportScale()
 slug: Web/API/XRView/requestViewportScale
 page-type: web-api-instance-method
-tags:
-  - API
-  - Method
-  - Reference
-  - AR
-  - VR
-  - XR
-  - WebXR
-  - Experimental
+status:
+  - experimental
 browser-compat: api.XRView.requestViewportScale
 ---
+
 {{APIRef("WebXR Device API")}}{{SeeCompatTable}}
 
 The **`requestViewportScale()`** method of the {{domxref("XRView")}} interface requests that the user agent sets the requested viewport scale for this viewport to the given value. This is used for dynamic viewport scaling which allows rendering to a subset of the WebXR viewport using a scale factor that can be changed every animation frame.
 
 ## Syntax
 
-```js
+```js-nolint
 requestViewportScale(scale)
 ```
 

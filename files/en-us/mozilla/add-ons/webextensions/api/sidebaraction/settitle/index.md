@@ -1,17 +1,10 @@
 ---
 title: sidebarAction.setTitle()
 slug: Mozilla/Add-ons/WebExtensions/API/sidebarAction/setTitle
-tags:
-  - API
-  - Add-ons
-  - Extensions
-  - Method
-  - Reference
-  - WebExtensions
-  - setTitle
-  - sidebarAction
+page-type: webextension-api-function
 browser-compat: webextensions.api.sidebarAction.setTitle
 ---
+
 {{AddonSidebar()}}
 
 Sets the sidebar's title. The title is displayed anywhere the browser lists available sidebars. For example, Firefox will show it in the "View > Sidebar" menu. It's also shown at the top o the sidebar when the sidebar is open.
@@ -28,7 +21,7 @@ If you set a new title using `setTitle()`, and omit both the `tabId` and `window
 
 ## Syntax
 
-```js
+```js-nolint
 browser.sidebarAction.setTitle(
   details // object
 )

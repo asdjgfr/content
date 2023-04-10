@@ -1,20 +1,11 @@
 ---
-title: RTCIceCandidate.protocol
+title: "RTCIceCandidate: protocol property"
+short-title: protocol
 slug: Web/API/RTCIceCandidate/protocol
 page-type: web-api-instance-property
-tags:
-  - API
-  - ICE
-  - Property
-  - Protocol
-  - RTCIceCandidate
-  - Read-only
-  - Reference
-  - SDP
-  - WebRTC
-  - WebRTC API
 browser-compat: api.RTCIceCandidate.protocol
 ---
+
 {{APIRef("WebRTC")}}
 
 The **{{domxref("RTCIceCandidate")}}** interface's read-only **`protocol`** property is a string

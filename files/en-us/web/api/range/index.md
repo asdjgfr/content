@@ -2,11 +2,9 @@
 title: Range
 slug: Web/API/Range
 page-type: web-api-interface
-tags:
-  - API
-  - DOM
 browser-compat: api.Range
 ---
+
 {{APIRef("DOM")}}
 
 The **`Range`** interface represents a fragment of a document that can contain nodes and parts of text nodes.
@@ -17,7 +15,7 @@ There also is the {{domxref("Range.Range()", "Range()")}} constructor available.
 
 {{InheritanceDiagram}}
 
-## Properties
+## Instance properties
 
 _There are no inherited properties._
 
@@ -39,7 +37,7 @@ _There are no inherited properties._
 - {{ domxref("Range.Range()", "Range()") }}
   - : Returns a `Range` object with the global {{domxref("Document")}} as its start and end.
 
-## Methods
+## Instance methods
 
 _There are no inherited methods._
 
@@ -60,7 +58,7 @@ _There are no inherited methods._
 - {{ domxref("Range.deleteContents()")}}
   - : Removes the contents of a `Range` from the {{ domxref("Document") }}.
 - {{ domxref("Range.detach()")}}
-  - : Releases the `Range` from use to improve performance.
+  - : Does nothing. Kept for compatibility.
 - {{ domxref("Range.extractContents()")}}
   - : Moves contents of a `Range` from the document tree into a {{ domxref("DocumentFragment") }}.
 - {{ domxref("Range.getBoundingClientRect()") }}

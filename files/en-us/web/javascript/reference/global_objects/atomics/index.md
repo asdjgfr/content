@@ -1,20 +1,17 @@
 ---
 title: Atomics
 slug: Web/JavaScript/Reference/Global_Objects/Atomics
-tags:
-  - JavaScript
-  - Namespace
-  - Shared Memory
-  - Specifications
+page-type: javascript-namespace
 browser-compat: javascript.builtins.Atomics
 ---
+
 {{JSRef}}
 
-The **`Atomics`** object provides atomic operations as static methods. They are used with {{jsxref("SharedArrayBuffer")}} and {{jsxref("ArrayBuffer")}} objects.
+The **`Atomics`** namespace object contains static methods for carrying out atomic operations. They are used with {{jsxref("SharedArrayBuffer")}} and {{jsxref("ArrayBuffer")}} objects.
 
 ## Description
 
-The Atomic operations are installed on an `Atomics` module. Unlike the other global objects, `Atomics` is not a constructor. You cannot use it with a [`new` operator](/en-US/docs/Web/JavaScript/Reference/Operators/new) or invoke the `Atomics` object as a function. All properties and methods of `Atomics` are static (as is the case with the {{jsxref("Math")}} object, for example).
+Unlike most global objects, `Atomics` is not a constructor. You cannot use it with the [`new` operator](/en-US/docs/Web/JavaScript/Reference/Operators/new) or invoke the `Atomics` object as a function. All properties and methods of `Atomics` are static (just like the {{jsxref("Math")}} object).
 
 ### Atomic operations
 
@@ -23,6 +20,11 @@ When memory is shared, multiple threads can read and write the same data in memo
 ### Wait and notify
 
 The `wait()` and `notify()` methods are modeled on Linux futexes ("fast user-space mutex") and provide ways for waiting until a certain condition becomes true and are typically used as blocking constructs.
+
+## Static properties
+
+- `Atomics[@@toStringTag]`
+  - : The initial value of the [`@@toStringTag`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/toStringTag) property is the string `"Atomics"`. This property is used in {{jsxref("Object.prototype.toString()")}}.
 
 ## Static methods
 

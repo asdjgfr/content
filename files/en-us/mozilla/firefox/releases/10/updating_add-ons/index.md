@@ -1,13 +1,8 @@
 ---
 title: Updating add-ons for Firefox 10
 slug: Mozilla/Firefox/Releases/10/Updating_add-ons
-tags:
-  - Add-ons
-  - Extensions
-  - Firefox
-  - Firefox 10
-  - Gecko 10
 ---
+
 {{FirefoxSidebar}}
 
 Although a lot of things have changed in Firefox 10 that, in theory, can cause add-on compatibility breakage, most of them are relatively obscure, so they're not very likely to affect you. This article will help guide you as you update your add-on.

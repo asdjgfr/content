@@ -1,18 +1,10 @@
 ---
 title: tabs.connect()
 slug: Mozilla/Add-ons/WebExtensions/API/tabs/connect
-tags:
-  - API
-  - Add-ons
-  - Extensions
-  - Method
-  - Non-standard
-  - Reference
-  - WebExtensions
-  - connect
-  - tabs
+page-type: webextension-api-function
 browser-compat: webextensions.api.tabs.connect
 ---
+
 {{AddonSidebar()}}
 
 Call this function to set up a connection between the extension's background scripts (or other privileged scripts, such as popup scripts or options page scripts) and any [content scripts](/en-US/docs/Mozilla/Add-ons/WebExtensions/Content_scripts) that belong to this extension and are running in the specified tab. This function returns a {{WebExtAPIRef("runtime.Port")}} object.
@@ -23,7 +15,7 @@ For more details, see [connection-based messaging](/en-US/docs/Mozilla/Add-ons/W
 
 ## Syntax
 
-```js
+```js-nolint
 browser.tabs.connect(
   tabId,      // integer
   connectInfo // optional object
@@ -81,8 +73,6 @@ browser.browserAction.onClicked.addListener(() => {
 {{Compat}}
 
 > **Note:** This API is based on Chromium's [`chrome.tabs`](https://developer.chrome.com/docs/extensions/reference/tabs/#method-connect) API. This documentation is derived from [`tabs.json`](https://chromium.googlesource.com/chromium/src/+/master/chrome/common/extensions/api/tabs.json) in the Chromium code.
->
-> Microsoft Edge compatibility data is supplied by Microsoft Corporation and is included here under the Creative Commons Attribution 3.0 United States License.
 
 <!--
 // Copyright 2015 The Chromium Authors. All rights reserved.

@@ -1,16 +1,11 @@
 ---
-title: XPathResult.booleanValue
+title: "XPathResult: booleanValue property"
+short-title: booleanValue
 slug: Web/API/XPathResult/booleanValue
 page-type: web-api-instance-property
-tags:
-  - API
-  - DOM XPath API
-  - Property
-  - Reference
-  - XPath
-  - XPathResult
 browser-compat: api.XPathResult.booleanValue
 ---
+
 {{APIRef("DOM XPath")}}
 
 The read-only **`booleanValue`** property of the

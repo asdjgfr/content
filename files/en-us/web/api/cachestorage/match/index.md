@@ -1,16 +1,8 @@
 ---
-title: CacheStorage.match()
+title: "CacheStorage: match() method"
+short-title: match()
 slug: Web/API/CacheStorage/match
 page-type: web-api-instance-method
-tags:
-  - API
-  - CacheStorage
-  - Method
-  - Reference
-  - Service Workers
-  - Service worker API
-  - ServiceWorker
-  - match
 browser-compat: api.CacheStorage.match
 ---
 
@@ -29,9 +21,9 @@ You can access `CacheStorage` through the global
 
 ## Syntax
 
-```js
-match(request);
-match(request, options);
+```js-nolint
+match(request)
+match(request, options)
 ```
 
 ### Parameters

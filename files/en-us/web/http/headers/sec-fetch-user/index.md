@@ -1,15 +1,9 @@
 ---
 title: Sec-Fetch-User
 slug: Web/HTTP/Headers/Sec-Fetch-User
-tags:
-  - Sec-Fetch-User
-  - Fetch metadata request headers
-  - HTTP
-  - HTTP Header
-  - Reference
-  - Request header
 browser-compat: http.headers.Sec-Fetch-User
 ---
+
 {{HTTPSidebar}}
 
 The **`Sec-Fetch-User`** {{Glossary("Fetch metadata request header", "fetch metadata request header")}} is only sent for requests initiated by user activation, and its value will always be `?1`.

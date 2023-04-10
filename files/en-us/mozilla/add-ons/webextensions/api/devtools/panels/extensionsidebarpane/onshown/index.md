@@ -1,25 +1,17 @@
 ---
 title: devtools.panels.ExtensionSidebarPane.onShown
 slug: Mozilla/Add-ons/WebExtensions/API/devtools/panels/ExtensionSidebarPane/onShown
-tags:
-  - API
-  - Add-ons
-  - ExtensionSidebarPane
-  - Extensions
-  - Event
-  - Reference
-  - WebExtensions
-  - devtools.panels
-  - onShown
+page-type: webextension-api-event
 browser-compat: webextensions.api.devtools.panels.ExtensionSidebarPane.onShown
 ---
+
 {{AddonSidebar()}}
 
 Fired when the sidebar pane becomes visible as a result of the user switching to it.
 
 ## Syntax
 
-```js
+```js-nolint
 browser.devtools.panels.onShown.addListener(listener)
 browser.devtools.panels.onShown.removeListener(listener)
 browser.devtools.panels.onShown.hasListener(listener)

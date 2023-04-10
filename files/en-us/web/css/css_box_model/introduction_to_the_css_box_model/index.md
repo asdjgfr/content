@@ -1,20 +1,17 @@
 ---
 title: Introduction to the CSS basic box model
 slug: Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model
-tags:
-  - CSS
-  - CSS Box Model
-  - Guide
-  - Layout
+page-type: guide
 spec-urls: https://drafts.csswg.org/css-box/#intro
 ---
+
 {{CSSRef}}
 
 When laying out a document, the browser's rendering engine represents each element as a rectangular box according to the standard **CSS basic box model**. CSS determines the size, position, and properties (color, background, border size, etc.) of these boxes.
 
 Every box is composed of four parts (or _areas_), defined by their respective edges: the _content edge_, _padding edge_, _border edge_, and _margin edge_.
 
-![CSS Box model](<boxmodel-(3).png>)
+![CSS Box model](boxmodel.png)
 
 ## Content area
 
@@ -50,7 +47,7 @@ Finally, note that for non-replaced inline elements, the amount of space taken u
 
 - [Layout and the containing block](/en-US/docs/Web/CSS/Containing_block)
 - [Introducing the CSS Cascade](/en-US/docs/Web/CSS/Cascade)
-- [Cascade and inheritance](/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance)
+- [Cascade, specificity, and inheritance](/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance)
 - CSS key concepts:
   - [CSS syntax](/en-US/docs/Web/CSS/Syntax)
   - [At-rules](/en-US/docs/Web/CSS/At-rule)

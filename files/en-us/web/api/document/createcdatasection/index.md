@@ -1,12 +1,8 @@
 ---
-title: Document.createCDATASection()
+title: "Document: createCDATASection() method"
+short-title: createCDATASection()
 slug: Web/API/Document/createCDATASection
 page-type: web-api-instance-method
-tags:
-  - API
-  - DOM
-  - Method
-  - Reference
 browser-compat: api.Document.createCDATASection
 ---
 
@@ -17,7 +13,7 @@ and returns it.
 
 ## Syntax
 
-```js
+```js-nolint
 createCDATASection(data)
 ```
 

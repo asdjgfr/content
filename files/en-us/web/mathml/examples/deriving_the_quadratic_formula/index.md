@@ -1,15 +1,10 @@
 ---
-title: 'MathML: Deriving the Quadratic Formula'
+title: "Deriving the Quadratic Formula"
 slug: Web/MathML/Examples/Deriving_the_Quadratic_Formula
-tags:
-  - Beginner
-  - Education
-  - Example
-  - Guide
-  - HTML
-  - MathML
-  - NeedsBeginnerUpdate
 ---
+
+{{MathMLRef}}
+
 This page outlines the derivation of the [Quadratic Formula](https://en.wikipedia.org/wiki/Quadratic_formula).
 
 We take a quadratic equation in its general form, and solve for x:

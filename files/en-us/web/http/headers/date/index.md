@@ -1,14 +1,9 @@
 ---
 title: Date
 slug: Web/HTTP/Headers/Date
-tags:
-  - HTTP
-  - HTTP Header
-  - Request header
-  - Response header
-  - Reference
 browser-compat: http.headers.Date
 ---
+
 {{HTTPSidebar}}
 
 The **`Date`** general HTTP header contains the date and time
@@ -19,11 +14,11 @@ at which the message originated.
 > in the fetch spec, so this code will not send the `Date` header:
 >
 > ```js
-> fetch('https://httpbin.org/get', {
->   'headers': {
->     'Date': (new Date()).toUTCString()
->   }
-> })
+> fetch("https://httpbin.org/get", {
+>   headers: {
+>     Date: new Date().toUTCString(),
+>   },
+> });
 > ```
 
 <table class="properties">
@@ -73,11 +68,6 @@ Date: <day-name>, <day> <month> <year> <hour>:<minute>:<second> GMT
 
 ```http
 Date: Wed, 21 Oct 2015 07:28:00 GMT
-```
-
-```js
-new Date().toUTCString()
-// "Mon, 09 Mar 2020 08:13:24 GMT"
 ```
 
 ## Specifications

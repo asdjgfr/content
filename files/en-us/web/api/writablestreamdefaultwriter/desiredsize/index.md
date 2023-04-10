@@ -1,16 +1,11 @@
 ---
-title: WritableStreamDefaultWriter.desiredSize
+title: "WritableStreamDefaultWriter: desiredSize property"
+short-title: desiredSize
 slug: Web/API/WritableStreamDefaultWriter/desiredSize
 page-type: web-api-instance-property
-tags:
-  - API
-  - Property
-  - Reference
-  - Streams
-  - WritableStreamDefaultWriter
-  - desiredSize
 browser-compat: api.WritableStreamDefaultWriter.desiredSize
 ---
+
 {{APIRef("Streams")}}
 
 The **`desiredSize`** read-only property of the
@@ -33,17 +28,20 @@ closed.
 ## Examples
 
 ```js
-const writableStream = new WritableStream({
-  write(chunk) {
-    // ...
+const writableStream = new WritableStream(
+  {
+    write(chunk) {
+      // ...
+    },
+    close() {
+      // ...
+    },
+    abort(err) {
+      // ...
+    },
   },
-  close() {
-    // ...
-  },
-  abort(err) {
-    // ...
-  }
-}, queuingStrategy);
+  queuingStrategy
+);
 
 // ...
 

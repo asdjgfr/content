@@ -1,13 +1,9 @@
 ---
 title: Tips and Tricks
 slug: Mozilla/Add-ons/WebExtensions/Tips
-tags:
-  - ECMAScript
-  - Tips
-  - Tips and Tricks
-  - WebExtensions
-  - tricks
+page-type: guide
 ---
+
 {{AddonSidebar}}
 
 This page contains various tips and tricks which should be useful to many people developing extensions using WebExtension APIs.

@@ -1,13 +1,10 @@
 ---
 title: Map.prototype.size
 slug: Web/JavaScript/Reference/Global_Objects/Map/size
-tags:
-  - ECMAScript 2015
-  - JavaScript
-  - Map
-  - Property
+page-type: javascript-instance-accessor-property
 browser-compat: javascript.builtins.Map.size
 ---
+
 {{JSRef}}
 
 The **`size`** accessor property returns the number of elements in a

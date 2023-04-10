@@ -1,14 +1,10 @@
 ---
 title: DataView.prototype.getInt8()
 slug: Web/JavaScript/Reference/Global_Objects/DataView/getInt8
-tags:
-  - DataView
-  - JavaScript
-  - Method
-  - Prototype
-  - TypedArrays
+page-type: javascript-instance-method
 browser-compat: javascript.builtins.DataView.getInt8
 ---
+
 {{JSRef}}
 
 The **`getInt8()`** method gets a signed 8-bit integer (byte)
@@ -18,7 +14,7 @@ at the specified byte offset from the start of the {{jsxref("DataView")}}.
 
 ## Syntax
 
-```js
+```js-nolint
 getInt8(byteOffset)
 ```
 

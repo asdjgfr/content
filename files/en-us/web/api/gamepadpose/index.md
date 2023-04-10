@@ -2,25 +2,18 @@
 title: GamepadPose
 slug: Web/API/GamepadPose
 page-type: web-api-interface
-tags:
-  - API
-  - Experimental
-  - Gamepad
-  - GamepadPose
-  - Interface
-  - Reference
-  - VR
-  - Virtual Reality
-  - WebVR
+status:
+  - experimental
 browser-compat: api.GamepadPose
 ---
+
 {{securecontext_header}}{{APIRef("Gamepad API")}}{{SeeCompatTable}}
 
 The **`GamepadPose`** interface of the [Gamepad API](/en-US/docs/Web/API/Gamepad_API) represents the pose of a [WebVR](/en-US/docs/Web/API/WebVR_API) controller at a given timestamp (which includes orientation, position, velocity, and acceleration information).
 
 This interface is accessible through the {{domxref("Gamepad.pose")}} property.
 
-## Properties
+## Instance properties
 
 - {{domxref("GamepadPose.hasOrientation")}} {{ReadOnlyInline}} {{Experimental_Inline}}
   - : Returns a boolean indicating whether the gamepad is capable of returning orientation information (`true`) or not (`false`).

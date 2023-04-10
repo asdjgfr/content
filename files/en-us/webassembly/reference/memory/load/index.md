@@ -1,12 +1,8 @@
 ---
 title: Load
 slug: WebAssembly/Reference/Memory/Load
-tags:
-  - WebAssembly
-  - wasm
-  - Reference
-  - Memory
 ---
+
 {{WebAssemblySidebar}}
 
 The **`load`** instructions, are used to load a number from memory onto the stack.

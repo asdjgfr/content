@@ -1,20 +1,14 @@
 ---
-title: VRFieldOfView.upDegrees
+title: "VRFieldOfView: upDegrees property"
+short-title: upDegrees
 slug: Web/API/VRFieldOfView/upDegrees
 page-type: web-api-instance-property
-tags:
-  - API
-  - Property
-  - Reference
-  - VR
-  - VRFieldOfView
-  - Virtual Reality
-  - WebVR
-  - upDegrees
-  - Deprecated
-  - Non-standard
+status:
+  - deprecated
+  - non-standard
 browser-compat: api.VRFieldOfView.upDegrees
 ---
+
 {{APIRef("WebVR API")}}{{Deprecated_header}}{{Non-standard_header}}
 
 The **`upDegrees`** read-only property of the {{domxref("VRFieldOfView")}} interface returns the number of degrees upwards that the field of view extends in.
